@@ -3,7 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Return On Interest (ROI)</title>
+    <title>Return On Investment (ROI)</title>
     <section>
         <title>ROI Summary</title>
         <para>The adoption of IKM within healthcare organizations presents a compelling value
@@ -41,7 +41,7 @@
                 <para>In response to these challenges, the strategic imperative for healthcare
             organizations is to adopt and implement robust data management frameworks that can
             address present needs and are scalable and flexible enough to adapt to future
-            requirements. The 2020-2025 Federal Health IT Strategic Plan outlines a vision for a
+            requirements. The 2024-2030 Federal Health IT Strategic Plan outlines a vision for a
             more integrated, interoperable healthcare ecosystem, underscoring the national priority
             placed on enhancing the quality and interoperability of healthcare data. [5]</para>
                 <para>Enter IKM, a forward-thinking solution designed to meet the complex demands of
@@ -73,10 +73,7 @@
     </section>
     <section>
         <title>The ROI of Implementing IKM in Healthcare Organizations</title>
-        <para>IKM in healthcare organizations offers substantial ROI by addressing several critical
-            areas:</para>
         <section>
-            <title>Investment and ROI Analysis</title>
             <para>A thorough investment and ROI analysis is a cornerstone of the IKM implementation
                 process. Leaders must estimate the costs associated with adopting IKM, including
                 technology, training, and change management expenses. [9] Moreover, projecting
@@ -90,6 +87,8 @@
                 investment and ROI analysis, healthcare leaders can lay the groundwork for IKM to
                 transform their data management practices and achieve significant improvements in
                 healthcare delivery and outcomes.</para>
+            <para>IKM in healthcare organizations offers substantial ROI by addressing several
+                critical areas:</para>
         </section>
         <section><title>Improved Interoperability and Data Accuracy</title>
             <para>The adoption of IKM leads to significant improvements in interoperability and data
@@ -106,10 +105,8 @@
                 information. This facilitates real-time clinical decision support, allowing
                 healthcare providers to make informed decisions based on comprehensive data. The
                 impact of such systems on healthcare outcomes is well-documented, underscoring the
-                value of IKM in supporting clinical decision-making processes. [12] One controlled
-                study found that when knowledge management was integrated into a medication
-                order-entry system serious errors were reduced by 55%. [13] Additionally, when
-                subject matter experts (SMEs) identified a new prescription medication was
+                value of IKM in supporting clinical decision-making processes. [12]  Additionally,
+                when subject matter experts (SMEs) identified a new prescription medication was
                 beneficial for heart problems, the integrated medication order-entry knowledge
                 management resulted in an increase in that medication’s ordering from 12% to 81%.
                 [13]</para></section>
@@ -128,13 +125,14 @@
                 [14]</para>
         </section>
         <section>
-            <title>Compliance and Risk Management </title>
+            <title>Enhanced Compliance and Risk Management </title>
             <para>Standardized data management, as facilitated by IKM, plays a crucial role in
                 ensuring regulatory compliance and mitigating risks associated with data
                 mismanagement and errors. IKM provides a repeatable, standardized, and comprehensive
                 framework to ensure compliance with the appropriate standards and minimizes risk by
                 sharing highly accurate and interoperable data with providers to make informed
-                decisions.</para>
+                decisions. One controlled study found that when knowledge management was integrated
+                into a medication order-entry system serious errors were reduced by 55%. [13]</para>
         </section>
         <section>
             <title>IKM in Healthcare ROI Summary</title>
@@ -152,9 +150,11 @@
         </section>
     </section>
     <section>
-        <title>Value Propositions for C-suite Executives</title>
+        <title>Value Propositions for Leading Healthcare Organizations</title>
         <para>Implementing IKM in healthcare organizations presents distinct value propositions for
-            C-suite executives, emphasizing strategic, financial, and innovative benefits.</para>
+            C-suite executives, emphasizing strategic, financial, and innovative benefits.
+            Implementing IKM will be a multi-team effort that will lead to important strategic,
+            financial, and innovative benefits for the entire organization. </para>
         <section>
             <title>Strategic Advantage in Healthcare Delivery</title>
             <para>IKM offers a strategic advantage by enhancing organizational reputation through
@@ -175,20 +175,23 @@
         </section>
         <section>
             <title>Fostering Innovation</title>
-            <para>IKM lays the groundwork for adopting future healthcare technologies, thus
-                fostering an environment conducive to innovation. [13] IKM supports research and
-                development initiatives, driving advancements in healthcare technologies and
-                practices, by providing a robust framework for data analysis and management. [13,18]
-                This not only positions the organization at the forefront of healthcare innovation
-                but also ensures readiness for future challenges and opportunities, such as new or
-                emerging diseases. IKM and IKM tools would support the conglomeration and use of
-                real-world data and information at a critical time for healthcare providers and
-                public health experts and could drive the creation and use of temporary or
-                placeholder terminology concepts before standard development organizations (SDOs)
-                could release their official versions. </para>
+            <para>IKM lays the groundwork for adopting future healthcare technologies, such as the
+                integration of AI, thus fostering an environment conducive to innovation. [13] IKM
+                supports research and development initiatives, driving advancements in healthcare
+                technologies and practices, by providing a robust framework for data analysis and
+                management. [13,18] This not only positions the organization at the forefront of
+                healthcare innovation but also ensures readiness for future challenges and
+                opportunities, such as new or emerging diseases. IKM and IKM tools would support the
+                conglomeration and use of real-world data and information at a critical time for
+                healthcare providers and public health experts and could drive the creation and use
+                of temporary or placeholder terminology concepts before standard development
+                organizations (SDOs) could release their official versions. IKM can facilitate the
+                adoption of AI into healthcare as a platform for innovation by fostering the use of
+                high quality data, which is critical for the development of Predictive Analytics
+                within healthcare (early warning systems within ICUs, enhanced CDS, etc).</para>
         </section>
         <section>
-            <title>C-Suite Value Summary</title>
+            <title>Healthcare Leaders Value Summary</title>
             <para>The implementation of IKM provides C-suite executives with a compelling value
                 proposition, highlighting the strategic advantages in healthcare delivery, financial
                 incentives from operational efficiencies, and the fostering of innovation. These
@@ -217,9 +220,11 @@
                 priorities and capabilities. Additionally, forming an interdisciplinary IKM
                 implementation and management team is vital for fostering collaboration across
                 healthcare systems and ensuring that diverse perspectives and expertise are
-                considered during the implementation process. Such a team can drive the adoption of
-                IKM platforms, workflows, and ideologies forward as they address technical,
-                clinical, and operational considerations effectively. [20]</para>
+                considered during the implementation process. This team could drive efforts such as
+                engaging with leadership and gaining leadership support, stakeholder mapping and
+                engagement, and change management. Such a team can drive the adoption of IKM
+                platforms, workflows, and ideologies forward as they address technical, clinical,
+                and operational considerations effectively. [20]</para>
         </section>
         <section>
             <title>Case Studies: Successes and Lessons from Healthcare Organizations Adopting
@@ -321,18 +326,25 @@
                         IKM adoption requires buy-in from all levels of the organization.
                         Communicate the benefits, strategic importance, and rationale of IKM to
                         leaders, end-users, and other stakeholders across the healthcare system to
-                        build support and enthusiasm for the initiative.</para>
+                        build support and enthusiasm for the initiative. </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <itemizedlist><emphasis role="bold">Sustainment: </emphasis>Sustainment of
+                            IKM systems and processes as well as continuous improvement is key to
+                            successful long term adoption and future innovation. </itemizedlist>
+                    </para>
                 </listitem>
             </orderedlist>
         </section>
         <section>
             <title>Invitation for Further Dialogue</title>
             <para>The path to IKM adoption is unique for each organization and further dialogue with
-                experts in the field will be invaluable. We invite C-suite executives and healthcare
-                leaders to engage in discussions with IKM consultants and our team to explore how
-                IKM can be effectively integrated into their operations and strategy. [27] Please
-                visit <link xlink:href="http://IKM.dev">IKM.Dev</link> for more information on
-                contributing to this body of work.</para>
+                experts in the field will be invaluable. We invite healthcare leaders and staff to
+                engage in discussions with IKM consultants and our team to explore how IKM can be
+                effectively integrated into their operations and strategy. [27] Please visit <link
+                    xlink:href="http://IKM.dev">IKM.Dev</link> for more information on contributing
+                to this body of work.</para>
             <para>By taking these steps and seeking further dialogue, healthcare leaders can ensure
                 their organizations are at the forefront of innovation and efficiency in healthcare
                 management. The time to act is now, and the opportunities that IKM presents for
@@ -364,9 +376,9 @@
                             Inst</emphasis>. 2017;109(11):djx187. doi:10.1093/jnci/djx187</para>
                 </listitem>
                 <listitem>
-                    <para>2020-2025 Federal Health IT Strategic Plan | HealthIT.gov. Accessed April
-                        5, 2024.
-                        https://www.healthit.gov/topic/2020-2025-federal-health-it-strategic-plan</para>
+                    <para>2024-2030 Federal Health IT Strategic Plan | HealthIT.gov [Internet].
+                        Healthit.gov. 2024. Available from:
+                        https://www.healthit.gov/topic/2024-2030-federal-health-it-strategic-plan </para>
                 </listitem>
                 <listitem>
                     <para>Friedman C, Rubin J, Brown J, et al. Toward a science of learning systems:

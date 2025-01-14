@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>IKM Book Background</title>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>IKM Book Background</title>
     <section>
         <title>Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
             Overview</title>
@@ -391,15 +391,17 @@
             interpretation. When this framework is applied to the healthcare system, clinical data,
             and more specifically clinical statements, we need <emphasis role="italic"
                 >terminology</emphasis> and <emphasis role="italic">structure</emphasis> to convey a
-            patient’s condition or health history from one provider to another. </para><figure xml:id="TerminologyandStructureExamples">
-                <title>Terminology and Structure Examples</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="../images/Terminology%20and%20Structure.svg" scale="35" align="center"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            <para>ANF is a data structure that is designed to improve clinical decision support, data
+            patient’s condition or health history from one provider to another. </para>
+        <figure xml:id="TerminologyandStructureExamples">
+            <title>Terminology and Structure Examples</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Terminology%20and%20Structure.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>ANF is a data structure that is designed to improve clinical decision support, data
             robustness, decrease data variation, and ultimately prevent terminology
             misrepresentations while following the principles of separation of concerns. There are
             several use cases that ANF can be applied to, such as questionnaire and questionnaire
@@ -417,8 +419,9 @@
                 reports. [9]</para>
         </section>
         <section>
-            <title>The Adoption of Three Key Terminology Standards: SNOMED CT®, LOINC® and
-                RxNorm</title>
+            <title>The Adoption of Three Key Terminology Standards: Systematized Nomenclature of
+                Medicine Clinical Terms (SNOMED CT®), Logical Observation Identifiers Names and
+                Codes® (LOINC®) and RxNorm</title>
             <para>Over the last several decades, SNOMED CT®, LOINC®, and RxNorm have been
                 increasingly recognized as key resources for: <orderedlist>
                     <listitem>
@@ -686,333 +689,19 @@
             depending on no other modules, and higher-level modules depend on lower-level ones. A
             particular program or library is a top-level module of its own hierarchy, but can in
             turn be seen as a lower-level module of a higher-level program, library, or
-            system.</para><figure xml:id="VersioningandModules">
-                <title>Modules and Extensions</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="../images/Versioning%20and%20Modules.svg" scale="70" align="center"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            </section>
-    <section>
-        <title>Safety Systems Thinking and High Reliability Organization (HRO) Overview</title>
-        <para>Today’s current state for knowledge management constructs lack a standardized approach
-            to ensure the quality of data as it is entered or transferred into the health care and
-            laboratory systems. Without a clear and repeatable way to verify the accuracy of
-            information within an EHR or laboratory system, there are opportunities for hazards and
-            patient safety issues to emerge. Our team will design a system based on a Safety Systems
-            Thinking approach and High Reliability Organization (HRO) principles that can improve
-            the quality, reliability, and interoperability of data and address the concerns with
-            current knowledge management constructs. We will use prior work and research from
-            industry leaders and subject matter experts (SMEs) as foundational building blocks as we
-            continue to research laboratory and health care systems, medical terminology standards,
-            and best practices and lessons learned to support our development and design
-            process.</para>
-        <section>
-            <title>Motivation for Safety Systems Thinking and HRO</title>
-            <para>The health care system in the United States has undergone a digital transformation
-                over the past few decades as digital health information systems and EHRs have been
-                widely adopted and implemented. Despite this expansive transformation, elements of
-                interoperability, data quality management, and the associated patient safety risks
-                are underrepresented as key subject matter experts and informatics stakeholders have
-                not been optimally involved in the design and implementation process of health
-                information systems.</para>
-            <para>The current state for health care knowledge management to ensure data quality and
-                interoperability is to encode health data using medical terminology standards such
-                as, LOINC®, SNOMED CT®, and RxNorm. These terminologies provide a standardized
-                method to create and enter data elements into health care systems and, in an ideal
-                world, support seamless interoperability between health care systems or health
-                record systems. However, the application and use of these standards is typically not
-                consistent during implementations between facilities within a health care system or
-                between different systems. This non-standardized implementation leads to localized
-                variants of terminologies and knowledge representations that limit interoperability
-                and impacts opportunities to comprehensively understand data within a system.</para>
-            <para>Not only is the current knowledge management unstandardized, but relative
-                uncertainty also exists regarding the quality and accuracy of the data representing
-                knowledge. A standardized process to validate the vast amount health care data does
-                not exist. The current situation further impacts the quality and accuracy of data,
-                the ability to support research and clinical decisions, and patient safety. Existing
-                data validation techniques need to be standardized and refined to support
-                comprehensive and reproducible validation of data within systems and transferable
-                data between systems.</para>
-        </section>
-        <section>
-            <title>Safety Systems Thinking and HRO Background</title>
-            <para>Improving existing knowledge management constructs requires an understanding of
-                industry leading frameworks and principles. Safety Systems Thinking and HRO
-                principles are two frameworks that will support the development of a standardized
-                and repeatable knowledge management and data validation process with continual
-                improvement.</para>
-            <section>
-                <title>Safety Systems Thinking Overview</title>
-                <para>A systems thinking approach to safety is a thorough and disciplined approach
-                    to identifying, analyzing, eliminating, and controlling hazards by analysis,
-                    design, and management procedures that operate throughout a system’s life cycle.
-                    Hazards are created by unsafe conditions and processes that may lead to negative
-                    outcomes for stakeholders in the system, such as patients, providers, and
-                    researchers.</para>
-                <para>Traditional approaches to safety view hazards as a linear chain of events and
-                    focus on eliminating component failures. However, a system thinking approach to
-                    safety attempts to eliminate hazards by examining the various hierarchical
-                    control structures and feedback loops that impact the conditions of a
-                    system.</para>
-                <para>In systems thinking, analysis of the system begins in the early concept design
-                    stage and continually evaluates changes in the system or the environment that
-                    could indicate a shift to unsafe conditions. Reporting and information sharing
-                    channels are established, including hazard documentation, tracking, and
-                    resolution. These documentation channels are critical to support continual
-                    process improvement and are maintained throughout the lifespan of the
-                    system.</para>
-            </section>
-            <section>
-                <title>HRO Overview</title>
-                <para>A HRO is an organization that avoids accidents and hazards, even in complex
-                    environments where accidents are common. HROs are based on five key principles
-                    [16]:</para>
-                <orderedlist>
-                    <listitem>
-                        <para><emphasis role="bold">Preoccupation with Failure</emphasis>: The
-                            organization works to ensure stakeholders are aware of errors and
-                            understands how errors occur, the processes that allow errors to occur,
-                            and how to reduce the causes of errors.</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis role="bold">Reluctance to Simplify</emphasis>: Stakeholders
-                            do not oversimplify the system and aim to fully understand all the
-                            processes and control structures that may impact that system.</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis role="bold">Sensitivity to Operations</emphasis>:
-                            Organizations and stakeholders identify, and continually measure, key
-                            indicators of quality and safety that could alert to changes, even small
-                            ones, or indications of a shift towards unsafe conditions or hazardous
-                            environments.</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis role="bold">Deference to Expertise</emphasis>: Organizations
-                            utilize the experience and knowledge of pertinent SMEs at every
-                            opportunity.</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis role="bold">Commitment to Resilience</emphasis>:
-                            Organizations learn from errors through feedback loops and continuous
-                            monitoring, as they aim to continually improve.</para>
-                    </listitem>
-                </orderedlist>
-            </section>
-        </section>
-        <section>
-            <title>Safety Systems Thinking and HRO Framework Considerations</title>
-            <para>Following the rapid transition to EHRs, there is a desperate need to overhaul the
-                current knowledge management constructs within the health care system to improve
-                data quality and patient safety. While there will never be a perfectly safe system,
-                an approach embedded in both Safety Systems Thinking and HRO principles can support
-                major strides towards that goal. A combined approach will guide organizations
-                through the successful implementation or redesign of systems to implement clear,
-                concise, and standardized data validation techniques and support continuous process
-                improvement through SME-led risk analysis and statistical, evidence-based review. </para>
-            <para>It is not uncommon for other high-risk industries to adopt HRO principles.
-                Commercial aviation and nuclear submarines are industries that adopted HRO based
-                principles to enable substantial improvements to quality and safety. Pairing these
-                principles with a systems-based approach to safety and proven tools like Statistical
-                Process Control (SPC), Systems Theoretic Process Analysis (STPA), and Causal
-                Analysis based on System Theory (CAST) will further improve the safety,
-                standardization, and quality of systems and knowledge management constructs.</para>
-            <para>As we use systems thinking and HRO principles to develop and design a system that
-                addresses the existing flaws in the current knowledge management constructs, it is
-                critical that we perform a comprehensive and proactive assessment of the pertinent
-                laboratory and health care systems, their controls, best practices, and weaknesses.
-                <xref linkend="CommonKnowledgeManagementConstructChallenges"/> below outlines some common knowledge management construct issues that we
-                will work to address as we design a system with proactive data assurance
-                methods.</para><figure xml:id="CommonKnowledgeManagementConstructChallenges">
-                    <title>Common Knowledge Management Construct
-                        Challenges</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../images/Common%20Knowledge%20Management%20Construct%20Challenges.svg" scale="50" align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                    </section>
-        <section>
-            <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T154900-0500" comment="move to later chapter? too much detail for backround chapter"?>Related
-                Safety Systems Thinking and HRO Work<?oxy_comment_end?></title>
-            <para>SMEs and other industry leaders have demonstrated use cases for the feasibility
-                and applicability of a Systems Safety and HRO-based approach to improving data
-                interoperability, reliability, and quality in the health care system. Our work will
-                build upon the findings of these subject matter experts and will incorporate lessons
-                learned to address known issues with current state knowledge management constructs.
-                [17, 18]</para>
-            <section>
-                <title>Increasing the Value of Health Data by Engineering Safety, Quality, and High
-                    Reliability into the Data Life Cycle Overview</title>
-                <para>In this 2022 paper by Dr. Keith E. Campbell et al., the team outlines an
-                    Independent Validation and Verification (IV&amp;V) approach that was designed
-                    with system safety, HRO principles, and statistical process control techniques.
-                    The generalized and iterative IV&amp;V sought to improve the quality and
-                    interoperability of data through a three-phased approach, error discovery and
-                    assessment, statistical process control, and continuous process
-                    improvement.</para>
-                <para>By identifying and establishing feed forward pathways and baseline metrics for
-                    data and knowledge quality, the team provided a use-case for an IV&amp;V
-                    approach’s ability to statistically improve the quality and interoperability of
-                    prescription data. Dr. Campbell and team highlighted a variety of lessons
-                    learned that will need to be addressed to continue improvements to health care
-                    data, including the need to embed data and informatics SMEs into EHR
-                    modernization (EHRM) efforts and to expand HRO principles to Standards
-                    organizations and health care system data processes. [19]</para>
-            </section>
-            <section>
-                <title>A Risk-Based Methodology for the Quality Assurance of Healthcare Knowledge
-                    Artifacts Overview</title>
-                <para>Greg Rehwoldt outlines a real-world use case of developing and applying a
-                    risk-based methodology to improve the quality of current state knowledge
-                    artifacts in this 2018 dissertation. [20] This paper highlights a variety of
-                    issues with current state knowledge management, particularly the lack of
-                    effective quality assurance for existing knowledge artifacts. Current approaches
-                    to quality tend to focus on system specific events or stakeholder mistakes, but
-                    as the health care environment has evolved, quality assurance must validate data
-                    during creation and as it transitions between systems.</para>
-                <para>While improving patient safety and data quality are key focuses of this paper,
-                    financial theory is also applied to demonstrate how cost and time variables will
-                    impact quality assurance. It is critical that data validation and assurance
-                    methods are implemented optimally to reduce the risk of hazards or patient
-                    safety issues while accounting for organizational constraints and pressures.
-                    [20]</para>
-            </section>
-            <section>
-                <title>Capability Maturity Model Integration (CMMI) Background</title>
-                <para>The Capability Maturity Model Integration for Development (CMMI-DEV) is a risk
-                    management model developed at the Carnegie-Mellon University as a maturity
-                    assessment for an organization’s processes and to support the identification of
-                    opportunities to improve management of risk and performance under stress. The
-                    model was designed as a process improvement initiative to support gap
-                    assessments and identify goals to support measured improvements to high value
-                    areas.</para>
-                <para>The CMMI-DEV examines 22 process areas and ranks an organization’s maturity
-                    for each area and that area’s process capabilities. By examining each area, this
-                    model identifies areas where improvements would provide the highest value and
-                    allows organizations to tailor their focus and efforts. [21]</para>
-            </section>
-            <section>
-                <title>Our National Rush to the EHR - An Analysis of Current Clinical Information
-                    Quality and Data Governance Practices Overview</title>
-                <para>The Enterprise Clinical Information Maturity (ECIM) framework outlined in this
-                    paper builds upon the previously mentioned CMMI-DEV model and supports the
-                    development of goals and baseline measurements to improve data quality and
-                    standardization. The ECIM framework also considers organization goals and the
-                    use of clinical data when evaluating current state processes. This comprehensive
-                    approach supports the identification of specific issues or opportunities for
-                    data quality and knowledge management improvements.</para>
-                <para>This paper highlights how current state electronic health information
-                    practices are not mature and identifies a variety of recurring issues related to
-                    knowledge management and data quality.</para>
-                <orderedlist>
-                    <listitem>
-                        <para>Electronic Medical Record (EMR) clinical documentation guidelines are
-                            poorly standardized and communicated to end-users.</para>
-                    </listitem>
-                    <listitem>
-                        <para>The lack of internal data audits across the health care industry
-                            results in unknown patient record quality, accuracy, and
-                            completeness.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Key informatics stakeholders and SMEs are not adequately included in
-                            EHRM efforts.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Providers do not use current state knowledge management tools, like
-                            standardized terminology or classification systems, optimally.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Providers must learn to structure and enter clinical information with
-                            a standardized process to support data interoperability as natural
-                            language processing (NLP) abilities remain limited.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Systems lack a standardized approach to terminology and data that
-                            leads to many redundant, ambiguous, or improperly mapped terms in EHR
-                            data dictionaries. This can often lead to improperly labeled data as
-                            information is shared between systems.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Data issues that affect multiple records can occur as automated data
-                            flows apply terminology maps based on the received map, rather than the
-                            original source data. [22]</para>
-                    </listitem>
-                </orderedlist>
-            </section>
-            <section>
-                <title>Analysis of Laboratory Data Transmission Between Two Healthcare Institutions
-                    Using a Widely Used Point-to-Point Health Information Exchange Platform: a Case
-                    Report</title>
-                <para>This report examined the data transmission of nine laboratory tests to
-                    determine the accuracy and completeness of transferred information. The data was
-                    analyzed at various stages of transmission, including the sending and receiving
-                    EHR, the HL7 V2 message, and LIS and found five key patient safety issues:</para>
-                    <orderedlist>
-                            <listitem>
-                                <para>The specimen source was consistently missing</para>
-                            </listitem>
-                    <listitem>
-                        <para>The analytical technique or instrument platform was not
-                            reported</para>
-                    </listitem>
-                    <listitem>
-                        <para>Units and reference ranges were inconsistent</para>
-                    </listitem>
-                    <listitem>
-                        <para>The LOINC codes used varied for the same tests</para>
-                    </listitem>
-                    <listitem>
-                        <para>Using different versions of HL7 led to unnecessary complexity and
-                            exacerbated data accuracy issues</para>
-                    </listitem>
-                        </orderedlist>
-                <para>The report goes on to discuss how the use of standardized messaging, through a
-                    health information exchange, along with industry best practices would improve
-                    the accuracy and completeness of data transmission. However, the pertinent and
-                    associated EHRs would need to be enhanced to support the necessary data elements
-                    and improvements. [23]</para>
-            </section>
-        </section>
-        <section>
-            <title>Safety Systems Thinking and HRO Conclusion</title>
-            <para>While this chapter has outlined key principles, frameworks, and research that will
-                be used as we design an improved knowledge management system, there is still
-                important research and work that needs to be done. Our team will need to continue
-                researching existing laboratory and health care systems and terminology standards to
-                build upon the years of research and SME experience.</para>
-            <para>Our system will be designed with Safety Systems Thinking and HRO principles and
-                will support the application of a rigorous and improved data review process that
-                verifies and validates data at each step of information exchange for accuracy,
-                completeness, and reliability. We must determine how to optimally design a system
-                that ensures data from multiple medical terminology standards and EHRs maintains all
-                relevant information and meaning as it seamlessly moves within and between systems.
-                The goal of our work is to optimally improve data accuracy and patient safety, while
-                understanding the real-world pressures of the health care and laboratory
-                systems</para>
-        </section>
-        <section>
-            <title>Safety Systems Use Case</title>
-            <para>The
-                <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T154754-0500" comment="remove synensys name?"?>Synensys<?oxy_comment_end?>
-                document, "<link
-                    xlink:href="https://synensysglobal.com/wp-content/uploads/2023/12/Executive-Summary_System-Safety-within-Laboratory-Data-Exchanges-Report.pdf"
-                    >System Safety within Laboratory Data Exchanges</link>", analyzes the complex
-                challenges in laboratory data exchanges within healthcare, emphasizing the
-                importance of accurate communication, standardized procedures, and contextual
-                information in diagnostics. Various loss scenarios and potential risks are detailed,
-                highlighting the consequences of miscommunication and inconsistency in laboratory
-                data handling. The document is being cited as an example because it illustrates the
-                application of system safety principles in healthcare. Its focus on engineering
-                safety, quality, and reliability into laboratory data exchanges exemplifies the
-                broader theme of implementing systems thinking and high reliability practices,
-                providing a real-world perspective on these critical concepts. [24]</para>
-        </section>
+            system.</para>
+        <figure xml:id="VersioningandModules">
+            <title>Modules and Extensions</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Versioning%20and%20Modules.svg" scale="70"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
     </section>
+    <xi:include href="Book%20Patient%20Safety%20Overview.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <section>
         <title>References</title>
         <para>
@@ -1108,56 +797,134 @@
                             >https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8</link></para>
                 </listitem>
                 <listitem>
-                    <para>Weick KE, Sutcliffe KM. Managing the unexpected: Assuring high performance
-                        in an age of complexity. San Francisco, CA, US: Jossey-Bass; 2001. xvi, 200
-                        p. (Managing the unexpected: Assuring high performance in an age of
-                        complexity.). </para>
+                    <para>Department of Veteran Affairs, Office of Inspector General. The New
+                        Electronic Health Record’s Unknown Queue Caused Multiple Events of Patient
+                        Harm July 14, 2022, Report #22-01137-204</para>
                 </listitem>
                 <listitem>
-                    <para>Leveson N, Samost A, Dekker S, Finkelstein S, Raman J. A Systems Approach
-                        to Analyzing and Preventing Hospital Adverse Events. J Patient Saf. 2020
-                        Jun;16(2):162–7. </para>
+                    <para>Mitchell PH. Defining Patient Safety and Quality Care. In: Hughes RG,
+                        editor. Patient Safety and Quality: An Evidence-Based Handbook for Nurses.
+                        Rockville (MD): Agency for Healthcare Research and Quality (US); 2008 Apr.
+                        Chapter 1. Available from: <link
+                            xlink:href="https://www.ncbi.nlm.nih.gov/books/NBK2681/"
+                            >https://www.ncbi.nlm.nih.gov/books/NBK2681/</link></para>
                 </listitem>
                 <listitem>
-                    <para>Cantu J, Tolk J, Fritts S, Gharehyakheh A. High Reliability Organization
-                        (HRO) systematic literature review: Discovery of culture as a foundational
-                        hallmark. Contingencies &amp; Crisis Mgmt [Internet]. 2020 [cited 2024 May
-                        14];28(4):399–410. Available from:
-                        https://onlinelibrary.wiley.com/doi/10.1111/1468-5973.12293 </para>
+                    <para>Plebani, M. (2015). Diagnostic errors and laboratory medicine–causes and
+                        strategies. JIFCCLM, 26(1), 7.</para>
                 </listitem>
                 <listitem>
-                    <para>Campbell KE, Montella D, Brown SH, Powell SM, Campbell SW, Cholan RA, et
-                        al. Increasing the Value of Health Data by Engineering Safety, Quality, and
-                        High Reliability into the Data Lifecycle 2022. </para>
+                    <para>Dekker, S. (2016). Just culture: Balancing safety and accountability. CRC
+                        Press.</para>
                 </listitem>
                 <listitem>
-                    <para>Rehwoldt G. A Risk-Based Methodology for the Quality Assurance of
-                        Healthcare Knowledge Artifacts (dissertation). 2018.</para>
+                    <para>Donaldson, M. S., Corrigan, J. M., &amp; Kohn, L. T. (Eds.). (2000). To
+                        err is human: building a safer health system.</para>
                 </listitem>
                 <listitem>
-                    <para>You C, Sherer T, Mabee D, Jacobs M, Koke J, Boer G, et al. Capability
-                        Maturity Model Integration (CMMI), background notes - azure boards
-                        [Internet]. Capability Maturity Model Integration (CMMI), background notes -
-                        Azure Boards | Microsoft Learn. [cited 2022Dec15]. Available from:
-                        https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi?view=azure-devops#related-articles</para>
+                    <para>Makary, M. A., &amp; Daniel, M. (2016). Medical error—the third leading
+                        cause of death in the US. BMJ, 353.</para>
                 </listitem>
                 <listitem>
-                    <para>Hawry PL, Clouse T, Spisla C, Konieck D. Our National Rush to the EHR - An
-                        Analysis of Current Clinical Information Quality and Data Governance
-                        Practices 2013.</para>
+                    <para>Institute of Medicine (US) Committee on Quality of Health Care in America.
+                        Crossing the Quality Chasm: A New Health System for the 21st Century.
+                        Washington (DC): National Academies Press (US); 2001. Available from:
+                        https://www.ncbi.nlm.nih.gov/books/NBK222274/ doi: 10.17226/10027</para>
                 </listitem>
                 <listitem>
-                    <para>Luu HS, Campbell WS, Cholan RA, Edgerton ME, Englund A, Keller A, et al.
-                        Analysis of laboratory data transmission between two healthcare institutions
-                        using a widely used point-to-point health information exchange platform: a
-                        case report. JAMIA Open [Internet]. 2024 Apr 8 [cited 2024 May
-                        14];7(2):ooae032. Available from:
-                        https://academic.oup.com/jamiaopen/article/doi/10.1093/jamiaopen/ooae032/7657767
+                    <para>Committee on Patient Safety and Health Information Technology; Institute
+                        of Medicine. Health IT and Patient Safety: Building Safer Systems for Better
+                        Care. Washington (DC): National Academies Press (US); 2011 Nov 10. PMID:
+                        24600741.</para>
+                </listitem>
+                <listitem>
+                    <para>Committee on Diagnostic Error in Health Care; Board on Health Care
+                        Services; Institute of Medicine; The National Academies of Sciences,
+                        Engineering, and Medicine; Balogh EP, Miller BT, Ball JR, editors. Improving
+                        Diagnosis in Health Care. Washington (DC): National Academies Press (US);
+                        2015 Dec 29. Preface. Available from:
+                        https://www.ncbi.nlm.nih.gov/books/NBK338585/</para>
+                </listitem>
+                <listitem>
+                    <para>Chassin, M. R., &amp; Loeb, J. M. (2013). High‐reliability health care:
+                        getting there from here. The Milbank Quarterly, 91(3), 459-490.</para>
+                </listitem>
+                <listitem>
+                    <para>Weick, K. E., &amp; Sutcliffe, K. M. (2001). Managing the unexpected (Vol.
+                        9). San Francisco: Jossey-Bass.</para>
+                </listitem>
+                <listitem>
+                    <para>Leveson, N., Dulac, N., Marais, K., &amp; Carroll, J. (2009). Moving
+                        beyond normal accidents and high reliability organizations: A systems
+                        approach to safety in complex systems. Organization studies, 30(2-3),
+                        227-249.</para>
+                </listitem>
+                <listitem>
+                    <para>Leveson, N. G. (2016). <emphasis role="italic">Engineering a safer world:
+                            Systems thinking applied to safety</emphasis> (p. 560). The MIT
+                        Press.</para>
+                </listitem>
+                <listitem>
+                    <para>Leveson, N. G., &amp; Stephanopoulos, G. (2013). A system-theoretic,
+                        control-inspired view and approach to process safety. </para>
+                </listitem>
+                <listitem>
+                    <para>Leveson, N. G. (2023). An Introduction to System Safety Engineering. The
+                        MIT Press.</para>
+                </listitem>
+                <listitem>
+                    <para>Li, Y., &amp; Guldenmund, F. W. (2018). Safety management systems: A broad
+                        overview of the literature. <emphasis role="italic">Safety
+                            science</emphasis>, <emphasis role="italic">103</emphasis>,
+                        94-123.</para>
+                </listitem>
+                <listitem>
+                    <para>Kristiansen, T. B., Kristensen, K., Uffelmann, J., &amp; Brandslund, I.
+                        (2022). Erroneous data: The Achilles' heel of AI and personalized medicine.
+                        Frontiers in Digital Health, 4, 862095.</para>
+                </listitem>
+                <listitem>
+                    <para>Office of the National Coordinator for Health Information Technology.
+                        ‘National Trends in Hospital and Physician Adoption of Electronic Health
+                        Records,’ Health IT Quick-Stat #61. </para>
+                </listitem>
+                <listitem>
+                    <para>Alotaibi, Y. K., &amp; Federico, F. (2017). The impact of health
+                        information technology on patient safety. Saudi medical journal, 38(12),
+                        1173. </para>
+                </listitem>
+                <listitem>
+                    <para>Singh, H., &amp; Sittig, D. F. (2016). Measuring and improving patient
+                        safety through health information technology: The Health IT Safety
+                        Framework. BMJ quality &amp; safety, 25(4), 226-232. </para>
+                </listitem>
+                <listitem>
+                    <para>Alder, S. (July, 2024). July 26, 2024: CrowdStrike Issues Update on Outage
+                        Cause; Healthcare Hit Hardest with Estimated $1.94B in Losses. HIPAA
+                        Journal. Accessed at
+                        https://www.hipaajournal.com/crowdstrike-issues-update-on-outage-cause-healthcare-hit-hardest-with-estimated-1-94b-in-losses/
                     </para>
                 </listitem>
                 <listitem>
-                    <para>Campbell SW, Case JT, Cholan R, England A, Geary C, Green A, et al. FDA
-                        System Safety within Laboratory Data Exchanges End of Base Year Report. </para>
+                    <para>Mijic, M., &amp; Tripathi, M. (2024). Accelerating The Exchange Of Health
+                        And Human Services Data To Improve Outcomes And Disrupt Inequities. Health
+                        Affairs Forefront. </para>
+                </listitem>
+                <listitem>
+                    <para>Lehne, M., Sass, J., Essenwanger, A., Schepers, J., &amp; Thun, S. (2019).
+                        Why digital medicine depends on interoperability. NPJ digital medicine,
+                        2(1), 79. </para>
+                </listitem>
+                <listitem>
+                    <para>Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton,
+                        M., Baak, A., ... &amp; Mons, B. (2016). The FAIR Guiding Principles for
+                        scientific data management and stewardship. Scientific data, 3(1), 1-9.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Fahey, R. A., &amp; Hino, A. (2020). COVID-19, digital privacy, and the
+                        social limits on data-focused public health responses. International Journal
+                        of Information Management, 55, 102181. </para>
                 </listitem>
             </orderedlist>
         </para>

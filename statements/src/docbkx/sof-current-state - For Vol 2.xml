@@ -13,11 +13,8 @@
             overcome lab interoperability barriers. Due to the complexity and vastness of this
             issue, SHIELD has embraced an ecosystem perspective that recognizes no single entity has
             the authority or influence to meaningfully impact the state of lab interoperability.
-            SHIELD stakeholders include IVD manufacturers, commercial and clinical center
-            laboratories, professional organizations, EHR vendors, Pew Charitable Trusts, numerous
-            federal agencies, standards development organizations, and patient advocates. SHIELD’s
-            overall objective is to ensure lab interoperability such that the same type of device is
-            described the same way throughout EHRs. </para>
+            SHIELD’s overall objective is to ensure lab interoperability such that the same type of
+            device is described the same way throughout EHRs. </para>
         <para>The purpose of this Summary of Findings – current state of RWE analytics including but
             not limited to information retrieval and Knowledge Management and discovery – is to
             explore the current state of real world data and real world evidence as it pertains to
@@ -132,13 +129,13 @@
         <section>
             <title>Current RWD Uses</title>
             <para>There are several national and international efforts to aggregate and expose
-                EHR/RWD for use by researchers and public health scientists. Such efforts include
-                the National Patient-Centered Clinical Research Network (PCORnet), Observational
-                Health Data Sciences and Informatics (OHDSI), National COVID Cohort Collaborative
-                (N3C) and its potential spin offs. Common to each of these efforts is the extraction
-                of EHR data from participating entities, transforming these data to a common data
-                model, annotating/managing the data with standardized medical terminologies and
-                aggregating entities’ datasets in consolidated or federated mechanisms for analyses. </para>
+                EHR/RWD for broad research. Such efforts include the National Patient-Centered
+                Clinical Research Network (PCORnet), Observational Health Data Sciences and
+                Informatics (OHDSI), National COVID Cohoert Collaborative (N3C) and its potential
+                spin offs. Common to each of these efforts is the extraction of EHR data from
+                participating entities, transforming these data to a common data model,
+                annotating/managing the data with standardized medical terminologies and aggregating
+                entities' datasets in consolidated or federated mechanisms for analyses. </para>
         </section>
         <section>
             <title>National Covid Cohort Collaborative (N3C)</title>
@@ -277,14 +274,12 @@
                 (NLP).</para>
             <para>In April 2022, OHDSI and SNOMED International formalized a five-year collaborative
                 agreement in which OHDSI and the associated user communities will receive
-                “comprehensive ontologies on specific healthcare domains and content such as
-                devices, social determinants of health, disease severity scores and modifiers of
-                cancers, as well as better concept definitions and resolutions of composite concepts
-                in large-scale observational research.” While this is an enormous benefit to OHDSI,
-                the benefit to SNOMED International manifests in the form of user data from
-                interaction with their product. OHDSI also has an existing agreement with HL7 to
-                integrate FHIR with the OMOP common data model in hopes of improving abilities to
-                track and share data in the healthcare and research industries.</para>
+                “comprehensive ontologies on specific healthcare domains and content...” While this
+                is an enormous benefit to OHDSI, the benefit to SNOMED International manifests in
+                the form of user data from interaction with their product. OHDSI also has an
+                existing agreement with HL7 to integrate FHIR with the OMOP common data model in
+                hopes of improving abilities to track and share data in the healthcare and research
+                industries.</para>
             <para>OHDSI has ventured into product development, including the Health Analytics
                 Data-to-Evidence Suite (HADES), which is a set of open-source R packages
                 specifically focusing on population level estimations, patient-level prediction,

@@ -7,22 +7,22 @@
         <title>IKM Volumes Motivation</title>
         <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
             number of sources to make informed clinical decisions. While this data is a critical
-            component of providing patients with the best care possible, major challenges exist with
-            the accuracy, interoperability, and quality of data that is transmitted within and
-            between healthcare systems. Clinical terminology standards are calling for one strategy
-            to standardize data collection and improve the quality of patient care with standardized
-            and repeatable guidelines for encoding health data. However, these standards often lose
-            critical aspects of the original data capture when they are shared with other providers
-            and healthcare systems. To enhance the quality, interoperability and usability of
-            patient data, the health care industry requires a solution that harmonizes the different
-            clinical terminology standards and generates a common model that supports patient care,
-            data querying and analysis, public health, and policy making. Interoperable data in an
-            ideal world would eliminiate patient harm and other inefficiencies stemmed from data
-            misrepresentations and errors in the health care ecosystem. The motivation for this work
-            is to explore the pathway to unifying a patient’s care experience through reliable and
-            interoperable data that supports accurate and timely clinical decision support that is
-            solely prompted and driven by real-world data and provides real-time assistance to
-            clinicians.</para>
+            component of supporting well-informed clinical decisions and the safe delivery of care,
+            major challenges exist with the accuracy, interoperability, and quality of data that is
+            transmitted within and between healthcare systems. Clinical terminology standards are
+            calling for one strategy to standardize data collection and improve the quality of
+            patient care with standardized and repeatable guidelines for encoding health data.
+            However, these standards often lose critical aspects of the original data capture when
+            they are shared with other providers and healthcare systems. To enhance the quality,
+            interoperability and usability of patient data, the health care industry requires a
+            solution that harmonizes the different clinical terminology standards and generates a
+            common model that supports patient care, data querying and analysis, public health, and
+            policy making. Interoperable data in an ideal world would eliminiate patient harm and
+            other inefficiencies stemmed from data misrepresentations and errors in the health care
+            ecosystem. The motivation for this work is to explore the pathway to unifying a
+            patient’s care experience through reliable and interoperable data that supports accurate
+            and timely clinical decision support that is solely prompted and driven by real-world
+            data and provides real-time assistance to clinicians.</para>
         <para>The essential challenge of informatics practice within the healthcare enterprise is to
             quickly deliver a high fidelity reasoned interpretation of principles and facts to the
             point of care—and then to quickly aggregate these point of care experiences for analytic
@@ -162,17 +162,18 @@
                 of stay, resulting in $1.9 billion, $1.5 billion, $12 billion, and $18 billion in
                 savings, respectively.[4-7] Implementing Integrated Knowledge Management will reduce
                 the challenges associated with unpredictable, poorly controlled, and reactive health
-                IT data. This lack of interoperable data hinders advancements and innovation in the
-                healthcare system, including use of Artificial Intelligence (AI) and Big Data,
-                medical communications, research, and international coordination, as new
-                technologies must rely on suboptimal data and cannot achieve their full potential.
-                [8] The Knowledge Architecture described above will provide the foundation for
-                robust configuration management and quality assurance of health IT data while
-                allowing for a standardized update and extension process. This approach will support
-                increased clinical and laboratory data quality and enable healthcare systems across
-                the industry to conduct robust and meaningful data analysis and increase overall
-                interoperability, which ultimately enhances the quality of care across all medical
-                facilities. </para>
+                IT data. Implementing Integrated Knowledge Management will reduce the challenges
+                associated with unpredictable, poorly controlled, and reactive health IT data. This
+                lack of interoperable data hinders advancements and innovation in the healthcare
+                system, including use of Artificial Intelligence (AI) and Big Data, medical
+                communications, research, and international coordination, as new technologies must
+                rely on suboptimal data and cannot achieve their full potential. [8] The Knowledge
+                Architecture described above will provide the foundation for robust configuration
+                management and quality assurance of health IT data while allowing for a standardized
+                update and extension process. This approach will support increased clinical and
+                laboratory data quality and enable healthcare systems across the industry to conduct
+                robust and meaningful data analysis and improve the safety and efficiency of care
+                across all medical facilities.</para>
             <para>The purpose of employing the Knowledge Architecture and enabling Integrated
                 Knowledge Management can be succinctly described through its benefits: increased
                 interoperability, improved patient outcomes, and meaningful data analysis. These
@@ -206,8 +207,8 @@
                 <para>Medical facilities will be able to easily query specific health factors to
                     gain necessary insights, draw conclusions, and make recommendations based on
                     accurate patient data. Improved data interoperability will also support policy
-                    makers and public health experts make informed decisions that more appropriately
-                    address evolving needs and priorities. [12]</para>
+                    makers and public health experts to make informed decisions in response to
+                    health trends and challenges." [12]</para>
             </section>
         </section>
     </section>
@@ -427,8 +428,8 @@
                 data across these settings is crucial to the processes of making safe clinical
                 decisions, tracking patient outcomes, anticipating future health problems,
                 identifying deviations from expected trends, informing preventive and public health
-                measures, supporting clinical research, and providing a legal and historical record.
-                [18] </para>
+                measures, supporting clinical research, and enabling standardized approaches in
+                treatment and health data exchange. [18] </para>
             <para>For example, when a primary care provider records a diabetes diagnosis in the
                 provider's local system, it is critical for that system to share the data accurately
                 and seamlessly to the pertinent pharmacy and laboratory systems. These systems must

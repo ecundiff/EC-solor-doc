@@ -208,8 +208,8 @@
             <title>How to View Details</title>
             <orderedlist>
                 <listitem>
-                    <para>To view a concept, double click on a result to view more details in the
-                        center panel </para>
+                    <para>To view a concept, double click on a search result or drag it to the
+                        center panel to view more details</para>
                 </listitem>
                 <listitem>
                     <para>You can click the magnifying glass icon at the top of the left-hand bar
@@ -217,8 +217,9 @@
                         icon in the left-hand bar)</para>
                 </listitem>
                 <listitem>
-                    <para>Use the icons at the top of the concept window to view various details and
-                        information about the selected concept</para>
+                    <para>Toggle the "Properties" button on and use the icons at the top right-had
+                        side of the concept window to view various details and information about the
+                        selected concept</para>
                     <figure xml:id="ViewConceptDetails">
                         <title>View Concept Details</title>
                         <mediaobject>
@@ -365,7 +366,7 @@
         <para>Users may want to create a concept to represent new or emerging clinical conditions or
             create temporary concepts while Standards Developing Organizations create official
             representations. Creating a concept allows users to enter associated information like
-            STAMP, stated relationships, and more.</para>
+            Status, Time, Author, Module, and Path (STAMP), stated relationships, and more.</para>
         <orderedlist>
             <listitem>
                 <para>To create a concept, click the "+" icon at the top of the Komet window and
@@ -436,7 +437,7 @@
         </orderedlist>
     </section>
     <section>
-        <title>Editing/Modifying a Concept</title>
+        <title>Editing and Modifying a Concept</title>
         <para>Users may want to edit or modify a concept to reflect new and emerging real-world data
             or real-world evidence.</para>
         <orderedlist>
@@ -501,7 +502,7 @@
             <title>Edit Axiom</title>
             <orderedlist>
                 <listitem>
-                    <para>Button isn't functional as of 4/10/24</para>
+                    <para>Button isn't functional as of 1/28/25</para>
                 </listitem>
                 <listitem>
                     <para>Axioms can also be edited by selecting the Pencil Icon next to the Axiom's
@@ -518,6 +519,168 @@
                 </listitem>
             </orderedlist>
         </section>
+    </section>
+    <section>
+        <title>Creating and Editing a Pattern</title>
+        <para>Users may want to create or edit a pattern to provide additional, important, context
+            to a concept.</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>To create a new pattern, click the "+" icon at the top of the Komet window
+                        and select "New Pattern"</para>
+                    <figure xml:id="NewPattern">
+                        <title>New Pattern</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/New%20Pattern.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>A new pattern editing window will appear, where you can select the
+                        ellipsis to add STAMP information</para>
+                    <figure xml:id="EditPatternSTAMP">
+                        <title>Edit Pattern STAMP</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Edit%20Pattern%20STAMP.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Next, select the Pencil Icon in the Pattern Definition section to add
+                        Semantic Purpose and Semantic Meaning</para>
+                    <figure xml:id="EditPatternDefinition">
+                        <title>Edit Pattern Definition</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Edit%20Pattern%20Definition.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Concepts for both Semantic Purpose and Semantic Meaning can be found by
+                        selecting the Comment Icon on the left-hand bar and searching for desired
+                        Concepts</para>
+                    <figure xml:id="PatternDefinitionOptions">
+                        <title>Pattern Definition Options</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Pattern%20Definition%20Options.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once you have added concepts for Semantic Purpose and Semantic Meaning,
+                        click "Done" in the Properties panel</para>
+                </listitem>
+                <listitem>
+                    <para>Next, select the Pencil Icon in the Description section to add a Fully
+                        Qualified Name and/or Other Name</para>
+                    <figure xml:id="EditDescriptions">
+                        <title>Edit Descriptions</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Edit%20Descriptions.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Selecting "Add Fully Qualified Name" or "Add Other Name" opens the
+                        Properties panel for users to fill out various components of a Pattern's
+                        description</para>
+                    <figure xml:id="EditFullyQualifiedName">
+                        <title>Edit Fully Qualified Name</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Edit%20Fully%20Qualified%20Name.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once all necessary components are complete, select "Done"</para>
+                </listitem>
+                <listitem>
+                    <para>Next, select the Pencil Icon in the Fields section to add additional
+                        information</para>
+                    <figure xml:id="EditFields">
+                        <title>Edit Fields</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Edit%20Fields.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once you have entered all the necessary details, click "Done". You can add
+                        additional Fields by clicking the Pencil icon again. These additional fields
+                        will be labeled with increasing Field Order numbers.</para>
+                    <figure xml:id="AddMultipleFields">
+                        <title>Add Multiple Fields</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Add%20Multiple%20Fields.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>You can edit Fields by right clicking the desired Field Number in the
+                        Fields Section and selecting "Edit"</para>
+                    <figure xml:id="ReviseFields">
+                        <title>Revise Fields</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Revise%20Fields.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once all sections have been completed for the Pattern, select the Globe
+                        icon to save the the pattern</para>
+                    <figure xml:id="AddIdentifier">
+                        <title>Add Identifier</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Add%20Identifier.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <para>If completed properly, an identifier will be generated underneath the
+                        Pattern name in the concept window and the Pattern will appear within the
+                        list of Patterns that can be accessed by selecting the Concept Navigator
+                        icon on the left-hand bar and then Patterns.</para>
+                    <figure xml:id="ViewPatternNavigator">
+                        <title>View Pattern Navigator</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/View%20Pattern%20Navigator.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+            </orderedlist>
+        </para>
     </section>
     <section>
         <title>Creating LIDR Data</title>
@@ -672,78 +835,83 @@
         </orderedlist>
     </section>
     <section>
-        <title>Exporting and Sharing Data (Placeholder)</title>
-        <section>
-            <title>Komet Interface</title>
-            <para>
-                <orderedlist>
-                    <listitem>
-                        <para>Select the concept or concepts you would like to export on the
-                            Navigation activity stream (default location: left panel) </para>
-                        <orderedlist>
-                            <listitem>
-                                <para>Use shift or control click to select multiple concepts</para>
-                            </listitem>
-                        </orderedlist>
-                    </listitem>
-                    <listitem>
-                        <para>Right click and select export OR use the “+” dropdown menu and select
-                            "Export Artifact"</para>
-                        <figure xml:id="ExportArtifact">
-                            <title>Export Artifact</title>
-                            <mediaobject>
-                                <imageobject>
-                                    <imagedata fileref="images/export%20artifact.svg" scale="30"
-                                        align="center"/>
-                                </imageobject>
-                            </mediaobject>
-                        </figure>
-                    </listitem>
-                </orderedlist>
-            </para>
-        </section>
-    </section>
-    <section>
-        <title>Importing and Reading-In Data (Placeholder)</title>
-        <para><emphasis role="bold">Note</emphasis>: This process is to import data after you have
-            finished the initial Komet download and install process</para>
+        <title>Exporting Datasets</title>
         <para>
             <orderedlist>
                 <listitem>
-                    <para>In the Detail Viewer activity stream (default location: center panel)
-                        click drop down button “+”, and click “Import Artifact"</para>
-                    <figure xml:id="ImportArtifact">
-                        <title>Import Artifact</title>
+                    <para>To export a dataset, select "File" in the upper left-hand side and then
+                        select "Export Dataset"</para>
+                    <figure xml:id="ExportDataSet">
+                        <title>Export Dataset</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Import%20Artifact.svg" scale="30"
-                                    align="center"/>
+                                <imagedata fileref="images/Export%20Data%20Set.svg" scale="35" align="center"
+                                />
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>A “Select your file for import” window will pop up. Click on “Select A
-                        File” button </para>
-                    <figure xml:id="SelectFile">
-                        <title>Select File</title>
+                    <para>Complete all of the necessary fields, including Time Period. Time Period
+                        can be any changes made during the Current Date or can be changed to a
+                        Custom Range to export changes made during a specific time period </para>
+                    <figure xml:id="ExportTimePeriod">
+                        <title>Export Custom Range</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Select%20File.svg" scale="30"
-                                    align="center"/>
+                                <imagedata fileref="images/Export%20Time%20Period.svg" scale="35" align="center"
+                                />
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Browse and select the zip file of your choice and click “Open”</para>
+                    <para>Once you have enetered all pertinent information, click "Export" and a
+                        progress bar will appear in the bottom left-hand side of Komet</para>
+                    <figure xml:id="Exporting">
+                        <title>Exporting</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Exporting.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+    <section>
+        <title>Importing Datasets</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>To import a Dataset, select "File" in the upper left-hand side and then
+                        select "Import Dataset"</para>
                 </listitem>
                 <listitem>
-                    <para>A progress bar will monitor the import of your files</para>
+                    <para>Once the following pop-up opens, drag your desired data set into Komet or
+                        browse for the specific files and click "Import"</para>
+                    <figure xml:id="ImportDataSet">
+                        <title>Import Dataset</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Import%20Data%20Set.svg" scale="45" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
-                    <para>The files will be displayed in the left panel under “Concept
-                        Navigator”</para>
+                    <para>Once you select "Import", a progress bar will appear in the bottom
+                        left-hand side of Komet</para>
+                    <figure xml:id="Importing">
+                        <title>Importing</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Importing.svg" scale="45" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
             </orderedlist>
         </para>

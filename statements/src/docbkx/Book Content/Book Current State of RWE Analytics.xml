@@ -5,6 +5,275 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Current State of RWE Analytics</title>
     <section>
+        <title>Real World Evidence (RWE) and Standards Overview</title>
+        <para>Real world evidence (RWE) using RWD collected as part of routine clinical care, has
+            been heralded as an answer to many of the woes of our medical system. There is a wealth
+            of untapped data from electronic health records (EHR), medical imaging, mobile apps,
+            and, more recently, low-cost gene sequencing and wearable devices, that could be
+            unlocked with artificial intelligence (AI) and cloud computing to support better
+            diagnostics, personalized treatments, and early disease prevention for millions.
+            Interoperable health data can help the medical field realize the future in the same way
+            that online banking and shopping revolutionized their respective industry, thereby
+            stressing the importance of establishing tools and resources that can support
+            interoperability, such as Laboratory Interoperability Data Repository (LIDR) and related
+            infrastructure. The vision of a national interoperable health information system has
+            been elusive because of siloed clinical care data, incompatible health information
+            technology (IT) systems, and proprietary software that make health information diffcult
+            to exchange, analyze, and interpret. </para>
+        <para>Given the number of distinct information systems and care delivery organizations in
+            the ecosystem (e.g., primary care, specialists, laboratories, other care teams),
+            multiple variations exist in how data is collected, manipulated, transmitted,
+            effectively used, and represented across various, disparate information systems.
+            Numerous scholarly and practical efforts have illustrated the challenges of using
+            observational data for safe patient care, comparative effectiveness research, and
+            analysis including recording biases, workflow differences, and issues with variations in
+            data collection, such as invalid, inconsistent, and missing data. [1-2] </para>
+        <para>Aggregated RWE and reliable analytics would benefit from implementable methodologies
+            that address interoperability and data aggregation gaps to help establish a health data
+            ecosystem capable of widespread use in regulatory efforts, public health surveillance,
+            research, and care delivery. To achieve safe and effective information retrieval and
+            reproducible search and query practices across various settings, the following
+            constructs are needed to successfully build, maintain, and analyze data/resources across
+            key biomedical concepts of interest. </para>
+        <section>
+            <title>Data Interoperability Tooling Overview</title>
+            <para>A generalized definition of interoperable health data that supports reliable RWE
+                analytics asserts that data recorded and encoded at the time of creation should
+                accurately reflect the meaning intended by the health care professional who created
+                the data. In the current ecosystem, it can be a very manual, error-prone, and
+                sometimes challenging process to determine if data received from entity A is
+                equivalent to data from entity B and if it is interpreted across each setting as the
+                data was originally intended at the point of origin. Data interoperability tooling,
+                such as a Knowledge Management Platform, that can ingest disparate health data and
+                knowledge sources and harmonize them into a common model and change management
+                system could help in ensuring that the data are reliably computed and/or transmitted
+                between health information systems without any change in meaning. The original
+                meaning, as intended by the first entity, should be fully communicated
+                electronically and, upon receipt, equally understood by the receiving entity. This
+                type of knowledge platform could serve as data interoperability tooling that can
+                determine equivalence between concepts and data sets from various organizations. </para>
+            <para>To facilitate such tooling, data must be represented by a normal form that can
+                safely and reliably support data analysis and be used to aggregate data using a
+                standard or non-standard input form or exchange mechanism. Examples of such data
+                models include Health Level 7 (HL7) Clinical Information Modeling Initiative (CIMI)
+                efforts, including the HL7 Analysis Normal Form (ANF) specification. The model to
+                support a Knowledge Management Platform should meet the following evolutionary
+                design criteria: </para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Understandable</emphasis>: The data model for
+                        normalizing disparate health data can be processed by health IT systems and
+                        understood by most healthcare providers without reference to private or
+                        inaccessible information.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Reproducible</emphasis>: Multiple users or systems
+                        apply the model and normal form to the same situations and source data with
+                        an equivalent result.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Useful</emphasis>: The model is fit-for-purpose—it
+                        has practical value for data analysis, in support of clinical decision
+                        support, research, and population health that requires information
+                        aggregated across health IT systems.</para>
+                </listitem>
+            </itemizedlist>
+            <para>Normalization of disparate health data and knowledge is defined as "the ability to
+                identify every representational format that confers the same meaning as being
+                equivalent (i.e., unambiguous representation)." [3] This
+                transformation/normalization would involve a data instance to data instance
+                transformation. An example could be John Doe's Systolic Blood Pressure measurement
+                taken on June 4, 2019 represented as a Fast Health Interoperability Resources (FHIR)
+                Observation instance, which is then transformed to a common data model/normal form
+                instance representing this same data. Transformation, in this case, is not a simple
+                endeavor that one can hope to implement on clinical data. It will likely involve
+                navigating disparate data structure trees and include variable representations to
+                then generate a well-formed terminology expression. It is most likely possible to
+                target sub-domains for consistent transformation, such as all quantitative
+                laboratory results, but in some cases, it may be that each detailed clinical model
+                needs its own unique transformation. </para>
+            <para>Currently, there are three basic categories of errors that might be associated
+                with attempts at normalizing clinical data representation: </para>
+            <orderedlist>
+                <listitem>
+                    <para>Errors associated with normalization of content of the terminology </para>
+                </listitem>
+                <listitem>
+                    <para>Errors associated with normalization of the semantics of the terminology
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Errors that result from ambiguous or misleading interactions between the
+                        structured clinical input and presentation of compound terminology to
+                        clinician end-users </para>
+                </listitem>
+            </orderedlist>
+            <para>A number of options exist for expressing transformation logic and for executing
+                the transformation on specific instances of clinical data for normalization. These
+                range from transformation languages to expensive middleware options commonly used in
+                healthcare interfaces. The suitability of a chosen transformation language highly
+                depends on the format of the source data, and the quality and accuracy of the
+                transformation is left to the transformation author. Examples of transformation
+                languages include extensible Stylesheet Language Transformations (XSLT), FHIR
+                Mapping Language, and Query/View/Transformation (QVT). Often referred to as “data
+                wrangling”, these transformation processes often require mapping data from one “raw”
+                data form into another format with the intent of making it more valuable for
+                downstream purposes such as analytics. </para>
+        </section>
+        <section>
+            <title>Data Liquidity Overview</title>
+            <para>To support RWE analytics and data aggregation, there is a desire to “reduce the
+                amount of data wrangling” and one-off transformations across the ecosystem and
+                instead enable “data liquidity”, or the ability of data to flow throughout the
+                health data ecosystem easily and securely so that it is quickly available to
+                clinicians, decision makers, laboratories, patients, and others when they need. </para>
+            <para>A robust information architecture and scalable solution to enable this ideal state
+                requires a common understanding of data and a method to support
+                knowledge-representation and assertional and procedural rules based on common
+                terminology and statement models. If a shareable architecture were able to be
+                implemented across the ecosystem, health data and knowledge could potentially be
+                represented in a way that is both applicable at enterprise and project-specific
+                levels. </para>
+            <para>Another pragmatic methodology would be to engage vendors and incentivize them to
+                implement an open, common data model and produce shareable output in interoperable,
+                reproducible, and understandable formats that could then be ingested by other
+                systems. While major U.S. EHR vendors have independently attempted to create such
+                clinical data resources and product offerings, they are often proprietary and do not
+                extend beyond the vendor-user community. Further, the data normalization and
+                representation process remains a "black box" and cannot be independently verified
+                for semantic correctness, data and information loss or gains, or appropriate
+                application of metadata standards. [4-5] Despite these weaknesses, an opportunity
+                exists to collaborate with EHR vendors to create unique value in their data
+                offerings to the clientele, while ensuring data can be safely and reliably
+                aggregated for research, public health, clinical quality improvement and regulatory
+                uses as described by SHIELD. </para>
+        </section>
+        <section>
+            <title>Metadata overview</title>
+            <para>An important construct for enabling RWE analytics, knowledge management, data
+                integration, and decision support, is adoption and reproducible encoding of health
+                data using biomedical terminologies. Acceleration and development of EHR systems
+                have precipitated the emergence of “standard terminologies” and their widespread
+                adoption in the health data community. These standard terminologies include
+                Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®), the Logical
+                Observation Identifiers, Names, and Codes (LOINC®) and RxNorm. </para>
+            <para>While these standards are widely implemented and adopted, aggregation and
+                analytics can be difficult because there is no standard representation across these
+                terminologies. Traversing the data models of these various terminology standards in
+                an integrated way is non-trivial because SNOMED CT®, LOINC®, and RxNorm each use
+                different formalisms and tools for their representation. Various terminologies have
+                different semantics, models, release cycles, and versioning mechanisms. [6] </para>
+            <para>Ideally, to support RWE analytics and aggregation, enterprise terminology requires
+                an integrated terminology using a common representation (metadata) and management. A
+                common terminology model, such as HL7 Standardized Terminology Knowledge Base (also
+                known as TermINology Knowledge Architecture [Tinkar]) would allow the following
+                analytics on top of aggregated RWE data sets [7]: </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ability to recognize equivalence between data from disparate health IT
+                            systems that use codes/terms from various standard terminologies (e.g.,
+                            “Feels Feverish” in the Temperature Symptoms SNOMED CT® hierarchy versus
+                            “Feels Hot/Feverish” in the Observation and Sensation SNOMED CT®
+                            hierarchy. Both concepts are Findings in SNOMED CT® but there is no
+                            unifying way to identify equivalence).</para>
+                    </listitem>
+                    <listitem>
+                        <para>Ability to represent local concepts using codes and terms that are
+                            modeled extensions to standard terminologies (e.g., “COVID-19 positive
+                            test result” was needed in practical use before official SDO releases,
+                            or providers wanting to use “mild anemia”, which was proposed, but not
+                            accepted, by both the international and U.S. SNOMED CT® release)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ability to identify equivalent concept representations that exist
+                            across disparate standards (e.g., LOINC® and SNOMED CT®)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ability to safely change over time in a clear way so that changes are
+                            easily understood by implementers. (e.g., redundancy, fully specified
+                            name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Analytic Environments Overview</title>
+            <para>Integrated analytics environments assist in creating and automating data pipelines
+                and workflows to deliver actionable information to a wide variety of end users.
+                These environments extract data from various data sources, ideally into an
+                integrated knowledge base, housed in a central ecosystem – thereby reducing data
+                silos, enhancing security and governance, and eliminating system redundancies. For
+                data analytics conducted using RWE, analytics environments will be dependent on a
+                variety of knowledge bases and datasets that may have differing fields, despite some
+                potential overlap. A vast variety of biomedical and administrative knowledge present
+                the basis for RWE analytics and knowledge management of these disparate datasets is
+                a major element of consideration to facilitate RWE analytics. Knowledge management
+                includes the creation, discovery, and application of knowledge assets to facilitate
+                sharing and re-use across the ecosystem. </para>
+            <para>The ability to use interoperable syntax and semantics between data sources is a
+                critical requirement to support effective knowledge management and reliable
+                analytics of disparate RWE datasets. Use of industry standards for syntax and
+                semantics helps facilitate integration; however, not all implementation
+                considerations are planned for and adopted and additional efforts are needed to
+                advance standards to improve data quality. The standards themselves update over time
+                and there is a requirement for knowledge management in analytics environments to
+                consider how standards and underlying code sets have changed over time and relaying
+                these changes to data analysts and users who interpret data reports to best
+                understand the information. </para>
+            <para>The following are best practices for the establishment of the LIDR taken from the
+                SHIELD Community Roadmap: </para>
+            <orderedlist>
+                <listitem>
+                    <para>Develop a freely accessible knowledge management architecture for
+                        laboratorians, clinicians, researchers, and regulators, which is needed to
+                        promote clinical interoperability, enabling the determination of equivalency
+                        between different test results to decide whether they can be safely used for
+                        trending, data aggregation, post-market efficacy studies, and
+                        research</para>
+                </listitem>
+                <listitem>
+                    <para>Determine the usefulness of clinical interventions to improve patient care
+                        based on relevant laboratory knowledge and reporting data, such as public
+                        health reporting and clinical surveillance</para>
+                </listitem>
+                <listitem>
+                    <para>Harmonize meaningful laboratory terminology standards, such as SNOMED CT®
+                        and LOINC®</para>
+                </listitem>
+                <listitem>
+                    <para>Enhance the reproducibility of data exchange structures used to express
+                        laboratory procedures and outcomes, such as Clinical Data Interchange
+                        Standards Consortium (CDISC), FHIR, and Integrating the Healthcare
+                        Enterprise (IHE) Laboratory Analytical Workflow (LAW)</para>
+                </listitem>
+                <listitem>
+                    <para>Promote the understandability of the laboratory test knowledge as
+                        interpreted and processed by supporting health IT systems such as Laboratory
+                        Information Systems (LIS), Laboratory Information Management Systems (LIMS),
+                        EHR</para>
+                </listitem>
+                <listitem>
+                    <para>Establishment of this infrastructure will help facilitating reliable data
+                        governance and knowledge management that will assist understandable,
+                        reproducible, and useful RWE analytics. Widespread promotion across
+                        disparate health information systems will help reduce variation for large
+                        national analytic enclaves, such as the National COVID Cohort Collaborative
+                        (N3C) Data Enclave which aggregates and analyzes data from numerous,
+                        disparate electronic health record systems.</para>
+                </listitem>
+            </orderedlist>
+        </section>
+    </section>
+    <section>
         <title>Purpose</title>
         <para>In an effort to resolve the challenges posed by data interoperability and unlock the
             full potential of RWD and RWE across the health care system, the SHIELD collaborative
@@ -13,8 +282,11 @@
             overcome lab interoperability barriers. Due to the complexity and vastness of this
             issue, SHIELD has embraced an ecosystem perspective that recognizes no single entity has
             the authority or influence to meaningfully impact the state of lab interoperability.
-            SHIELD’s overall objective is to ensure lab interoperability such that the same type of
-            device is described the same way throughout EHRs. </para>
+            SHIELD stakeholders include IVD manufacturers, commercial and clinical center
+            laboratories, professional organizations, EHR vendors, Pew Charitable Trusts, numerous
+            federal agencies, standards development organizations, and patient advocates. SHIELD’s
+            overall objective is to ensure lab interoperability such that the same type of device is
+            described the same way throughout EHRs. </para>
         <para>The purpose of this Summary of Findings – current state of RWE analytics including but
             not limited to information retrieval and Knowledge Management and discovery – is to
             explore the current state of real world data and real world evidence as it pertains to
@@ -129,14 +401,14 @@
         <section>
             <title>Current RWD Uses</title>
             <para>There are several national and international efforts to aggregate and expose
-                EHR/RWD for broad research. Such efforts include the National Patient-Centered
-                Clinical Research Network (PCORnet), Observational Health Data Sciences and
-                Informatics (OHDSI), National COVID Cohoert Collaborative (N3C) and its potential
-                spin offs. Common to each of these efforts is the extraction of EHR data from
-                participating entities, transforming these data to a common data model,
-                annotating/managing the data with standardized medical terminologies and aggregating
-                entities' datasets in consolidated or federated mechanisms for analyses. </para>
-        </section>
+                EHR/RWD for use by researchers and public health scientists. Such efforts include
+                the National Patient-Centered Clinical Research Network (PCORnet), Observational
+                Health Data Sciences and Informatics (OHDSI), National COVID Cohort Collaborative
+                (N3C) and its potential spin offs. Common to each of these efforts is the extraction
+                of EHR data from participating entities, transforming these data to a common data
+                model, annotating/managing the data with standardized medical terminologies and
+                aggregating entities’ datasets in consolidated or federated mechanisms for analyses. </para>
+        
         <section>
             <title>National Covid Cohort Collaborative (N3C)</title>
             <para>N3C is one of the largest collections of COVID-19 clinical data in the United
@@ -275,12 +547,14 @@
                 (NLP).</para>
             <para>In April 2022, OHDSI and SNOMED International formalized a five-year collaborative
                 agreement in which OHDSI and the associated user communities will receive
-                “comprehensive ontologies on specific healthcare domains and content...” While this
-                is an enormous benefit to OHDSI, the benefit to SNOMED International manifests in
-                the form of user data from interaction with their product. OHDSI also has an
-                existing agreement with HL7 to integrate FHIR with the OMOP common data model in
-                hopes of improving abilities to track and share data in the healthcare and research
-                industries.</para>
+                “comprehensive ontologies on specific healthcare domains and content such as
+                devices, social determinants of health, disease severity scores and modifiers of
+                cancers, as well as better concept definitions and resolutions of composite concepts
+                in large-scale observational research.” While this is an enormous benefit to OHDSI,
+                the benefit to SNOMED International manifests in the form of user data from
+                interaction with their product. OHDSI also has an existing agreement with HL7 to
+                integrate FHIR with the OMOP common data model in hopes of improving abilities to
+                track and share data in the healthcare and research industries.</para>
             <para>OHDSI has ventured into product development, including the Health Analytics
                 Data-to-Evidence Suite (HADES), which is a set of open-source R packages
                 specifically focusing on population level estimations, patient-level prediction,
@@ -679,3 +953,4 @@
     </section>
 </chapter>
         
+

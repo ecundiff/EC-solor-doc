@@ -14,7 +14,7 @@
             arrangement. This phenomenon has helped encourage both individual and group
             contributions to drive IKM efforts and development. Crowdsourcing, in part, relies on
             the Wisdom of Crowds, which refers to the collective intelligence and decision-making
-            ability of a diverse group, often leading to more accurate outcomes than individual
+            ability of a large group, often leading to more accurate outcomes than individual
             decisions. In healthcare, this concept has been applied in various ways, from diagnosing
             rare diseases through crowdsourcing to improving clinical care by harnessing structured
             information-sharing networks among physicians. [1, 2] The collective insight of
@@ -58,7 +58,7 @@
             contexts and stretched much farther. Instead of a single development team being tasked
             with identifying and repairing errors, users can serve as developers and contribute to
             addressing errors much faster. As a result, open-source software employs a high degree
-            of modularity where it can be adaptive and flexible to the diverse needs of its
+            of modularity where it can be adaptive and flexible to the wide ranging needs of its
             users.</para>
         <para>Allowing for open licensing encourages improvements to terminology and standards by
             ancillary bodies. The open licensing also creates a more robust and flexible system that
@@ -120,8 +120,8 @@
         <para>The healthcare community consists of many different stakeholders, including medical
             providers, IT professionals, informaticists, researchers, marketers, project conveners
             who bring commercial, public and private stakeholders together, and more. Employing the
-            Wisdom of Crowds in healthcare offers a diverse array of perspectives and information
-            that can facilitate rapid and adaptable solution development. </para>
+            Wisdom of Crowds in healthcare offers an array of perspectives and information that can
+            facilitate rapid and adaptable solution development. </para>
     </section>
     <section>
         <title>How can we Apply Crowdsourcing and Wisdom of Crowds to IKM and Tinkar?</title>
@@ -131,7 +131,7 @@
             development, including current challenges or issues, the Wisdom of Crowds can generate
             potential solutions and enhance IKM processes. Second, by engaging with stakeholders,
             the crowd can identify solutions to support and maintain high quality and interoperable
-            data across medical scenarios. Engaging with the diverse stakeholders across the
+            data across medical scenarios. Engaging with the wide ranging stakeholders across the
             healthcare ecosystem will generate solutions for a wide range of scenarios and lessons
             learned that will inform continuous improvement. </para>
         <para>The main purpose of Tinkar is to standardize the representation of disparate
@@ -203,7 +203,7 @@
     </section>
     <section>
         <title>Is Crowdsourcing Reliable?</title>
-        <para>The Wisdom of Crowds in healthcare offers several advantages, including diverse
+        <para>The Wisdom of Crowds in healthcare offers several advantages, including wide ranging
             perspectives, rapid information gathering, and innovative problem-solving. [6] However,
             the approach also has limitations of potential misinformation, anonymity, unchecked
             credentials, breaches that compromise intellectual property, and identity theft.
@@ -240,7 +240,7 @@
                     <para><emphasis role="bold">Data Quality and Reliability</emphasis>: Ensuring
                     the accuracy and reliability of crowdsourced data is a significant challenge.
                     There is a risk of misinformation and variability in data quality due to the
-                    diverse sources of information.</para>
+                    wide range of sources of information.</para>
                 </listitem>
                 <listitem>
                 <para><emphasis role="bold">Integration with Existing Systems</emphasis>:

@@ -204,10 +204,10 @@
             design is enhanced when system control structures are modelled, monitored, and audited
             using system safety engineering principles such as STPA. </para>
         <para>Safety in a health data context includes clinical decision support, safe data
-            exchange, and safe use of health data for regulatory oversight, health equity, research,
-            and population health decision-making. Furthermore, poor data quality degrades patient
-            safety especially among disparate health populations when using low quality data to
-            train AI models for patient care. [32]</para>
+            exchange, and safe use of health data for regulatory oversight, research, and population
+            health decision-making. Furthermore, poor data quality degrades patient safety
+            especially among disparate health populations when using low quality data to train AI
+            models for patient care. [32]</para>
         <para><emphasis role="bold">Spotlight Case Study #1: STPA of the U.S. Diagnostic Laboratory
                 Data Ecosystem</emphasis></para>
         <para>The STPA of the U.S. Diagnostic Laboratory Data Ecosystem, was a proactive analysis

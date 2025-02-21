@@ -981,11 +981,10 @@
             <para>While localized development of Artificial Intelligence (AI) and Machine Learning
                 (ML) offers customization and optimization benefits, the associated risks and
                 challenges necessitate careful consideration. Without adequate safeguards and
-                oversight, localized development can lead to biased, unreliable, and inequitable
-                AI/ML algorithms, compromising patient care and outcomes. The concerns associated
-                with localized development highlighted below document the need for a more
-                standardized, equitable, and generalizable approach to developing AI/ML algorithms
-                in healthcare.</para>
+                oversight, localized development can lead to unreliable AI/ML algorithms,
+                compromising patient care and outcomes. The concerns associated with localized
+                development highlighted below document the need for a more standardized and
+                generalizable approach to developing AI/ML algorithms in healthcare.</para>
             <para>
                 <orderedlist>
                     <listitem>
@@ -994,7 +993,7 @@
                             <listitem>
                                 <para>Concern: There is a risk of introducing or worsening biases
                                     when developing algorithms locally especially if the dataset
-                                    used is not diverse enough.</para>
+                                    used is not robust enough.</para>
                             </listitem>
                             <listitem>
                                 <para>Impact: This could result in predictions and unreliable
@@ -1064,20 +1063,6 @@
                         </itemizedlist>
                     </listitem>
                     <listitem>
-                        <para><emphasis role="bold">Ethical and Equity Concerns</emphasis></para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>Issue: The development and implementation of localized
-                                    algorithms raise concerns regarding fairness, equity and ethical
-                                    considerations. </para>
-                            </listitem>
-                            <listitem>
-                                <para>Effect: If not properly regulated localized algorithms could
-                                    worsen healthcare disparities and give rise to concerns.</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
                         <para><emphasis role="bold">Lack of Standardization</emphasis>
                         </para>
                         <itemizedlist>
@@ -1103,27 +1088,6 @@
                 considerations include;</para>
             <para>
                 <orderedlist>
-                    <listitem>
-                        <para><emphasis role="bold">Equity and Fairness</emphasis></para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>Concern: Smaller manufacturers might have access to limited
-                                    datasets, which may not be representative of diverse patient
-                                    populations. This limitation can lead to the development of
-                                    biased algorithms that do not perform equitably across different
-                                    groups.</para>
-                            </listitem>
-                            <listitem>
-                                <para>Ethical Question: Is it ethical to deploy algorithms that
-                                    might not provide equitable benefits to all patient groups due
-                                    to limitations in data diversity and representativeness?</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                
-            
-            
-                
                     <listitem>
                         <para><emphasis role="bold">Quality and Safety</emphasis></para>
                         <itemizedlist>
@@ -1178,50 +1142,8 @@
                             </listitem>
                         </itemizedlist>
                     </listitem>
-                
-
-            
-                <listitem>
-                    <para><emphasis role="bold">Access and Affordability</emphasis></para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>Concern: Devices developed by smaller manufacturers might have
-                                limited availability and accessibility, potentially exacerbating
-                                healthcare disparities.</para>
-                        </listitem>
-                        <listitem>
-                            <para>Ethical Question: How can we ensure that devices developed by
-                                smaller manufacturers are accessible and affordable to all patients
-                                who might benefit from them?</para>
-                        </listitem>
-                    </itemizedlist>
-                </listitem>
             </orderedlist>
             </para>
-        </sect2>
-        <sect2>
-            <title>Recommendations for Ethical Practices</title>
-            <para>While smaller sepsis AI device manufacturers pursuing localized development raises
-                several ethical consideration, with the appropriate support, resources, and
-                guidelines, it is possible to address the ethical concerns associated with localized
-                development by smaller manufacturers that support innovation and diversity in the
-                field. </para>
-            <orderedlist>
-            <listitem><para><emphasis role="bold">Ethical Oversight</emphasis>; It is important to establish mechanisms
-                        for oversight in order to thoroughly review and monitor the development and
-                        deployment of devices by manufacturers (if not already there).</para></listitem>
-            <listitem><para><emphasis role="bold">Support and Resources</emphasis>; Smaller manufacturers should be
-                        provided with support and resources to ensure their adherence to standards
-                        and regulatory requirements.</para></listitem>
-            <listitem><para><emphasis role="bold">Partnership</emphasis>; Encouraging smaller manufacturers to collaborate
-                        with institutions, academia and research organizations will grant them
-                        access, to datasets and expertise fostering better development
-                        practices.</para></listitem>
-            <listitem><para><emphasis role="bold">Tailored Ethical Guidelines</emphasis>; Developing and implementing
-                        guidelines that are specifically tailored for manufacturers will serve as a
-                        comprehensive framework guiding their responsible development and deployment
-                        processes.</para></listitem>
-            </orderedlist>
         </sect2>
         <sect2>
             <title>Recommendations and Guidelines for Small Vendors Developing Localized AI/ML
@@ -1239,7 +1161,7 @@
                             <listitem>
                                 <para>Description: Establish platforms where healthcare institutions
                                     (TOPX Census Bureau comes to mind), researchers, and
-                                    manufacturers can share and access diverse and representative
+                                    manufacturers can share and access representative
                                     datasets.</para>
                             </listitem>
                             <listitem>
@@ -1331,8 +1253,8 @@
                             <itemizedlist>
                                 <listitem>
                                     <para>Description: Outline best practices for data collection,
-                                        management, and usage, emphasizing the importance of data
-                                        diversity, representativeness, privacy, and security.</para>
+                                    management, and usage, emphasizing the importance of data
+                                    representativeness, privacy, and security.</para>
                                 </listitem>
                                 <listitem>
                                     <para>Purpose: To guide smaller manufacturers in managing data

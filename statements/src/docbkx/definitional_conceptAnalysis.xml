@@ -1268,9 +1268,10 @@
                                 example:</para>
                             <itemizedlist>
                                 <listitem>
-                                    <para><emphasis role="italic">Traumatic vs. non-traumatic</emphasis>
-                                    - concepts without a stated “traumatic” in the FSN are
-                                        considered non-traumatic by default.</para> 
+                                    <para><emphasis role="italic">Traumatic injury vs. non-traumatic
+                                            injury</emphasis> - concepts without a stated
+                                        “traumatic” in the FSN are considered non-traumatic by
+                                        default.</para> 
                                 </listitem>
                                 <listitem>
                                     <para><emphasis role="italic">With vs. without</emphasis>

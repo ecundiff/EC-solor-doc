@@ -131,8 +131,8 @@
             <para>There are several national and international efforts to aggregate and expose
                 EHR/RWD for broad research. Such efforts include the National Patient-Centered
                 Clinical Research Network (PCORnet), Observational Health Data Sciences and
-                Informatics (OHDSI), National COVID Cohoert Collaborative (N3C) and its potential
-                spin offs. Common to each of these efforts is the extraction of EHR data from
+                Informatics (OHDSI), National COVID Cohort Collaborative (N3C) and its potential
+                spin-offs. Common to each of these efforts is the extraction of EHR data from
                 participating entities, transforming these data to a common data model,
                 annotating/managing the data with standardized medical terminologies and aggregating
                 entities' datasets in consolidated or federated mechanisms for analyses. </para>
@@ -229,7 +229,7 @@
                 PCORnet Clinical Research Networks currently include 337 hospitals, 169,695
                 physicians, 3,564 primary care practices, 338 emergency departments, and 1,024
                 community clinics serving medically underserved populations. These healthcare
-                institutions and their clinicians serve as a diverse set of clinical trial sites for
+                institutions and their clinicians serve as a set of clinical trial sites for
                 pragmatic research conducted in everyday clinical care settings. [8]</para>
                 <para>In PCORnet, 66 million patients’ health records are available for
                 observational studies and provide vast scale to power research for conditions
@@ -346,16 +346,16 @@
                 ensuring common definitions and coding exists for phenotype variables being
                 deposited into the database of Genotypes and Phenotypes (dpGaP) and facilitating
                 Quality Assurance/Quality Control (QA/QC) of data as it comes in. [17]</para>
-        <para>Similarly, the size, scope, and diversity of eMERGE’s data allows the network to develop and 
-            execute additional analyses as data evolves and medical interpretations change. Cultivating a 
-            diverse biobank and a rich EHR linkage allows for cost-effective longitudinal genomic studies. 
-            Moreover, the continued collection of clinical data enriches the depth and value of the network 
-            while incurring minimal added costs. [16] The ability to build upon existing data is particularly 
-            valuable in fields where scientific understanding is still evolving, as with genomics and novel 
-            diseases or treatments. Despite the challenges inherent with multi-site collaboration, eMERGE 
-            12
-            has demonstrated that interoperability risk can be mitigated to allow for robust and powerful 
-            analytics.</para>
+        <para>Similarly, the size, scope, and diversity of eMERGE’s data allows the network to
+                develop and execute additional analyses as data evolves and medical interpretations
+                change. Cultivating a varied biobank and a rich EHR linkage allows for
+                cost-effective longitudinal genomic studies. Moreover, the continued collection of
+                clinical data enriches the depth and value of the network while incurring minimal
+                added costs. [16] The ability to build upon existing data is particularly valuable
+                in fields where scientific understanding is still evolving, as with genomics and
+                novel diseases or treatments. Despite the challenges inherent with multi-site
+                collaboration, eMERGE 12 has demonstrated that interoperability risk can be
+                mitigated to allow for robust and powerful analytics.</para>
         <para>Despite its many successes, the eMERGE network experienced several challenges. The
                 personal nature of genetic data emphasizes the requirements for patient privacy and
                 de-identification. When aggregating data across various timepoints and institutions,

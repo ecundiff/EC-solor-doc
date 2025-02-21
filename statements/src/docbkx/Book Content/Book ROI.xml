@@ -73,7 +73,7 @@
     </section>
     <section>
         <title>The ROI of Implementing IKM in Healthcare Organizations</title>
-        <section>
+        
             <para>A thorough investment and ROI analysis is a cornerstone of the IKM implementation
                 process. Leaders must estimate the costs associated with adopting IKM, including
                 technology, training, and change management expenses. [9] Moreover, projecting
@@ -89,7 +89,6 @@
                 healthcare delivery and outcomes.</para>
             <para>IKM in healthcare organizations offers substantial ROI by addressing several
                 critical areas:</para>
-        </section>
         <section><title>Improved Interoperability and Data Accuracy</title>
             <para>The adoption of IKM leads to significant improvements in interoperability and data
                 accuracy within healthcare systems. Studies have shown that initiatives aimed at
@@ -329,10 +328,11 @@
                         build support and enthusiasm for the initiative. </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        <itemizedlist><emphasis role="bold">Sustainment: </emphasis>Sustainment of
+                    
+                        <para>
+                        <emphasis role="bold">Sustainment:</emphasis> Sustainment of
                             IKM systems and processes as well as continuous improvement is key to
-                            successful long term adoption and future innovation. </itemizedlist>
+                            successful long term adoption and future innovation. 
                     </para>
                 </listitem>
             </orderedlist>

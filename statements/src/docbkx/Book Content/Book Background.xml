@@ -182,7 +182,7 @@
                 uses as described by SHIELD. </para>
         </section>
         <section>
-            <title>Metadata overview</title>
+            <title>Metadata Overview</title>
             <para>An important construct for enabling RWE analytics, knowledge management, data
                 integration, and decision support, is adoption and reproducible encoding of health
                 data using biomedical terminologies. Acceleration and development of EHR systems

@@ -31,9 +31,10 @@
     </section>
     <section>
         <title>The Problem IKM Addresses </title>
-        <para>In healthcare, organizations that help achieve standardized health data are referred
-            to as Standards Development Organizations (SDOs). SDOs exist in every industry, but in
-            health Information Technology (IT) the following are key examples: <informaltable>
+        <para>In healthcare, Standards Development Organizations (SDOs) develop, maintain, and
+            distribute or publish healthcare standards. SDOs exist in every industry, but in health
+            Information Technology (IT) the following are key examples of healthcare standards
+            developed by the Regenstrief Institute: <informaltable>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1"/>
                     <colspec colnum="2" colname="col2"/>

@@ -14,28 +14,28 @@
         <para>Keith E. Campbell, MD, PhD</para>
     </section>
     <section>
-        <title>IKM Book Motivation</title>
+        <title>Motivation</title>
         <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
             number of sources to make informed clinical decisions. While this data is a critical
-            component of supporting well-informed clinical decisions and the safe delivery of care,
-            major challenges exist with the accuracy, interoperability, and quality of data that is
-            transmitted within and between healthcare systems. Clinical terminology standards are
-            one strategy to standardize data collection and improve the quality of patient care with
-            standardized and repeatable guidelines for encoding health data. However, these
-            standards often lose critical aspects of the original data capture when they are shared
-            with other providers and healthcare systems. To enhance the quality, interoperability,
-            and usability of patient data, the health care industry requires a solution that
-            harmonizes the different clinical terminology standards and generates a common model
-            that supports patient care, data querying and analysis, public health, and policy
-            making. Interoperable data in an ideal world would eliminate patient harm and other
-            inefficiencies stemming from data misrepresentations and errors. The motivation for this
-            work is to explore the pathway to unifying a patient’s care experience through reliable
-            and interoperable data that supports accurate and timely clinical decision support that
-            is solely prompted and driven by real-world data and provides real-time assistance to
-            clinicians.</para>
-        <para>The essential challenge of informatics practice within the healthcare enterprise is to
-            quickly deliver a high fidelity reasoned interpretation of principles and facts to the
-            point of care—and then to quickly aggregate these point of care experiences for analytic
+            component of supporting well-informed clinical decision making and the safe delivery of
+            care, major challenges exist with the accuracy, interoperability, and quality of data
+            that is transmitted within and between healthcare systems. Clinical terminology
+            standards are one strategy to standardize data collection and improve the quality of
+            patient care with standardized and repeatable guidelines for encoding health data.
+            However, these standards often lose critical aspects of the original data capture when
+            they are shared with other providers and healthcare systems. To enhance the quality,
+            interoperability, and usability of patient data, the health care industry requires a
+            solution that harmonizes the different clinical terminology standards and generates a
+            common model that supports patient care, data querying and analysis, public health, and
+            policy making. Interoperable data in an ideal world would eliminate patient harm and
+            other inefficiencies stemming from data misrepresentations and errors. The motivation
+            for this work is to explore the pathway to unifying a patient’s care experience through
+            reliable and interoperable data that supports accurate and timely clinical decision
+            support that is solely prompted and driven by real-world data and provides real-time
+            assistance to clinicians.</para>
+        <para>The essential challenge of the informatics practice within the healthcare enterprise
+            is to quickly deliver a high fidelity reasoned interpretation of principles and facts to
+            the point of care—and then to quickly aggregate these point of care experiences for
             analysis so that new principles and facts can be formulated and validated as part of a
             continuous optimization of healthcare knowledge and delivery. To effectively answer this
             challenge, we must focus on simplification and integration of knowledge assets, and on
@@ -54,7 +54,7 @@
             Information Technology (IT) landscape, and a framework for the implementation of a
             layered, architecture-based approach to integrating and managing knowledge in the
             healthcare ecosystem that will seek to solve the previously identified issues.</para>
-        <para>This framework, referred to throughout the Book as the Knowledge Architecture, is a
+        <para>This framework, referred to throughout the Book as the 'Knowledge Architecture', is a
             methodology seeking to enable the concept of IKM throughout the healthcare
             ecosystem.</para>
         <para>Through examples and illustrations, this Book seeks to have a direct connection to
@@ -318,11 +318,12 @@
         <title>IKM Book Introduction</title>
         <section>
         <title>The Promise of Health Information Technology (IT)</title>
-        <para>Health Information Technology (IT), or the use of computer hardware, software, or infrastructure to record,
-            store, protect, and retrieve clinical, administrative, or financial information, has
-            become a critically important form of organizing, managing, analyzing, and exchanging
-            patient health information. [13] Though first employed in the 1960s, Health IT entered
-            the scene and obtained widespread adoption in the early-1990s promising: </para>
+        <para>Health IT, or the use of computer hardware, software, or infrastructure to record,
+                store, protect, and retrieve clinical, administrative, or financial information, has
+                become a critically important form of organizing, managing, analyzing, and
+                exchanging patient health information. [13] Though first employed in the 1960s,
+                Health IT entered the scene and obtained widespread adoption in the early-1990s
+                promising: </para>
         <itemizedlist>
             <listitem>
                 <para>The enhancement of quality and safety of healthcare,</para>

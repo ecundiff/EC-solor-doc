@@ -11,14 +11,13 @@
             <listitem>
                 <para><emphasis role="bold">Content</emphasis>: While missing content is expected,
                     formally stated processes for requesting and adding content is required. SNOMED
-                    CT®, LOINC® and RxNorm all have formal processes in place for requesting changes
-                    to the terminologies either through the organization that maintains them or
-                    through a national release center in the case of SNOMED CT®. While content can
-                    be added using these formal processes, there is usually a delay before a formal
-                    addition is available for use. In addition to the formal processes available
-                    through the standards development organizations (SDOs), SNOMED CT® includes
-                    formal mechanisms for users to extend the terminology and add missing content
-                    locally.</para>
+                    CT®, LOINC® and RxNorm all have established processes in place for requesting
+                    changes to the terminologies either through the organization that maintains them
+                    or through a national release center in the case of SNOMED CT®. While content
+                    can be added using these  processes, there is usually a delay before a formal
+                    addition is available for use. In addition to the standards development
+                    organizations (SDOs) processes, SNOMED CT® includes formal mechanisms for users
+                    to extend the terminology and add missing content locally.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Concept Orientation</emphasis>: The most granular piece
@@ -66,10 +65,10 @@
                 <para><emphasis role="bold">Concept Permanence</emphasis>: A concept's meaning
                     cannot change, and concepts cannot be deleted after they have been released.
                     Once added to a terminology, concepts and their identifiers should persist.
-                    However, a mechanism to make concepts inactive when they are deemed to be
-                    duplicate or erroneous should be available. Terminologies like SNOMED CT® and
-                    LOINC® both have mechanisms for inactivating concepts after they have been
-                    deemed to be in error.</para>
+                    However, a mechanism to retire concepts when they are deemed to be duplicate or
+                    erroneous should be available. Terminologies like SNOMED CT® and LOINC® both
+                    have mechanisms for inactivating concepts after they have been deemed to be in
+                    error.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Meaningless Concept Identifiers</emphasis>: Concepts

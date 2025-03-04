@@ -14,7 +14,7 @@
     <part>
         <title xml:id="BookBackground">Background</title>
         <xi:include href="Book%20Content/Book%20Background.xml"/>
-        <xi:include href="sof-current-state - For Vol 2.xml"/>
+        <xi:include href="Book%20Content/Book%20sof-current-state.xml"/>
     </part>
     <part>
         <title>IKM Overview</title>

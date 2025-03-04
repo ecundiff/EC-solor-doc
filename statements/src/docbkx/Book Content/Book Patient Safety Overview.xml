@@ -33,7 +33,7 @@
             is unlikely practitioners will self-report errors due to fear of retribution, loss of
             employment, or legal action. Blaming an individual or team for system errors prevents
             learning from errors, impedes continuous improvement, and reinforces silence when system
-            vulnerabilities are discovered. Unfortunately, many healthcare professionals </para>
+            vulnerabilities are discovered.</para>
         <para>Since the 1999 report, <emphasis role="italic">To Err is Human</emphasis>, was
             published by the Institute of Medicine, patient safety has received more attention
             across the healthcare ecosystem due to the prevalence of preventable patient harm. A
@@ -89,9 +89,9 @@
             The principles originated from social science as behaviors present in organizations
             which operated in extremely complex, high-risk environments with high levels of system
             reliability believed to produce safer outcomes. Reliability is the probability that a
-            component or system will perform as designed under certain conditions over time (i.e.,
-            checklists. Leaders and managers can foster a culture supported by HRO principles mostly
-            focused on reducing errors at a single component level also known as component failures
+            component or system will perform as designed under certain conditions over time (e.g.,
+            checklists). Leaders and managers can foster a culture supported by HRO principles that
+            focuses on reducing errors at a single component level, also known as component failures
             (human or machine). [26] Limitations of this approach can seduce leaders into believing
             that worse case scenarios (losses, adverse events, accidents) have linear causality with
             the human as a possible weak link in the system. HRO methods rely on decomposition
@@ -328,26 +328,26 @@
             solutioning would strengthen knowledge representation, improve data quality, and reduce
             patient risk.</para>
         <para>UCA scenario: A medical practitioner may provide treatment that does not match the
-            patient’s condition. One contributing factor may be that the practitioner did not have
+            patient’s condition. One contributing factor may be that the practitioner does not have
             the diagnostic information to inform their mental model of the patient’s condition. The
             diagnostic information may not be observed by the medical practitioner because they may
             be accustomed to using their routine process to access results in the EHR, which only
             displays laboratory data that has been previously mapped to the care facility’s EHR
             system (e.g., mapped to a LOINC® code or local code representation). In some cases,
             additional unmapped test results are shared by the laboratory as a PDF and the physician
-            may not notice the PDF due to its lack of salience in the EHR process flow. Physicians
-            who are not expecting and looking for the test results may not be prompted to look for
+            may not notice due to its lack of salience in the EHR process flow. Physicians who are
+            not expecting or looking for the test results may not be prompted to look for
             additional, unmapped information in a patient profile, particularly if the unmapped
             results were ordered by another physician or a long time ago. The results may have been
             shared as a PDF because they pertained to a new or uncommon test whose format could not
             be represented in the messaging standard available to that laboratory-care facility
             pair. Standards for new and complex tests (e.g., genomics) are not yet tightly
-            constrained. The results are able to be shared as PDFs because CLIA only requires that
-            the data that is sent gets received, and it does not specify the method of transmission
-            nor impose any requirement or confirmation that the information is observed by the
-            medical practitioner. CLIA was drafted and approved in 1988, before EHRs were widely
-            adopted and modifications to CLIA require Congressional approval. The following is a
-            visualization of this scenario using system safety principles (Figure 2). </para>
+            constrained and can be shared as PDFs because Clinical Laboratory Improvement Amendments
+            (CLIA) only requires that the data sent gets received and does not specify the method of
+            transmission nor impose any requirement or confirmation that the information is observed
+            by the medical practitioner. CLIA was drafted and approved in 1988, before EHRs were
+            widely adopted and modifications to CLIA require Congressional approval. The following
+            is a visualization of this scenario using system safety principles (Figure 2). </para>
         <figure xml:id="VisualizationofUnsafeControlActionUCALaboratoryDataScenario">
             <title>Visualization of UCA Laboratory Data Scenario</title>
             <mediaobject>
@@ -364,15 +364,15 @@
     </section>
     <section>
         <title>The Promise of Digital Health Information and Patient Safety</title>
-        <para>Moving from paper charts to EHR systems is mostly complete (96%) in the U.S. while 22%
-            of office-based physician practices remain paper-based. [33] Incentive programs such as
-                <emphasis role="italic">Meaningful Use </emphasis>(MU) provided government funding
-            through CMS for health systems and provider organizations to digitize their health
-            information systems. From 2010-2020, MU program goals included digital data collection,
-            data sharing, advanced clinical processes, and improved outcomes. Studies have shown
-            that HIT has improved patient safety by reducing medication errors, avoiding adverse
-            drug reactions, and increasing adherence to evidence-based medicine protocols. [34]
-            While HIT has improved some clinical outcomes, the adoption, configuration,
+        <para>In the U.S., moving from paper charts to EHR systems is mostly complete (96%) with
+            only 22% of office-based physician practices remaining paper-based. [33] Incentive
+            programs such as <emphasis role="italic">Meaningful Use </emphasis>(MU) provided
+            government funding through CMS for health systems and provider organizations to digitize
+            their health information systems. From 2010-2020, MU program goals included digital data
+            collection, data sharing, advanced clinical processes, and improved outcomes. Studies
+            have shown that HIT has improved patient safety by reducing medication errors, avoiding
+            adverse drug reactions, and increasing adherence to evidence-based medicine protocols.
+            [34] While HIT has improved some clinical outcomes, the adoption, configuration,
             implementation, and maintenance of HIT has increased patient risk in other parts of the
             health delivery system due to unintended consequences of poorly managed HIT. [35]</para>
         <para>First-generation HIT configurations have mostly been managed by HIT vendors who mainly

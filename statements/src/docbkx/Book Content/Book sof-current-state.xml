@@ -13,8 +13,11 @@
             overcome lab interoperability barriers. Due to the complexity and vastness of this
             issue, SHIELD has embraced an ecosystem perspective that recognizes no single entity has
             the authority or influence to meaningfully impact the state of lab interoperability.
-            SHIELD’s overall objective is to ensure lab interoperability such that the same type of
-            device is described the same way throughout EHRs. </para>
+            SHIELD stakeholders include IVD manufacturers, commercial and clinical center
+            laboratories, professional organizations, EHR vendors, Pew Charitable Trusts, numerous
+            federal agencies, standards development organizations, and patient advocates. SHIELD’s
+            overall objective is to ensure lab interoperability such that the same type of device is
+            described the same way throughout EHRs. </para>
         <para>The purpose of this Summary of Findings – current state of RWE analytics including but
             not limited to information retrieval and Knowledge Management and discovery – is to
             explore the current state of real world data and real world evidence as it pertains to
@@ -129,14 +132,14 @@
         <section>
             <title>Current RWD Uses</title>
             <para>There are several national and international efforts to aggregate and expose
-                EHR/RWD for broad research. Such efforts include the National Patient-Centered
-                Clinical Research Network (PCORnet), Observational Health Data Sciences and
-                Informatics (OHDSI), National COVID Cohort Collaborative (N3C) and its potential
-                spin-offs. Common to each of these efforts is the extraction of EHR data from
-                participating entities, transforming these data to a common data model,
-                annotating/managing the data with standardized medical terminologies and aggregating
-                entities' datasets in consolidated or federated mechanisms for analyses. </para>
-        </section>
+                EHR/RWD for use by researchers and public health scientists. Such efforts include
+                the National Patient-Centered Clinical Research Network (PCORnet), Observational
+                Health Data Sciences and Informatics (OHDSI), National COVID Cohort Collaborative
+                (N3C) and its potential spin offs. Common to each of these efforts is the extraction
+                of EHR data from participating entities, transforming these data to a common data
+                model, annotating/managing the data with standardized medical terminologies and
+                aggregating entities’ datasets in consolidated or federated mechanisms for analyses. </para>
+        
         <section>
             <title>National Covid Cohort Collaborative (N3C)</title>
             <para>N3C is one of the largest collections of COVID-19 clinical data in the United
@@ -230,7 +233,7 @@
                 PCORnet Clinical Research Networks currently include 337 hospitals, 169,695
                 physicians, 3,564 primary care practices, 338 emergency departments, and 1,024
                 community clinics serving medically underserved populations. These healthcare
-                institutions and their clinicians serve as a set of clinical trial sites for
+                institutions and their clinicians serve as a diverse set of clinical trial sites for
                 pragmatic research conducted in everyday clinical care settings. [8]</para>
                 <para>In PCORnet, 66 million patients’ health records are available for
                 observational studies and provide vast scale to power research for conditions
@@ -275,12 +278,14 @@
                 (NLP).</para>
             <para>In April 2022, OHDSI and SNOMED International formalized a five-year collaborative
                 agreement in which OHDSI and the associated user communities will receive
-                “comprehensive ontologies on specific healthcare domains and content...” While this
-                is an enormous benefit to OHDSI, the benefit to SNOMED International manifests in
-                the form of user data from interaction with their product. OHDSI also has an
-                existing agreement with HL7 to integrate FHIR with the OMOP common data model in
-                hopes of improving abilities to track and share data in the healthcare and research
-                industries.</para>
+                “comprehensive ontologies on specific healthcare domains and content such as
+                devices, social determinants of health, disease severity scores and modifiers of
+                cancers, as well as better concept definitions and resolutions of composite concepts
+                in large-scale observational research.” While this is an enormous benefit to OHDSI,
+                the benefit to SNOMED International manifests in the form of user data from
+                interaction with their product. OHDSI also has an existing agreement with HL7 to
+                integrate FHIR with the OMOP common data model in hopes of improving abilities to
+                track and share data in the healthcare and research industries.</para>
             <para>OHDSI has ventured into product development, including the Health Analytics
                 Data-to-Evidence Suite (HADES), which is a set of open-source R packages
                 specifically focusing on population level estimations, patient-level prediction,
@@ -349,16 +354,16 @@
                 ensuring common definitions and coding exists for phenotype variables being
                 deposited into the database of Genotypes and Phenotypes (dpGaP) and facilitating
                 Quality Assurance/Quality Control (QA/QC) of data as it comes in. [17]</para>
-        <para>Similarly, the size, scope, and diversity of eMERGE’s data allows the network to
-                develop and execute additional analyses as data evolves and medical interpretations
-                change. Cultivating a varied biobank and a rich EHR linkage allows for
-                cost-effective longitudinal genomic studies. Moreover, the continued collection of
-                clinical data enriches the depth and value of the network while incurring minimal
-                added costs. [16] The ability to build upon existing data is particularly valuable
-                in fields where scientific understanding is still evolving, as with genomics and
-                novel diseases or treatments. Despite the challenges inherent with multi-site
-                collaboration, eMERGE 12 has demonstrated that interoperability risk can be
-                mitigated to allow for robust and powerful analytics.</para>
+        <para>Similarly, the size, scope, and diversity of eMERGE’s data allows the network to develop and 
+            execute additional analyses as data evolves and medical interpretations change. Cultivating a 
+            diverse biobank and a rich EHR linkage allows for cost-effective longitudinal genomic studies. 
+            Moreover, the continued collection of clinical data enriches the depth and value of the network 
+            while incurring minimal added costs. [16] The ability to build upon existing data is particularly 
+            valuable in fields where scientific understanding is still evolving, as with genomics and novel 
+            diseases or treatments. Despite the challenges inherent with multi-site collaboration, eMERGE 
+            12
+            has demonstrated that interoperability risk can be mitigated to allow for robust and powerful 
+            analytics.</para>
         <para>Despite its many successes, the eMERGE network experienced several challenges. The
                 personal nature of genetic data emphasizes the requirements for patient privacy and
                 de-identification. When aggregating data across various timepoints and institutions,
@@ -456,64 +461,71 @@
     </section>
     <section>
         <title>Learnings</title>
-        <para>EHRs have been in use in the U.S. since the 1970’s. However, the rush to implement the
-            EHR nationwide did not occur until the introduction of the Meaningful Use (MU) in 2009.
-            [24] The EHR has provided a large pool of patient records and healthcare data from
-            across the globe for secondary research. As of 2021, 85% of physicians in the US
-            electronically recorded social determinants of health (SDOH) data and 97% electronically
-            recorded broad determinants of health (BDOH) data. Rates of electronic recording of SDOH
-            and BDOH data were slightly higher among primary care physicians, with 89% of primary
-            care physicians electronically recording SDOH data and 98% electronically recording BDOH
-            data in 2021.</para>
-       <para>In the past, research relied upon billing data from the UB-04 billing form as the
-            source of structured data for research purposes. The UB-04 medical billing form is the
-            standard claim form that healthcare organization use for the billing of inpatient or
-            outpatient medical and mental health claims. [25-26] Although developed by CMS, the form
-            has become the standard form used by all insurance carriers. This form captures all data
-            in a structured format and captures diagnoses, treatments and procedures, type of
-            admission, medications, and demographic information. While the UB-04 and similar
-            administrative data have been considered rich sources of data for research and can be
-            readily de-identified, shared, and stored, much valuable information is lost. Coding
-            systems used for billing purposes dilute data by use of non-specific coding systems
-            which bundle similar conditions or procedures under the same code. Diagnosis data is
-            captured using ICD10CM codes which will bundle similar diagnoses under the same
-            code.</para>
-        <para>Limitations to using RWD cannot be overlooked, ignored, or dismissed. Aggregation of data 
-            from multiple sources may impact the availability of data in real-time. Time and effort to clean 
-            or harmonize data from multiple or disparate sources increases time between availability of 
-            RWD for researchers compared to when the data was collected. This delay may impact the 
-            accuracy or quality of research data, meaning researchers are analyzing data no longer true of a 
-            given scenario. </para>
-        <para>Patient reported data is information reported directly by patients to the healthcare providers or 
-            researchers. Patient-reported data provides a rich source of data for researchers yet is 
-            challenging to collect and share due to a lack of data standards. Data standardization is 
-            challenged by the various sources of patient reported data from paper or digital surveys, EHR 
-            portals, medical devices, or other sources.</para>
+        <para>EHRs have been in use in the U.S. since the 1970’s. However, the rush to implement
+            EHRs nationwide did not occur until the introduction of the Meaningful Use (MU)
+            incentive proram in 2009. The EHR has provided a large pool of patient records and
+            healthcare data from across the globe for secondary research. As of 2021, 85% of
+            physicians in the US electronically recorded social determinants of health (SDOH) data
+            and 97% electronically recorded broad determinants of health (BDOH) data. Rates of
+            electronic recording of SDOH and BDOH data were slightly higher among primary care
+            physicians, with 89% of primary care physicians electronically recording SDOH data and
+            98% electronically recording BDOH data in 2021. [24] </para>
+       <para>In the past, research relied upon billing data from the UB-04 and CMS-1500 billing
+            forms as the source of structured data for research purposes. The UB-04 and CMS-1500
+            billing forms are the standard claim forms that healthcare organization use for the
+            billing of inpatient and outpatient, respectively, medical and mental health claims.
+            [25-26] Although developed by CMS, the form has become the standard form used by all
+            insurance carriers. This form captures data in a structured format and captures
+            diagnoses, treatments and procedures, type of admission, medications, and demographic
+            information. While the UB-04 and similar administrative data have been considered rich
+            sources of data for research and can be readily de-identified, shared, and stored, much
+            valuable information is lost because the coding systems used for billing purposes dilute
+            data with non-specific coding systems that bundle similar conditions or procedures under
+            the same code. This leads to various limitations when using current RWD that cannot be
+            overlooked, ignored, or dismissed:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>Data aggregated from multiple sources may impact the availability and
+                        quality of data in real-time. </para>
+                </listitem>
+                <listitem>
+                    <para>The time and effort to clean or harmonize data from multiple or disparate
+                        sources increases time between the collection and availability of RWD for
+                        researchers. This delay may further impact the accuracy or quality of
+                        research data, meaning researchers are analyzing data no longer true of a
+                        given scenario. </para>
+                </listitem>
+                <listitem>
+                    <para>Patient reported data (information reported directly by patients to the
+                        healthcare providers or researchers) provides a rich source of data for
+                        researchers yet is challenging to collect and share due to a lack of data
+                        standards and the various sources of patient reported data such as paper or
+                        digital surveys, EHR portals, medical devices, or other sources.</para>
+                </listitem>
+                <listitem>
+                    <para>Clinical documentation by nursing or allied health professionals is rarely
+                        considered as a source of data for research. Yet, their documentation may
+                        yield a rich source for data. Additionally, their documentation is more
+                        likely to be captured in a structured manner in the form of structured (and
+                        often researched and validated) assessments and flowsheets. </para>
+                </listitem>
+            </itemizedlist>
+        </para>
         <para>Ideally RWD for RWE is extracted directly from clinical documentation. EHR
             vendor-agnostic data and interoperability standards such as Health Information Exchanges
             (HIEs), MU, HL7, and FHIR were created to encourage or mandate data interoperability
             across healthcare organizations. Yet healthcare organizations continue to consider their
-            healthcare data as a proprietary asset. Adding complexity to RWD is inconsistent and/or
-            proprietary implementation health information technologies to meet the needs and
-            requests of the healthcare organization. Data analysts or data wranglers are charged
-            with making data understandable. Adding complexity to this challenge is inconsistent
-            and/or proprietary implementation of each EHR implementation to meet the needs and
-            requests of the healthcare organization. This inconsistent and/or proprietary database
-            design and EHR implementation impacts query methodology for secondary use of clinical
-            data across healthcare systems. Each EHR vendor database structure is different and
-            proprietary. EHR vendors did not provide standardized terminology implementation
-            support, resulting in overreliance on third party terminology vendors to provide the
-            linkages between “provider-friendly” terminology and standardized clinical
-            terminologies. These ‘provider friendly terms’ are often mapped to a broader than or
-            inaccurate standardized language concept. Insight to the quality of these mappings is
-            opaque and error prone.</para>
-        <para>Clinical documentation by nursing or allied health professionals is rarely considered
-            as a source of data for research. Yet, their documentation may yield a rich source for
-            data. Additionally, their documentation is more likely to be captured in a structured
-            manner in the form of structured (and often researched and validated) assessments and
-            flowsheets. Ideally, RWD for RWE is extracted directly from clinical
-            documentation.</para>
-        <para>To address this issue, research databases were created to allow researchers access
+            healthcare data as a proprietary asset. Adding complexity to this challenge is the
+            inconsistent and/or proprietary nature of each EHR implementation to meet the needs and
+            requests of the specific healthcare organization. This design and EHR implementation
+            then impacts query methodology for secondary use of clinical data across healthcare
+            systems and an overreliance on third party terminology vendors to provide the linkages
+            between “provider-friendly” terminology and standardized clinical terminologies. These
+            ‘provider friendly terms’ are often mapped to a broader than or inaccurate standardized
+            language concept and insight to the quality of these mappings is opaque and error
+            prone.</para>
+        <para>To address this issue, research databases were created to allow researchers access to
             clinical data without actual access to the EHR. EHR database managers utilize “extract,
             transform, load” (ETL) to move data from EHR database(s) or other sources to a unified
             repository—typically a data warehouse. However, the ETL process relies on structured and
@@ -678,4 +690,3 @@
         </orderedlist>
     </section>
 </chapter>
-        

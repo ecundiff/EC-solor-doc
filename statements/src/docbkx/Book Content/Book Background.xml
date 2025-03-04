@@ -4,14 +4,15 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
     <title>IKM Book Background</title>
+    
     <section>
         <title>Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
             Overview</title>
         <para>Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
             is a public-private collaboration that started in 2015 with a singular focus: improving
             the interoperability and utility of in vitro diagnostic (IVD) test data. To accomplish
-            their mission of being able to “Describe the same test the same way anywhere in the
-            Healthcare ecosystem”, SHIELD is working to develop a solution that focuses on:</para>
+            their mission of being able to “describe the same test the same way anywhere in the
+            healthcare ecosystem”, SHIELD is working to develop a solution that focuses on:</para>
         <itemizedlist>
             <listitem>
                 <para><emphasis role="bold">Ecosystem Engagement</emphasis> - Collaborating and
@@ -39,42 +40,27 @@
     <section>
         <title>Real World Evidence (RWE) and Standards Overview</title>
         <para>Real world evidence (RWE) using RWD collected as part of routine clinical care, has
-            been heralded as an answer to many of the woes of our medical system. A vision has been
-            made popular that suggests a wealth of untapped data – electronic health records (EHR),
-            medical imaging, mobile apps, and, more recently, low-cost gene sequencing and wearable
-            devices, unlocked using artificial intelligence and cloud computing – is a path to
-            better diagnostics, personalized treatments, and early disease prevention for millions.
-            Interoperable Health Data may help medicine realize the future in the same way in which
-            other industries have advanced – such as banking, the “internet of things” and online
-            shopping, thereby stressing the importance of establishing the Laboratory
-            Interoperability Data Repository (LIDR) and related infrastructure. The vision of a
-            national interoperable health information system has been elusive because of siloed
-            clinical care data , incompatible health information technology (IT) systems, and
-            proprietary software that make health information difﬁcult to exchange, analyze, and
-            interpret. </para>
+            been heralded as an answer to many of the woes of our medical system. There is a wealth
+            of untapped data from electronic health records (EHR), medical imaging, mobile apps,
+            and, more recently, low-cost gene sequencing and wearable devices, that could be
+            unlocked with artificial intelligence (AI) and cloud computing to support better
+            diagnostics, personalized treatments, and early disease prevention for millions.
+            Interoperable health data can help the medical field realize the future in the same way
+            that online banking and shopping revolutionized their respective industry, thereby
+            stressing the importance of establishing tools and resources that can support
+            interoperability, such as Laboratory Interoperability Data Repository (LIDR) and related
+            infrastructure. The vision of a national interoperable health information system has
+            been elusive because of siloed clinical care data, incompatible health information
+            technology (IT) systems, and proprietary software that make health information diffcult
+            to exchange, analyze, and interpret. </para>
         <para>Given the number of distinct information systems and care delivery organizations in
             the ecosystem (e.g., primary care, specialists, laboratories, other care teams),
-            multiple variations exist in how data is collected, manipulated, transmitted, and
-            effectively used. The problem is not the systems per se, but rather the difficulty of
-            data exchange between systems or data incompatibility. Medical data range in format from
-            narrative, textual data to numerical measurements, recorded signals, photographs,
-            drawings, and more. There is also the challenge of the volume of data recorded. Several
-            different observations of a patient are often made concurrently, the observation of the
-            same patient parameter made at several points in time, or both. [1] It is also important
-            to keep a record of the circumstances under which data are obtained. For example, is a
-            blood pressure reading taken on the arm or the leg, had the patient just exercised, what
-            kind of device was used, etc. </para>
-        <para>Representing these data in various, disparate information systems introduces
-            additional opportunities for inefficiencies, redundancies, and inconsistencies. Each
-            system has a proprietary, standard, or ad-hoc information model and is typically
-            configured to satisfy organization-specific needs, resulting in differences in data
-            capture and storage between and within systems. This is the current reality, as
-            electronic health data are represented in unpredictable and denormalized forms. This
-            reduces the quality of data processing and ability to conduct safe and reliable
-            analytics. Numerous scholarly and practical efforts illustrate the challenges of using
+            multiple variations exist in how data is collected, manipulated, transmitted,
+            effectively used, and represented across various, disparate information systems.
+            Numerous scholarly and practical efforts have illustrated the challenges of using
             observational data for safe patient care, comparative effectiveness research, and
             analysis including recording biases, workflow differences, and issues with variations in
-            data collection, such as invalid, inconsistent, and missing data. [2] </para>
+            data collection, such as invalid, inconsistent, and missing data. [1-2] </para>
         <para>Aggregated RWE and reliable analytics would benefit from implementable methodologies
             that address interoperability and data aggregation gaps to help establish a health data
             ecosystem capable of widespread use in regulatory efforts, public health surveillance,
@@ -173,40 +159,30 @@
                 amount of data wrangling” and one-off transformations across the ecosystem and
                 instead enable “data liquidity”, or the ability of data to flow throughout the
                 health data ecosystem easily and securely so that it is quickly available to
-                clinicians, decision makers, laboratories, patients, and others when they need. A
-                robust information architecture and scalable solution to enable this ideal state
+                clinicians, decision makers, laboratories, patients, and others when they need. </para>
+            <para>A robust information architecture and scalable solution to enable this ideal state
                 requires a common understanding of data and a method to support
                 knowledge-representation and assertional and procedural rules based on common
                 terminology and statement models. If a shareable architecture were able to be
                 implemented across the ecosystem, health data and knowledge could potentially be
-                represented in a way that is both applicable at the interoperability-enterprise and
-                project-specific levels. </para>
+                represented in a way that is both applicable at enterprise and project-specific
+                levels. </para>
             <para>Another pragmatic methodology would be to engage vendors and incentivize them to
                 implement an open, common data model and produce shareable output in interoperable,
                 reproducible, and understandable formats that could then be ingested by other
-                systems. Major U.S. EHR vendors, which represent > 80% of the U.S. healthcare EHR
-                implementations, represent a possible avenue to normalizing and aggregating
-                EHR-based data in the U.S. on a broad scale. Individually, each vendor has
-                independently attempted to create such clinical data resources and product offerings
-                for their user communities. These efforts entail attempts to align, normalize, and
-                aggregate the EHR data held by each individual client into a large, de-identified
-                data enclave for purposes of data analytics, quality improvement, and research.
-                Unfortunately, these independent efforts are proprietary and do not extend beyond
-                the vendor-user community. Further, the data normalization and representation
-                process remains a "black box" and cannot be independently verified for semantic
-                correctness, data and information loss or gains, or appropriate application of
-                metadata standards. In fact, these vendor-centric efforts face the same issues with
-                vendor-centric data alignment and reuse on a smaller scale. [4-5] Despite these
-                weaknesses, an opportunity exists to collaborate with EHR vendors to normalize and
-                apply metadata standards safely and reliably to the EHR data created by their
-                clients. To capitalize on this opportunity, vendors must be allowed to create unique
-                value in their data offerings to the clientele but also be required to expose these
-                data to the broader community such that data collected by numbers of vendors can be
-                safely and reliably aggregated for research, public health, clinical quality
-                improvement and regulatory uses as described by SHIELD. </para>
+                systems. While major U.S. EHR vendors have independently attempted to create such
+                clinical data resources and product offerings, they are often proprietary and do not
+                extend beyond the vendor-user community. Further, the data normalization and
+                representation process remains a "black box" and cannot be independently verified
+                for semantic correctness, data and information loss or gains, or appropriate
+                application of metadata standards. [4-5] Despite these weaknesses, an opportunity
+                exists to collaborate with EHR vendors to create unique value in their data
+                offerings to the clientele, while ensuring data can be safely and reliably
+                aggregated for research, public health, clinical quality improvement and regulatory
+                uses as described by SHIELD. </para>
         </section>
         <section>
-            <title>Metadata overview</title>
+            <title>Metadata Overview</title>
             <para>An important construct for enabling RWE analytics, knowledge management, data
                 integration, and decision support, is adoption and reproducible encoding of health
                 data using biomedical terminologies. Acceleration and development of EHR systems
@@ -237,20 +213,18 @@
                     </listitem>
                     <listitem>
                         <para>Ability to represent local concepts using codes and terms that are
-                            modeled extensions to standard terminologies (e.g., “COVID-19 negative
+                            modeled extensions to standard terminologies (e.g., “COVID-19 positive
                             test result” was needed in practical use before official SDO releases,
-                            or gaps like “mild anemia”, which was proposed, but not accepted, by
-                            both the international and U.S. SNOMED CT® release)</para>
+                            or providers wanting to use “mild anemia”, which was proposed, but not
+                            accepted, by both the international and U.S. SNOMED CT® release)</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>Ability to identify flawed information or incorrect usage or
-                            representation of concepts from standard terminologies due to a lack of
-                            harmonization and multiple representations that exist across disparate
-                            standards (e.g., LOINC® and SNOMED CT® have overlapping concepts)</para>
+                        <para>Ability to identify equivalent concept representations that exist
+                            across disparate standards (e.g., LOINC® and SNOMED CT®)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -258,7 +232,8 @@
                 <itemizedlist>
                     <listitem>
                         <para>Ability to safely change over time in a clear way so that changes are
-                            easily understood by implementers. (e.g., redundancy, major name)</para>
+                            easily understood by implementers. (e.g., redundancy, fully specified
+                            name)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -458,22 +433,17 @@
                     Health Data Sciences and Informatics collaborative. [13]</emphasis></para>
             <section>
                 <title>SNOMED CT® Overview</title>
+                <para>SNOMED CT® is a terminology standard that holds a yearly Expo as a forum for
+                    EHR vendors, health terminology specialists and the community of practice to
+                    exchange best practices and measure progress towards the implementation of
+                    SNOMED CT® across the world. SNOMED International consist of member countries,
+                    of which the US is one of its inaugural members.</para>
                 <para>Regulations have had a significant impact on the adoption of SNOMED CT®:
                     [13]</para>
                 <itemizedlist>
                     <listitem>
-                        <para>SNOMED International consist of member countries, of which the US is
-                            one of its inaugural members.</para>
-                    </listitem>
-                    <listitem>
-                        <para>SNOMED CT® holds a yearly Expo as a forum for EHR vendors, health
-                            terminology specialists and the community of practice to exchange best
-                            practices and measure progress towards the implementation of SNOMOED CT®
-                            across the world.</para>
-                    </listitem>
-                    <listitem>
                         <para>In the U.S., EHRs are required to use SNOMED CT® for documenting the
-                            following: problem lists, procedures and some clinical findings, (i.e.
+                            following: problem lists, procedures, and some clinical findings, (i.e.
                             smoking status).</para>
                     </listitem>
                     <listitem>
@@ -568,24 +538,27 @@
                         <listitem>
                             <para><emphasis role="bold">Reference Value Sets</emphasis> - Electronic
                                 clinical quality measure drug value sets are defined in reference to
-                                RxNorm for the Meaningful use incentive program.</para>
+                                RxNorm for the Meaningful Use incentive program.</para>
                         </listitem>
                         <listitem>
                             <para><emphasis role="bold">Analytics</emphasis> - RxNorm is
-                                increasingly being used as a drug stand for clinical data
+                                increasingly being used as a drug standard for clinical data
                                 warehouses. As an example, OHDSI research group uses RxNorm for
                                 representing drugs as part of its Observational Medical Outcomes
                                 Partnership (OMOP) common data model (CDM).</para>
                         </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Common Data Model</emphasis> - PCORnet also
+                                uses RxNorm in its common data model.</para>
+                        </listitem>
                     </itemizedlist></para>
-                <para>PCORnet also uses RxNorm in its common data model.</para>
             </section>
             <section>
                 <title>Interoperability Concerns</title>
                 <para>Despite widespread adoption, there are concerns regarding the interoperability
-                    and reliability of LOINC® between organizations. These concerns inspired several
-                    scholarly and practical efforts to champion and facilitate laboratory data
-                    exchange.</para>
+                    and reliability of these terminology standards between organizations. These
+                    concerns inspired several scholarly and practical efforts to champion and
+                    facilitate laboratory data exchange.</para>
                 <para>Examples of Scholarly and Practical Efforts to Assess SNOMED CT® from SNOMED
                     CT® Interoperability Projects:<itemizedlist>
                         <listitem>
@@ -612,7 +585,7 @@
                                 mismatched LOINC® code by the medical centers.” [9]</para>
                         </listitem>
                         <listitem>
-                            <para>A study auditing consistency of LOINC® encoding between three
+                            <para>A study auditing consistency of LOINC® encoding across three
                                 institutions stated, "There are variations in the way LOINC® is used
                                 for data exchange that result in some data not being truly
                                 interoperable across different enterprises." [15]</para>
@@ -665,7 +638,7 @@
             to establish a foundation for versioning and modularity architecture that allows changes
             and subchanges to be referenced uniquely so that all parties can be on the same page as
             to a particular version.</para>
-        <para>For example, the following diagram shows how each module could be given a unique
+        <para>For example, the following figure shows how each module could be given a unique
             version number and contain all layers of the architectural stack. In the instance that a
             particular versioned module needs to be extended, an extension module could be added to
             that main versioned module without the need to go to a completely new full module
@@ -777,12 +750,11 @@
                         2011; 50 (2): 105–14.</para>
                 </listitem>
                 <listitem>
-                    <para>Bietenbeck A, Boeker M, Schulz S. NPU, loinc, and SNOMED CT: A comparison
+                    <para>Bietenbeck A, Boeker M, Schulz S. NPU, LOINC, and SNOMED CT: A comparison
                         of terminologies for laboratory results reveals individual advantages and a
                         lack of possibilities to encode interpretive comments [Internet]. De
                         Gruyter. De Gruyter; 2018 [cited 2022Oct19]. Available from:
-                        https://www.degruyter.com/document/doi/10.1515/labmed-2018-0103/html?lang=en
-                    </para>
+                        https://www.degruyter.com/document/doi/10.1515/labmed-2018-0103/html?lang=en </para>
                 </listitem>
                 <listitem>
                     <para>Lin M, Vreeman D, McDonald C, et al. Auditing consistency and usefulness
@@ -846,7 +818,7 @@
                         https://www.ncbi.nlm.nih.gov/books/NBK338585/</para>
                 </listitem>
                 <listitem>
-                    <para>Chassin, M. R., &amp; Loeb, J. M. (2013). High‐reliability health care:
+                    <para>Chassin, M. R., &amp; Loeb, J. M. (2013). High‐Reliability health care:
                         getting there from here. The Milbank Quarterly, 91(3), 459-490.</para>
                 </listitem>
                 <listitem>

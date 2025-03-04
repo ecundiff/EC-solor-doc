@@ -54,11 +54,8 @@
                 <para><emphasis role="bold"><emphasis role="italic">Crossing the Quality Chasm
                             (2001)</emphasis></emphasis> – described the quality gaps in healthcare,
                     how current practices degrade quality, and how to take systems approaches to
-                    improve quality. Aims for quality improvement included safety as system
-                    property, effectiveness, patient-centeredness, timeliness, efficiency, and
-                    equity regardless of gender, ethnicity, geographic location, or socio-economic
-                    status. The report furthered the need for digitized health information systems.
-                    [22]</para>
+                    improve quality. The report furthered the need for digitized health information
+                    systems. [22]</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold"><emphasis role="italic">Health IT and Patient Safety
@@ -204,10 +201,10 @@
             design is enhanced when system control structures are modelled, monitored, and audited
             using system safety engineering principles such as STPA. </para>
         <para>Safety in a health data context includes clinical decision support, safe data
-            exchange, and safe use of health data for regulatory oversight, health equity, research,
-            and population health decision-making. Furthermore, poor data quality degrades patient
-            safety especially among disparate health populations when using low quality data to
-            train AI models for patient care. [32]</para>
+            exchange, and safe use of health data for regulatory oversight, research, and population
+            health decision-making. Furthermore, poor data quality degrades patient safety
+            especially among disparate health populations when using low quality data to train AI
+            models for patient care. [32]</para>
         <para><emphasis role="bold">Spotlight Case Study #1: STPA of the U.S. Diagnostic Laboratory
                 Data Ecosystem</emphasis></para>
         <para>The STPA of the U.S. Diagnostic Laboratory Data Ecosystem, was a proactive analysis

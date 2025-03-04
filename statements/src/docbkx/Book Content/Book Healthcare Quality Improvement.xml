@@ -163,11 +163,11 @@
         <section><title>Challenges in Healthcare Quality Management</title>
         
         <para>Despite the association between low-quality healthcare and significant mortality and
-            economic impacts, especially in low- and medium-income countries, healthcare systems
-            globally struggle to provide a consistent, standardized, and high-quality standard of
-            care. Issues surrounding clinical workflows, the workforce, stagnant healthcare systems,
-            and health equity all pose challenges that need to be addressed to improve the quality
-            of care provided.</para>
+                economic impacts, especially in low- and medium-income countries, healthcare systems
+                globally struggle to provide a consistent, standardized, and high-quality standard
+                of care. Issues surrounding clinical workflows, the workforce, and stagnant
+                healthcare systems all pose challenges that need to be addressed to improve the
+                quality of care provided.</para>
         <para>Issues optimizing clinical workflows lead to inefficient practices, incomplete
                 information, alert fatigue, and delays in care, which further compound and
                 contribute to clinician dissatisfaction and turnover. Beyond suboptimal workflows,
@@ -183,15 +183,10 @@
                 healthcare workflows is meant to save time and improve efficiencies, it often leads
                 to added stress, burnout, fatigue, and errors. Healthcare systems will need to find
                 a way to upskill the workforce to lessen the technological burden, improve existing
-                work systems, and alleviate the stress of a diminished talent pipeline. </para>
-        <para>Another key component of healthcare delivery is health equity. Advancing health equity
-                by addressing healthcare disparities, including socioeconomic, racial, and
-                gender-based inequities, is a complex and critical challenge in healthcare. High
-                quality demographic data has been linked to improved, patient-centered outcomes and
-                is critical for identifying, addressing, and reducing current health disparities.
-                All of these challenges are bookended by patient safety, with issues like medication
-                errors, diagnostic inaccuracies, and hospital-acquired infections (HAIs) continuing
-                to pose significant challenges to healthcare quality. [10]</para>
+                work systems, and alleviate the stress of a diminished talent pipeline. All of these
+                challenges are bookended by patient safety, with issues like medication errors,
+                diagnostic inaccuracies, and hospital-acquired infections (HAIs) continuing to pose
+                significant challenges to healthcare quality. [10]</para>
         </section>
         <section><title>The Role of Data and Information Management in Healthcare
                 Quality</title>
@@ -474,12 +469,6 @@
                         role="italic">Engagement: </emphasis>Surveys and feedback mechanisms to
                     gauge the impact on healthcare providers' workflow and job satisfaction.
                     [25]</para></listitem>
-            <listitem><para><emphasis role="italic">Health </emphasis><emphasis role="italic">Equity:
-                    </emphasis>Collection of patient data including Race, Ethnicity, and Language,
-                    and percentage of workforce trained in collecting this data. Other domains
-                    include data collection and use, cultural competency trainings, Diversity,
-                    Equity, and Inclusion (DEI) in leadership, and strength of community
-                    partnerships. [26]</para></listitem>
         </orderedlist>
         <para>Evaluating the effectiveness of IKM and Tinkar requires a robust data analysis to
             assess the changes in healthcare delivery and outcomes before and after implementation.
@@ -498,7 +487,7 @@
             and patient monitoring. Shifting the focus to patient engagement, the healthcare process
             experience, and regular training and education will ensure that both patients and
             providers are centered in the process and healthcare professionals are up-to-date with
-            the latest technologies and practices in healthcare quality improvement. [27]</para>
+            the latest technologies and practices in healthcare quality improvement. [26]</para>
     </section>
     <section>
         <title>Implementation Considerations</title>
@@ -720,16 +709,6 @@
                 <para>CDC. CDC Policy Process | Policy, Performance, and Evaluation | CDC
                     [Internet]. www.cdc.gov. 2023. Available from:
                     https://www.cdc.gov/policy/paeo/process/index.html</para>
-            </listitem>
-            <listitem>
-                <para>Orand J. Most important metrics for a healthcare quality management dashboard
-                    | symplr [Internet]. www.symplr.com. 2021. Available from:
-                    https://www.symplr.com/blog/most-important-metrics-healthcare-quality-dashboard</para>
-            </listitem>
-            <listitem>
-                <para>Health Equity, Diversity &amp; Inclusion Measures for Hospitals and Health
-                    System Dashboards [Internet]. Available from:
-                    https://ifdhe.aha.org/system/files/media/file/2020/12/ifdhe_inclusion_dashboard.pdf</para>
             </listitem>
             <listitem>
                 <para>Harvard T.H. Chan School of Public Health. 8 Healthcare Quality Improvement

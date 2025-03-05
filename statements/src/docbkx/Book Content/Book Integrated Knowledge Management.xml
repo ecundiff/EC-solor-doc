@@ -11,41 +11,47 @@
             data with the emergence of technologies and advanced analytics, such as artificial
             intelligence (AI) and machine learning (ML). Individuals and organizations alike are
             continuously generating data which may sit in siloed databases but, with the appropriate
-            tools, can be aggregated across platforms, analyzed, and utilized. However, the flow of
-            data through systems can lead to a myriad of issues including loss of meaning, inability
-            to aggregate data, misinterpretation, and more. Achieving coordinated and standardized
-            ways to integrate data across systems is an important tenet of integrated knowledge
-            management (IKM). </para>
+            tools, can be aggregated across platforms, analyzed, and utilized. However, the data
+            liquidity through systems can lead to a myriad of issues including loss of meaning,
+            inability to aggregate data, misinterpretation, and more. Achieving coordinated and
+            standardized ways to integrate data across systems is an important tenet of integrated
+            knowledge management (IKM). </para>
         <para>Currently, implementers must know how to work with all the existing standards and be
             familiar with their respective rules and formats. Through this body of work, we are
             advancing a reference demonstration of an IKM environment that can be used by various
             stakeholders in the laboratory ecosystem to easily view, manage, and integrate existing
-            knowledge standards (e.g., SNOMED CT® , LOINC®) in a singular location, ultimately
-            allowing users to identify relationships between disparate knowledge sets. This work
-            will help set the foundation for a common model that would eventually help promote
-            collaboration across standards-development organizations, vendors, and
-            provider-organizations, improving interoperability of laboratory data across the entire
-            ecosystem. Through IKM, all standards work together under one data model with tooling to
-            work across standards and reduce redundancies. IKM can benefit the healthcare ecosystem
-            and society by improving patient outcomes, allowing meaningful data analyses, and
-            increasing interoperability. </para>
+            terminology content standards in a singular location, ultimately allowing users to
+            identify relationships between disparate knowledge sets. This work will help set the
+            foundation for a common model that would eventually help promote collaboration across
+            standards-development organizations, vendors, and provider-organizations, improving
+            interoperability of laboratory data across the entire ecosystem. Through IKM, all
+            standards work together under one data model with tooling to work across standards and
+            reduce redundancies. IKM can benefit the healthcare ecosystem and society by improving
+            patient outcomes, allowing meaningful data analyses, and increasing interoperability. </para>
     </section>
     <section>
         <title>The Problem IKM Addresses </title>
-        <para>In healthcare, organizations that help achieve standardized health data are referred
-            to as Standards Development Organizations (SDOs). SDOs exist in every industry, but in
-            health Information Technology (IT) the following are key examples: <informaltable>
+        <para>In healthcare, Standards Development Organizations (SDOs) develop, maintain, and
+            distribute or publish healthcare standards. SDOs exist in every industry, but in health
+            Information Technology (IT) the following are key examples of healthcare standards
+            developed by the Regenstrief Institute: <informaltable>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1"/>
                     <colspec colnum="2" colname="col2"/>
                     <tbody>
                         <row>
-                            <entry>SNOMED CT® </entry>
+                            <entry>
+                                <para>Systematized Nomenclature of Medicine</para>
+                                <para>Clinical Terms (SNOMED CT®)</para>
+                            </entry>
                             <entry>A national standard, comprehensive and precise multilingual
                                 health terminology globally [1]</entry>
                         </row>
                         <row>
-                            <entry>LOINC®</entry>
+                            <entry>
+                                <para>Logical Observation Identifiers, Names, and Codes
+                                    (LOINC®)</para>
+                            </entry>
                             <entry>Logical Observation Identifiers Names and Codes terminology:
                                 facilitate the exchange and pooling of clinical or laboratory
                                 results for clinical care, outcomes management, claims attachment,
@@ -69,15 +75,16 @@
                     </tbody>
                 </tgroup>
             </informaltable></para>
-        <para>The Office of the National Coordinator for Health Information Technology (ONC)
-            currently oversees and promotes SDOs and supports the adoption and application of health
-            data standards in the U.S. healthcare space. The structure and meaning of data must be
-            maintained to achieve full data integrity and a truly interoperable system. FHIR is an
-            example of a standard that works to maintain the structure of data as it flows through
-            systems, while terminology organizations including SNOMED CT®, RxNorm, and LOINC® work
-            to maintain the meaning of data. With the many existing SDOs and agencies pushing their
-            adoption, issues such as overlapping coding standards, loss of meaning, and partial
-            representation continue to exist. </para>
+        <para>The Assistant Secretary for Technology Policy and Office of the National Coordinator
+            for Health Information Technology (ASTP/ONC) currently oversees and promotes SDOs and
+            supports the adoption and application of health data standards in the U.S. healthcare
+            space. The structure and meaning of data must be maintained to achieve full data
+            integrity and a truly interoperable system. FHIR is an example of a standard that works
+            to maintain the structure of data as it flows through systems, while terminology
+            organizations including SNOMED CT®, RxNorm, and LOINC® work to maintain the meaning of
+            data. With the many existing SDOs and agencies pushing their adoption, issues such as
+            overlapping coding standards, loss of meaning, and partial representation continue to
+            exist. </para>
         <para>While medical terminology standards exist, the way they record, manage, and represent
             terminologies differs, leading to redundant and duplicative ways to reference the same
             concept. This leads to variations in clinical data exchange across the ecosystem as
@@ -134,12 +141,12 @@
             including:</para>
         <itemizedlist>
             <listitem>
-                <para><emphasis role="bold">Import</emphasis> – The data model must be able to pull
-                    and visualize data from LOINC®, SNOMED CT®, and other terminology standards into
-                    the model’s data elements. Displaying the disparate terminology standards in a
-                    single place will allow users and authors to compare commonalities and
-                    differences between standards, identify equivalent concepts, and understand how
-                    concepts relate to one another.</para>
+                <para><emphasis role="bold">Import</emphasis> – The data model must be able to load
+                    and represent disparate terminology sources such as LOINC® and SNOMED CT® in a
+                    common model without loss of fidelity Displaying the disparate terminology
+                    standards in a single place will allow users and authors to compare
+                    commonalities and differences between standards, identify equivalent concepts,
+                    and understand how concepts relate to one another.</para>
             </listitem>
             <listitem>
                 <para>
@@ -202,7 +209,7 @@
             complex and individual elements of each standard then allows continual process
             improvement, including rapid extension development. Edits to concepts or newly authored
             concepts in Tinkar can be tested and previewed before deployment to a live environment
-            and historic versioning of meta data is perpetually maintained to support iterative
+            and historic versioning of metadata is perpetually maintained to support iterative
             authoring, development, and versioning. [5]</para>
         <para>Tinkar aims to improve the quality of patient care across the healthcare enterprise by
             creating a cross-cutting and common model that can integrate other terminology standards
@@ -295,11 +302,11 @@
                 participation, like:</para>
             <itemizedlist>
                 <listitem>
-                    <para>The Centers for Medicare and Medicaid Services (CMS) and Office of the
-                        National Coordinator for Health IT (ONC) will need to outline minimum data
-                        requirements for orders to ensure the participating entities are capturing
-                        standardized data elements for standardized questions that come from a
-                        well-known and widely available source of truth.</para>
+                    <para>The Centers for Medicare and Medicaid Services (CMS) and ASTP/ONC will
+                        need to outline minimum data requirements for orders to ensure the
+                        participating entities are capturing standardized data elements for
+                        standardized questions that come from a well-known and widely available
+                        source of truth.</para>
                 </listitem>
                 <listitem>
                     <para>The Food and Drug Administration (FDA) will need to develop an

@@ -5,36 +5,37 @@
     <title>Introduction to the Integrated Knowledge Management (IKM) Book</title>
     <section>
         <title>Preface</title>
-        <para>“The discipline of bringing all knowledge resources into a unified paradigm where the
-            resources all share a common underlying representation that integrates version control,
-            configuration management, modularity, concept-oriented representation, and standardized
-            viewing, collaborative editing, and extension development capabilities within a shared
-            knowledge-management environment.”</para>
+        <para>Integrated Knowledge Management (IKM) is “the discipline of bringing all knowledge
+            resources into a unified paradigm where the resources all share a common underlying
+            representation that integrates version control, configuration management, modularity,
+            concept-oriented representation, and standardized viewing, collaborative editing, and
+            extension development capabilities within a shared knowledge-management
+            environment.”</para>
         <para>Keith E. Campbell, MD, PhD</para>
     </section>
     <section>
-        <title>IKM Book Motivation</title>
+        <title>Motivation</title>
         <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
             number of sources to make informed clinical decisions. While this data is a critical
-            component of providing patients with the best care possible, major challenges exist with
-            the accuracy, interoperability, and quality of data that is transmitted within and
-            between healthcare systems. Clinical terminology standards are calling for one strategy
-            to standardize data collection and improve the quality of patient care with standardized
-            and repeatable guidelines for encoding health data. However, these standards often lose
-            critical aspects of the original data capture when they are shared with other providers
-            and healthcare systems. To enhance the quality, interoperability and usability of
-            patient data, the health care industry requires a solution that harmonizes the different
-            clinical terminology standards and generates a common model that supports patient care,
-            data querying and analysis, public health, and policy making. Interoperable data in an
-            ideal world would eliminate patient harm and other inefficiencies stemmed from data
-            misrepresentations and errors in the health care ecosystem. The motivation for this work
-            is to explore the pathway to unifying a patient’s care experience through reliable and
-            interoperable data that supports accurate and timely clinical decision support that is
-            solely prompted and driven by real-world data and provides real-time assistance to
-            clinicians.</para>
-        <para>The essential challenge of informatics practice within the healthcare enterprise is to
-            quickly deliver a high fidelity reasoned interpretation of principles and facts to the
-            point of care—and then to quickly aggregate these point of care experiences for analytic
+            component of supporting well-informed clinical decision making and the safe delivery of
+            care, major challenges exist with the accuracy, interoperability, and quality of data
+            that is transmitted within and between healthcare systems. Clinical terminology
+            standards are one strategy to standardize data collection and improve the quality of
+            patient care with standardized and repeatable guidelines for encoding health data.
+            However, these standards often lose critical aspects of the original data capture when
+            they are shared with other providers and healthcare systems. To enhance the quality,
+            interoperability, and usability of patient data, the health care industry requires a
+            solution that harmonizes the different clinical terminology standards and generates a
+            common model that supports patient care, data querying and analysis, public health, and
+            policy making. Interoperable data in an ideal world would eliminate patient harm and
+            other inefficiencies stemming from data misrepresentations and errors. The motivation
+            for this work is to explore the pathway to unifying a patient’s care experience through
+            reliable and interoperable data that supports accurate and timely clinical decision
+            support that is solely prompted and driven by real-world data and provides real-time
+            assistance to clinicians.</para>
+        <para>The essential challenge of the informatics practice within the healthcare enterprise
+            is to quickly deliver a high fidelity reasoned interpretation of principles and facts to
+            the point of care—and then to quickly aggregate these point of care experiences for
             analysis so that new principles and facts can be formulated and validated as part of a
             continuous optimization of healthcare knowledge and delivery. To effectively answer this
             challenge, we must focus on simplification and integration of knowledge assets, and on
@@ -47,21 +48,19 @@
     </section>
     <section>
         <title>Overview of the IKM Book</title>
-        <para>The Integrated Knowledge Management (IKM) Book serves as an educational resource to
-            allow stakeholders to perform a deep dive into the IKM Architecture this team has worked
-            to develop. </para>
-        <section>
-            <title>Purpose of This Document</title>
-            <para>This Book will act as 1) a reference for understanding the complex, multi-layered,
-                and highly interdependent Health IT landscape, and 2) a framework for the
-                implementation of a layered, architecture-based approach to integrating and managing
-                knowledge in the healthcare ecosystem that will seek to solve the previously
-                identified issues.</para>
-            <para>This framework, referred to throughout the Book as the Knowledge Architecture, is
-                a methodology seeking to enable the concept of Integrated Knowledge Management
-                throughout the healthcare ecosystem.</para>
-            <para>Through examples and illustrations, this Book seeks to demonstrate that such an
-                approach for managing knowledge will allow for:</para>
+        <para>The IKM Book serves as an educational resource to allow stakeholders to perform a deep
+            dive into the IKM Architecture this team has worked to develop. This Book will act as a
+            reference for understanding the complex, multi-layered, and highly interdependent Health
+            Information Technology (IT) landscape, and a framework for the implementation of a
+            layered, architecture-based approach to integrating and managing knowledge in the
+            healthcare ecosystem that will seek to solve the previously identified issues.</para>
+        <para>This framework, referred to throughout the Book as the 'Knowledge Architecture', is a
+            methodology seeking to enable the concept of IKM throughout the healthcare
+            ecosystem.</para>
+        <para>Through examples and illustrations, this Book seeks to have a direct connection to
+            real world events and circumstances and demonstrate that this approach for managing
+            knowledge will allow for:</para>
+        
             <itemizedlist>
                 <listitem>
                     <para><emphasis role="italic">The ability to recognize equivalence between
@@ -85,13 +84,10 @@
                             technologies and policies are implemented.</emphasis></para>
                 </listitem>
             </itemizedlist>
-            <para>The intent of the IKM Book is to have a direct connection to real world events and
-                circumstances. </para>
-        </section>
         <section>
             <title>IKM Guiding Principles</title>
             <para>The following key principles are critical in our summarization and discussion of
-                Integrated Knowledge Management. </para>
+                IKM. </para>
             <para>Functional decomposition—often referred to as a Separation of Concerns
                 (SoC)—across components or sections with a specific purpose is a foundational design
                 principle for complex system architecture. SoC allows a complete system to be
@@ -100,15 +96,12 @@
                 as well as designed, implemented, and updated independently to address emerging
                 requirements. This is especially useful and important in a medical context given how
                 many different health information and clinical terminology projects are ongoing at
-                any given time. Efforts are often uncoordinated and led by disparate and unrelated
-                standards development organizations. In these cases, SoC allows teams to
-                simultaneously work independently and in coordination with each other and reuse the
-                resulting artifacts.</para>
+                any given time.</para>
             <para>The architecture presented in this Book is inspired by core evolutionary design
-                principles called “Understandable, Reproducible, and Useful,” upon which
-                Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®) development is
-                still based. [1, 2] These criteria describe an approach for improving data quality
-                and increasing data integrity and agility: </para>
+                principles called “Understandable, Reproducible, and Useful” upon which Systematized
+                Nomenclature of Medicine Clinical Terms (SNOMED CT®) development is still based. [1,
+                2] These criteria describe an approach for improving data quality and increasing
+                data integrity and agility: </para>
             <itemizedlist>
                 <listitem>
                     <para><emphasis role="bold">Understandable: </emphasis>The content can be
@@ -131,13 +124,13 @@
                 within a tooling’s software development methodology: Use-case driven,
                 architecture-centric, iterative and incremental.<itemizedlist>
                     <listitem>
-                        <para><emphasis role="bold">Use-case Driven</emphasis>: Defining,
+                        <para><emphasis role="bold">Use-Case Driven</emphasis>: Defining,
                             developing, and refining software design(s) to meet known and emerging
                             use cases enable software solutions to meet critical real-world
                             needs.</para>
                     </listitem>
                     <listitem>
-                        <para><emphasis role="bold">Architecture-centric</emphasis>: Formally
+                        <para><emphasis role="bold">Architecture-Centric</emphasis>: Formally
                             documenting the “layers” of capabilities that a software system may have
                             enables developers to identify dependencies between layers, allowing for
                             shared responsibility of reducing functional complexity across the
@@ -166,55 +159,26 @@
                 system upwards of $30 billion per year. The introduction of industry-wide
                 interoperability could improve upon these expenditures by reducing adverse events,
                 redundant testing, clinician’s time spent on manual data entry, and reducing length
-                of stay, resulting in significant savings.[4-7] Implementing Integrated Knowledge
-                Management will reduce the challenges associated with unpredictable, poorly
-                controlled, and reactive health IT data. This lack of interoperable data hinders
-                advancements and innovation in the healthcare system, including use of Artificial
-                Intelligence (AI) and Big Data, medical communications, research, and international
-                coordination, as new technologies must rely on suboptimal data and cannot achieve
-                their full potential. [8] The Knowledge Architecture described above will provide
-                the foundation for robust configuration management and quality assurance of health
-                IT data while allowing for a standardized update and extension process. This
-                approach will support increased clinical and laboratory data quality and enable
-                healthcare systems across the industry to conduct robust and meaningful data
-                analysis and increase overall interoperability, which ultimately enhances the
-                quality of care across all medical facilities. </para>
-            <para>The purpose of employing the Knowledge Architecture and enabling Integrated
-                Knowledge Management can be succinctly described through its benefits: increased
-                interoperability, improved patient outcomes, and meaningful data analysis. These
-                benefits cut across important aspects of healthcare including regulatory adherence,
+                of stay, resulting in significant savings.[4-7] Implementing IKM will reduce the
+                challenges associated with unpredictable, poorly controlled, and reactive health IT
+                data. This lack of interoperable data hinders advancements and innovation in the
+                healthcare system, including use of Artificial Intelligence (AI) and Big Data,
+                medical communications, research, and international coordination, as new
+                technologies must rely on suboptimal data and cannot achieve their full potential.
+                [8] </para>
+            <para>Our Knowledge Architecture, described above, will provide the foundation for
+                robust configuration management and quality assurance of health IT data while
+                allowing for a standardized update and extension process. This approach will support
+                increased clinical and laboratory data quality, enable healthcare systems across the
+                industry to conduct robust and meaningful data analysis, and improve the safety and
+                efficiency of care across the healthcare ecosystem. The benefits of our approach cut
+                across important aspects of healthcare including regulatory adherence,
                 patient-centric care, operational excellence, data management, innovation and
                 collaboration, and cost and fraud control. Additionally, incorporating aspects of
                 Highly Reliable Organization (HRO) data governance and data quality, HRO principles
                 can minimize errors, increase efficiency, and promote a culture of continuous
-                learning and improvement, all of which are highly relevant to this work. [9]</para>
-            <section>
-                <title>Increased Interoperability</title>
-                <para>Improved interoperability will reduce the need for clinicians to access
-                    important health records using dated methods, such as manual, phone, and fax
-                    transmission of health data and break down information silos. Medical facilities
-                    will have more interoperable capabilities, opening the door for future
-                    opportunities to integrate patient data with other agencies, community partners,
-                    and the private sector. [10]</para>
-            </section>
-            <section>
-                <title>Improved Patient Outcomes</title>
-                <para>Patient care will be optimized and efficient, enabling clinicians to provide
-                    high-quality care to patients across medical facilities that improves patient
-                    outcomes and provider productivity, and reduces adverse events and redundant
-                    testing. The potential of digital innovation in health care delivery can also
-                    contribute to advancing diagnosis and treatment options, facilitating
-                    introduction of telemedicine, promoting and supporting self-management, and
-                    reducing error. [11]</para>
-            </section>
-            <section>
-                <title>Meaningful Data Analysis</title>
-                <para>Medical facilities will be able to easily query specific health factors to
-                    gain necessary insights, draw conclusions, and make recommendations based on
-                    accurate patient data. Improved data interoperability will also support policy
-                    makers and public health experts make informed decisions that more appropriately
-                    address evolving needs and priorities. [12]</para>
-            </section>
+                learning and improvement, all of which are highly relevant to this work.
+                [9-12]</para>
         </section>
     </section>
     <section>
@@ -226,16 +190,16 @@
             pulse oximetry, manual) about past observations or requests for future interventions.
             While two quantitative measurements may be the same, the procedural information could
             indicate meaningful semantic differences and lead to different clinical interpretation
-            and treatment. As information is exchanged across systems, the solution requires a
-            common understanding of data, a method to support knowledge representation, and clinical
-            decision rules based on common terminology and statements. Each component must address
-            an aspect and together need to address the requirements of clinicians. Current HL7
-            standard implementations rely on profiles and templates to disambiguate statement and
-            terminology and provide sufficient precision for transactions, documents, and
-            standards-based Application Programming Interfaces (APIs). Therefore, the architectural
-            approach described here is applicable to standards organizations developing
-            interoperability for enterprise and project-specific implementations in equal
-            measure.</para>
+            and treatment. As information is exchanged across systems, an interoperable solution
+            requires a common understanding of data, a method to support knowledge representation,
+            and clinical decision rules based on common terminology and statements to ultimately
+            address the requirements of medical proffesionals. Current Health Level Seven
+            International (HL7), a variety of global standards for the transfer of health data,
+            implementations rely on profiles and templates to disambiguate statement and terminology
+            and provide sufficient precision for transactions, documents, and standards-based
+            Application Programming Interfaces (APIs). Therefore, the architectural approach
+            described here is applicable to standards organizations developing interoperability for
+            enterprise and project-specific implementations in equal measure.</para>
         <para>The Knowledge Architecture, by definition, is a framework for clinical information
             that is organized into distinct layers such that each higher layer relies upon artifacts
             from the lower layer. The purpose of the Knowledge Architecture is to standardize
@@ -351,77 +315,72 @@
             </itemizedlist></para>
     </section>
     <section>
-        <title> IKM Book Introduction</title>
+        <title>IKM Book Introduction</title>
         <section>
-            <title>The Promise of Health Information Technology</title>
-            <para>Health Information Technology (IT), or the use of computer hardware, software, or
-                infrastructure to record, store, protect, and retrieve clinical, administrative, or
-                financial information, has become a critically important form of organizing,
-                managing, analyzing, and exchanging patient health information. [13] Though first
-                employed in the 1960s, Health IT entered the scene and obtained widespread adoption
-                in the early-1990s promising:</para>
-            <itemizedlist>
-                <listitem>
-                    <para>The enhancement of quality and safety of healthcare,</para>
-                </listitem>
-                <listitem>
-                    <para>The ability to more easily measure and reduce the cost of care,</para>
-                </listitem>
-            </itemizedlist>
-            <itemizedlist>
-                <listitem>
-                    <para>The ability to share information with multiple providers across
-                        organizations in a continuum of care,</para>
-                </listitem>
-                <listitem>
-                    <para>The ability to implement and automate high-quality decision support into
-                        clinical workflows, and</para>
-                </listitem>
-                <listitem>
-                    <para>The ability to improve clinician/provider satisfaction and reduce burden
-                        and burnout. [14]</para>
-                </listitem>
-            </itemizedlist>
-            <para>The most commonly known forms of Health IT systems, EHRs, or a systematized
-                collection of electronically stored patient and population health information, have
-                undoubtedly enabled dramatic advancements in patient care, allowing for breakthrough
-                technologies with advanced analytical capabilities (e.g., Machine Learning(ML), AI )
-                to more easily identify new diseases and develop treatments and reduce the need for
-                patients to maintain and carry paper records from provider to provider. </para>
-            <para>Despite advancement in technologies like these, a Johns Hopkins study conducted in
-                2016 suggested that preventable medical errors, including those due to EHR errors,
-                accounted for approximately 250,000 patient deaths every year – making it the
-                third-leading cause of death in the United States. [15] When Controlled Risk
-                Insurance Company (CRICO), a medical professional liability organization, identified
-                147 cases of patient harm over five years in which an EHR was identified as a
-                contributing factor, a staggering 80 percent of these cases involved moderate or
-                severe harm to the patient. [16] In total, an estimated $61 million in direct
-                payments and legal expenses resulted from these cases, at an average cost of
-                $415,000 per case.</para>
-            <para>On the surface, exciting new technology has continued to advance in the healthcare
-                ecosystem, but cases of patient harm, redundant testing, and over-expenditure
-                persists. This begs the question: <emphasis role="bold">is Health IT truly
-                    fulfilling its promises?</emphasis></para>
-            <para>Technology has the potential to revolutionize patient care – concepts like AI and
-                ML promise better patient outcomes and reduced clinician burden. However, these
-                systems are only as good as the data from which they operate. EHRs, for example,
-                were created to provide healthcare automation, patient care and patient access, and
-                reduce clinician workload. The advancements in EHRs have had a great impact for
-                patients, but users continue to face complications due to the lack of standardized
-                data exchange. Unstandardized data stacking has made it difficult to interpret a
-                patient’s chart with accurate data reporting. [17] As far as healthcare technology
-                has come, the quality of existing technology platforms is limited through the
-                quality of encoded data – which is where the problem begins.</para>
-        </section>
-        <section>
-            <title>The Problems with Electronic Health Data</title>
-            <para>While healthcare information originates across a variety of disparate systems and
-                organizations, the United States healthcare environment requires interoperable,
-                coordinated, and accurate information to support high quality patient care, clinical
-                and laboratory research, public health monitoring, and regulatory decision making.
-                Many needs must be met in the existing, fragmented healthcare setting which includes
-                a network of interconnected information systems.</para>
-            <para>Historically, the United States healthcare system has been composed of relatively
+        <title>The Promise of Health Information Technology (IT)</title>
+        <para>Health IT, or the use of computer hardware, software, or infrastructure to record,
+                store, protect, and retrieve clinical, administrative, or financial information, has
+                become a critically important form of organizing, managing, analyzing, and
+                exchanging patient health information. [13] Though first employed in the 1960s,
+                Health IT entered the scene and obtained widespread adoption in the early-1990s
+                promising: </para>
+        <itemizedlist>
+            <listitem>
+                <para>The enhancement of quality and safety of healthcare,</para>
+            </listitem>
+            <listitem>
+                <para>The ability to more easily measure and reduce the cost of care,</para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>The ability to share information with multiple providers across organizations
+                    in a continuum of care,</para>
+            </listitem>
+            <listitem>
+                <para>The ability to implement and automate high-quality decision support into
+                    clinical workflows, and</para>
+            </listitem>
+            <listitem>
+                <para>The ability to improve clinician/provider satisfaction and reduce burden and
+                    burnout. [14]</para>
+            </listitem>
+        </itemizedlist>
+        <para>The most commonly known forms of Health IT systems, EHRs, or a systematized collection
+            of electronically stored patient and population health information, have undoubtedly
+            enabled dramatic advancements in patient care and reduced the burden on providers. EHRs
+            have also allowed for breakthrough technologies with advanced analytical capabilities
+            (e.g., Machine Learning(ML), AI ) to more easily identify new diseases and develop
+            treatments and reduce the need for patients to maintain and carry paper records from
+            provider to provider. </para>
+        <para>Despite advancement in technologies like these, a Johns Hopkins study conducted in
+            2016 suggested that preventable medical errors, including those due to EHR errors,
+            accounted for approximately 250,000 patient deaths every year – making it the
+            third-leading cause of death in the United States. [15] When Controlled Risk Insurance
+            Company (CRICO), a medical professional liability organization, identified 147 cases of
+            patient harm over five years in which an EHR was identified as a contributing factor, a
+            staggering 80 percent of these cases involved moderate or severe harm to the patient.
+            [16] In total, an estimated $61 million in direct payments and legal expenses resulted
+            from these cases, at an average cost of $415,000 per case.</para>
+        <para>On the surface, exciting new technology has continued to advance in the healthcare
+            ecosystem, but cases of patient harm, redundant testing, and over-expenditure persists.
+            This begs the question: <emphasis role="bold">is Health IT truly fulfilling its
+                promises?</emphasis></para>
+    </section>
+    <section>
+        <title>The Problems with Electronic Health Data</title>
+        <para>The advancements in EHRs have had a great impact for patients, but users continue to
+            face complications due to the lack of standardized data exchange. Unstandardized data
+            stacking has made it difficult to interpret a patient’s chart with accurate data
+            reporting. [17] As far as healthcare technology has come, the quality of existing
+            technology platforms is limited through the quality of encoded data – which is where the
+            problem begins. While healthcare information originates across a variety of disparate
+            systems and organizations, the United States healthcare environment requires
+            interoperable, coordinated, and accurate information to support high quality patient
+            care, clinical and laboratory research, public health monitoring, and regulatory
+            decision making. Many needs must be met in the existing, fragmented healthcare setting
+            which includes a network of interconnected information systems.</para>
+        <para>Historically, the United States healthcare system has been composed of relatively
                 autonomous organizations that maintain loose relationships in support of patient
                 care. Patients typically visit one or more primary care clinicians and are
                 frequently sent, along with orders and patient data, to specialists, laboratories,
@@ -429,291 +388,275 @@
                 data across these settings is crucial to the processes of making safe clinical
                 decisions, tracking patient outcomes, anticipating future health problems,
                 identifying deviations from expected trends, informing preventive and public health
-                measures, supporting clinical research, and providing a legal and historical record.
-                [18] </para>
-            <para>For example, when a primary care provider records a diabetes diagnosis in the
-                provider's local system, it is critical for that system to share the data accurately
-                and seamlessly to the pertinent pharmacy and laboratory systems. These systems must
-                then in turn communicate with one another and with the primary care system to alert
-                the provider that the patient has previously been prescribed gentamicin and has
-                recently been given an order for a radiologic examination that requires intravenous
-                iodine dye – both of which are known to affect kidney function. If this information
-                is not accurately communicated across healthcare settings in a way that can be
-                readily accessed, the patient may face unnecessary harm or risks that could have
-                been avoided.</para>
-            <para>The following sections aim to spell out some of the current problems with
-                electronic health data more clearly.</para>
-            <section>
-                <title>The Need for Unmatched Precision</title>
-                <para>The degree to which data must maintain precision in healthcare is unmatched in
-                    other industries. Health data is unique in its direct association with a
-                    person’s health outcomes. Nuanced concepts exist in patient care settings
-                    creating challenges for the representation thereof in data capture and
-                    transmission. Laboratory testing on a specimen involves a plethora of biological
-                    concepts which must be represented by data in a meaningful way while maintaining
-                    precision as well as consumption for other entities or systems in the ecosystem.
-                    When an association to a patient’s health outcomes is combined with such nuanced
-                    concepts, exceptional rigor must be taken in the maintenance of data precision
-                    and representation.</para>
-            </section>
-            <section>
-                <title>The Size, Scale, and Complexity of the System</title>
-                <para>The ecosystem of healthcare entities, which share responsibility in the
-                    delivery of care, is vast. Various stakeholders include government health
-                    authorities, EHR companies, medical device manufacturers, health insurance
-                    companies, medical laboratories, hospitals and healthcare systems, and clinical
-                    providers among various site types. A healthcare entity’s data requirements
-                    differ in context from other industries regarding the facilitation of patient
-                    care and handling of health data in methods that are specific to their context.
-                    Industries such as transportation and logistics are more confined to a common
-                    context for the data required to successfully facilitate operations. The array
-                    of contexts for healthcare entities creates an unsolved challenge for
-                    interpreting and exchanging data without compromising its intended meaning.
-                </para>
-            </section>
-            <section>
-                <title>The Lack of Adherence and Enforcement of Standards </title>
-                <para>Standards in healthcare exist to promote successful interpretation and
-                    exchange of data; however, they are not enforced and can experience poor
-                    adherence in practice, undercutting their effectiveness and purpose. Despite a
-                    significant history of emphasis on healthcare data standards, entities continue
-                    to leverage proprietary, or localized, methods for data representation creating
-                    inherent and avoidable challenges in care delivery, reporting, and the
-                    meaningful application of available technology. Motivations for proprietary or
-                    localized data methods cannot be confirmed, however, considerations include
-                    protection of market share from competitors and avoidance of public scrutiny for
-                    misalignment to standard processes. Maintaining alignment with standards
-                    development organizations (SDOs) is resource intensive and invites SDOs to
-                    measure and scrutinize an organization against the standard processes to which
-                    an entity claims conformity. </para>
-            </section>
-            <section>
-                <title>The Inability to Share Between Systems</title>
-                <para>Numerous distinct systems and organizations across the healthcare ecosystem
-                    lead to a large variation in how data are handled, e.g., data collection, data
-                    manipulation, data transmission, data storage, and real-world application. Each
-                    system has a proprietary, standard, or ad-hoc information model and is typically
-                    configured to satisfy organization-specific needs, resulting in differences in
-                    data handling within systems. While this variation is not an innate issue, the
-                    difficulty exchanging data between systems and the lack of interoperability
-                    compromises data quality and ultimately patient safety. </para>
-            </section>
-            <section>
-                <title>The Significant Variation in Types of Data Needed</title>
-                <para>Medical data range in format from narrative and textual data to numerical
-                    measurements, images, drawings, and more. It is common practice for several
-                    different observations of a singular patient to be made concurrently, the
-                    observation of the same patient parameter to be made over the course of several
-                    points in time, or both. [18] It is also important to keep a record of the
-                    circumstances under which data are obtained, further adding to the complexity
-                    and volume of data. For example, a simple blood pressure reading may factor if a
-                    blood pressure reading is taken on the arm or the leg, whether the patient
-                    recently exercised, and what kind of device was used.</para>
-                <para>Current approaches for representing data from various, disparate health
-                    information systems introduce additional opportunities for inefficiencies,
-                    redundancies, and inconsistencies. Unpredictable and denormalized data formats
-                    reduce the quality of data processing and the ability to conduct safe and
-                    reliable analytics. When incongruent data is repeatedly collated, it requires
-                    extensive expertise and resources to synthesize basic trends, information, and
-                    insights that should be readily available. A history of numerous scholarly and
-                    practical efforts illustrates the challenges of using observational data for
-                    safe patient care, comparative effectiveness research, and analyses for biases,
-                    workflow differences, and issues with variations in data collection, such as
-                    invalid, inconsistent, and missing data. [19 – 34]</para>
-            </section>
+                measures, supporting clinical research, and enabling standardized approaches in
+                treatment and health data exchange. [18] </para>
+        <para>For example, when a primary care provider records a diabetes diagnosis in the
+            provider's local system, it is critical for that system to share the data accurately and
+            seamlessly to the pertinent pharmacy and laboratory systems. These systems must then in
+            turn communicate with one another and with the primary care system to alert the provider
+            that the patient has previously been prescribed gentamicin and has recently been given
+            an order for a radiologic examination that requires intravenous iodine dye – both of
+            which are known to affect kidney function. If this information is not accurately
+            communicated across healthcare settings in a way that can be readily accessed, the
+            patient may face unnecessary harm or risks that could have been avoided.</para>
+        <para>The following sections aim to spell out some of the current problems with electronic
+            health data more clearly.</para>
+        <section>
+            <title>The Need for Unmatched Precision</title>
+            <para>The degree to which data must maintain precision in healthcare is unmatched in
+                other industries. Health data is unique in its direct association with a person’s
+                health outcomes. Nuanced concepts exist in patient care settings creating challenges
+                for the representation thereof in data capture and transmission. Laboratory testing
+                on a specimen involves a plethora of biological concepts which must be represented
+                by data in a meaningful way while maintaining precision as well as consumption for
+                other entities or systems in the ecosystem. When an association to a patient’s
+                health outcomes is combined with such nuanced concepts, exceptional rigor must be
+                taken in the maintenance of data precision and representation.</para>
         </section>
         <section>
-            <title>A Brief Overview of Health Data Standards</title>
-            <para>Standards are generally required when excessive variation creates inefficiencies
-                or impedes effectiveness. [18] There have been many valuable standards applied
-                throughout history such as railroad tracks, telephones, WiFi, and financial
-                transactions. The broad goal of the application of standards to electronic health
-                data is unambiguous data exchange, or “interoperability” – the ability of two
-                parties, either human or machine, to exchange data or information so that it is
-                transportable, organizable, and interpretable in an expected format. </para>
-            <para>Standards for electronic health data have existed since the creation of the EHR in
-                the 1960s. Computer engineers responsible for EHR development were tasked with
-                representing health concepts in a digital format that could be shared with users and
-                connected systems for common interpretation. In 1965, the Systematized Nomenclature
-                of Pathology (SNOP) was developed to provide a common way to describe morphology and
-                anatomy. A decade later, SNOP expanded into its known name today, Systematized
-                Nomenclature of Medicine Clinical Terminology (SNOMED CT®). As the adoption of EHRs
-                increased during the 1980s, Health Level Seven International (HL7) was formed in
-                1987 as a non-profit, American National Standards Institute (ANSI)-accredited
-                standards development organization to develop standards that provide global health
-                data interoperability. Since then, several SDOs in the healthcare space have
-                appeared and, along with HL7 and SNOMED CT®, continued to commit resources to the
-                development and adoption of standardized health data processes. In 2004, under the
-                United States Department of Health and Human Services (HHS), the Office of the
-                National Coordinator for Health Information Technology (ONC) was born to promote a
-                national health information technology infrastructure and oversee its development.
-                While ONC is not a SDO, it works in close coordination with SDOs to support the
-                adoption and application of health data standards in the U.S. </para>
-            <para>While interoperable health data is a complex and nuanced topic, a primary
-                component is maintaining the meaning and intent of clinical data from the point of
-                consumption throughout the transmission and use of that data across various systems.
-                As data is exchanged within and between multiple healthcare systems, the original
-                provider’s meaning and intent must be electronically communicated in a way that,
-                upon receipt, receiving systems and providers can understand in an identical manner.
-                Data exchange standards provide a formal process for defining specific constructs to
-                be exchanged between machines and must be used to support this seamless transfer of
-                data.</para>
-            <section>
-                <title>Structure and Meaning</title>
-                <para>In simple terms, <emphasis role="italic">Structure </emphasis>and<emphasis
-                        role="italic"> Meaning </emphasis>are two considerations to ensure data
-                    maintains its full integrity and can be communicated in a way that supports
-                    interoperability.</para>
-                <para><emphasis role="italic">Structure</emphasis> is the ability of systems to
-                    agree on how to format the data. Structural interoperability ensures the
-                    seamless communication of the data’s structure between systems but does not
-                    guarantee that the receiving system will interpret the data with the original
-                    intent. Web pages, for instance, are developed using HTML or XML to ensure
-                    structural interoperability. While this guarantees a web page can be read by any
-                    machine with a web browser, it does not ensure the meaning of that page is
-                    identical across machines. There are a variety of healthcare structural
-                    standards, including FHIR, HL7 Version 2 Messaging (HL7 v2), and Consolidated
-                    Clinical Document Architecture (C-CDA). </para>
-                <para>To understand structural interoperability, consider the two sentences below.
-                    While both sentences have the same sentence <emphasis role="italic"
-                        >structure</emphasis>, their <emphasis role="italic">meanings</emphasis> are
-                    completely different and only one makes logical sense.</para><figure xml:id="StructuralInteropoerability">
-                        <title>Structural Interoperability</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../images/Structural%20Interoperability2.svg" scale="30" align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                <para><emphasis role="italic">Meaning</emphasis> is the ability of systems to share
-                    the same interpretation of the data. Meaning interoperability ensures the
-                    original meaning and intent of data is interpreted identically across all
-                    parties but allows for structural variance. When people and systems use
-                    different words and codes to describe synonymous or related things, healthcare
-                    meaning standards translate the data to a common meaning. Healthcare terminology
-                    and meaning standards include SNOMED CT®, LOINC® and RxNorm (a terminology
-                    defining medications and ingredients from the National Library of
-                    Medicine).</para>
-                <para>In the below example, the two sentences share a common <emphasis role="italic"
-                        >meaning</emphasis>, however the sentence <emphasis role="italic"
-                            >structure</emphasis> varies drastically. </para><figure xml:id="MeaningInteropoerability">
-                                <title>Meaning Interoperability</title>
-                <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../images/Meaning%20Interoperability%202.svg" scale="30" align="center"/>
-                        </imageobject>
-                    </mediaobject> 
-                </figure>
-                <para>While <xref linkend="StructuralInteropoerability"/> and <xref
-                        linkend="MeaningInteropoerability"/>  intend to illustrate <emphasis
-                        role="italic">structure</emphasis> and <emphasis role="italic"
-                        >meaning</emphasis> simply, a more real-world example like, “the patient was
-                    given pain medication” and “the patient was given medication for pain,”
-                    highlights potential issues when determining equivalence. Objectively, the two
-                    sentences do not follow the same <emphasis role="italic">structure;</emphasis>
-                    however, they may or may not have the same <emphasis role="italic"
-                        >meaning</emphasis> depending on your perspective or interpretation. The
-                    first sentence could be read to mean “the provider prescribed the patient pain
-                    medication to address pain” or that “the patient acquired pain medication from
-                    another source other than the provider.” The complex relationship between these
-                    two concepts can lead to confusion and will need to be addressed to accurately
-                    characterize equivalence.</para>
-            </section>
-            <section>
-                <title>Example of Overlapping and Intersecting Nature of Standards</title>
-                <para>Hospitals and independent reference labs are two primary entities in the
-                    health data ecosystem which share direct relationships and interfaces in the
-                    exchange of clinical data. Healthcare interfaces must leverage various existing
-                    standards for <emphasis role="italic">structure </emphasis>and<emphasis
-                        role="italic"> meaning</emphasis> and use them together in integrated ways.
-                    An electronic interface provides an avenue, or connection point, for sharing
-                    data in a meaningful, coherent way between two disparate systems. Without an
-                    interface, two disparate systems are unable to communicate in a common language.
-                    In the U.S. and elsewhere, the most common and accepted messaging structural
-                    standard for EHR-to- Reference Lab interfacing is the Health Level Seven (HL7)
-                    Version 2.x (V2.x) standard. While other messaging standards exist and can be
-                    used, the HL7 V2.x messaging standard, first released in 1987, is used in 95% of
-                    U.S. healthcare organizations and in more than 35 countries. [35] </para>
-                <para>To illustrate how standards for <emphasis role="italic">structure
-                        </emphasis>and<emphasis role="italic"> meaning</emphasis> may be currently
-                    implemented, we will explore a scenario of a typical hospital-to-reference lab
-                    order message generated by a hospital EHR system sent electronically to a
-                    Reference Lab. This laboratory order message is received, processed, and acted
-                    upon by which the laboratory will perform the test specified in the order
-                    message received. After a laboratory test is performed and a test result is
-                    available, the Reference Laboratory in this scenario will return a Laboratory
-                    Result message to the hospital EHR system.</para>
-                <para><xref linkend="ErroneousLoincMapping"/> below shows an example of an HL7 v2
-                    Observation (OBX) segment from two different mock lab result messages. In this
-                    scenario, a laboratory has conducted two distinct blood glucose tests on two
-                    distinct specimen sources. For the first test, a specimen from serum or plasma
-                    was used. For the second test, the specimen was from whole blood. The figure
-                    below illustrates how the HL7 v2 <emphasis role="italic">structure</emphasis>
-                    standard is populated using existing terminology standards for <emphasis
-                        role="italic">meaning, </emphasis>in this case LOINC®. In the first HL7
-                    segment for test 1, the LOINC® code is for a “Glucose [Mass/volume] in Serum or
-                    Plasma”, whereas for test 2, the LOINC® code is for a “Glucose [Mass/volume] in
-                    Blood”. Different tests were conducted. Therefore, different LOINC® codes were
-                    used in the HL7 v2 messages. The local laboratory information system and EHR
-                    also define and use their own code systems to encode the tests; these are called
-                    “local codes.” Although not universal, local codes are another way for health
-                    information systems to represent <emphasis role="italic">meaning</emphasis> for
-                    clinical concepts. The HL7 v2 observation data in <xref
-                        linkend="ErroneousLoincMapping"/> shows blue text representing a local code,
-                    and the observation data denoted in red represents a corresponding LOINC® code. </para><figure xml:id="ErroneousLoincMapping">
-                    <title>Erroneous LOINC® Mapping</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../images/Erroneous%20Loinc%20Mapping.svg" scale="55" align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para>The figure shows how the same local code can be erroneously mapped to
-                    different LOINC® codes and transmitted in a Lab Result message. In this case
-                    example, we see the same laboratory conducting two distinct tests and encoding
-                    each test with a different LOINC® code; however, both are mapped to the same
-                    local code. This mock scenario highlights one example of the myriad of
-                    interoperability challenges faced in healthcare today. [35] Successful
-                    interoperability is dependent on either using universal code systems for data
-                    capture or through mapping local content to a universal code system. Local code
-                    systems serve the same function as universal coding systems such as SNOMED CT®
-                    and LOINC®, however are internal identification schemas that consist of a set of
-                    local codes and their associated definitions. </para>
-                <para>Because the receiving system will parse the identical local codes from the two
-                    mock HL7 v2 segments above, it will interpret the lab result as having been
-                    produced from identical lab tests. In simpler terms, the receiving system will
-                    interpret these messages as the same glucose test with a “count of 2
-                    observations” rather than two different glucose tests, each with a “count of 1
-                    observation.” Since the source specimen and lab tests are different, but
-                    represented identically in the data transmission, semantic meaning is lost
-                    compromising patient safety and accurate reporting. The receiving system will
-                    interpret these two HL7 v2 segments as meaning the “same thing” or representing
-                    the “same glucose test”; however, any terminologist or laboratory professional
-                    would interpret this as “different glucose tests.”</para>
-                <para>To improve the quality and safety of patient care, there is a need to refine
-                    data exchange within the healthcare ecosystem. We often hear comments as, “Why
-                    is the problem of data exchange in healthcare so difficult? After all, other
-                    industries—banking, for example— have solved the problem. Healthcare
-                    transactions can’t be that much more complicated than those managed by a
-                    geographically distributed, multiple line-of-business banking system.”</para>
-                <para>While other industries, like banking, have resolved issues with their
-                    transmission and exchange of complex banking data across geographical locations
-                    and between numerous unaffiliated businesses, the complexity with healthcare
-                    data arises, in part, because neither the standards for structure (i.e.,
-                    statement model) nor standards for meaning (i.e., terminology model) can
-                    represent clinical data alone in the current data structures. Both types of
-                    models can be arbitrarily complex, and, at some point, semantics not represented
-                    in one must be represented in the other if one is to achieve interoperability.
-                    [18]</para>
-            </section>
+            <title>The Size, Scale, and Complexity of the System</title>
+            <para>The ecosystem of healthcare entities, which share responsibility in the delivery
+                of care, is vast. Various stakeholders include government health authorities, EHR
+                companies, medical device manufacturers, health insurance companies, medical
+                laboratories, hospitals and healthcare systems, and clinical providers among various
+                site types. A healthcare entity’s data requirements differ in context from other
+                industries regarding the facilitation of patient care and handling of health data in
+                methods that are specific to their context. Industries such as transportation and
+                logistics are more confined to a common context for the data required to
+                successfully facilitate operations. The array of contexts for healthcare entities
+                creates an unsolved challenge for interpreting and exchanging data without
+                compromising its intended meaning. </para>
+        </section>
+        <section>
+            <title>The Significant Variation in Types of Data Needed</title>
+            <para>Medical data range in format from narrative and textual data to numerical
+                measurements, images, drawings, and more. It is common practice for several
+                different observations of a singular patient to be made concurrently, the
+                observation of the same patient parameter to be made over the course of several
+                points in time, or both. [18] It is also important to keep a record of the
+                circumstances under which data are obtained, further adding to the complexity and
+                volume of data. </para>
+        </section>
+        <section>
+            <title>The Lack of Adherence and Enforcement of Standards </title>
+            <para>Despite a significant history of emphasis on healthcare data standards, entities
+                continue to leverage proprietary, or localized, methods for data representation
+                creating inherent and avoidable challenges in care delivery, reporting, and the
+                meaningful application of available technology. Motivations for proprietary or
+                localized data methods cannot be confirmed, however, considerations include
+                protection of market share from competitors and avoidance of public scrutiny for
+                misalignment to standard processes. Maintaining alignment with Standards Development
+                Organizations (SDOs) is resource intensive and invites SDOs to measure and
+                scrutinize an organization against the standard processes to which an entity claims
+                conformity. </para>
+            <para>Current approaches for representing data from various, disparate health
+                information systems introduce additional opportunities for inefficiencies,
+                redundancies, and inconsistencies. A history of numerous scholarly and practical
+                efforts illustrates the challenges of using observational data for safe patient
+                care, comparative effectiveness research, and analyses for biases, workflow
+                differences, and issues with variations in data collection, such as invalid,
+                inconsistent, and missing data. [19 – 34]</para>
+        </section>
+        <section>
+            <title>The Inability to Share Between Systems</title>
+            <para>Numerous distinct systems and organizations across the healthcare ecosystem lead
+                to a large variation in how data are handled, e.g., data collection, data
+                manipulation, data transmission, data storage, and real-world application. Each
+                system has a proprietary, standard, or ad-hoc information model and is typically
+                configured to satisfy organization-specific needs, resulting in differences in data
+                handling within systems. While this variation is not an innate issue, the difficulty
+                exchanging data between systems and the lack of interoperability compromises data
+                quality and ultimately patient safety. </para>
         </section>
     </section>
+    <section>
+        <title>A Brief Overview of Health Data Standards</title>
+        <para>The broad goal of the application of standards to electronic health data is
+            unambiguous data exchange, or “interoperability” – the ability of two parties, either
+            human or machine, to exchange data or information so that it is transportable,
+            organizable, and interpretable in an expected format. </para>
+        <para>Standards for electronic health data have existed since the creation of the EHR in the
+            1960s. Computer engineers responsible for EHR development were tasked with representing
+            health concepts in a digital format that could be shared with users and connected
+            systems for common interpretation. Over the last 60 years, extensive work has been
+            performed to develop:<orderedlist>
+                <listitem>
+                    <para>Standards to represent clinical concepts (e.g., Systematized Nomenclature
+                        of Medicine Clinical Terms [SNOMED CT®])</para>
+                </listitem>
+                <listitem>
+                    <para>Standards to exchange those concepts (e.g., HL7)</para>
+                </listitem>
+                <listitem>
+                    <para>Supporting infrastruture (e.g., The United States Department of Health and
+                        Human Services [HHS], the Office of the National Coordinator for Health
+                        Information Technology [ONC] was born to promote a national health
+                        information technology infrastructure and oversee its development.)</para>
+                </listitem>
+            </orderedlist></para>
+        <para>While interoperable health data is a complex and nuanced topic, a primary component is
+            maintaining the meaning and intent of clinical data from the point of consumption
+            throughout the transmission and use of that data across various systems. As data is
+            exchanged within and between multiple healthcare systems, the original provider’s
+            meaning and intent must be electronically communicated in a way that, upon receipt,
+            receiving systems and providers can understand in an identical manner. Data exchange
+            standards provide a formal process for defining specific constructs to be exchanged
+            between machines and must be used to support this seamless transfer of data.</para>
+        <section>
+            <title>Structure and Meaning</title>
+            <para>In simple terms, <emphasis role="italic">Structure </emphasis>and<emphasis
+                    role="italic"> Meaning </emphasis>are two considerations to ensure data
+                maintains its full integrity and can be communicated in a way that supports
+                interoperability.</para>
+            <para><emphasis role="italic">Structure</emphasis> is the ability of systems to agree on
+                how to format the data. Structural interoperability ensures the seamless
+                communication of the data’s structure between systems but does not guarantee that
+                the receiving system will interpret the data with the original intent. Web pages,
+                for instance, are developed using HTML or XML to ensure structural interoperability.
+                While this guarantees a web page can be read by any machine with a web browser, it
+                does not ensure the meaning of that page is identical across machines. There are a
+                variety of healthcare structural standards, including FHIR, HL7 Version 2 Messaging
+                (HL7 v2), and Consolidated Clinical Document Architecture (C-CDA). </para>
+            <para>To understand structural interoperability, consider the two sentences below. While
+                both sentences have the same sentence <emphasis role="italic">structure</emphasis>,
+                their <emphasis role="italic">meanings</emphasis> are completely different and only
+                one makes logical sense.</para>
+            <figure xml:id="StructuralInteropoerability">
+                <title>Structural Interoperability</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/Structural%20Interoperability2.svg" scale="30"
+                            align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para><emphasis role="italic">Meaning</emphasis> is the ability of systems to share the
+                same interpretation of the data. Meaning interoperability ensures the original
+                meaning and intent of data is interpreted identically across all parties but allows
+                for structural variance. When people and systems use different words and codes to
+                describe synonymous or related things, healthcare meaning standards translate the
+                data to a common meaning. Healthcare terminology and meaning standards include
+                SNOMED CT®, LOINC® and RxNorm (a terminology defining medications and ingredients
+                from the National Library of Medicine).</para>
+            <para>In the below example, the two sentences share a common <emphasis role="italic"
+                    >meaning</emphasis>, however the sentence <emphasis role="italic"
+                    >structure</emphasis> varies drastically. </para>
+            <figure xml:id="MeaningInteropoerability">
+                <title>Meaning Interoperability</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/Meaning%20Interoperability%202.svg" scale="30"
+                            align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>While <xref linkend="StructuralInteropoerability"/> and <xref
+                    linkend="MeaningInteropoerability"/> intend to illustrate <emphasis
+                    role="italic">structure</emphasis> and <emphasis role="italic"
+                    >meaning</emphasis> simply, a more real-world example like, “the patient was
+                given pain medication” and “the patient was given medication for pain,” highlights
+                potential issues when determining equivalence. Objectively, the two sentences do not
+                follow the same <emphasis role="italic">structure;</emphasis> however, they may or
+                may not have the same <emphasis role="italic">meaning</emphasis> depending on your
+                perspective or interpretation. The first sentence could be read to mean “the
+                provider prescribed the patient pain medication to address pain” or that “the
+                patient acquired pain medication from another source other than the provider.” The
+                complex relationship between these two concepts can lead to confusion and will need
+                to be addressed to accurately characterize equivalence.</para>
+        </section>
+        <section>
+            <title>Example of Overlapping and Intersecting Nature of Standards</title>
+            <para>Hospitals and independent reference labs are two primary entities in the health
+                data ecosystem which share direct relationships and interfaces in the exchange of
+                clinical data. Healthcare interfaces must leverage various existing standards for
+                    <emphasis role="italic">structure </emphasis>and<emphasis role="italic">
+                    meaning</emphasis> and use them together in integrated ways. An electronic
+                interface provides an avenue, or connection point, for sharing data in a meaningful,
+                coherent way between two disparate systems. Without an interface, two disparate
+                systems are unable to communicate in a common language. In the U.S. and elsewhere,
+                the most common and accepted messaging structural standard for EHR-to- Reference Lab
+                interfacing is the Health Level Seven (HL7) Version 2.x (V2.x) standard. While other
+                messaging standards exist and can be used, the HL7 V2.x messaging standard, first
+                released in 1987, is used in 95% of U.S. healthcare organizations and in more than
+                35 countries. [35] </para>
+            <para>To illustrate how standards for <emphasis role="italic">structure
+                    </emphasis>and<emphasis role="italic"> meaning</emphasis> may be currently
+                implemented, we will explore a scenario of a typical hospital-to-reference lab order
+                message generated by a hospital EHR system sent electronically to a Reference Lab.
+                This laboratory order message is received, processed, and acted upon by which the
+                laboratory will perform the test specified in the order message received. After a
+                laboratory test is performed and a test result is available, the Reference
+                Laboratory in this scenario will return a Laboratory Result message to the hospital
+                EHR system.</para>
+            <para><xref linkend="ErroneousLoincMapping"/> below shows an example of an HL7 v2
+                Observation (OBX) segment from two different mock lab result messages. In this
+                scenario, a laboratory has conducted two distinct blood glucose tests on two
+                distinct specimen sources. For the first test, a specimen from serum or plasma was
+                used. For the second test, the specimen was from whole blood. The figure below
+                illustrates how the HL7 v2 <emphasis role="italic">structure</emphasis> standard is
+                populated using existing terminology standards for <emphasis role="italic">meaning,
+                </emphasis>in this case LOINC®. In the first HL7 segment for test 1, the LOINC® code
+                is for a “Glucose [Mass/volume] in Serum or Plasma”, whereas for test 2, the LOINC®
+                code is for a “Glucose [Mass/volume] in Blood”. Different tests were conducted.
+                Therefore, different LOINC® codes were used in the HL7 v2 messages. The local
+                laboratory information system and EHR also define and use their own code systems to
+                encode the tests; these are called “local codes.” Although not universal, local
+                codes are another way for health information systems to represent <emphasis
+                    role="italic">meaning</emphasis> for clinical concepts. The HL7 v2 observation
+                data in <xref linkend="ErroneousLoincMapping"/> shows blue text representing a local
+                code, and the observation data denoted in red represents a corresponding LOINC®
+                code. </para>
+            <figure xml:id="ErroneousLoincMapping">
+                <title>Erroneous LOINC® Mapping</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/Erroneous%20Loinc%20Mapping.svg" scale="55"
+                            align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>The figure shows how one local code can be erroneously mapped to two different
+                tests and their distinct LOINC® codes and transmitted in a Lab Result message. This
+                mock scenario highlights one example of the myriad of interoperability challenges
+                faced in healthcare today. [35] Successful interoperability is dependent on either
+                using universal code systems for data capture or through mapping local content to a
+                universal code system. Local code systems serve the same function as universal
+                coding systems such as SNOMED CT® and LOINC®, however are internal identification
+                schemas that consist of a set of local codes and their associated definitions. </para>
+            <para>Because the receiving system will parse the identical local codes from the two
+                mock HL7 v2 segments above, it will interpret the lab result as having been produced
+                from identical lab tests. In simpler terms, the receiving system will interpret
+                these messages as the same glucose test with a “count of 2 observations” rather than
+                two different glucose tests, each with a “count of 1 observation.” Since the source
+                specimen and lab tests are different, but represented identically in the data
+                transmission, semantic meaning is lost compromising patient safety and accurate
+                reporting. The receiving system will interpret these two HL7 v2 segments as meaning
+                the “same thing” or representing the “same glucose test”; however, any terminologist
+                or laboratory professional would interpret this as “different glucose tests.”</para>
+            <para>To improve the quality and safety of patient care, there is a need to refine data
+                exchange within the healthcare ecosystem. We often hear comments as, “Why is the
+                problem of data exchange in healthcare so difficult? After all, other
+                industries—banking, for example— have solved the problem. Healthcare transactions
+                can’t be that much more complicated than those managed by a geographically
+                distributed, multiple line-of-business banking system.”</para>
+            <para>While other industries, like banking, have resolved issues with their transmission
+                and exchange of complex banking data across geographical locations and between
+                numerous unaffiliated businesses, the complexity with healthcare data arises, in
+                part, because neither the standards for structure (i.e., statement model) nor
+                standards for meaning (i.e., terminology model) can represent clinical data alone in
+                the current data structures. Both types of models can be arbitrarily complex, and,
+                at some point, semantics not represented in one must be represented in the other if
+                one is to achieve interoperability. [18]</para>
+        </section>
+    </section>
+    </section>
+    
     <section>
         <title>References</title>
         <para>
             <orderedlist>
                 <listitem>
-                    <para>Spackman K, Guillermo R. Examining SNOMED from the perspective of formal
+                    <para>Spackman K, Reynoso G. Examining SNOMED from the perspective of formal
                         ontological principles: Some preliminary analysis and observations. KR-MED
                         2004 Proceedings 2004; 72-80. </para>
                 </listitem>
@@ -942,5 +885,4 @@
         </para>
     </section>
 </chapter>
-
 

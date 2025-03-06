@@ -10,9 +10,15 @@
             Overview</title>
         <para>Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
             is a public-private collaboration that started in 2015 with a singular focus: improving
-            the interoperability and utility of in vitro diagnostic (IVD) test data. To accomplish
-            their mission of being able to “describe the same test the same way anywhere in the
-            healthcare ecosystem”, SHIELD is working to develop a solution that focuses on:</para>
+            the interoperability and utility of in vitro diagnostic (IVD) test data. Due to the
+            complexity and vastness of this issue, SHIELD has embraced an ecosystem perspective that
+            recognizes no single entity has the authority or influence to meaningfully impact the
+            state of lab interoperability. SHIELD stakeholders include IVD manufacturers, commercial
+            and clinical center laboratories, professional organizations, EHR vendors, Pew
+            Charitable Trusts, numerous federal agencies, standards development organizations, and
+            patient advocates. SHIELD’s overall objective is to “describe the same test the same way
+            anywhere in the healthcare ecosystem” and to accomplish this goal, SHIELD is working to
+            develop a solution that focuses on:</para>
         <itemizedlist>
             <listitem>
                 <para><emphasis role="bold">Ecosystem Engagement</emphasis> - Collaborating and
@@ -36,55 +42,81 @@
                     and useful.</para>
             </listitem>
         </itemizedlist>
+        <para>One of SHIELD's initiatives in support of interoperable data is to establish
+            Laboratory Interoperability Data Registry (LIDR), a resource that houses standardized
+            laboratory in vitro diagnostic (LIVD) file entries. The following are best practices for
+            the establishment of the LIDR taken from the SHIELD Community Roadmap: </para>
+        <orderedlist>
+            <listitem>
+                <para>Develop a freely accessible knowledge management architecture for
+                    laboratorians, clinicians, researchers, and regulators, which is needed to
+                    promote clinical interoperability, enabling the determination of equivalency
+                    between different test results to decide whether they can be safely used for
+                    trending, data aggregation, post-market efficacy studies, and research</para>
+            </listitem>
+            <listitem>
+                <para>Determine the usefulness of clinical interventions to improve patient care
+                    based on relevant laboratory knowledge and reporting data, such as public health
+                    reporting and clinical surveillance</para>
+            </listitem>
+            <listitem>
+                <para>Harmonize meaningful laboratory terminology standards, such as SNOMED CT® and
+                    LOINC®</para>
+            </listitem>
+            <listitem>
+                <para>Enhance the reproducibility of data exchange structures used to express
+                    laboratory procedures and outcomes, such as Clinical Data Interchange Standards
+                    Consortium (CDISC), FHIR, and Integrating the Healthcare Enterprise (IHE)
+                    Laboratory Analytical Workflow (LAW)</para>
+            </listitem>
+            <listitem>
+                <para>Promote the understandability of the laboratory test knowledge as interpreted
+                    and processed by supporting health IT systems such as Laboratory Information
+                    Systems (LIS), Laboratory Information Management Systems (LIMS), EHR</para>
+            </listitem>
+            <listitem>
+                <para>Establishment of this infrastructure will help facilitating reliable data
+                    governance and knowledge management that will assist understandable,
+                    reproducible, and useful RWE analytics. Widespread promotion across disparate
+                    health information systems will help reduce variation for large national
+                    analytic enclaves, such as the National COVID Cohort Collaborative (N3C) Data
+                    Enclave which aggregates and analyzes data from numerous, disparate electronic
+                    health record systems.</para>
+            </listitem>
+        </orderedlist>
     </section>
     <section>
-        <title>Real World Evidence (RWE) and Standards Overview</title>
-        <para>Real world evidence (RWE) using RWD collected as part of routine clinical care, has
-            been heralded as an answer to many of the woes of our medical system. There is a wealth
-            of untapped data from electronic health records (EHR), medical imaging, mobile apps,
-            and, more recently, low-cost gene sequencing and wearable devices, that could be
-            unlocked with artificial intelligence (AI) and cloud computing to support better
-            diagnostics, personalized treatments, and early disease prevention for millions.
-            Interoperable health data can help the medical field realize the future in the same way
-            that online banking and shopping revolutionized their respective industry, thereby
-            stressing the importance of establishing tools and resources that can support
-            interoperability, such as Laboratory Interoperability Data Repository (LIDR) and related
-            infrastructure. The vision of a national interoperable health information system has
-            been elusive because of siloed clinical care data, incompatible health information
-            technology (IT) systems, and proprietary software that make health information diffcult
-            to exchange, analyze, and interpret. </para>
-        <para>Given the number of distinct information systems and care delivery organizations in
-            the ecosystem (e.g., primary care, specialists, laboratories, other care teams),
-            multiple variations exist in how data is collected, manipulated, transmitted,
-            effectively used, and represented across various, disparate information systems.
-            Numerous scholarly and practical efforts have illustrated the challenges of using
-            observational data for safe patient care, comparative effectiveness research, and
-            analysis including recording biases, workflow differences, and issues with variations in
-            data collection, such as invalid, inconsistent, and missing data. [1-2] </para>
-        <para>Aggregated RWE and reliable analytics would benefit from implementable methodologies
-            that address interoperability and data aggregation gaps to help establish a health data
-            ecosystem capable of widespread use in regulatory efforts, public health surveillance,
-            research, and care delivery. To achieve safe and effective information retrieval and
-            reproducible search and query practices across various settings, the following
-            constructs are needed to successfully build, maintain, and analyze data/resources across
-            key biomedical concepts of interest. </para>
-        <section>
-            <title>Data Interoperability Tooling Overview</title>
+            <title>Data Interoperability Overview</title>
             <para>A generalized definition of interoperable health data that supports reliable RWE
-                analytics asserts that data recorded and encoded at the time of creation should
-                accurately reflect the meaning intended by the health care professional who created
-                the data. In the current ecosystem, it can be a very manual, error-prone, and
-                sometimes challenging process to determine if data received from entity A is
-                equivalent to data from entity B and if it is interpreted across each setting as the
-                data was originally intended at the point of origin. Data interoperability tooling,
-                such as a Knowledge Management Platform, that can ingest disparate health data and
-                knowledge sources and harmonize them into a common model and change management
-                system could help in ensuring that the data are reliably computed and/or transmitted
-                between health information systems without any change in meaning. The original
-                meaning, as intended by the first entity, should be fully communicated
-                electronically and, upon receipt, equally understood by the receiving entity. This
-                type of knowledge platform could serve as data interoperability tooling that can
-                determine equivalence between concepts and data sets from various organizations. </para>
+            analytics asserts that data recorded and encoded at the time of creation should
+            accurately reflect the meaning intended by the health care professional who created the
+            data. Interoperability primarily focuses on two aspects, structural and meaning
+            interoperability. </para>
+        <orderedlist>
+            <listitem>
+                <para><emphasis role="bold">Structural Interoperability</emphasis> – Structural
+                    Interoperability focuses on maintaining how systems format data, but it cannot
+                    ensure that the receiving system will understand the structured data with the
+                    original meaning.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Meaning Interoperability</emphasis> – Meaning, or
+                    semantic, interoperability works to ensure that the receiving system interprets
+                    data in an identical way as the original system.</para>
+            </listitem>
+        </orderedlist>
+        <para>In the current ecosystem, it can be a very manual, error-prone, and sometimes
+            challenging process to determine if data received from entity A is equivalent to data
+            from entity B and if it is interpreted across each setting as the data was originally
+            intended at the point of origin. Data interoperability tooling, such as a Knowledge
+            Management Platform, that can ingest disparate health data and knowledge sources and
+            harmonize them into a common model and change management system could help in ensuring
+            that the data are reliably computed and/or transmitted between health information
+            systems without any change in meaning. The original meaning, as intended by the first
+            entity, and structure should be fully communicated electronically and, upon receipt,
+            equally understood by the receiving entity. This type of knowledge platform could serve
+            as data interoperability tooling that can determine equivalence between concepts and
+            data sets from various organizations. </para>
             <para>To facilitate such tooling, data must be represented by a normal form that can
                 safely and reliably support data analysis and be used to aggregate data using a
                 standard or non-standard input form or exchange mechanism. Examples of such data
@@ -241,105 +273,24 @@
         <section>
             <title>Analytic Environments Overview</title>
             <para>Integrated analytics environments assist in creating and automating data pipelines
-                and workflows to deliver actionable information to a wide variety of end users.
-                These environments extract data from various data sources, ideally into an
-                integrated knowledge base, housed in a central ecosystem – thereby reducing data
-                silos, enhancing security and governance, and eliminating system redundancies. For
-                data analytics conducted using RWE, analytics environments will be dependent on a
-                variety of knowledge bases and datasets that may have differing fields, despite some
-                potential overlap. A vast variety of biomedical and administrative knowledge present
-                the basis for RWE analytics and knowledge management of these disparate datasets is
-                a major element of consideration to facilitate RWE analytics. Knowledge management
-                includes the creation, discovery, and application of knowledge assets to facilitate
-                sharing and re-use across the ecosystem. </para>
-            <para>The ability to use interoperable syntax and semantics between data sources is a
-                critical requirement to support effective knowledge management and reliable
-                analytics of disparate RWE datasets. Use of industry standards for syntax and
-                semantics helps facilitate integration; however, not all implementation
-                considerations are planned for and adopted and additional efforts are needed to
-                advance standards to improve data quality. The standards themselves update over time
-                and there is a requirement for knowledge management in analytics environments to
-                consider how standards and underlying code sets have changed over time and relaying
-                these changes to data analysts and users who interpret data reports to best
-                understand the information. </para>
-            <para>The following are best practices for the establishment of the LIDR taken from the
-                SHIELD Community Roadmap: </para>
-            <orderedlist>
-                <listitem>
-                    <para>Develop a freely accessible knowledge management architecture for
-                        laboratorians, clinicians, researchers, and regulators, which is needed to
-                        promote clinical interoperability, enabling the determination of equivalency
-                        between different test results to decide whether they can be safely used for
-                        trending, data aggregation, post-market efficacy studies, and
-                        research</para>
-                </listitem>
-                <listitem>
-                    <para>Determine the usefulness of clinical interventions to improve patient care
-                        based on relevant laboratory knowledge and reporting data, such as public
-                        health reporting and clinical surveillance</para>
-                </listitem>
-                <listitem>
-                    <para>Harmonize meaningful laboratory terminology standards, such as SNOMED CT®
-                        and LOINC®</para>
-                </listitem>
-                <listitem>
-                    <para>Enhance the reproducibility of data exchange structures used to express
-                        laboratory procedures and outcomes, such as Clinical Data Interchange
-                        Standards Consortium (CDISC), FHIR, and Integrating the Healthcare
-                        Enterprise (IHE) Laboratory Analytical Workflow (LAW)</para>
-                </listitem>
-                <listitem>
-                    <para>Promote the understandability of the laboratory test knowledge as
-                        interpreted and processed by supporting health IT systems such as Laboratory
-                        Information Systems (LIS), Laboratory Information Management Systems (LIMS),
-                        EHR</para>
-                </listitem>
-                <listitem>
-                    <para>Establishment of this infrastructure will help facilitating reliable data
-                        governance and knowledge management that will assist understandable,
-                        reproducible, and useful RWE analytics. Widespread promotion across
-                        disparate health information systems will help reduce variation for large
-                        national analytic enclaves, such as the National COVID Cohort Collaborative
-                        (N3C) Data Enclave which aggregates and analyzes data from numerous,
-                        disparate electronic health record systems.</para>
-                </listitem>
-            </orderedlist>
+            and workflows to deliver actionable information to a wide variety of end users. These
+            environments extract data from various data sources, ideally into an integrated
+            knowledge base, housed in a central ecosystem – thereby reducing data silos, enhancing
+            security and governance, and eliminating system redundancies. RWE Analytic environments
+            depend on a variety of knowledge bases and datasets that may have differing fields,
+            despite some potential overlap. Proper knowledge management for these disparate soruces
+            requires the creation, discovery, and application of knowledge assets to facilitate
+            sharing and re-use across the ecosystem. </para>
+            <para>Interoperable syntax and semantics between data sources is a critical requirement
+            to support effective knowledge management and reliable analytics of disparate RWE
+            datasets. Use of industry standards for syntax and semantics helps facilitate
+            integration; however, not all implementation considerations are planned for and adopted
+            and additional efforts are needed to advance standards to improve data quality. The
+            standards themselves update over time and there is a requirement for knowledge
+            management in analytics environments to consider how standards and underlying code sets
+            have changed over time and relaying these changes to data analysts and users who
+            interpret data reports to best understand the information. </para>
         </section>
-    </section>
-    <section>
-        <title>Interoperability Overview</title>
-        <para>Data interoperability is the ability to store, query, transform, and transmit data
-            within and between systems while maintaining meaning and all associated and pertinent
-            information. Interoperability primarily focuses on two aspects, structural and meaning
-            interoperability. </para>
-        <orderedlist>
-            <listitem>
-                <para><emphasis role="bold">Structural Interoperability</emphasis> – Structural
-                    Interoperability focuses on maintaining how systems format data, but it cannot
-                    ensure that the receiving system will understand the structured data with the
-                    original meaning.</para>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Meaning Interoperability</emphasis> – Meaning, or
-                    semantic, interoperability works to ensure that the receiving system interprets
-                    data in an identical way as the original system.</para>
-            </listitem>
-        </orderedlist>
-        <para>Working to ensure that transmitted data maintains both structure and meaning is a
-            critical component of our work towards an Integrated Knowledge Management (IKM) platform
-            that can ensure lossless transmission of data. Currently, interoperability of data
-            between and within both organizations and standards poses as a major patient safety
-            issue in the healthcare system. A test with a given LIVD LOINC code can be performed
-            within a lab and as it is transmitted to the LIS, the test can be assigned a different
-            LIS LOINC code that does not capture all of the pertinent information. Even within the
-            organization the interoperability of data is threatened, so when data is then
-            transferred from the lab’s LIS to a hospital's EHR that lack of data interoperability
-            can compound as the LIS LOINC code is assigned another, potentially different EHR LOINC
-            code.</para>
-        <para>Working to maintain both structure and meaning as data moves within and between
-            systems will improve patient safety, product development, and health analytics and
-            reduce regulatory and clinical burden on policy makers and healthcare providers.</para>
-    </section>
     <section>
         <title>Clinical Statement Overview</title>
         <para>A clinical statement is a general informatics term. It is a definite and clear
@@ -384,14 +335,105 @@
             language processing of consult notes, and many others. </para>
     </section>
     <section>
-        <title>Terminology Overview</title>
+        <?oxy_comment_start author="tocrow" timestamp="20250228T212444-0500" comment="From Book Introduction"?>
+        <title><?oxy_custom_start type="oxy_content_highlight" color="255,255,0" mid="1"?>A Brief
+            Overview of Health Data Standards</title><?oxy_comment_end?>
+        <para>The broad goal of the application of standards to electronic health data is
+            unambiguous data exchange, or “interoperability” – the ability of two parties, either
+            human or machine, to exchange data or information so that it is transportable,
+            organizable, and interpretable in an expected format. </para>
+        <para>Standards for electronic health data have existed since the creation of the EHR in the
+            1960s. Computer engineers responsible for EHR development were tasked with representing
+            health concepts in a digital format that could be shared with users and connected
+            systems for common interpretation. Over the last 60 years, extensive work has been
+            performed to develop:<orderedlist>
+                <listitem>
+                    <para>Standards to represent clinical concepts (e.g., Systematized Nomenclature
+                        of Medicine Clinical Terms [SNOMED CT®])</para>
+                </listitem>
+                <listitem>
+                    <para>Standards to exchange those concepts (e.g., HL7)</para>
+                </listitem>
+                <listitem>
+                    <para>Supporting infrastructure (e.g., The United States Department of Health
+                        and Human Services [HHS], the Office of the National Coordinator for Health
+                        Information Technology [ONC] was born to promote a national health
+                        information technology infrastructure and oversee its development.)</para>
+                </listitem>
+            </orderedlist></para>
         <section>
-            <title>Industry Coding Standards</title>
-            <para>Healthcare data exchange requires that healthcare institutions and laboratories
-                reproducibly encode their test data using industry coding standards. For laboratory
-                data, appropriate use of LOINC® and SNOMED CT® is essential to ensure tests and
-                results are accurately and reliably described within EHR, LIS, and public health
-                reports. [9]</para>
+            <title>Example of Overlapping and Intersecting Nature of Standards</title>
+            <para>Hospitals and independent reference labs are two primary entities in the health
+                data ecosystem which share direct relationships and interfaces in the exchange of
+                clinical data. Healthcare interfaces must leverage various existing standards for
+                    <emphasis role="italic">structure </emphasis>and<emphasis role="italic">
+                    meaning</emphasis> and use them together in integrated ways. An electronic
+                interface provides an avenue, or connection point, for sharing data in a meaningful,
+                coherent way between two disparate systems. Without an interface, two disparate
+                systems are unable to communicate in a common language. In the U.S. and elsewhere,
+                the most common and accepted messaging structural standard for EHR-to- Reference Lab
+                interfacing is the Health Level Seven (HL7) Version 2.x (V2.x) standard. While other
+                messaging standards exist and can be used, the HL7 V2.x messaging standard, first
+                released in 1987, is used in 95% of U.S. healthcare organizations and in more than
+                35 countries. [35] </para>
+            <para><xref linkend="ErroneousLoincMapping"/> below shows an example of an HL7 v2
+                Observation (OBX) segment from two different mock lab result messages. In this
+                scenario, a laboratory has conducted two distinct blood glucose tests on two
+                distinct specimen sources. For the first test, a specimen from serum or plasma was
+                used. For the second test, the specimen was from whole blood. The figure below
+                illustrates how the HL7 v2 <emphasis role="italic">structure</emphasis> standard is
+                populated using existing terminology standards for <emphasis role="italic">meaning,
+                </emphasis>in this case LOINC®. In the first HL7 segment for test 1, the LOINC® code
+                is for a “Glucose [Mass/volume] in Serum or Plasma”, whereas for test 2, the LOINC®
+                code is for a “Glucose [Mass/volume] in Blood”. Different tests were conducted and
+                therefore, different LOINC® codes were used in the HL7 v2 messages. </para>
+            <figure xml:id="ErroneousLoincMapping">
+                <title>Erroneous LOINC® Mapping</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/Erroneous%20Loinc%20Mapping.svg" scale="55"
+                            align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>While different LOINC® codes were used, the local laboratory information system
+                and EHR also define and use their own code systems to encode the tests; these are
+                called “local codes." Although not universal, local codes are another way for health
+                information systems to represent <emphasis role="italic">meaning</emphasis> for
+                clinical concepts.</para>
+            <para>The figure shows how one local code, show in blue, can be erroneously mapped to
+                two different tests and their distinct LOINC® codes and transmitted in a Lab Result
+                message. This mock scenario highlights one example of the myriad of interoperability
+                challenges faced in healthcare today. [35] Successful interoperability is dependent
+                on either using universal code systems for data capture or through mapping local
+                content to a universal code system. Local code systems serve the same function as
+                universal coding systems such as SNOMED CT® and LOINC®, however are internal
+                identification schemas that consist of a set of local codes and their associated
+                definitions. </para>
+            <para>Because the receiving system will parse the identical local codes from the two
+                mock HL7 v2 segments above, it will interpret the lab result as having been produced
+                from identical lab tests. In simpler terms, the receiving system will interpret
+                these messages as the same glucose test with a “count of 2 observations” rather than
+                two different glucose tests, each with a “count of 1 observation.” Since the source
+                specimen and lab tests are different, but represented identically in the data
+                transmission, semantic meaning is lost compromising patient safety and accurate
+                reporting. The receiving system will interpret these two HL7 v2 segments as meaning
+                the “same thing” or representing the “same glucose test”; however, any terminologist
+                or laboratory professional would interpret this as “different glucose tests.”</para>
+            <para>To improve the quality and safety of patient care, there is a need to refine data
+                exchange within the healthcare ecosystem. We often hear comments as, “Why is the
+                problem of data exchange in healthcare so difficult? After all, other
+                industries—banking, for example— have solved the problem. Healthcare transactions
+                can’t be that much more complicated than those managed by a geographically
+                distributed, multiple line-of-business banking system.”</para>
+            <para>While other industries, like banking, have resolved issues with their transmission
+                and exchange of complex banking data across geographical locations and between
+                numerous unaffiliated businesses, the complexity with healthcare data arises, in
+                part, because neither the standards for structure (i.e., statement model) nor
+                standards for meaning (i.e., terminology model) can represent clinical data alone in
+                the current data structures. Both types of models can be arbitrarily complex, and,
+                at some point, semantics not represented in one must be represented in the other if
+                one is to achieve interoperability. [18]</para><?oxy_custom_end mid="1"?>
         </section>
         <section>
             <title>The Adoption of Three Key Terminology Standards: Systematized Nomenclature of
@@ -414,8 +456,10 @@
                     <listitem>
                         <para>High impact on biomedical research</para>
                     </listitem>
-                </orderedlist>The following excerpt, written by Olivier Bodenreider, Ronald Cornet,
-                and Daniel Vreeman discusses this further: </para>
+                </orderedlist> For laboratory data, appropriate use of LOINC® and SNOMED CT® is
+                essential to ensure tests and results are accurately and reliably described within
+                EHR, LIS, and public health reports. [9] The following excerpt, written by Olivier
+                Bodenreider, Ronald Cornet, and Daniel Vreeman discusses this further: </para>
             <para><emphasis role="italic">The recent acceleration in the deployment of EHR systems
                     has precipitated the emergence of a few terminologies and their wide adoption in
                     the clinical community. Two of them, the Systematized Nomenclature of Medicine
@@ -633,11 +677,28 @@
         <para>When dealing with the complexities of the various architectural layers of the below
             informatics architectural separation of concerns, one of the most important things to
             note is that any one of the architectural layers will be undergoing modifications at any
-            given point in time, as various Standards Development Organizations go through each of
-            their various drafting, balloting, and approval lifecycles. Therefore, it is important
-            to establish a foundation for versioning and modularity architecture that allows changes
-            and subchanges to be referenced uniquely so that all parties can be on the same page as
-            to a particular version.</para>
+            given point in time, as various Standards Development Organizations (SDOs) go through
+            each of their various drafting, balloting, and approval lifecycles. Therefore, it is
+            important to establish a foundation for versioning and modularity architecture that
+            allows changes and subchanges to be referenced uniquely so that all parties can be on
+            the same page as to a particular version.</para>
+        <para>In software engineering, modularity refers to the extent to which software may be
+            divided into smaller modules and emphasizes separating the functionality of a program
+            into independent, interchangeable modules, such that each contains everything necessary
+            to execute only one aspect of the desired functionality. A module interface expresses
+            the elements that are provided and required by the module, and the elements defined in
+            the interface are detectable by other modules. Modular programming is closely related to
+            object-oriented programming, having the same goal of facilitating construction of large
+            software programs and systems by decomposition into smaller pieces (i.e., 'polymorphism
+            by encapsulation' or 'composition over inheritance'). With modular programming, concerns
+            are separated such that modules perform logically discrete functions, interacting
+            through well-defined interfaces. Often modules form a directed acyclic graph (DAG); in
+            this case, a cyclic dependency between modules is seen as indicating that these should
+            be a single module. In the case where modules do form a DAG they can be arranged as a
+            hierarchy, where the lowest-level modules are independent, depending on no other
+            modules, and higher-level modules depend on lower-level ones. A particular program or
+            library is a top-level module of its own hierarchy, but can in turn be seen as a
+            lower-level module of a higher-level program, library, or system.</para>
         <para>For example, the following figure shows how each module could be given a unique
             version number and contain all layers of the architectural stack. In the instance that a
             particular versioned module needs to be extended, an extension module could be added to
@@ -645,24 +706,6 @@
             version. This arrangement accounts for the constant change in the healthcare
             interoperability space while still allowing two organizations to baseline on the same
             version for testing or exchange purposes.</para>
-        <para>In software engineering, modularity refers to the extent to which software may be
-            divided into smaller modules. Modularity emphasizes separating the functionality of a
-            program into independent, interchangeable modules, such that each contains everything
-            necessary to execute only one aspect of the desired functionality. A module interface
-            expresses the elements that are provided and required by the module, and the elements
-            defined in the interface are detectable by other modules. Modular programming is closely
-            related to object-oriented programming, having the same goal of facilitating
-            construction of large software programs and systems by decomposition into smaller pieces
-            (i.e., 'polymorphism by encapsulation' or 'composition over inheritance'). With modular
-            programming, concerns are separated such that modules perform logically discrete
-            functions, interacting through well-defined interfaces. Often modules form a directed
-            acyclic graph (DAG); in this case, a cyclic dependency between modules is seen as
-            indicating that these should be a single module. In the case where modules do form a DAG
-            they can be arranged as a hierarchy, where the lowest-level modules are independent,
-            depending on no other modules, and higher-level modules depend on lower-level ones. A
-            particular program or library is a top-level module of its own hierarchy, but can in
-            turn be seen as a lower-level module of a higher-level program, library, or
-            system.</para>
         <figure xml:id="VersioningandModules">
             <title>Modules and Extensions</title>
             <mediaobject>
@@ -676,7 +719,7 @@
     <xi:include href="Book%20Patient%20Safety%20Overview.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <section>
-        <title>References</title>
+        <title><?oxy_comment_start author="tocrow" timestamp="20250225T184250-0500" comment="Text for citations 1-2 was moved"?>References<?oxy_comment_end?></title>
         <para>
             <orderedlist>
                 <listitem>
@@ -901,4 +944,5 @@
             </orderedlist>
         </para>
     </section>
+    
 </chapter>

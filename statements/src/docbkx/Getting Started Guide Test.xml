@@ -1198,7 +1198,7 @@
             <title>Scenario 1</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Scenario1Codesniop_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Scenario1Codesniop_GSG%20.svg" scale="55"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1212,7 +1212,7 @@
             <title>Scenario 2</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Scenario2Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Scenario2Codesnip_GSG%20.svg" scale="60"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1319,11 +1319,11 @@
         </figure></para>
         <para>Output:</para>
         <para>
-            <figure xml:id="AtomicOutput#Codesnip_GSG ">
+            <figure xml:id="AtomicOutputCountCodesnip_GSG">
             <title>Atomic Output</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Atomic%20Output%20%23%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Atomic%20Output%20Count%20Codesnip_GSG%20.svg" scale="35"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1348,11 +1348,11 @@
             </mediaobject>
         </figure></para>
         <para>Output:</para>  
-        <figure xml:id="ActiveConceptsAtomic#Codesnip_GSG ">
+        <figure xml:id="ActiveConceptsAtomicCountodesnip_GSG">
             <title>Active Concepts Count</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Active%20Concepts%20Atomic%20%23%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Active%20Concepts%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1380,11 +1380,11 @@
         </figure></para>
         <para>Output:</para>        
         <para>
-            <figure xml:id="InactiveConceptsAtomic#Codesnip_GSG">
+            <figure xml:id="InactiveConceptsAtomicCountCodesnip_GSG">
             <title>Inactive Concepts Count</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Inactive%20Concepts%20Atomic%20%23%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Inactive%20Concepts%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1413,11 +1413,11 @@
         </figure></para>
         <para>Output:</para>
         <para>
-            <figure xml:id="ActiveConcepts10Atomic#Codesnip_GSG">
+            <figure xml:id="ActiveConcepts10AtomicCountCodesnip_GSG">
             <title>Active Concepts 10 Count</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Active%20Concepts%2010%20Atomic%20%23%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Active%20Concepts%2010%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
                         align="center"/>
                 </imageobject>
             </mediaobject>

@@ -17,11 +17,11 @@
                 role="italic">Federal Health IT Strategic Plan
             2015-2020</emphasis><?oxy_comment_end?> set a strategy to encourage consistent
             terminology standards implementation in Electronic Health Records (EHRs) and encourage
-            use through federal payment policies. </para>
-        <para>Standards are obtained from a variety of efforts, cover different domains of clinical
-            and nonclinical content relevant to the EHR, and serve various purposes. Currently, no
-            single terminology or classification system contains everything that is needed for the
-            medical record. Terminology systems typically consist of the following elements: </para>
+            their use use through federal payment policies. </para>
+        <para>Terminology standards cover different domains of clinical and nonclinical content
+            relevant to the EHR, and serve various purposes. Currently, no single terminology or
+            classification system contains everything that is needed for the medical record.
+            Terminology systems typically consist of the following elements: </para>
         <itemizedlist>
             <listitem>
                 <para>Coded Concepts – the discrete units of knowledge managed within the
@@ -54,7 +54,7 @@
             varies from focusing on a very specific domain to covering multiple domains.</para>
     </section>
     <section>
-        <title>What is LOINC®?</title>
+        <title>What is Logical Observation Identifiers Names and Codes (LOINC®)?</title>
         <para>Bodenreider et al. provide an overview of LOINC®:</para>
         <para><emphasis>LOINC® is a clinical terminology for identifying health measurements,
                 observations, and documents. LOINC® was initiated in 1994 by the Regenstrief
@@ -165,19 +165,27 @@
         </section>
         <section>
             <title>LOINC® Collaboration</title>
+            <para><emphasis role="italic">In the context of the specifications of the U.S.
+                    Meaningful Use incentive program, LOINC® is the primary choice for specifying
+                    attributes, and SNOMED CT® the system of use for the relevant attribute values.
+                    In other words, LOINC® is used to specify the question (e.g., 29308-4: “what is
+                    the diagnosis?”), and SNOMED CT® to specify the answer (e.g., 3723001:
+                    “Arthritis”). Adoption of this principle by both the Regenstrief Institute and
+                    SNOMED International has formed the basis for the cooperation agreement. In
+                    2013, Regenstrief and SNOMED International formed a long-term collaborative
+                    relationship to link the rich clinical semantics of SNOMED CT® to LOINC®, which
+                    provides extensive coverage of laboratory tests and clinical measurements.
+                </emphasis>[1]</para>
             <para>The following <emphasis role="italic">italicized excerpts</emphasis> provide an
                 overview of Regenstrief’s relationship with the health community in the development
                 of LOINC®. Non italicized text reflects updates and discussion to reflect the
-                current state. </para>
-            <para><emphasis role="italic">Regenstrief is committed to working with developers of
-                    health data standards that are complementary to LOINC®, including syntax
-                    standards for data exchange and other terminology standards. Regenstrief and HL7
-                    have a long-standing collaboration; a few joint work highlights include clinical
-                    genomics guides, claims attachments specifications, and approaches for
-                    representing vocabulary standards in Fast Healthcare Interoperability Resources
-                    (FHIR) terminology services. Regenstrief Institute made core LOINC® content
-                    available via a FHIR API as part of its normal release process beginning Summer
-                    2018.</emphasis></para>
+                current state.
+                <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250311T144529-0500" comment="Deleted a paragraph that followed this intro: &quot;Regenstrief is committed to working with developers of health data standards that are complementary to
+LOINC®, including syntax standards for data exchange and other terminology standards. Regenstrief and
+HL7 have a long-standing collaboration; a few joint work highlights include clinical genomics guides,
+claims attachments specifications, and approaches for representing vocabulary standards in Fast Healthcare
+Interoperability Resources (FHIR) terminology services. Regenstrief Institute made core LOINC®
+content available via a FHIR API as part of its normal release process beginning Summer 2018.&quot;"?></para><?oxy_comment_end?>
             <para>In April 2022, a LOINC® Terminology Service using the FHIR Standard was launched
                 with an API that provides a means for users to access LOINC® content across multiple
                 versions programmatically.]</para>
@@ -191,29 +199,19 @@
                     Diagnostic (IVD) Industry Connectivity Consortium (IICC) on a specification for
                     publishing vendor IVD tests associated with a set of LOINC® codes that identify
                     the distinct observations produced by the test.</emphasis></para>
-            <para><emphasis role="italic">In the context of the specifications of the U.S.
-                    Meaningful Use incentive program, LOINC® is the primary choice for specifying
-                    attributes, and SNOMED CT® the system of use for the relevant attribute values.
-                    In other words, LOINC® is used to specify the question (e.g., 29308-4: “what is
-                    the diagnosis?”), and SNOMED CT® to specify the answer (e.g., 3723001:
-                    “Arthritis”). Adoption of this principle by both the Regenstrief Institute and
-                    SNOMED International has formed the basis for the cooperation agreement. In
-                    2013, Regenstrief and SNOMED International formed a long-term collaborative
-                    relationship to link the rich clinical semantics of SNOMED CT® to LOINC®, which
-                    provides extensive coverage of laboratory tests and clinical measurements.
-                </emphasis>[1]</para>
+            <para/>
             <para>While the initial partnership and memorandum of understanding signed between
-                SNOMED CT® and LOINC® developers paved the way
-                for development teams to facilitate interoperability and minimize duplication of
-                effort, the collaborative relationship did not accomplish a complete integration of
-                the two disparate terminologies. Further integration has been proposed to leverage
-                SNOMED CT®’s model for the representation of LOINC® building blocks and for a more
-                consistent representation of clinical and laboratory observations in SNOMED CT®.
-                Furthermore, the use of description logics for the representation of LOINC® was not
-                accomplished under this initial partnership in 2013 and only SNOMED CT® currently
-                uses this formalism. LOINC® still uses its distinct formalisms and tools for its
-                representation, has its own release cycles and versioning mechanisms, which makes
-                seamless integration with SNOMED CT® non trivial, if possible at all. </para>
+                SNOMED CT® and LOINC® developers paved the way for development teams to facilitate
+                interoperability and minimize duplication of effort, the collaborative relationship
+                did not accomplish a complete integration of the two disparate terminologies.
+                Further integration has been proposed to leverage SNOMED CT®’s model for the
+                representation of LOINC® building blocks and for a more consistent representation of
+                clinical and laboratory observations in SNOMED CT®. Furthermore, the use of
+                description logics for the representation of LOINC® was not accomplished under this
+                initial partnership in 2013 and only SNOMED CT® currently uses this formalism.
+                LOINC® still uses its distinct formalisms and tools for its representation, has its
+                own release cycles and versioning mechanisms, which makes seamless integration with
+                SNOMED CT® non trivial, if possible at all. </para>
         </section>
     </section>
     <section>
@@ -254,10 +252,8 @@
             <title>SNOMED CT® Current State</title>
             <para>Regarding the current state, Bodenreider, et al., go on to say:</para>
             <para><emphasis role="italic">Since the first release of SNOMED CT® in January 2003,
-                    updated versions have been released twice a year. Maintenance can lead to a
-                    decrease of the number of elements, e.g., in January 2010 when, among others,
-                    the veterinary content was removed from the International Release.
-                </emphasis>[1]</para>
+                    updated versions have been released twice a year, maintenance can lead to a
+                    decrease of the number of elements.</emphasis>[1]</para>
             <para>The July 2022 release contains 356,817 active concepts, 1,202,379 active
                 relationships and 1,286,456 active descriptions. The largest categories of concepts
                 in SNOMED CT® are disorders (23%), procedures (16%), body structures (11%), clinical
@@ -336,122 +332,44 @@
                 <imagedata fileref="../images/RxNorm.svg" scalefit="1" width="100%" contentdepth="100%"/>
             </imageobject>
         </inlinemediaobject></para>
-        <para>Here’s an excerpt of Bodenreider et al. overview of RxNorm:</para>
-        <para><emphasis role="italic">At the dawn of the twenty-first century, there was no standard
-                terminology for drugs in the U.S.. While many companies provide information about
-                drugs for use in clinical information systems (e.g., to support clinical decision),
-                each drug knowledge base defines its own codes and names for medications, making it
-                difficult to exchange information across clinical information systems and to
-                retrieve information from different systems. For example, the same transdermal patch
-                delivering 0.583 milligrams of nicotine per hour for 24 hours (e.g., to help with
-                smoking cessation) is referred to with the following codes and names in three of the
-                major drug knowledge bases: • 2707 nicotine 14 mg/24 hr transdermal film, extended
-                release • 102712 Nicotine 14 MG/24 HR Transdermal Patch, Extended Release • 016426
-                NICOTINE 14 mg/24 hour T R A N S D E R M P A T C H , TRANSDERMAL 24 HOURS In
-                addition to capitalization differences, there is a lack of standardization in naming
-                dose forms (transdermal film vs. transdermal patch) and units (24 hr vs. 24 hour),
-                making it difficult to parse names from multiple systems. RxNorm was created to
-                address the lack of standardization in drug names, and to make drug terminologies
-                interoperable by integrating them into a reference system. Since the 1990s, the NLM
-                has released the UMLS, a terminology integration system in which names and codes
-                from all major biomedical terminologies are integrated, and equivalent terms across
-                vocabularies are identified. RxNorm can be thought of as a specialized version of
-                the UMLS. While both UMLS and RxNorm are built upon existing vocabularies, one major
-                difference between the two is that UMLS generally does not create names for
-                biomedical entities. In contrast, RxNorm creates a “normal form” for every drug
-                entity it integrates. In RxNorm parlance, normal forms are standardized terms for
-                drug entities. For example, the normal form for the nicotine patch discussed above
-                is “24 HR Nicotine 0.583 MG/HR Transdermal System”, to which RxNorm permanently
-                assigns the concept unique identifier 198029. Unlike the UMLS, RxNorm also defines a
-                rich network of named relationships among the various types of drug entities it
-                integrates (e.g., ingredient, brand name, generic drug product, branded drug
-                product). The main use cases RxNorm was designed to support include electronic
-                prescribing, drug information exchange, and mapping across drug vocabularies (e.g.,
-                for medication reconciliation purposes). Standard names and codes for drugs were
-                also expected to facilitate the development of standard clinical decision support
-                rules involving medications. RxNorm started in 2002. It was first released through
-                the UMLS and has been published as an independent terminology with monthly releases
-                since November 2004, and weekly updates since 2008 to reflect drugs recently
-                marketed in the U.S. market. The number of sources integrated in RxNorm has grown
-                from 5 to 13.</emphasis>[1]</para>
+        <para>Here’s an excerpt of Bodenreider et al. overview of
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250311T145619-0500" comment="Deleted text: &quot;At the dawn of the twenty-first century, there was no standard terminology for drugs in the U.S.. While many companies provide information about drugs for use in clinical information systems (e.g., to support clinical decision), each drug knowledge base defines its own codes and names for medications, making it difficult to exchange information across clinical information systems and to retrieve information from different systems. For example, the same transdermal patch delivering 0.583 milligrams of nicotine per hour for 24 hours (e.g., to help with smoking cessation) is referred to with the following codes and names in three of the major drug knowledge bases: • 2707 nicotine 14 mg/24 hr transdermal film, extended release • 102712 Nicotine 14 MG/24 HR Transdermal Patch, Extended Release • 016426 NICOTINE 14 mg/24 hour T R A N S D E R M P A T C H , TRANSDERMAL 24 HOURS In addition to capitalization differences, there is a lack of standardization in naming dose forms (transdermal film vs. transdermal patch) and units (24 hr vs. 24 hour), making it difficult to parse names from multiple systems.&quot;"?>RxNorm<?oxy_comment_end?>:</para>
+        <para><emphasis role="italic">RxNorm was created to address the lack of standardization in
+                drug names, and to make drug terminologies interoperable by integrating them into a
+                reference system. Since the 1990s, the NLM has released the UMLS, a terminology
+                integration system in which names and codes from all major biomedical terminologies
+                are integrated, and equivalent terms across vocabularies are identified.
+                <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250311T145710-0500" comment="Deleted comment: &quot;RxNorm can be thought of as a specialized version of the UMLS. While both UMLS and RxNorm are built upon existing vocabularies, one major difference between the two is that UMLS generally does not create names for biomedical entities. In contrast, RxNorm creates a “normal form” for every drug entity it integrates. In RxNorm parlance, normal forms are standardized terms for drug entities. For example, the normal form for the nicotine patch discussed above is “24 HR Nicotine 0.583 MG/HR Transdermal System”, to which RxNorm permanently assigns the concept unique identifier 198029. Unlike the UMLS, RxNorm also defines a rich network of named relationships among the various types of drug entities it integrates (e.g., ingredient, brand name, generic drug product, branded drug product). &quot;"?>The<?oxy_comment_end?>
+                main use cases RxNorm was designed to support include electronic prescribing, drug
+                information exchange, and mapping across drug vocabularies (e.g., for medication
+                reconciliation purposes). Standard names and codes for drugs were also expected to
+                facilitate the development of standard clinical decision support rules involving
+                medications. RxNorm started in 2002. It was first released through the UMLS and has
+                been published as an independent terminology with monthly releases since November
+                2004, and weekly updates since 2008 to reflect drugs recently marketed in the U.S.
+                market. The number of sources integrated in RxNorm has grown from 5 to
+                13.</emphasis>[1]</para>
         <section>
             <title>RxNorm Current State</title>
-            <para>Bodenreider et al. go on to talk about the current state:</para>
-            <para><emphasis role="italic">Status: RxNorm currently integrates terminology
-                    information from most drug knowledge base vendors (e.g., First DataBank, Multum,
-                    Micromedex, Gold Standard), as well as the drug component of standard
-                    terminologies (e.g., SNOMED CT®, MeSH). RxNorm also integrates sources from
-                    several public entities. More recently, RxNorm has also integrated international
-                    drug resources, such as the Anatomical Therapeutic Chemical (ATC) Classification
-                    System and DrugBank, a drug resource used in many research projects.
-                </emphasis></para>
-            <para><emphasis role="italic">Organization: The RxNorm drug model distinguishes between
-                    generic and branded drug entities and identifies three major definitional
-                    elements for drug products, namely ingredient, strength, and dose form, along
-                    with two additional elements, quantity factor and qualitative distinction. The
-                    major types of drug entities include ingredient (e.g., Azithromycin), brand name
-                    (e.g., Zithromax), clinical drug (e.g., Azithromycin 250 MG Oral Tablet), and
-                    branded drug (e.g., Zithromax 250 MG Oral Tablet). Generic and branded packs are
-                    collections of clinical and branded drugs, respectively (e.g., Z-PAK, a branded
-                    pack of 6 tablets of 250 milligrams of azithromycin). While drugs are sold
-                    mostly pre-packaged in some countries (e.g., individual tablets in blister
-                    packs), packs are available for a minority of drugs in the U.S. In addition to
-                    the six major drug entities, RxNorm provides entities for navigational purposes.
-                    Clinical and branded drug components associate ingredient (or brand name) and
-                    strength information, and clinical and branded dose forms associate ingredient
-                    (or brand name) and dose form information.</emphasis></para>
-            <para><emphasis role="italic">The various types of drug entities in RxNorm are organized
-                    into a graph that can be easily traversed, enabling users to navigate among
-                    types of entities (e.g., to find the branded drugs associated with a given
-                    ingredient). While its main organization principles have remained centered on
-                    the ingredient-strength-dose form triad, RxNorm has added definitional features
-                    to accommodate distinctions, such as duration for extended release forms and
-                    transdermal systems (e.g., the quantity factor “24 HR” in “24 HR Nicotine 0.583
-                    MG/HR Transdermal System”) and size of unit of presentation for injectable
-                    medications (e.g., the quantity factor “40 ML” in “40 ML Ciprofloxacin 10 MG/ML
-                    Injection”), as well as qualitative elements for specific drugs (e.g., the
-                    qualitative distinction “Sugar-Free” in “Sugar-Free Cholestyramine Resin 4000 MG
-                    Powder for Oral Suspension”). A drug product in RxNorm is fully defined by its
-                    set of ingredient, strength, dose form, quantity factor, and qualitative
-                    distinction values. Types of ingredients include multi-ingredients (e.g.,
-                    Sulfamethoxazole / Trimethoprim) and “precise ingredients” (e.g., Atorvastatin
-                    calcium, Morphine Sulfate), generally denoting, salts, esters, and complexes of
-                    base substances. As illustrated in the examples above, RxNorm normal forms
-                    reflect the definitional features of drug entities. Additionally, RxNorm
-                    explicitly links drug entities to these features, which supports efficient
-                    processing. For example, the generic nicotine patch “24 HR Nicotine 0.583 MG/HR
-                    Transdermal System” is linked to its ingredient (Nicotine), strength (0.583
-                    MG/HR), dose form (Transdermal System), and quantity factor (“24 HR”).
-                </emphasis></para>
+            <para>Bodenreider et al. go on to talk about the current
+                <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250311T145824-0500" comment="Deleted: &quot;Status: RxNorm currently integrates terminology information from most drug knowledge base vendors (e.g., First DataBank, Multum, Micromedex, Gold Standard), as well as the drug component of standard terminologies (e.g., SNOMED CT®, MeSH). RxNorm also integrates sources from several public entities. More recently, RxNorm has also integrated international drug resources, such as the Anatomical Therapeutic Chemical (ATC) Classification System and DrugBank, a drug resource used in many research projects. 
+Organization: The RxNorm drug model distinguishes between generic and branded drug entities and identifies three major definitional elements for drug products, namely ingredient, strength, and dose form, along with two additional elements, quantity factor and qualitative distinction. The major types of drug entities include ingredient (e.g., Azithromycin), brand name (e.g., Zithromax), clinical drug (e.g., Azithromycin 250 MG Oral Tablet), and branded drug (e.g., Zithromax 250 MG Oral Tablet). Generic and branded packs are collections of clinical and branded drugs, respectively (e.g., Z-PAK, a branded pack of 6 tablets of 250 milligrams of azithromycin). While drugs are sold mostly pre-packaged in some countries (e.g., individual tablets in blister packs), packs are available for a minority of drugs in the U.S. In addition to the six major drug entities, RxNorm provides entities for navigational purposes. Clinical and branded drug components associate ingredient (or brand name) and strength information, and clinical and branded dose forms associate ingredient (or brand name) and dose form information.
+The various types of drug entities in RxNorm are organized into a graph that can be easily traversed, enabling users to navigate among types of entities (e.g., to find the branded drugs associated with a given ingredient). While its main organization principles have remained centered on the ingredient-strength-dose form triad, RxNorm has added definitional features to accommodate distinctions, such as duration for extended release forms and transdermal systems (e.g., the quantity factor “24 HR” in “24 HR Nicotine 0.583 MG/HR Transdermal System”) and size of unit of presentation for injectable medications (e.g., the quantity factor “40 ML” in “40 ML Ciprofloxacin 10 MG/ML Injection”), as well as qualitative elements for specific drugs (e.g., the qualitative distinction “Sugar-Free” in “Sugar-Free Cholestyramine Resin 4000 MG Powder for Oral Suspension”). A drug product in RxNorm is fully defined by its set of ingredient, strength, dose form, quantity factor, and qualitative distinction values. Types of ingredients include multi-ingredients (e.g., Sulfamethoxazole / Trimethoprim) and “precise ingredients” (e.g., Atorvastatin calcium, Morphine Sulfate), generally denoting, salts, esters, and complexes of base substances. As illustrated in the examples above, RxNorm normal forms reflect the definitional features of drug entities. Additionally, RxNorm explicitly links drug entities to these features, which supports efficient processing. For example, the generic nicotine patch “24 HR Nicotine 0.583 MG/HR Transdermal System” is linked to its ingredient (Nicotine), strength (0.583 MG/HR), dose form (Transdermal System), and quantity factor (“24 HR”). &quot;"?>state<?oxy_comment_end?>:</para>
             <para><emphasis role="italic">The scope of RxNorm is different from that of drug
                     knowledge bases. RxNorm focuses on drug names and codes. In other words,
                     clinical information (e.g., indications, drug classes, and drug-drug
                     interactions) and administrative information (e.g., drug pricing) are out of
-                    scope for RxNorm. Although it integrates international sources (e.g., ATC,
-                    DrugBank), RxNorm focuses on drug products marketed in the U.S. Finally,
-                    non-therapeutic radiopharmaceuticals, bulk powders, contrast media, food,
-                    dietary supplements, and medical devices, such as bandages and crutches, are all
-                    out of scope for RxNorm. In addition to the codes from drug terminologies and
-                    knowledge bases, RxNorm integrates codes from the US Food and Drug
-                    Aministration's (FDA) National Drug Code (NDC) Directory, which serve as product
-                    identifiers for drugs in billing transactions, and contains links to Structured
-                    Product Labels (i.e., package inserts) submitted by drug manufacturers to the
-                    FDA..</emphasis>[1]</para>
-            <para>The September 2022 edition of RxNorm includes 13856 (base) ingredients, 5065 brand
-                names, 17226 semantic clinical drugs, 9424 semantic branded drugs, 474 generic
-                packs, and 543 branded backs. </para>
+                    scope for
+                    <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250311T145856-0500" comment="Deleted: &quot;lthough it integrates international sources (e.g., ATC, DrugBank), RxNorm focuses on drug products marketed in the U.S. Finally, non-therapeutic radiopharmaceuticals, bulk powders, contrast media, food, dietary supplements, and medical devices, such as bandages and crutches, are all out of scope for RxNorm. In addition to the codes from drug terminologies and knowledge bases, RxNorm integrates codes from the US Food and Drug Aministration&apos;s (FDA) National Drug Code (NDC) Directory, which serve as product identifiers for drugs in billing transactions, and contains links to Structured Product Labels (i.e., package inserts) submitted by drug manufacturers to the FDA..[1]
+The September 2022 edition of RxNorm includes 13856 (base) ingredients, 5065 brand names, 17226 semantic clinical drugs, 9424 semantic branded drugs, 474 generic packs, and 543 branded backs. &quot;"?>RxNorm<?oxy_comment_end?>.</emphasis></para>
             <para><emphasis role="italic">With each monthly update, the RxNorm content is kept
                     current and in sync with drugs available on the U.S. market, i.e., new drug
                     products are added and drug products no longer available are retired. RxNorm
                     identifiers are never reused and can be safely used as permanent identifiers for
                     drugs in clinical data warehouses and prescription datasets. However, any given
                     release of RxNorm only contains detailed information about active drug products
-                    in that release.</emphasis></para>
-            <para>In 2019 Medication - Reference Terminology (MED-RT) replaced National Drug File -
-                Reference Terminology (NDF-RT). [5] RxNorm is available as a resource in the HL7
-                FHIR website. While it is currently in Standard for Trial Use (STU), it has been
-                advancing through the HL7 Ballot Levels to expose the RxNorm content as medication
-                resources. [6]</para>
+                    in that
+                    <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250311T145940-0500" comment="Deleted: &quot;In 2019 Medication - Reference Terminology (MED-RT) replaced National Drug File - Reference Terminology (NDF-RT). [5] RxNorm is available as a resource in the HL7 FHIR website. While it is currently in Standard for Trial Use (STU), it has been advancing through the HL7 Ballot Levels to expose the RxNorm content as medication resources. [6]&quot;"?>release<?oxy_comment_end?>.</emphasis></para>
         </section>
         <section>
             <title>RxNorm Collaborations</title>
@@ -625,8 +543,9 @@
                     language processing tools</para>
             </listitem>
         </itemizedlist>
-        <para>The Semantic Network and Lexical Tools are used to produce the Metathesaurus. The
-            steps to produce the Metathesaurus involve:</para>
+        <para>The Semantic Network and Lexical Tools are used to produce the Metathesaurus.
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250311T150229-0500" comment="Comment from Russ Ham Feb 2025: Maybe relocate to section 16"?>The
+            steps to produce the Metathesaurus involve:<?oxy_comment_end?></para>
         <itemizedlist>
             <listitem>
                 <para>Processing the terms and codes from source terminologies using the Lexical
@@ -674,54 +593,17 @@
             among the three terminologies. Moreover, these three terminologies use different
             formalisms and tools for their representation, have their own release cycles and
             versioning mechanisms, which makes their seamless integration non trivial, if at all
-            possible.” </para>
-    </section>
-    <section>
-        <title>Value Set Authority Center (VSAC)</title>
-    
-        <para>The NLM, also, in collaboration with the Office of the National Coordinator for Health
-            Information Technology and Centers for Medicare &amp; Medicaid Services, hosts the Value
-            Set Authority Center (VSAC). The VSAC aims to provide lists of values, codes, and names
-            (i.e., value sets) from standard clinical terminologies to represent clinical concepts.
-            Similarly, Winnenburg et al. highlighted duplicate value sets in the VSAC, and showed
-            that 19% of value sets in 2011 contained invalid codes.
-                <citation><?oxy_comment_start author="tocrow" timestamp="20240624T153159-0400" comment="Cite"?>Winnenburg<?oxy_comment_end?></citation>
-            In subsequent work, they highlighted issues related to granularity by evaluating over
-            1,000 value sets and found that value sets varied vastly in size with some only
-            containing one code, while other value sets included over 20,000 codes.
-                <citation><?oxy_comment_start author="tocrow" timestamp="20240624T153204-0400" comment="Cite"?>Winnenburg2<?oxy_comment_end?></citation>
-            Similarly, Bahr et al. showed issues with concept orientation by analyzing medication
-            value sets and found extraneous and missing ingredients in both the value sets and drug
-                classes.<citation><?oxy_comment_start author="tocrow" timestamp="20240624T153212-0400" comment="Cite"?>Bahr<?oxy_comment_end?></citation>
-        </para>
-    </section>
-    <section>
-        <title>Observational Medical Outcomes Partnership (OMOP)</title>
-        <para>Observational Health Data Sciences and Informatics (OHDSI) created OMOP Common Data
-            Model (CDM) to inform the appropriate use of observational healthcare databases for
-            studying the effects of medical products. ATHENA is used to harmonize disparate coding
-            systems—with minimal information loss—to a standardized vocabulary. The Standard
-            Vocabulary is a foundational tool that enables transparent and consistent content across
-            disparate observational databases, and serves to support the OHDSI research community in
-            conducting efficient and reproducible observational research.</para>
-        <para>OHDSI categorizes source terminology concepts in three ways:<itemizedlist>
-            <listitem>
-                <para><emphasis role="bold">Standard Concept:</emphasis> "official" concepts
-                    used to represent unique clinical entities in the CDM.</para>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Classification Concept:</emphasis> have a
-                    hierarchical relationship to Standard Concepts and can be used to query for
-                    Standard Concepts using the records of the CONCEPT_ANCESTOR table. However,
-                    they cannot appear in the Data Tables.</para>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Source Concept:</emphasis> all remaining Concepts
-                    that are not Standard or Classification Concepts </para>
-            </listitem>
-        </itemizedlist></para>
-        <para>OHDSI's Standard Vocabulary relies heavily on mapping non-standard concepts to the
-            Standard Concepts.  </para>
+            possible.”
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250311T150632-0500" comment="Deleted these sections: 
+&quot;Value Set Authority Center (VSAC)
+The NLM, also, in collaboration with the Office of the National Coordinator for Health Information Technology and Centers for Medicare &amp; Medicaid Services, hosts the Value Set Authority Center (VSAC). The VSAC aims to provide lists of values, codes, and names (i.e., value sets) from standard clinical terminologies to represent clinical concepts. Similarly, Winnenburg et al. highlighted duplicate value sets in the VSAC, and showed that 19% of value sets in 2011 contained invalid codes. Winnenburg In subsequent work, they highlighted issues related to granularity by evaluating over 1,000 value sets and found that value sets varied vastly in size with some only containing one code, while other value sets included over 20,000 codes. Winnenburg2 Similarly, Bahr et al. showed issues with concept orientation by analyzing medication value sets and found extraneous and missing ingredients in both the value sets and drug classes.Bahr 
+Observational Medical Outcomes Partnership (OMOP)
+Observational Health Data Sciences and Informatics (OHDSI) created OMOP Common Data Model (CDM) to inform the appropriate use of observational healthcare databases for studying the effects of medical products. ATHENA is used to harmonize disparate coding systems—with minimal information loss—to a standardized vocabulary. The Standard Vocabulary is a foundational tool that enables transparent and consistent content across disparate observational databases, and serves to support the OHDSI research community in conducting efficient and reproducible observational research.
+OHDSI categorizes source terminology concepts in three ways:
+Standard Concept: &quot;official&quot; concepts used to represent unique clinical entities in the CDM.
+Classification Concept: have a hierarchical relationship to Standard Concepts and can be used to query for Standard Concepts using the records of the CONCEPT_ANCESTOR table. However, they cannot appear in the Data Tables.
+Source Concept: all remaining Concepts that are not Standard or Classification Concepts 
+OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts to the Standard Concepts. &quot;"?></para><?oxy_comment_end?>
     </section>
     <xi:include href="Book%20SOLOR%20Terminology.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <section>

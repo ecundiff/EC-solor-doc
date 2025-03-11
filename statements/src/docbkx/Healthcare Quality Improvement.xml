@@ -185,15 +185,10 @@
                 healthcare workflows is meant to save time and improve efficiencies, it often leads
                 to added stress, burnout, fatigue, and errors. Healthcare systems will need to find
                 a way to upskill the workforce to lessen the technological burden, improve existing
-                work systems, and alleviate the stress of a diminished talent pipeline. </para>
-        <para>Another key component of healthcare delivery is health equity. Advancing health equity
-                by addressing healthcare disparities, including socioeconomic, racial, and
-                gender-based inequities, is a complex and critical challenge in healthcare. High
-                quality demographic data has been linked to improved, patient-centered outcomes and
-                is critical for identifying, addressing, and reducing current health disparities.
-                All of these challenges are bookended by patient safety, with issues like medication
-                errors, diagnostic inaccuracies, and hospital-acquired infections (HAIs) continuing
-                to pose significant challenges to healthcare quality. [10]</para>
+                work systems, and alleviate the stress of a diminished talent pipeline. All of these
+                challenges are bookended by patient safety, with issues like medication errors,
+                diagnostic inaccuracies, and hospital-acquired infections (HAIs) continuing to pose
+                significant challenges to healthcare quality. [10]</para>
         </section>
         <section><title>The Role of Data and Information Management in Healthcare
                 Quality</title>
@@ -475,12 +470,6 @@
                         role="italic">Engagement: </emphasis>Surveys and feedback mechanisms to
                     gauge the impact on healthcare providers' workflow and job satisfaction.
                     [25]</para></listitem>
-            <listitem><para><emphasis role="italic">Health </emphasis><emphasis role="italic">Equity:
-                    </emphasis>Collection of patient data including Race, Ethnicity, and Language,
-                    and percentage of workforce trained in collecting this data. Other domains
-                    include data collection and use, cultural competency trainings, Diversity,
-                    Equity, and Inclusion (DEI) in leadership, and strength of community
-                    partnerships. [26]</para></listitem>
         </orderedlist>
         <para>Evaluating the effectiveness of IKM and Tinkar requires a robust data analysis to
             assess the changes in healthcare delivery and outcomes before and after implementation.
@@ -499,7 +488,7 @@
             and patient monitoring. Shifting the focus to patient engagement, the healthcare process
             experience, and regular training and education will ensure that both patients and
             providers are centered in the process and healthcare professionals are up-to-date with
-            the latest technologies and practices in healthcare quality improvement. [27]</para>
+            the latest technologies and practices in healthcare quality improvement. [26]</para>
     </section>
     <section>
         <title>Implementation Considerations</title>
@@ -567,7 +556,7 @@
             advancing healthcare quality and health policy. By embracing these technologies and
             addressing associated challenges, healthcare organizations can improve patient outcomes,
             enhance operational efficiency, and pave the way for a more dynamic and patient-centered
-            healthcare system. [28]</para>
+            healthcare system. [27]</para>
     </section>
     <section>
         <title>References</title>
@@ -721,11 +710,6 @@
                 <para>CDC. CDC Policy Process | Policy, Performance, and Evaluation | CDC
                     [Internet]. www.cdc.gov. 2023. Available from:
                     https://www.cdc.gov/policy/paeo/process/index.html</para>
-            </listitem>
-            <listitem>
-                <para>Orand J. Most important metrics for a healthcare quality management dashboard
-                    | symplr [Internet]. www.symplr.com. 2021. Available from:
-                    https://www.symplr.com/blog/most-important-metrics-healthcare-quality-dashboard</para>
             </listitem>
             <listitem>
                 <para>Health Equity, Diversity &amp; Inclusion Measures for Hospitals and Health

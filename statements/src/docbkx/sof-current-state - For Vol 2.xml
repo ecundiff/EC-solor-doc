@@ -13,11 +13,8 @@
             overcome lab interoperability barriers. Due to the complexity and vastness of this
             issue, SHIELD has embraced an ecosystem perspective that recognizes no single entity has
             the authority or influence to meaningfully impact the state of lab interoperability.
-            SHIELD stakeholders include IVD manufacturers, commercial and clinical center
-            laboratories, professional organizations, EHR vendors, Pew Charitable Trusts, numerous
-            federal agencies, standards development organizations, and patient advocates. SHIELD’s
-            overall objective is to ensure lab interoperability such that the same type of device is
-            described the same way throughout EHRs. </para>
+            SHIELD’s overall objective is to ensure lab interoperability such that the same type of
+            device is described the same way throughout EHRs. </para>
         <para>The purpose of this Summary of Findings – current state of RWE analytics including but
             not limited to information retrieval and Knowledge Management and discovery – is to
             explore the current state of real world data and real world evidence as it pertains to
@@ -132,13 +129,13 @@
         <section>
             <title>Current RWD Uses</title>
             <para>There are several national and international efforts to aggregate and expose
-                EHR/RWD for use by researchers and public health scientists. Such efforts include
-                the National Patient-Centered Clinical Research Network (PCORnet), Observational
-                Health Data Sciences and Informatics (OHDSI), National COVID Cohort Collaborative
-                (N3C) and its potential spin offs. Common to each of these efforts is the extraction
-                of EHR data from participating entities, transforming these data to a common data
-                model, annotating/managing the data with standardized medical terminologies and
-                aggregating entities’ datasets in consolidated or federated mechanisms for analyses. </para>
+                EHR/RWD for broad research. Such efforts include the National Patient-Centered
+                Clinical Research Network (PCORnet), Observational Health Data Sciences and
+                Informatics (OHDSI), National COVID Cohort Collaborative (N3C) and its potential
+                spin-offs. Common to each of these efforts is the extraction of EHR data from
+                participating entities, transforming these data to a common data model,
+                annotating/managing the data with standardized medical terminologies and aggregating
+                entities' datasets in consolidated or federated mechanisms for analyses. </para>
         </section>
         <section>
             <title>National Covid Cohort Collaborative (N3C)</title>
@@ -182,17 +179,18 @@
                 collaboration and has proven its impact through hundreds of peer reviewed,
                 scientific publications. </para>
             <para>The successes of the N3C data enclave are not without limitations. Data sets are
-                geographically limited to the U.S., and only patients with known COVID-19 positive
-                tests are included. This may preclude large populations of patients with alternative
-                methods of diagnosis from being included. Those whose results were not recorded in
-                an EHR but were performed else where such as at a Public Health Lab (PHL), or who
-                had viral sequencing performed are not included. Control cohort methods are not well
-                described and thus there is lacking any RWD on non-covid patients. The strength of
-                security does not come without some downsides and can limit the participation and
-                quality of data contributed by participants. There is no method for testing for data
-                equivalence between sites, and data is not in real-time or near real-time. The
-                enclave would benefit from expanding its horizon beyond COVID-19 to other conditions
-                and general disease surveillance. [6] </para>
+                    geographically limited to the U.S., and only patients with known COVID-19
+                    positive tests are included. This may preclude large populations of patients
+                    with alternative methods of diagnosis from being included. Those whose results
+                    were not recorded in an EHR but were performed else where such as at a Public
+                    Health Lab (PHL), or who had viral sequencing performed are not included.
+                    Control cohort methods are not well described and thus there is lacking any RWD
+                    on non-COVID patients. The strength of security does not come without some
+                    downsides and can limit the participation and quality of data contributed by
+                    participants. There is no method for testing for data equivalence between sites,
+                    and data is not in real-time or near real-time. The enclave would benefit from
+                    expanding its horizon beyond COVID-19 to other conditions and general disease
+                    surveillance. [6] </para>
     </section>
             <section>
                 <title>Patient-Centered Outcomes Research Institute (PCORI) and National Patient-Centered Clinical Research Network (PCORnet)</title>
@@ -232,7 +230,7 @@
                 PCORnet Clinical Research Networks currently include 337 hospitals, 169,695
                 physicians, 3,564 primary care practices, 338 emergency departments, and 1,024
                 community clinics serving medically underserved populations. These healthcare
-                institutions and their clinicians serve as a diverse set of clinical trial sites for
+                institutions and their clinicians serve as a set of clinical trial sites for
                 pragmatic research conducted in everyday clinical care settings. [8]</para>
                 <para>In PCORnet, 66 million patients’ health records are available for
                 observational studies and provide vast scale to power research for conditions
@@ -277,14 +275,12 @@
                 (NLP).</para>
             <para>In April 2022, OHDSI and SNOMED International formalized a five-year collaborative
                 agreement in which OHDSI and the associated user communities will receive
-                “comprehensive ontologies on specific healthcare domains and content such as
-                devices, social determinants of health, disease severity scores and modifiers of
-                cancers, as well as better concept definitions and resolutions of composite concepts
-                in large-scale observational research.” While this is an enormous benefit to OHDSI,
-                the benefit to SNOMED International manifests in the form of user data from
-                interaction with their product. OHDSI also has an existing agreement with HL7 to
-                integrate FHIR with the OMOP common data model in hopes of improving abilities to
-                track and share data in the healthcare and research industries.</para>
+                “comprehensive ontologies on specific healthcare domains and content...” While this
+                is an enormous benefit to OHDSI, the benefit to SNOMED International manifests in
+                the form of user data from interaction with their product. OHDSI also has an
+                existing agreement with HL7 to integrate FHIR with the OMOP common data model in
+                hopes of improving abilities to track and share data in the healthcare and research
+                industries.</para>
             <para>OHDSI has ventured into product development, including the Health Analytics
                 Data-to-Evidence Suite (HADES), which is a set of open-source R packages
                 specifically focusing on population level estimations, patient-level prediction,
@@ -323,18 +319,20 @@
             individual’s genetics increase their disease risk or make them better suited for specific 
             medications. Since its initiation in 2007, eMERGE has grown to develop 777 publications, 
             discover 68 phenotypes, and encompass over 136,000 network participants. [14]</para>
-        <para>eMERGE conducts genome wide association studies (GWAS) with EHRs to sequence patients’ 
-            genes, evaluate disease risk, return actionable results to clinicians and patients, and contribute 
-            findings to patient EHRs. [15] One facet of the research is using broad GWAS results to calculate 
-            disease risk in values known as polygenic risk scores (PRS). Additional work is performed to 
-            compare International Classification of Diseases, Ninth Revision (ICD-9) codes across network 
-            sites to assess comparability of large populations taken from different institutions, evaluate 
-            privacy concerns surrounding patient consent and continuing genomic research, and identify 
-            optimal methods for the development and cross-site deployment of algorithms to identify case 
-            and control cohorts. [6] The overall goals of eMERGE, in addition to advancing research 
-            regarding genetic disease and treatment associations, are to develop analytical tools, identify 
-            and communicate genomic research best practices, and return genomic results to patients and 
-            practitioners to improve clinical care. [14]</para>
+        <para>eMERGE conducts genome wide association studies (GWAS) with EHRs to sequence patients’
+                    genes, evaluate disease risk, return actionable results to clinicians and
+                    patients, and contribute findings to patient EHRs. [15] One facet of the
+                    research is using broad GWAS results to calculate disease risk in values known
+                    as polygenic risk scores (PRS). Additional work is performed to compare
+                    International Classification of Diseases, Tenth Revision (ICD-10) codes across
+                    network sites to assess comparability of large populations taken from different
+                    institutions, evaluate privacy concerns surrounding patient consent and
+                    continuing genomic research, and identify optimal methods for the development
+                    and cross-site deployment of algorithms to identify case and control cohorts.
+                    [6] The overall goals of eMERGE, in addition to advancing research regarding
+                    genetic disease and treatment associations, are to develop analytical tools,
+                    identify and communicate genomic research best practices, and return genomic
+                    results to patients and practitioners to improve clinical care. [14]</para>
         <para>Since its inception, eMERGE has provided valuable insights into both genomics research
                 and methodologies to effectively analyze data across various institutions. Early
                 into eMERGE’s work, investigators found projects had better outcomes when performed
@@ -351,16 +349,16 @@
                 ensuring common definitions and coding exists for phenotype variables being
                 deposited into the database of Genotypes and Phenotypes (dpGaP) and facilitating
                 Quality Assurance/Quality Control (QA/QC) of data as it comes in. [17]</para>
-        <para>Similarly, the size, scope, and diversity of eMERGE’s data allows the network to develop and 
-            execute additional analyses as data evolves and medical interpretations change. Cultivating a 
-            diverse biobank and a rich EHR linkage allows for cost-effective longitudinal genomic studies. 
-            Moreover, the continued collection of clinical data enriches the depth and value of the network 
-            while incurring minimal added costs. [16] The ability to build upon existing data is particularly 
-            valuable in fields where scientific understanding is still evolving, as with genomics and novel 
-            diseases or treatments. Despite the challenges inherent with multi-site collaboration, eMERGE 
-            12
-            has demonstrated that interoperability risk can be mitigated to allow for robust and powerful 
-            analytics.</para>
+        <para>Similarly, the size, scope, and diversity of eMERGE’s data allows the network to
+                develop and execute additional analyses as data evolves and medical interpretations
+                change. Cultivating a varied biobank and a rich EHR linkage allows for
+                cost-effective longitudinal genomic studies. Moreover, the continued collection of
+                clinical data enriches the depth and value of the network while incurring minimal
+                added costs. [16] The ability to build upon existing data is particularly valuable
+                in fields where scientific understanding is still evolving, as with genomics and
+                novel diseases or treatments. Despite the challenges inherent with multi-site
+                collaboration, eMERGE 12 has demonstrated that interoperability risk can be
+                mitigated to allow for robust and powerful analytics.</para>
         <para>Despite its many successes, the eMERGE network experienced several challenges. The
                 personal nature of genetic data emphasizes the requirements for patient privacy and
                 de-identification. When aggregating data across various timepoints and institutions,
@@ -396,16 +394,18 @@
     <para>The primary goal of the Sentinel system is to inform FDA decision-making using RWE generated 
         from a distributed data network, a common data model, curated RWD, and flexible analytic 
         tools. [19]</para>
-    <para>Sentinel collects EHRs that cover covers approximately 700 million person-years of longitudinal 
-        observation time, much of which comes from insurance claims and pharmacy records. [17] It 
-        pulls from a network of established data partners containing over 170 inpatient facilities and 
-        some of the nation’s largest health insurance providers, including Aetna, Anthem, Humana, and 
-        Kaiser Permanente. [18] The Sentinel System is not a data repository, but rather a distributed 
-        network in which each data partner maintains ownership and operational control of their data. 
-        In addition to the collected partner data, which is delivered quarterly or annually, Sentinel can
-        access select full-text medical records, inpatient data, including lab results from the nation’s 
-        largest hospital network that covers approximately five percent of inpatient care and over 10 
-        billion pharmacy and medication encounters. [17]</para>
+    <para>Sentinel collects HER data that covers approximately 700 million person-years of
+                    longitudinal observation time, much of which comes from insurance claims and
+                    pharmacy records. [17] It pulls from a network of established data partners
+                    containing over 170 inpatient facilities and some of the nation’s largest health
+                    insurance providers, including Aetna, Anthem, Humana, and Kaiser Permanente.
+                    [18] The Sentinel System is not a data repository, but rather a distributed
+                    network in which each data partner maintains ownership and operational control
+                    of their data. In addition to the collected partner data, which is delivered
+                    quarterly or annually, Sentinel can access select full-text medical records,
+                    inpatient data, including lab results from the nation’s largest hospital network
+                    that covers approximately five percent of inpatient care and over 10 billion
+                    pharmacy and medication encounters. [17]</para>
     <para>Data is transformed into the Sentinel Common Data Model (SCDM) format for standardization, 
         allowing for efficient analysis across data sources. Sentinel has developed a collection of flexible 
         computer programs to run routine queries and perform analyses that inform FDA decision making, ranging from medication utilization patterns among patient cohorts to evaluation of 
@@ -452,6 +452,7 @@
         analytics, research, and patient care. As with all applications of RWD, strategies for how to best 
         capture, maintain, and analyze RWD and RWE must continue to develop and expand. </para>
             </section>
+    </section>
     </section>
     <section>
         <title>Learnings</title>

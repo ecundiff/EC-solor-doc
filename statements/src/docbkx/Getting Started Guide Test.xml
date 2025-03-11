@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Welcome to Komet: Getting Started Guide</title>
+    <section>
+        <title>Ground Rules</title>
+        <para>Expectations </para>
+        <para>As a member of the IKM Community, we expect you to: </para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Be respectful and considerate</emphasis><emphasis
+                        role="bold">:</emphasis> Treat others with respect, valuing diverse
+                    perspectives and backgrounds. Foster an inclusive and welcoming environment for
+                    all. </para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Be open to constructive feedback:</emphasis> Embrace
+                    feedback as an opportunity for growth and improvement. Provide feedback to
+                    others in a respectful and constructive manner. </para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Be willing to learn and grow:</emphasis> Approach your
+                    contributions with a growth mindset, continuously seeking to expand your
+                    knowledge and skills. </para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Contribute with the best interests of the project in
+                        mind:</emphasis> Prioritize the collective goals and objectives of IKM,
+                    putting the project's needs ahead of personal agendas. </para>
+            </listitem>
+        </itemizedlist>
+        <para>We have a zero-tolerance policy for any form of harassment, discrimination, or
+            unethical behavior. All community members are expected to adhere to our Code of Conduct,
+            which outlines the standards of behavior and interaction within the IKM Community.
+            Please review the Code of Conduct carefully to ensure a positive and inclusive
+            experience for everyone. </para>
+        <para><emphasis role="bold">Background: </emphasis></para>
+        <para>Before jumping into the project it is important that you understand the design
+            principle and foundation from which this works is built. </para>
+        <para>Knowledge architecture is an architectural design principle for clinical information
+            that is organized into distinct layers such that each higher layer relies upon artifacts
+            from the lower layer. The purpose of the knowledge architecture is to help provide a
+            framework for addressing the current gaps in standards for “Structure” and “Meaning”. </para>
+        <para>Each architectural layer addresses separate concerns that can be reused, developed,
+            and updated independently. A Knowledge Architecture can individually resolve issues in
+            the data within their layers vs a whole system, leading to much more agile improvement. </para>
+        <para><emphasis role="bold">Foundational: </emphasis></para>
+        <para>The foundational architecture includes (a) the foundation and building blocks of the
+            common model, a standardized, normalized, and repeatable way to represent data; (b)
+            rules for how the repeatable transformation process of disparate standards into the
+            common model promotes interoperability with other environments; and (c) rules for how
+            the modules of the architecture are tightly version controlled over time. This layer
+            includes common elements of interoperability such as object identity, versioning,
+            modularity, exchange paradigms, and knowledge representation. </para>
+        <para><emphasis role="bold">Terminology: </emphasis></para>
+        <para>The terminology knowledge layer builds upon the foundational architecture to create
+            artifacts with medical terminology and codes (i.e. SNOMED CT, LOINC, RxNorm) that deﬁne
+            concepts of interest, including descriptions, dialects, language, and semantic
+            hierarchy. This layer deﬁnes what valid codes or expressions may be used by higher level
+            layers. </para>
+        <para><emphasis role="bold">Statement: </emphasis></para>
+        <para>The statement model layer is responsible for deﬁning how data elements are combined to
+            create a statement. This layer reuses the artifacts deﬁned in the terminology knowledge
+            layer to combine data elements into statements. This layer includes standards-based
+            clinical statements like Analysis Normal Form (ANF) and CIMI and statement models that
+            may be implemented using HL7 V2, CDA, FHIR, etc. </para>
+        <para><emphasis role="bold">Assertional: </emphasis></para>
+        <para>The assertional knowledge layer makes use of terminology and statement knowledge to
+            specify non-deﬁning facts that may be used by procedural knowledge algorithms based on
+            relationships between data elements. Assertional knowledge may be used to indicate what
+            symptoms may be associated with a disorder or what treatment is optimal for a condition. </para>
+        <para><emphasis role="bold">Procedural: </emphasis></para>
+        <para>The procedural knowledge layer, also known as imperative knowledge, is the knowledge
+            exercised in the performance of some task. This is the action-oriented layer that uses
+            information from the assertional knowledge layer that can enable clinical decision
+            support for clinical alert rules, reminders, etc. that trigger actions or recommend
+            interventions to ultimately improve quality measurement and patient safety. </para>
+        <para>The Knowledge Architecture described above provide the foundation for robust
+            conﬁguration management and quality assurance of health IT data while allowing for a
+            standardized update and extension process. </para>
+    </section>
+    <section>
+        <title>Introduction to Komet</title>
+        <para>This section will introduce NextGen Knowledge Management Environment (Komet) to
+            external contributors by diving into the problems Komet aims to solve, why it is
+            important, and a brief history of NextGen Komet and its predecessors. (e.g., Problem:
+            Hospitals have difficulty communicating with each other due to poor data
+            interoperability.)</para>
+        <para><emphasis role="bold">Komet Overview</emphasis></para>
+        <para>Komet is a transformative open-source tool designed to harmonize healthcare data
+            standards, enhancing clinical decision support and improving patient outcomes. To read
+            more about Komet, our unique approach, and Komet’s capabilities please visit: <link
+                xlink:href="https://www.ikm.dev/about/komet">Komet | Integrated Knowledge Management
+                (ikm.dev)</link>. </para>
+        <para>
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry>
+                                <para><emphasis role="bold">Challenge</emphasis></para>
+                            </entry>
+                            <entry>
+                                <para><emphasis role="bold">Implication</emphasis></para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Data Integrity Loss</emphasis></entry>
+                            <entry>Affects various sectors like public health agencies and research
+                                labs, leading to redundant patient care and inefficient
+                                decision-making.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Data Quality and Agility
+                                    Challenges</emphasis></entry>
+                            <entry>Inconsistent knowledge standards across the healthcare ecosystem
+                                impede data aggregation and require a transformative
+                                approach.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </para>
+        <para><emphasis role="bold">Goals:</emphasis></para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Harmonize Data</emphasis>: Reconciling various knowledge
+                    standards into a common data model.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Improve Clinical Decision Support</emphasis>: Enhancing
+                    healthcare data collection and collaboration reliability.</para>
+            </listitem>
+        </itemizedlist>
+        <para>Komet addresses key challenges in healthcare data management:</para>
+        <informaltable>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">Feature</emphasis></para>
+                        </entry>
+                        <entry>
+                            <para><emphasis role="bold">Benefit</emphasis></para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Uniform Display of Knowledge
+                                Standards</emphasis></entry>
+                        <entry>Improves data transformation accuracy across healthcare
+                            systems.</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Benefits to Patient Outcomes</emphasis></entry>
+                        <entry>Aids in better decision-making and policy development.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <informaltable>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">Functionality</emphasis></para>
+                        </entry>
+                        <entry>
+                            <para><emphasis role="bold">Description</emphasis></para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Consistent Representation</emphasis></entry>
+                        <entry>Implements a common terminology data model.</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Improved Code Mappings</emphasis></entry>
+                        <entry>Enhances the quality of data transformation.</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Reconciliation of Guidance</emphasis></entry>
+                        <entry>Allows real-time updates to terminology standards.</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Maintaining Provenance</emphasis></entry>
+                        <entry>Ensures version control and attribution of data sources.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para>If you would like to get started with Komet, please see our Komet User Guide. </para>
+        <orderedlist>
+            <listitem>
+                <para><link xlink:href="https://ikmdev.atlassian.net/wiki/spaces/AR/pages/571572230"
+                        >Komet User Guide</link></para>
+                <para>The Komet User Guide has step by step instructions for downloading,
+                    installing, and launching Komet. This user guide provides instructions for both
+                    iOS and Windows users.</para>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
+        <title>Introduction to Tinkar</title>
+        <para>This section will introduce Terminology Knowledge Architecture (Tinkar), a new
+            knowledge standard used in Komet’s knowledge management system. Tinkar entities—such as
+            concepts, patterns, and semantics—will be explored, along with guidance on how to create
+            Tinkar entities in the code.</para>
+        <para>The Tinkar Reference Model is a logical model that describes the standardized model
+            for terminology and change management. Tinkar provides an architecture that delivers
+            integrated terminology to the enterprise and its information systems. In doing so, it
+            addresses the differences in management and structure across reference terminology,
+            local concepts, and code lists/value sets.</para>
+        <para>Understanding the Tinkar data model is the first step to using Status, Time, Author,
+            Module, Path (STAMP) calculators/coordinates, which consists of concepts, semantics, and
+            patterns. </para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="underline">Concepts</emphasis> are like a key which represents
+                    an entity.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="underline">Patterns</emphasis> use sets of predicates and
+                    object types to define the structure and how Tinkar concepts should be
+                    represented. Each pattern has a specified meaning and purpose for the associated
+                    object, a data type, meaning, and purpose for the fields the pattern defines,
+                    and a specific meaning and purpose for each pattern.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="underline">Semantics</emphasis> can then be attached to that
+                    concept with the referenced component, providing additional information about
+                    the concept. Semantics themselves, are defined by patterns and field
+                    definitions. Semantics sit at the core of the data model and are connected to
+                    different information that provides additional information on the
+                    concept.</para> 
+            </listitem>
+        </itemizedlist><figure xml:id="TinkarLogicalModel_GSG">
+            <title>Tinkar Logical Model</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Tinkar%20Logical%20Model.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>         
+                <para>An example of the Tinkar Model in action can be seen below, where the Tinkar
+                    Logical Model applies a Separation of Concerns approach where every concept has
+                    associated semantics and patterns. The concept for Urine homocysteine derives
+                    meaning from the semantics and patterns which describe it.</para>
+        <para><figure xml:id="TinkarLogicalModelExample_GSG">
+            <title>Tinkar Logical Model Example</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Tinkar%20Logical%20Model%20Example_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>         </para>
+            <para>Now that we understand Concepts, Patterns, and Semantics, we want to dive into
+                STAMPs and how they are used. STAMP stands for status, time, author, module, and
+                path and each concept, semantic, and pattern must have an associated STAMP. While
+                each STAMP is unique to itself, concepts can have the same concept STAMP, but will
+                be differentiated by a specific and unique combination of pattern and semantic
+                STAMPs.</para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="underline">Status</emphasis> is represented by “active” or
+                        “inactive”. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="underline">Time</emphasis> is a timestamp in the data
+                        model represented by milliseconds. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="underline">Author</emphasis> is the author of a concept or
+                        change, identified using the appropriate level of granularity. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="underline">Module</emphasis> is an organizational label
+                        for the larger asset to which a component belongs, such as code, system, or
+                        edition. This is often provided by the standard development organizations
+                        or, when using Tinkar data, it would be the primordial module. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="underline">Path</emphasis> is the production component,
+                        similar to a branch, of the previously defined organization, such as
+                        primordial (before time), sandbox, development, and master. Sandbox is used
+                        for testing; development is where more mature features/functions can be
+                        moved to; master is where the functionality becomes available for all users.
+                    </para>
+                </listitem>
+            </itemizedlist>
+        <para><figure xml:id="StampCircle_GSG">
+            <title>STAMP Model</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/STAMP%20Circle_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>       </para>
+            <para>As terminology concepts evolve, new STAMPs are assigned to each version that allow
+                for concept provenance and a documented history for its evolution – the time, that
+                is signature to the STAMP, allows for the tracking and comparison of evolving
+                concepts. Versions are representations of a unique state of an object at a
+                particular coordinate and always are associated with a single STAMP. Notably, Tinkar
+                preserves each version with equal importance as versions evolve over time. STAMP is
+                also required for each pattern and semantic, again supporting versioning, tracking,
+                and comparing the evolution of patterns and semantics associated with a given
+                concept.</para>
+        <para><figure xml:id="STAMPVersions_GSG">
+            <title>STAMP Versions</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/STAMP%20Versions_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>       </para>
+        <para><figure xml:id="ApplicationArchEntityModel_GSG">
+            <title>Entity Model</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Application%20Arch%20Entity%20Model_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>     </para>
+        <para>Further reading: <link xlink:href="https://www.ikm.dev/Volume-4.pdf">Integrated
+                Knowledge Management (IKM) Volume 4 - Tinkar Ballot</link></para>
+        <para>HL7: <link
+                xlink:href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=573"
+                >HL7 Standards Product Brief - HL7 Logical Model: Standardized Terminology
+                Knowledgebase, Release 1 | HL7 International</link></para>
+    </section>
+    <section>
+        <title>Version Property Graph (DRAFT)</title>
+        <section>
+            <title>Overview</title>
+            <para>The foundation of our work lies in a Version Property Graph data model, a
+                fundamental data science structure for parsed languages. Property Graphs are
+                somewhat new in the data representation landscape and describe how entities are
+                related using vertices or nodes and relationships that directly link nodes together.
+                These graph structures support rapid data querying as both the data and
+                relationships between the data are permanently stored in the database and can be
+                retrieved with a single request. This is done using a key-value store that allows
+                users to search for a key that uniquely identifies the associated human-readable
+                data string, which is uniquely associated with a concept.</para>
+        </section>
+        <section>
+            <title>Current Data Representation</title>
+            <para>To understand why our project is based on a Version Property Graph, we must first
+                understand the current health Information Technology (IT) landscape. Most data are
+                stored in procedural databases that rely on specific syntax to follow a series of
+                sequential instructions. In healthcare databases there are two ways to represent
+                complex clinical expressions:</para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Pre-Coordination </emphasis>– Commonly paired or
+                        related clinical concepts/codes are represented using a single premade
+                        concept/code. For example, chronic lung disease could be a pre-coordination
+                        concept used by providers to describe a patient’s condition. This could have
+                        previously been described using two separate concepts, the lung disease and
+                        the chronic illness concept, but is now an established single code.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Post-Coordination</emphasis> – Multiple, separate
+                        clinical concepts/codes are strung together to form a clinical expression or
+                        observation. For example, the concepts or codes for a fracture, with a
+                        location of the femur, and left-side laterality could be combined to
+                        represent a fracture of the left femur.</para>
+                </listitem>
+            </orderedlist>
+            <para>While both the pre- and post-coordination representation of data have their own
+                benefits, they also have their downsides. Pre-coordination limits the ability to
+                comprehensively describe conditions or represent new and emerging medical concepts,
+                while post-coordination can lead to data bloat, unstandardized representation of
+                clinical data, and ambiguity.</para>
+        </section>
+        <section>
+            <title>Our Approach</title>
+            <para>Our approach to IKM employs a flexible and dynamic way to represent disparate
+                knowledge sources to simplify the data representation space and leverage the
+                benefits of pre- and post-coordination data representation. We use an abstract
+                syntax tree with special properties and a first-class versioning model to create a
+                Version Property Graph that accommodates for the perpetually changing knowledge
+                management environment. While this does technically limit the size of
+                Post-Coordination expressions, we use 32-bit integers to link upwards of 15 concepts
+                together to form a singular complex and detailed concept.</para>
+            <para>We use Tinkar as a foundation for the logical architecture that transforms
+                disparate terminology standards into locally defined logical concepts that can then
+                be used to populate ANF, a logical data model that normalizes the representation of
+                clinical concepts using separation of concerns. By separating clinically pertinent
+                information into its own data field, such as location, laterality, and topic, you
+                can ensure concepts are represented in a repeatable, standardized, and normalized
+                way using pre-coordination. Authoring medical concepts with this separation of
+                concerns also ensures all concepts are unique or are easily identified as logically
+                equivalent to an existing concept. This reduces unnecessary duplication and data
+                bloat and ensures that the data repository housing all the Tinkar concepts is
+                normalized, which reduces the complexity of data in the knowledge management
+                environment (Komet).</para>
+            <para>Tinkar heavily relies on reasoners, which infer logical relationships and
+                hierarchies based on axioms and stated truths, to ensure the proper representation
+                of concepts and data. Reasoners are a critical component of our process as they help
+                ensure a consistent representation of our ontology across all terminology standards,
+                determine if concepts have been authored in an ambiguous way that lacks the
+                necessary specificity, and compares attributes, concept inheritance, defined sets,
+                and more to determine if concepts are unique or have an equivalent. This approach
+                allows Tinkar to standardize the representation of clinical terminologies regardless
+                of the original dogma.</para>
+            <section>
+                <title>Syntax</title>
+                <para>There are a variety of syntax languages used to share healthcare data, like
+                    Web Ontology Language (OWL), JavaScript Object Notation (JSON), and eXtensible
+                    Markup Language (XML). While these syntaxes all use tokens to represent
+                    fragments of data and information, they represent semantics in a human-readable,
+                    rather than computer-readable, strings which limits the ability to understand
+                    the meaning of the syntactic string, distinguish between semantics like “and”
+                    versus “or”, and represent data in a standardized and repeatable way.</para>
+                <para>We use a unique concept-oriented Version Property Graph that represents
+                    strings with semantic and pattern concepts and tokens. This allows users to
+                    consistently represent data, agnostic of the original syntax, provide context
+                    and meaning to strings using computer-readable formats, and to determine if
+                    description logic concepts and tokens like “and” and “or” are equivalent.</para>
+            </section>
+        </section>
+        <section>
+            <title>Current Challenges</title>
+            <para>Our Version Property Graph is a unique approach to data storage and querying,
+                which poses some challenges.</para>
+            <orderedlist>
+                <listitem>
+                    <para>There are a variety of existing databases that use property graphs, but we
+                        are unable to use these as a starting point because our approach utilizes
+                        versioning of the concepts within the property graph. While this means we
+                        must create and manage our own key-value store database, our current
+                        database is smaller than five gigabytes (gb) with the ultimate goal of being
+                        less than 20gb, even with the higher demand on actions.</para>
+                </listitem>
+                <listitem>
+                    <para>As we design and manage our Version Property Graph, we must ensure that
+                        the database is scalable and adaptable. Despite our careful development and
+                        use of reasoners, this will require optimization and manual input to ensure
+                        it is maintained and evolving properly.</para>
+                </listitem>
+                <listitem>
+                    <para>Ensuring we can get a wide range of syntax and data languages into our
+                        database in a way that supports rapid querying and parsing is critical
+                        requirement of our work. We are working through use cases and test examples
+                        to ensure the proper “Tinkarization” of data and plan to create application
+                        programming interfaces (APIs) to support their incorporation.</para>
+                </listitem>
+            </orderedlist>
+        </section>
+    </section>
+    <section>
+        <title>Developer Onboarding Guide</title>
+        <para>This section will provide step-by-step instructions on how to set up the developer
+            environment for external contributors to allow them to begin development within
+            Komet.</para>
+        <para><emphasis role="bold">Developer’s Onboarding Guide for External Users:</emphasis>
+            <link
+                xlink:href="https://ikmdev.atlassian.net/wiki/pages/resumedraft.action?draftId=442761290&amp;draftShareId=3db33fbe-8552-4f19-a7f7-c4eeca3a10e8"
+                >Developer's Onboarding Guide (External Users)</link></para>
+        <para><emphasis role="bold">Developer’s Onboarding Guide for Internal (Deloitte)
+                Users:</emphasis>FDA SHIELD Internal Developers Onboarding Guide_ 2024.pdf</para>
+    </section>
+    <section>
+        <title>High Level Architecture</title>
+        <para>This section will provide a high-level view of Komet’s software architecture to help
+            contributors better understand the big picture of Komet’s framework and its development
+            workflow.</para>
+        <para><figure xml:id="HighLevelArch_GSG">
+            <title>High Level Architecture</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/High%20Level%20Arch_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>    </para>
+        <para>
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry>
+                                <para><emphasis role="bold">Architectural
+                                    Component</emphasis></para>
+                            </entry>
+                            <entry>
+                                <para><emphasis role="bold">Definition</emphasis></para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Architectural Component</entry>
+                            <entry>Definition</entry>
+                        </row>
+                        <row>
+                            <entry>Preferences</entry>
+                            <entry>Refers to the persisting Komet environment states between
+                                sessions, similar to how browser tabs reopen after closing. This
+                                helps users maintain their settings and views.</entry>
+                        </row>
+                        <row>
+                            <entry>Reasoner</entry>
+                            <entry>Provides reasoning capabilities by analyzing logical definitions
+                                and hierarchies to infer additional relationships. It processes the
+                                stated definitions to create an inferred hierarchy, which helps in
+                                understanding complex relationships within the data.</entry>
+                        </row>
+                        <row>
+                            <entry>Navigation</entry>
+                            <entry>The functionality within the Komet application that allows users
+                                to browse and interact with different data elements, including the
+                                hierarchy.</entry>
+                        </row>
+                        <row>
+                            <entry>Coordinates</entry>
+                            <entry>Are filters that specify criteria for different attributes such
+                                as status, time, author, module, and path. They help in filtering
+                                and retrieving the latest versions of entities based on these
+                                attributes.</entry>
+                        </row>
+                        <row>
+                            <entry>Calculators</entry>
+                            <entry>Use the coordinates to filter out and get the latest version of
+                                entities for use and display, whether in the viewer or the
+                                navigator.</entry>
+                        </row>
+                        <row>
+                            <entry>Reasoner Service</entry>
+                            <entry>This component interacts with the Reasoner to start and stop the
+                                reasoning process.</entry>
+                        </row>
+                        <row>
+                            <entry>EntityService</entry>
+                            <entry>It is responsible for taking low-level byte representations of
+                                data retrieved by the PrimitiveDataService and translating them into
+                                human-consumable formats. It acts as a bridge, making data
+                                accessible and editable for the rest of the application. Various
+                                components, such as the Searcher, Indexer, and Viewer, interact with
+                                the EntityService to access and manipulate data.</entry>
+                        </row>
+                        <row>
+                            <entry>Viewer</entry>
+                            <entry>Is a component that displays data provided by the entity service.
+                                It is used to view concepts, patterns, semantics, or other data
+                                elements.</entry>
+                        </row>
+                        <row>
+                            <entry>Builder</entry>
+                            <entry>Refers to a design pattern used in the rule service. It helps in
+                                constructing complex objects step by step.</entry>
+                        </row>
+                        <row>
+                            <entry>Searcher &amp; Indexer</entry>
+                            <entry>Components that work together to facilitate searching within the
+                                data set. When the data store is started, the indexer scans and
+                                indexes all the strings in the data set, allowing the searcher to
+                                efficiently retrieve and rank search results based on their
+                                relevance. This enables functionalities like the search box to
+                                provide accurate and ranked search results.</entry>
+                        </row>
+                        <row>
+                            <entry>Rule Service</entry>
+                            <entry>Determines what buttons are allowed to be displayed in the edit
+                                window, such as the stated definition editor. For example, when you
+                                click on a pencil icon in the stated definition editor, the rule
+                                service scans the stated definition graph and provides options for
+                                adding or removing vertices or roles.</entry>
+                        </row>
+                        <row>
+                            <entry>Search</entry>
+                            <entry>Refers to the capability that allows users to search for specific
+                                strings within the data set.</entry>
+                        </row>
+                        <row>
+                            <entry>Import &amp; Export</entry>
+                            <entry>Functionality in Komet that allows the user to import or export
+                                tinkarized data.</entry>
+                        </row>
+                        <row>
+                            <entry>Aggregators</entry>
+                            <entry>Filter and retrieve entities based on relationships and semantic
+                                attributes.</entry>
+                        </row>
+                        <row>
+                            <entry>Activity, Alerts, &amp; Completions</entry>
+                            <entry>Provide real-time feedback on the execution of tasks such as
+                                reasoning, importing, and exporting data. This helps users stay
+                                informed about ongoing activities and their outcomes.</entry>
+                        </row>
+                        <row>
+                            <entry>Streams &amp; Events</entry>
+                            <entry>Refers to the mechanisms used for communication between different
+                                UI and data processing components in Komet. They facilitate
+                                cross-layer communication and provide activity updates to the user
+                                interface.</entry>
+                        </row>
+                        <row>
+                            <entry>Executors &amp; Progress</entry>
+                            <entry>Executors are used to start and manage longer-running processes
+                                within the application, such as searches, reasoning tasks, or
+                                import/export operations. Progress refers to the updates provided by
+                                the executors to the user interface, indicating the current status
+                                of the ongoing tasks.</entry>
+                        </row>
+                        <row>
+                            <entry>PrimitiveDataService</entry>
+                            <entry>The primitive data service retrieves data from the data
+                                store.</entry>
+                        </row>
+                        <row>
+                            <entry>Disk/ Memory Datastore Providers</entry>
+                            <entry>These include in-memory and on-disk data stores. These providers
+                                connect to where data is stored for editing and retrieval.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </para>
+        <para><figure xml:id="AppArchPhysArch_GSG">
+            <title>IKM Modules and Definitions</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/AppArchPhysArch_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure> </para>
+    </section>
+    <section>
+        <title>GitHub Repositories</title>
+        <para>This section will introduce the repositories housed on GitHub and required to
+            successfully build Komet. It will explain where in Komet’s architecture a repository
+            belongs, how to build and run each one, and any other special characteristics.</para>
+        <informaltable>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1" colwidth="1*"/>
+                <colspec colnum="2" colname="col2" colwidth="2.23*"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Repositories</emphasis></entry>
+                        <entry><emphasis role="bold">Description</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">build-parent </emphasis></entry>
+                        <entry>
+                            <para>The General Parent that helps to define the build processes</para>
+                            <para>A Simple maven build parent that configures and customizes builds
+                                for all child modules. This can be used by any project that would
+                                like to inherit these build configurations. This includes a number
+                                of the compiling, code quality, code style, and plugin
+                                configurations of Tinkar and related HL7 projects.</para>
+                            <para>The output of this project is solely a pom file and is distributed
+                                via standard Maven release procedures.</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">ikm-dev-doc</emphasis></entry>
+                        <entry>
+                            <para>Documentation for <link xlink:href="https://www.ikm.dev/">Bringing
+                                    Integrated Knowledge Management to Life | Integrated Knowledge
+                                    Management</link></para>
+                            <para>This is the repository that drives the website at ikm.dev. This
+                                site was created to be the development documentation site, defining
+                                installation, usage, and enterprise integration of the products for
+                                Komet. This website is built using Docusaurus 2.</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">jpms-deps</emphasis></entry>
+                        <entry>jpms-deps is an internal JPMS-compliant library which makes non-JPMS
+                            compliant modules accessible to Komet and Tinkar Core.</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">komet</emphasis></entry>
+                        <entry>
+                            <para>Komet is a health care interoperability solution that seeks to
+                                translate and integrate terminology standards used in health care
+                                settings.</para>
+                            <para>Komet was created to harmonize existing medical terminology and
+                                create interoperable data. This file will explain best practices for
+                                getting started, building, running, and contributing code in
+                                Komet.</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">starter data builder</emphasis></entry>
+                        <entry>This project was created to programmatically create starter data (via
+                            java code). It will be <emphasis role="bold">abandoned</emphasis> in
+                            favor of creating starter data via Komet.</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">tinkar-core</emphasis></entry>
+                        <entry>
+                            <para>Tinkar-core is a java software project that aims to provides a
+                                reference implementation for the open-source HL7 Tinkar
+                                informational Ballot.</para>
+                            <para>Tinkar core is an essential repository that creates the primitive
+                                functionality and data types for Komet. Tinkar core is also
+                                responsible for managing caches and I/O (spined-array) of the
+                                application. Building tinkar-core is a prerequisite to building
+                                komet on your local machine.</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">tinkar-schema</emphasis></entry>
+                        <entry>This repository contains the Protobuf schema file for the Tinkar
+                            project and generates code packages for different languages that can be
+                            distributed to read and write Tinkar files.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+    <section>
+        <title>Dependencies </title>
+        <para>This section will describe dependency relationships between repositories. It will
+            explore both library-level and class-level dependencies and will also dive into the
+            tightly dependent relationship between komet and tinkar-core in more detail. All repos
+            have a dependency on build-parent.</para>
+        <para><figure xml:id="Dependencies_GSG">
+            <title>Repository Dependencies</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Dependencies_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure> </para>
+    </section>
+    <section>
+        <title>NextGen Komet User Interface</title>
+        <para>This section will explore all current high-level features in NextGen Komet, including
+            but not limited to the concept panel (axioms, description logic, necessary vs sufficient
+            set), navigation, search, hierarchy, timeline, and reasoner. It will explain feature
+            capabilities and how to use them. A further look at Komet functionality can be found in
+            the Komet User Guide linked in Part 4.</para>
+        <para>The current state of NextGen Komet contains a multitude of concept features that
+            provides the functionality needed for data harmonization. In its current state, Komet
+            allows users to:</para>
+        <informaltable>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1" colwidth="1*"/>
+                <colspec colnum="2" colname="col2" colwidth="2.13*"/>
+                <tbody>
+                    <row>
+                        <entry>
+                            <para> </para>
+                        </entry>
+                        <entry>
+                            <para> </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">Search for a Concept </emphasis></para>
+                            <para>Users can search for a concept by selecting the magnifying glass
+                                in the top left of the screen and typing the keyword or concept name
+                                into the search bar. </para>
+                        </entry>
+                        <entry><figure xml:id="ConceptSearch_GSG">
+                            <title>Concept Search</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/Concept%20Search_GSG.svg" scale="35"
+                                        align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure> </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">View a Concept</emphasis></para>
+                            <para>Users can view a concept by double clicking a concept or dragging
+                                it into the viewing window and selecting the various icons in the
+                                concept window to view details and hierarchical
+                                relationships.</para>
+                            <para> </para>
+                        </entry>
+                        <entry><figure xml:id="ViewConceptDetails_GSG">
+                            <title>Concept View</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/View%20Concept%20Details_GSG.svg" scale="35"
+                                        align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure> </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">View a Concept’s Version
+                                History</emphasis></para>
+                            <para>Users can view and explore a concept’s version history by
+                                selecting the Time Travel Icon in the top left of the concept
+                                window, toggling properties on in the top right of the concept
+                                window, and toggling range on in the Timeline panel. Users can now
+                                drag the blue bars to specify the date range of interest and explore
+                                individual nodes for specific changes. Version history helps users
+                                understand how a concept has evolved over time, including when
+                                certain characteristics or details were added or removed and when
+                                axiom changes were made.</para>
+                        </entry>
+                        <entry><figure xml:id="ViewVersioning_GSG">
+                            <title>Versioning</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/View%20Versioning_GSG.svg" scale="35"
+                                        align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure> </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">Create a Concept</emphasis></para>
+                            <para>Users can click the + icon at the top of the Komet window to
+                                create a concept that represents new or emerging clinical conditions
+                                or create temporary concepts while Standards Developing
+                                Organizations create official representations. </para>
+                            <para>Once you click New Concept, a concept window will appear where you
+                                can select the ellipsis and pencil icons to enter associated
+                                information like STAMP, stated relationships, and more.</para>
+                        </entry>
+                        <entry><figure xml:id="NewLIDRRecord_GSG">
+                            <title>New LIDR Record</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/New%20LIDR%20Record_GSG.svg" scale="35"
+                                        align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure><figure xml:id="NewConcept_GSG">
+                                <title>New Concept</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/New%20Concept_GSG.svg" scale="35"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>  </entry>                      
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">Edit or Modify a Concept</emphasis></para>
+                            <para>Users can edit or modify a concept to reflect new and emerging
+                                real-world data or real-world evidence.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>To edit concept descriptions, the user can click the
+                                        description text directly to edit the Fully Qualified Name
+                                        or Other Names. The user can also use the pencil icon in the
+                                        Description section to add more Other Names.</para>
+                                </listitem>
+                                <listitem>
+                                    <para>To edit concept axioms, the user can use the pencil icons
+                                        in the Axioms section to edit roles and role groups in
+                                        existing axioms to make changes to “is-a” relationships
+                                        associated with a concept.</para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>Creating or modifying a <emphasis role="italic">concept</emphasis>
+                                requires authors to enter STAMP information, which, along with a
+                                UUID, can be used to identify the concept and its version history.
+                                The concept will house information from the <emphasis role="italic"
+                                    >semantic</emphasis> and a <emphasis role="italic"
+                                    >pattern</emphasis>, which provide meaning to the concept and
+                                define how data fields should be understood in the semantic,
+                                respectively. </para>
+                        </entry>
+                        <entry><figure xml:id="ModifyConcept_GSG">
+                            <title>Modify Concept</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/Modify%20Concept_GSG.svg" scale="35"
+                                        align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure> </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="underline"><emphasis role="bold">Author LIDR
+                                        Data</emphasis></emphasis>: </para>
+                            <para>Users can create LIDR data and a new laboratory test by clicking
+                                the + icon at the top of the Komet window and selecting New LIDR
+                                Record. </para>
+                            <para>Users can then add STAMP, device, and LIDR Record information
+                                (such as analyte, targets, and results) by selecting the ellipsis
+                                and pencil icons in the LIDR Viewer.</para>
+                        </entry>
+                        <entry>
+                            <figure xml:id="NewLIDRRecord_GSGCopy">
+                                <title>LIDR Record</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/New%20LIDR%20Record_GSG%20-%20Copy.svg" scale="35"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                            <figure xml:id="NewLIDRViewer_GSG">
+                                <title>New LIDR Viewer</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/New%20LIDR%20Viewer_GSG.svg"
+                                            scale="35" align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                             </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">Run a Reasoner</emphasis></para>
+                            <para>Users can run the reasoner in NextGen Komet, which uses <emphasis
+                                    role="italic">axioms</emphasis> that contain necessary and
+                                sufficient sets—to help classify and establish where a concept
+                                should be placed in the navigation hierarchy. This will then update
+                                the inferred relationships (based on the stated relationships that
+                                the author enters for a concept), the Hierarchical Relationship tab
+                                in the lefthand bar with manually entered LIDR result names, detect
+                                equivalences, and more. This can be done by selecting the Reasoner
+                                icon in the concept window or in the left-hand ribbon in Komet and
+                                clicking Run full reasoner in the drop down menu that appears in the
+                                top-left of the reasoner panel.</para>
+                            <para><emphasis role="bold">For Experienced DL Users</emphasis></para>
+                            <para>Komet has three DL reasoner service implementations which are
+                                dynamically discovered and loaded as implementations of the tinkar
+                                ReasonerService interface. If all service implementation are present
+                                when the komet ReasonerResults dropdown is selected, the menu
+                                displays as Image 2. </para>
+                            <para>The ElkOwl reasoner and the ElkSnomed reasoners both perform
+                                standard EL++ profile description logic reasoning. There primary
+                                difference between the two is that ElkOwl creates OWL axioms via the
+                                OWL API, whereas as ElkSnomed creates Snomed model objects to
+                                interface directly with the ELK reasoner.</para>
+                            <para>Note the ElkOwl reasoner has a maintenance backlog for concrete
+                                roles and role chains. So, select Use
+                                ElkSnomedReasonerService.</para>
+                            <para>The hybrid reasoner uses structural subsumption with "absent
+                                semantics" for the SNOMED "Situtation with explicit context"
+                                hierarchy. Briefly, "absent semantics" is a form of negation where
+                                the presence of the role "Finding context" with value "Known absent"
+                                treats the concept definition within that role group as a negation.
+                                Using the reasoner on SNOMED "as is" will produce erroneous results.
+                                As a result, the hybrid reasoner is limited to the "No family
+                                history" sub-hierarchy. Additionally, adjustments to those
+                                definitions need to be made to produce reasonable results. </para>
+                            <para>Selecting "Run full reasoner" does a complete classification of
+                                the taxonomy. When selected, the activity panel will be displayed,
+                                and show the reasoner service implementation.</para>
+                            <para>Run incremental reasoner" has a maintenance backlog, and is
+                                intended for concept level edits only.</para>
+                        </entry>
+                        <entry>
+                            <figure xml:id="RunReasoner_GSG">
+                            <title>Run Reasoner</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/Run%20Reasoner_GSG.svg"
+                                        scale="35" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                            <figure xml:id="ReasonerMenu_GSG">
+                                <title>Reasoner Menu</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/Reasoner%20Menu_GSG.svg" scale="35"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                            <figure xml:id="ReasonerPart2_GSG">
+                                <title>Reasoner Part 2</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/Reasoner%20Part%202_GSG.svg" scale="35"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                            </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">Protobuf Export</emphasis></para>
+                            <para>A tinkarized database in Komet can be exported using protobuf
+                                format. After selecting “File” from the top left corner, a dropdown
+                                will appear with the selection to export a database. Once selected,
+                                the user will see a pop-up that allows the user to select a date
+                                range and the type of export they would like to generate from the
+                                current database in Komet. </para>
+                            <para> </para>
+                            <para> </para>
+                            <para> </para>
+                        </entry>
+                        <entry><figure xml:id="Protobuf1_GSG">
+                            <title>Protobuf</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/Protobuf%201_GSG%20.svg" scale="35"
+                                        align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                            <figure xml:id="Protobuf2_GSG">
+                                <title>Protobuf</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/Protobuf%202_GSG%20.svg" scale="35"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure></entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">Protobuf Import</emphasis></para>
+                            <para>A tinkarized database in Komet can be imported using protobuf
+                                format. After selecting “File” from the top left corner, a dropdown
+                                will appear with the selection to import a database. Once selected,
+                                the user will see a pop-up that allows the user to select a database
+                                that is in protobuf format to import. </para>
+                        </entry>
+                        <entry><figure xml:id="ProtobufImport_GSG">
+                            <title>Protobuf Import</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="images/Protobuf%20Import_GSG%20.svg" scale="35"
+                                        align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure></entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+    <section>
+        <title>Komet UI Framework</title>
+        <para><emphasis role="bold">Moving Away from Model-View-Controller (MVC)</emphasis></para>
+        <para>JavaFX’s default GUI architecture pattern is Model View Controller or MVC. Below is
+            code that will load a Pane (Parent) based on an FXML file loaded using the FXMLLoader
+            API. The loader can also load the associated controller.</para>
+        <para><figure xml:id="OverrideCodesnip_GSG">
+            <title>Override</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/OverrideCodesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+            </figure></para>
+        <para>Above, you’ll notice the loader is also able to load one View and one controller
+            instance. The view and controller are a one-to-one mapping.</para>
+        <para>When developing JavaFX form based applications you will typically create three
+            things:</para>
+        <orderedlist>
+            <listitem>
+                <para>Java Domain objects - Business objects such as Java object representing the
+                        <emphasis role="bold">Model</emphasis></para>
+            </listitem>
+            <listitem>
+                <para>FXML file - A JavaFX XML markup representing the <emphasis role="bold"
+                        >View</emphasis></para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Controller</emphasis> class - A Java class can contain
+                    bound UI controls, presentation logic, methods to update data and UI.</para>
+            </listitem>
+        </orderedlist>
+        <para>As you can see the <emphasis role="bold">Controller</emphasis> is doing way too much
+            and as a result can be often difficult if not impossible to test in isolation. Because
+            JavaFX uses it’s own dependency injection facility to reference UI components during
+            runtime it’s difficult or impossible to mock or test a controller’s presentation logic.
+            Often controls are bound to JavaFX properties in the same controller class. Because of
+            this one-to-one mapping (View &amp; Controller) you can not have multiple views
+            referencing one ViewModel. To simply and improve development within Komet, we leverage
+            the MVVM model described below.</para>
+        <para><emphasis role="bold">Model-View-ViewModel (MVVM)</emphasis></para>
+        <para>MVVM is an architectural pattern that isolates the business logic/back-end data from
+            the view. It was invented by Microsoft and designed to simplify event driven user
+            interfaces. According to Wikipedia the <link
+                xlink:href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel"
+                >MVVM</link> is a variation of <link
+                xlink:href="https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)">Martin
+                Fowler</link>'s Presentation Model design pattern. The figure below shows how each
+            layer is notified when a data changes occur.</para>
+        <para><figure xml:id="MVVM_GSG">
+            <title>MVVM</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/MVVM_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>The following is a break down of each layer within MVVM:</para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">M — Model:</emphasis> is the access to the data layer,
+                    also known as the content for the view. This contains both business logic and
+                    data. Also known as the <emphasis role="italic">non-visual class </emphasis>that
+                    encapsulates the app’s data. In the context of Java, a Model is not necessarily
+                    the data but the data logic. For an example we can use Java domain objects as a
+                    developer to both define the data type/object we are creating and encapsulate it
+                    into a domain object for transfer.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">V — View: </emphasis>This represents what the user of a
+                    given application sees on the screen. It has the structure, layout, visuals,
+                    etc. The view contains zero business logic and is typically designed to bind to
+                    the ViewModel to receive data/cues. Multiple views can point to one view model.
+                    In JavaFX the view is typically composed of a FXML file (creates the layout of
+                    the UI components) and the controller class (adds functionality to UI
+                    components). The relationship between the controller class and FXML file is, the
+                    controller class is able to access each component of the UI via a FMXL
+                    identifier and set actions to occur when a component is interacted with.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">VM — ViewModel: </emphasis>An abstraction of the view
+                    because it reveals some properties that the view is not privy to. It listens for
+                    any changes of state and notifies the view of any. The View is bound to
+                    properties in the ViewModel so it can access the state of the data in the model.
+                    In JavaFX has Properties APIs that allow you to create View Models that will
+                    manage data properties that can be bound to UI form fields. A ViewModel will
+                    reference a domain model object such as a Java Bean or a POJO (plain old Java
+                    object). At any moment the domain object can be swapped out. Once the old object
+                    will no longer be firing property changes to ViewModel it was referenced.</para>
+            </listitem>
+        </itemizedlist>
+        <para><emphasis role="bold">Converting MVC to MVVM in JavaFX</emphasis></para>
+        <para>Converting JavaFX MVC code to MVVM, we will take on the follow steps:</para>
+        <orderedlist>
+            <listitem>
+                <para>Refactor controller class by removing presentation logic</para>
+            </listitem>
+            <listitem>
+                <para>Move presentation logic into the ViewModel class</para>
+            </listitem>
+            <listitem>
+                <para>Bind properties between the View properties and the ViewModel
+                    properties</para>
+            </listitem>
+            <listitem>
+                <para>Code to unbind properties</para>
+            </listitem>
+        </orderedlist>
+        <para>Shown below is a high level diagram of what this can look like:</para>
+        <para><figure xml:id="JAVMVCMVVM_GSG">
+            <title>Java MVC MVVM</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/JAVMVC%20MVVM_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Now that you know how to convert the traditional JavaFX MVC to MVVM, let’s look at
+            some proposed ViewModel APIs (code snippets) for common scenarios.</para>
+        <para><emphasis role="bold">A ViewModel API Using Inheritance</emphasis></para>
+        <para>If a GUI View Model API existed it could follow an inheritance model where a ViewModel
+            could be an interface with default methods or a concrete class that allows derived
+            classes.</para>
+        <para><emphasis role="bold">Pros</emphasis> of this approach is you can document UML on
+            derived classes. Also, derived classes can have a direct method for each property field
+            as opposed to a generic way to set/get properties by name.</para>
+        <para><emphasis role="bold">Cons</emphasis> of this approach is an addition class has to be
+            created and therefore must extend or implement the ViewModel class (or
+            interface).</para>
+        <para>Let’s look at the two common scenarios of MVVM as shown below.</para>
+        <para><emphasis role="bold">Scenario 1</emphasis>: User types into a JavaFX text
+            field</para>
+        <para>A user will type into the JavaFX text field which will update the view model which
+            will update the model. It can also update multiple views bound to the view model.</para>
+        <para><emphasis role="bold">Figure X. Title Goes Here</emphasis></para>
+        <para>
+            <figure xml:id="Scenario1Codesniop_GSG">
+            <title>Scenario 1</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Scenario1Codesniop_GSG%20.svg" scale="55"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para><emphasis role="bold">Scenario 2</emphasis>: Background process updates model to
+            update ViewModel then JavaFX text field</para>
+        <para>Now we go in the other direction by updating the model which will notify the change to
+            the View Model which then updates the UI control TextField.</para>
+        <para>
+            <figure xml:id="Scenario2Codesnip_GSG ">
+            <title>Scenario 2</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Scenario2Codesnip_GSG%20.svg" scale="60"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para><emphasis role="bold">An ViewModel API Using Generics</emphasis></para>
+        <para>Assuming a GUI View Model API existed it could follow a generic ViewModel strategy
+            utilizing Java’s generic type definition as shown below.</para>
+        <para><emphasis role="bold">Pros</emphasis> No need to have a derived class. Less code to
+            maintain.</para>
+        <para><emphasis role="bold">Cons</emphasis> of this approach is you’ll need to use generic
+            set/get methods to access named properties.</para>
+        <para>Let’s look at the two common scenarios of MVVM as shown below.</para>
+        <para><emphasis role="bold">Scenario 1</emphasis>: User types into a JavaFX text
+            field</para>
+        <para>
+            <figure xml:id="GenericsScen1Codesnip_GSG">
+            <title>Scenario 1</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Generics%20Scen1%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para><emphasis role="bold">Scenario 2</emphasis>: Background process updates model to
+            update ViewModel then JavaFX text field</para>
+        <para>
+            <figure xml:id="GenericsScen2Codesnip_GSG ">
+            <title>Scenario 2</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Generics%20Scen2%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para><emphasis role="bold">References:</emphasis></para>
+        <para><emphasis role="bold">JavaFX Frameworks:</emphasis>
+            <link xlink:href="https://github.com/mhrimaz/AwesomeJavaFX#frameworks">GitHub -
+                mhrimaz/AwesomeJavaFX: A curated list of awesome JavaFX libraries, books,
+                frameworks, etc...</link></para>
+        <para><emphasis role="bold">Wikipedia MVVM:</emphasis>
+            <link xlink:href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel"
+                >Model–view–viewmodel</link></para>
+        <para><emphasis role="bold">mvvmFX</emphasis>: <link
+                xlink:href="https://github.com/sialcasa/mvvmFX">itHub - sialcasa/mvvmFX: an
+                Application Framework for implementing the MVVM Pattern with JavaFX</link></para>
+        <para><emphasis role="bold">JGoodies Binding:</emphasis>
+            <link xlink:href="https://www.jgoodies.com/freeware/libraries/binding/"/></para>
+        <para><emphasis role="bold">GUI Architectures</emphasis> by Martin Fowler - <link
+                xlink:href="https://martinfowler.com/eaaDev/uiArchs.html">GUI
+            Architectures</link></para>
+    </section>
+    <section>
+        <title>Interacting with the Komet Database</title>
+        <para>This section will detail several examples of how to interact with the spined array
+            database as a developer. All of the samples assume that a spined array database has been
+            loaded.</para>
+        <para>You can use the following code to load a database:</para>
+        <para>
+            <figure xml:id="CachingCodesnip_GSG">
+            <title>Caching</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Caching%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Please note that line two should be replaced with the fully qualified path of the
+            database. By convention, databases generally reside in the “Solor” directory within the
+            user’s home directory, as this is where Komet looks for available databases.</para>
+        <para>Additionally, it is good practice to explicitly shutdown the database when you are
+            done using it:</para>
+        <para>
+            <figure xml:id="PrimitiveCodesnip_GSG ">
+            <title>Primitive</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Primitive%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para> The dataset used in the code samples is based off of the October 2024 SNOMED
+            International distribution.</para>
+        <para><emphasis role="bold">Code Samples</emphasis></para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Count all of Concepts</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>
+            <figure xml:id="AtomicCodesnip_GSG">
+            <title>Atomic</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Atomic%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>
+        <para>
+            <figure xml:id="AtomicOutputCountCodesnip_GSG">
+            <title>Atomic Output</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Atomic%20Output%20Count%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Count Active Concepts</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Stamp Calculators act as filters. Here we check each Concept against the Stamp
+            Calculator which filters on only active Concepts on the development path.</para>        
+        <para>
+            <figure xml:id="ActiveConceptsAtomicCodesnip_GSG">
+            <title>Atomic Concepts</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Active%20Concepts%20Atomic%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>  
+        <figure xml:id="ActiveConceptsAtomicCountodesnip_GSG">
+            <title>Active Concepts Count</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Active%20Concepts%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Count Inactive Concepts</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Similarly, we can use the StampCalculator to retrieve the latest version of a concept
+            to count the number of inactive concepts. “Latest” acts like a Java Optional, so we can
+            use the same “ifPresent()” closure that only executes if the underlying concept
+            exists.</para>        
+        <para>
+            <figure xml:id="InactiveConceptsAtomicCodesnip_GSG">
+            <title>Inactive Concepts</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Inactive%20Concepts%20Atomic%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>        
+        <para>
+            <figure xml:id="InactiveConceptsAtomicCountCodesnip_GSG">
+            <title>Inactive Concepts Count</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Inactive%20Concepts%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Count the Number of Concepts Made Inactive by Year
+                            for the Last Ten Years</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Here we iterate through each concept and increment a count tracked by a map for the
+            year it went inactive. We then print out the count for the last ten years. Similar to
+            the above, note that the “Latest” class, returned by “latest()”, acts like an Optional
+            so we use “ifPresent()” to access the underlying concept.</para>        
+        <para>
+            <figure xml:id="ActiveConcepts10AtomicCodesnip_GSG">
+            <title>Active Concepts 10</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Active%20Concepts%2010%20Atomic%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>
+        <para>
+            <figure xml:id="ActiveConcepts10AtomicCountCodesnip_GSG">
+            <title>Active Concepts 10 Count</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Active%20Concepts%2010%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Retrieve the Various Names for a Concept in the US
+                            Language</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Components in the database are represented externally by UUIDs and internally by
+            “nids”. Here we look up a nid using the EntityService based on a UUID we got from
+            looking up a “chronic lung disease” from Komet. We then use this nid to get the
+            different types of names associated with this concept.</para>        
+        <para>
+            <figure xml:id="LanguageCodesnip_GSG ">
+            <title>Language</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Language%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>        
+        <para>
+            <figure xml:id="LanguageOutputCodesnip_GSG">
+            <title>Language</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Language%20Output%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Lookup the Definition for a
+                        Concept</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Here we lookup a definition for the concept “Capra Hircus” based off of the UUID we
+            found in Komet. To find the definition, we get a reference to the description pattern
+            from the latest StampCalculator. Then we iterate through each description semantic of
+            the pattern for the concept until we find the definition description type.</para>        
+        <para>
+            <figure xml:id="DefinitionCodesnip_GSG">
+            <title>Definition</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Definition%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>        
+        <para>
+            <figure xml:id="DefinitionOutputCodesnip_GSG ">
+            <title>Definition Output</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Definition%20Output%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+    </section>
+    <section>
+        <title>Plugin Services</title>
+        <para>This section will explain how plugin services are used to build out Komet components.
+            The team is currently building plugin services for windows, menus, panels, and tasks.
+            Plugin services are implemented using Maven plugins.</para>
+        <para>This section will be available in the near future. </para>
+    </section>
+    <section>
+        <title>Data Artifact Management</title>
+        <para>This section will explain how different data artifacts are managed. Currently the team
+            is implementing a data architecture using Maven plugins and protobuf to streamline data
+            artifact storing for easier access via an API. This section will also dive into
+            datastores (inverted knowledge graphs), data import/export, different data IDs (public
+            IDs vs. native IDs vs. UUIDs), and other data components.</para>
+        <para>Future topics include:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Datastore (hosting location, inverted knowledge graphs)</para>
+            </listitem>
+            <listitem>
+                <para>Data artifacts (maven plugins)</para>
+            </listitem>
+            <listitem>
+                <para>Import/export using maven and protobuf</para>
+            </listitem>
+            <listitem>
+                <para>Public IDs vs. Native IDs vs. UUIDs</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+    <section>
+        <title>APIs</title>
+        <para>This section will explore all available APIs and data query services within komet and
+            tinkar-core. This includes STAMP coordinates/calculators, view coordinates/calculators,
+            the entity service, the search service, and methods for creating/editing
+            concepts.</para>
+        <para><emphasis role="bold">Coordinates and Calculators</emphasis></para>
+        <para>At a high level, Calculators are used to filter, compare, and order versions using the
+            five aspects of STAMPs, while Coordinates are used to capture the version processing
+            configurations / preferences which will drive this processing. Calculator responsiveness
+            directly impacts many functionalities surfaced in the UI, there is a large emphasis
+            placed on performance. There is a multi-dimensional spatial representation that allows
+            us to focus in on a certain subset of information in a given data store, using STAMPs.
+            STAMPs have five coordinates which were mentioned earlier, status, time, author, module,
+            and path and map to a five-dimensional hyperplane. Coordinates and calculators allow
+            developers to request only certain information by defining the STAMP field parameters
+            and filtering out only what is needed for the accurate permutation. Tinkar Core has a
+            module called coordinate which has different coordinates and calculators. For instance,
+            in StampCoordinateRecord there are different available STAMPs available. In the
+            StampCalculatorWithCache, developers can filter out the StampCoordinateRecord so that
+            only what was specified as the require STAMP is returned. Additionally,
+            LanguageCoordinateRecord, LogicCoordinateRecord and NavigationCoordinateRecord can be
+            used in order to filter out coordinates for logic, language semantics and navigation
+            semantics using their respective calculators. Lastly, ViewCoordinateRecord is the
+            highest level of filtering that can be done. It allows you to put in
+            EditCoordinateRecord and it is what Komet uses to populate the filtered records. It can
+            retrieve information from the other coordinates and their calculators. In short, the
+            calculators use the coordinates to filter out the desired records.</para>
+        <para>Below provides an example of how the StampCalculator is used to return a list of
+            PublicIds of Concepts that are active members of a particular membership pattern:</para>        
+        <para>
+            <figure xml:id="APICodesnip_GSG">
+            <title>API</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/API%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para><emphasis role="bold">EntityService </emphasis></para>
+        <para>The data layer of Komet is managed by Tinker Core and contains the Disk/Memory
+            Datastore Providers. There is an abstraction on top of that which is the
+            PrimitiveDataService, with EntityService (handles data retrieval and processing for
+            semantic and conceptual entities)above that primitive data. With data stored in spined
+            arrays, the PrimitiveDataService and the Disk/Memory Datastore Providers allow data to
+            be processed and unpackaged from the ingested files. The EntityService takes the data
+            from there and makes it consumable objects in java, specifically semantics, patterns,
+            and concept objects. These are viewable and defined in the entity project. The
+            EntityProvider implements EntityService. From there the EntityService can get objects
+            from the database and use them as needed.</para>
+    </section>
+    <section>
+        <title>Tinkarizer</title>
+        <para>This section will dive into any element or process that interacts with Tinkar data.
+            This includes the Tinkarizer (module for importing and transforming Tinkar data sets),
+            Tinkar data, the Tinkar import process, starter data, change sets, and bindings.</para>
+        <para><emphasis role="italic">More on this topic will be made available at a later
+                time.</emphasis></para>
+    </section>
+    <section>
+        <title>Testing</title>
+        <para>This section will describe how integration and/or unit testing is done for Komet and
+            Tinkar data. It will provide different testing requirements for developers vs. testers
+            and provide instructions on how to run tests.</para>
+        <para><emphasis role="italic">More on this topic will be made available at a later
+                time.</emphasis></para>
+    </section>
+    <section>
+        <title>Knowledge Standards and Use Cases</title>
+        <para>This section will provide a high-level education on existing knowledge standards like
+            SNOMED, LOINC, LIVD/LIDR, and RxNorm to help developers solidify their understanding of
+            Tinkar data artifacts, which is heavily based on data elements in these
+            standards.</para>
+        <para><emphasis role="italic">More on this topic will be made available at a later
+                time.</emphasis></para>
+    </section>
+    <section>
+        <title>References</title>
+        <para>This section will provide helpful resources for further education and a list of
+            definitions for terms that are commonly used across the project but may not be common
+            knowledge.</para>
+        <para><emphasis role="italic">More on this topic will be made available at a later time.
+            </emphasis></para>
+    </section>
+</chapter>

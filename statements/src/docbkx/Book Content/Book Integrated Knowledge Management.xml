@@ -1,51 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>IKM Overview</title>
-    <section>
-        <title>Motivation for IKM</title>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>IKM Overview</title>
+    
         <para>Knowledge management (KM) is an important process organizations use to identify,
-            organize, and disseminate information and is providing greater value and insights into
-            data with the emergence of technologies and advanced analytics, such as artificial
-            intelligence (AI) and machine learning (ML). Individuals and organizations alike are
-            continuously generating data which may sit in siloed databases but, with the appropriate
-            tools, can be aggregated across platforms, analyzed, and utilized. However, the flow of
-            data through systems can lead to a myriad of issues including loss of meaning, inability
-            to aggregate data, misinterpretation, and more. Achieving coordinated and standardized
-            ways to integrate data across systems is an important tenet of integrated knowledge
-            management (IKM). </para>
-        <para>Currently, implementers must know how to work with all the existing standards and be
-            familiar with their respective rules and formats. Through this body of work, we are
-            advancing a reference demonstration of an IKM environment that can be used by various
-            stakeholders in the laboratory ecosystem to easily view, manage, and integrate existing
-            knowledge standards (e.g., SNOMED CT® , LOINC®) in a singular location, ultimately
-            allowing users to identify relationships between disparate knowledge sets. This work
-            will help set the foundation for a common model that would eventually help promote
-            collaboration across standards-development organizations, vendors, and
-            provider-organizations, improving interoperability of laboratory data across the entire
-            ecosystem. Through IKM, all standards work together under one data model with tooling to
-            work across standards and reduce redundancies. IKM can benefit the healthcare ecosystem
-            and society by improving patient outcomes, allowing meaningful data analyses, and
-            increasing interoperability. </para>
-    </section>
+        organize, and disseminate information. With the emergence of technologies and advanced
+        analytics, such as artificial intelligence (AI) and machine learning (ML), KM could provide
+        even greater value and insights into managed data. Individuals and organizations alike are
+        continuously generating data which may sit in siloed databases but, with the appropriate
+        tools, can be aggregated across platforms, analyzed, and utilized. However, due to the
+        variance in the representation and encoding of healthcare data, data liquidity through
+        systems can lead to a myriad of issues including loss of meaning, inability to aggregate
+        data, misinterpretation, and more. Integrated knowledge management (IKM) is an approach to
+        manage disparate healthcare data using a coordinated and standardized process. Our
+        implementation of IKM will use a common model to support the conversion of existing
+        terminology standards into a standardized format that maintains meaning, associated
+        concepts, semantics, hierarchies, and other critical information and relationships. </para>
     <section>
-        <title>The Problem IKM Addresses </title>
-        <para>In healthcare, organizations that help achieve standardized health data are referred
-            to as Standards Development Organizations (SDOs). SDOs exist in every industry, but in
-            health Information Technology (IT) the following are key examples: <informaltable>
+        <title>The Problem IKM Addresses</title>
+        <para>In healthcare, standards development organizations (SDOs) develop, maintain, and
+            distribute or publish healthcare standards. SDOs exist in every industry, but in health
+            Information Technology (IT) the following are key examples of healthcare standards
+            developed by the Regenstrief Institute: <informaltable>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1"/>
                     <colspec colnum="2" colname="col2"/>
                     <tbody>
                         <row>
-                            <entry>SNOMED CT® </entry>
+                            <entry>
+                                <para>Systematized Nomenclature of Medicine</para>
+                                <para>Clinical Terms (SNOMED CT®)</para>
+                            </entry>
                             <entry>A national standard, comprehensive and precise multilingual
                                 health terminology globally [1]</entry>
                         </row>
                         <row>
-                            <entry>LOINC®</entry>
+                            <entry>
+                                <para>Logical Observation Identifiers, Names, and Codes
+                                    (LOINC®)</para>
+                            </entry>
                             <entry>Logical Observation Identifiers Names and Codes terminology:
                                 facilitate the exchange and pooling of clinical or laboratory
                                 results for clinical care, outcomes management, claims attachment,
@@ -69,114 +64,83 @@
                     </tbody>
                 </tgroup>
             </informaltable></para>
-        <para>The Office of the National Coordinator for Health Information Technology (ONC)
-            currently oversees and promotes SDOs and supports the adoption and application of health
-            data standards in the U.S. healthcare space. The structure and meaning of data must be
-            maintained to achieve full data integrity and a truly interoperable system. FHIR is an
-            example of a standard that works to maintain the structure of data as it flows through
-            systems, while terminology organizations including SNOMED CT®, RxNorm, and LOINC® work
-            to maintain the meaning of data. With the many existing SDOs and agencies pushing their
-            adoption, issues such as overlapping coding standards, loss of meaning, and partial
-            representation continue to exist. </para>
-        <para>While medical terminology standards exist, the way they record, manage, and represent
-            terminologies differs, leading to redundant and duplicative ways to reference the same
-            concept. This leads to variations in clinical data exchange across the ecosystem as
-            organizations use inconsistent and varied concept representation. Interoperability
-            specifications aim to force these terminologies to adhere to predefined concepts, code
-            systems, and reusable value sets. Although there are standardized codes and formats,
-            there are many ways to use these standards. </para>
-        <para>To address the current issues with disparate standards, a common model and IKM
-            capabilities are needed to support the integration and management of clinical
-            terminology and local concepts to support increased data quality and interoperable
-            clinical information. [5] IKM and implementation of a common model can support the
-            integration of disparate standards, provide version control, and support extensions that
-            otherwise do not exist. A common model for knowledge standards addresses the differences
-            in management and structure across disparate terminology standards, local concepts, and
-            code lists/value sets. Employing the architectural design principle of Separation of
-            Concerns (SoC), a system can be divided into sections and each section can be addressed
-            and allowed to evolve irrespective of other sections. In IKM and its knowledge
-            architecture, the foundational layer provides the common elements of interoperability
-            including object identity, versioning, modularity, and knowledge representation. In this
-            foundational architecture layer, we find the shared module system where version and
-            configuration management provide the foundation for interoperability and the common
-            model. </para>
-        <para>A common model will unify disparate standards and address the following points when
-            designing an interoperable healthcare system:</para>
-        <orderedlist>
-            <listitem>
-                <para><emphasis role="bold">Version Control</emphasis>: changes to published
-                    terminology artifacts will be documented and historic versions maintained if the
-                    need for rollback arises. </para>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Extensions</emphasis>: Improved processes around
-                    extensions to terminology that conform to the requirements of the standards the
-                    extension is based on. The ability to implement terminology extensions and
-                    support additional content</para>
-            </listitem>
-        </orderedlist>
-    </section>
-    <section>
-        <title>Goals of IKM</title>
-        <para>One of the goals of this body of work is to develop both a common model and the
+        <para>The Assistant Secretary for Technology Policy and Office of the National Coordinator
+            for Health Information Technology (ASTP/ONC) currently oversees and promotes SDOs and
+            supports the adoption and application of health data standards in the U.S. healthcare
+            space to ensure the structure, meaning, and integrity of data is maintained as it is
+            exchanged within and between systems. FHIR is an example of a standard that works to
+            maintain the structure of data as it flows through systems, while terminology standards
+            like SNOMED CT®, RxNorm, and LOINC® work to maintain the meaning of data. While SDOs,
+            agencies, and medical terminology standards exist, the way they record, manage, and
+            represent terminologies differs, leading to variations in clinical data exchange across
+            the ecosystem as organizations use inconsistent and varied concept representation.
+            Although there are standardized codes and formats, there are many ways to use these
+            standards. </para>
+        <para>Our IKM approach employs a common model for data representation to support the
+            integration of these disparate standards and improve the quality and interoperability of
+            data. One of the goals of this body of work is to develop both a common model and the
             necessary tooling to support the implementation of the common model and IKM
-            capabilities. Our work aims to improve patient care and safety through interoperable,
+            capabilities. Our aim is to improve patient care and safety through interoperable,
             high-quality data, and accurate transmission within and between healthcare systems.
             Improved data quality will cascade to other refinements within the healthcare ecosystem,
             such as improved research capabilities, identification of real-world data trends, and
-            real-time public health information. A standardized way to represent medical terminology
-            must be developed to ensure new concepts are represented in a uniform and repeatable way
-            and support the conversion of existing terminology standards into a common model while
-            maintaining meaning, associated concepts, semantics, hierarchies, and other critical
-            information and relationships. </para>
-        <para>To support IKM, an implementation of a common model for knowledge standards must
-            support a variety of functionalities across all knowledge standards and frameworks,
-            including:</para>
-        <itemizedlist>
-            <listitem>
-                <para><emphasis role="bold">Import</emphasis> – The data model must be able to pull
-                    and visualize data from LOINC®, SNOMED CT®, and other terminology standards into
-                    the model’s data elements. Displaying the disparate terminology standards in a
-                    single place will allow users and authors to compare commonalities and
-                    differences between standards, identify equivalent concepts, and understand how
-                    concepts relate to one another.</para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis role="bold">Edit</emphasis> – The model must be able to convert pulled
-                    data into the standardized format while maintaining meaning and any associated
-                    concepts. Editing will support the identification of unnecessary or redundant
-                    concepts caused by unstandardized formatting of concepts across terminology
-                    standards. Editing within the model will also support a uniform way to safely
-                    and reliably update, evolve, and version content over time as new concepts,
-                    relationships, and information are uncovered.</para>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Authoring</emphasis> – The model must support the
-                    development of new concepts using a standardized and repeatable format to
-                    maintain lossless capture and transmission of data (including identification and
-                    inclusion of related concepts), incorporate new concepts such as Long
-                    coronavirus disease 2019 (COVID-19), and meet standardized terminology
-                    formatting.</para>
-            </listitem>
-        </itemizedlist>
-        <para>Tooling is needed to support IKM and the common model. The tooling will serve as an
-            environment to view all existing standards and how they are related. Examples of
-            functionality include: </para>
-        <itemizedlist>
-            <listitem>
-                <para>Concept, semantic, hierarchy, and pattern display and navigation</para>
-            </listitem>
-            <listitem>
-                <para>Options to view additional details of various concepts</para>
-            </listitem>
-            <listitem>
-                <para>Clear and concise versioning information</para>
-            </listitem>
-            <listitem>
-                <para>Equivalent concept lists</para>
-            </listitem>
-        </itemizedlist>
+            real-time public health information.</para>
+        <para>To support the common model, our team is developing a tool and authoring environment
+            that supports a variety of functionalities across all knowledge standards and frameworks
+            to address the differences in management and structure across disparate terminology
+            standards, local concepts, and code lists/value sets, including:<itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Viewing</emphasis> – The model must support
+                        user-friendly and straightforward viewing of concept, semantic, hierarchy,
+                        and patterns, logical navigation, options to view additional details of
+                        various concepts, equivalent concept lists, and concise versioning
+                        information.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Import</emphasis> – The model must be able to load
+                        and represent disparate terminology sources such as LOINC® and SNOMED CT® in
+                        a common model without loss of fidelity Displaying the disparate terminology
+                        standards in a single place will allow users and authors to compare
+                        commonalities and differences between standards, identify equivalent
+                        concepts, and understand how concepts relate to one another.</para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <emphasis role="bold">Edit</emphasis> – The model must be able to convert
+                        pulled data into the standardized format while maintaining meaning and any
+                        associated concepts. Editing will support the identification of unnecessary
+                        or redundant concepts caused by unstandardized formatting of concepts across
+                        terminology standards. Editing within the model will also support a uniform
+                        way to safely and reliably update, evolve, and version content over time as
+                        new concepts, relationships, and information are uncovered.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Authoring</emphasis> – The model must support the
+                        development of new concepts using a standardized and repeatable format to
+                        maintain lossless capture and transmission of data (including identification
+                        and inclusion of related concepts), incorporate new concepts such as Long
+                        coronavirus disease 2019 (COVID-19), and meet standardized terminology
+                        formatting.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Version Control</emphasis> – The model must support
+                        changes to published terminology artifacts by documenting, maintaining, and
+                        making historic versions available if the need for rollback arises. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Extension Support</emphasis> – The model must
+                        support continued improvements, including  incorporating terminology
+                        standard extensions that conform to the requirements of the given
+                        standards.</para>
+                </listitem>
+            </itemizedlist></para>
+        <para>Employing the architectural design principle of Separation of Concerns (SoC), a system
+            can be divided into sections and each section can be addressed and allowed to evolve
+            irrespective of other sections. In our apporach to IKM and our knowledge architecture,
+            the foundational layer provides the common elements of interoperability including object
+            identity, versioning, modularity, and knowledge representation. In this foundational
+            architecture layer, we find the shared module system where version and configuration
+            management provide the foundation for interoperability and the common model. </para>
     </section>
     <section>
         <title>TermINology Knowledge Architecture (Tinkar) Overview</title>
@@ -202,7 +166,7 @@
             complex and individual elements of each standard then allows continual process
             improvement, including rapid extension development. Edits to concepts or newly authored
             concepts in Tinkar can be tested and previewed before deployment to a live environment
-            and historic versioning of meta data is perpetually maintained to support iterative
+            and historic versioning of metadata is perpetually maintained to support iterative
             authoring, development, and versioning. [5]</para>
         <para>Tinkar aims to improve the quality of patient care across the healthcare enterprise by
             creating a cross-cutting and common model that can integrate other terminology standards
@@ -295,11 +259,11 @@
                 participation, like:</para>
             <itemizedlist>
                 <listitem>
-                    <para>The Centers for Medicare and Medicaid Services (CMS) and Office of the
-                        National Coordinator for Health IT (ONC) will need to outline minimum data
-                        requirements for orders to ensure the participating entities are capturing
-                        standardized data elements for standardized questions that come from a
-                        well-known and widely available source of truth.</para>
+                    <para>The Centers for Medicare and Medicaid Services (CMS) and ASTP/ONC will
+                        need to outline minimum data requirements for orders to ensure the
+                        participating entities are capturing standardized data elements for
+                        standardized questions that come from a well-known and widely available
+                        source of truth.</para>
                 </listitem>
                 <listitem>
                     <para>The Food and Drug Administration (FDA) will need to develop an
@@ -404,4 +368,3 @@
         </para>
     </section>
 </chapter>
-

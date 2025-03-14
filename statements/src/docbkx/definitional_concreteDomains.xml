@@ -11,8 +11,10 @@
         <para>Concrete domains are used to model concrete properties such as numbers, time
             intervals, and spatial regions.<citation>reasonConcreteDomain</citation> However, a
             limitation of description logic is the ability to fully represent concrete values. For
-            example, "male husband is younger than a female spouce" could only be represented by an
-            abstract mean and does not fully capture the semantics.<citation>complexity_DL_concreteDomain</citation> </para>
+            example, "male husband is younger than a female spouse" could only be represented by an
+            abstract mean and does not fully capture the
+                semantics.<citation>complexity_DL_concreteDomain</citation>
+        </para>
         <para>In patient records, there is no shortage of a need to represent these values (weight,
             temperature, dosages, etc), and SNOMED CT has already begun work on addressing concrete
             domain. In order to "stand on the

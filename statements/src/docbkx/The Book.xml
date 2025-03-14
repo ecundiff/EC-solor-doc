@@ -119,7 +119,7 @@
         <xi:include href="Book%20Content/Book%20Healthcare%20Data%20Management.xml"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Book%20Healthcare%20Quality%20Improvement.xml"
-            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
         <xi:include
             href="Book%20Content/Book%20Global%20Health%20and%20International%20Collaboration.xml"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>

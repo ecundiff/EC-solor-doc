@@ -105,25 +105,6 @@
             costs by employing IKM to ensure data interoperability and leverage advanced analytics.
             Moreover, IKM supports continuous improvements to data quality and the adoption of PHM
             best practices. [15]</para>
-        <sect2>
-            <title>Health Disparities</title>
-            <para>Health disparity is a complex and nuanced topic that covers the differences in the
-                way population groups access, receive, and experience various aspects of healthcare.
-                These inequalities are caused by social, economic, environmental, and a variety of
-                other factors and are constantly evolving as healthcare and the factors themselves
-                change.
-                [16]
-                IKM offers an opportunity to not only identity health disparities but to also
-                understand the various causes of the inequality. By improving the quality and
-                interoperability of health data, researchers, public health officials, and providers
-                could more accurately identify health disparities, develop personalized solutions to
-                address the specific needs of population groups, and track changes to population
-                groups using real-world data to maintain high-quality care and solutions. While IKM
-                offers a wide array of information sources and data that could be used to support
-                disparate communities, it is essential that patient privacy, ethics, and safety
-                remain as driving factors.
-                [17]</para>
-        </sect2>
     </sect1>
     <sect1>
         <title>Pediatric Data Management</title>
@@ -133,31 +114,31 @@
             psychological characteristics of pediatric populations. The application of IKM
             principles can significantly improve the management and use of pediatric health data,
             ensuring that healthcare providers can deliver age-appropriate care that supports the
-            healthy development of children. [18] </para>
+            healthy development of children. [16] </para>
         <para>Pediatric health data encompasses a broad spectrum of information, from birth records
             and immunizations to growth charts and developmental milestones. Managing this data
             effectively requires systems that can adapt to the rapid changes in health status and
             needs that characterize childhood and adolescence. Additionally, pediatric data
             management must address consent and privacy issues, particularly as they relate to the
-            rights of minors and the involvement of parents or guardians. [19] </para>
+            rights of minors and the involvement of parents or guardians. [17] </para>
         <para>Consent and ethical considerations are paramount in pediatric data management.
             Healthcare providers must navigate the complex legal and ethical landscape surrounding
             the collection and use of health data from minors, ensuring compliance with regulations
             that protect children’s privacy while simultaneously facilitating necessary medical
             care. IKM can support this process by providing frameworks for managing consent
             documentation and ensuring that data use policies are clearly communicated and followed.
-            [20] </para>
+            [18] </para>
         <para>An area of particular interest for pediatric data management is school, a core site of
             care for children aged five through 17 years old. Less than half of the US children have
             an assigned healthcare provider, but over 95% of children aged five through 17 years old
-            go to school. [21] Evidence-based research suggests that healthy students earn better
+            go to school. [19] Evidence-based research suggests that healthy students earn better
             grades and have better attendance, stressing the opportunity for healthcare
             organizations, health partners, or schools themselves to use school as an opportunity to
             provide health screenings or address gaps in students’ care. Approximately 17% of public
             schools in the US offered telehealth services to students in the 2021-2022 school year,
             and this trend is projected to go up. IKM can support advancements in pediatric data
             management by coordinating care between clinics, schools, and other health systems
-            involved in the delivery of care. [21]</para>
+            involved in the delivery of care. [19]</para>
     </sect1>
     <sect1>
         <title>Infectious Disease Research and Management  </title>
@@ -167,7 +148,7 @@
             identify outbreaks, and inform public health responses in real time. IKM principles can
             enhance infectious disease management by ensuring high-quality, standardized, and
             interoperable real-world data that can be used by organizations to outline actionable
-            management plans. [22] </para>
+            management plans. [20] </para>
         <para>Infectious disease data management and research track the spread of infectious
             diseases, enabling health authorities to identify outbreaks quickly and implement
             containment measures. Real-time data collection and analysis are essential for
@@ -175,25 +156,25 @@
             patterns. IKM facilitates the integration of data from multiple sources, including
             healthcare facilities, laboratories, public health departments, and non-traditional data
             collection methods like at home testing, to ensure a comprehensive view of the disease
-            landscape across the US and around the world. [23] </para>
+            landscape across the US and around the world. [21] </para>
         <para>The integration of research and clinical data is vital for developing effective
             treatments and vaccines for infectious diseases. IKM principles support the
             standardization of data formats and terminologies, making it easier for researchers to
             aggregate and analyze data from diverse studies. IKM accelerates the translation of
             research findings into clinical practice, improving patient outcomes and public health
-            responses around the world. [24] </para>
+            responses around the world. [22] </para>
         <para>One notable example of a data-driven approach to infectious disease management is the
             global response to the COVID-19 pandemic. Health organizations worldwide utilized IKM
             principles to standardize data reporting, enabling the effective tracking of cases,
             vaccination rates, and emerging variants. This coordinated effort facilitated rapid
             research, informed public health policies, and guided the allocation of resources to
-            areas most in need. [25] Another example of how IKM principles can support improved
+            areas most in need. [23] Another example of how IKM principles can support improved
             infectious disease management is the work by the Infectious Diseases Data Observatory
             (IDDO). IDDO is a scientifically independent, multi-disciplinary coalition that has been
             trying to identify and collate de-identified individual patient data (IPD) in a
             format-agnostic way. IKM could facilitate and support their efforts to track
             surveillance data in an established system for a wide range of infectious diseases, such
-            as: [26]</para>
+            as: [24]</para>
         <para> </para>
         <itemizedlist>
             <listitem>
@@ -253,32 +234,32 @@
             difficult. The scarcity of data, combined with its often fragmented nature, hinders the
             development of effective treatments and care strategies. The application of IKM
             principles facilitates the aggregation, standardization, and sharing of rare disease
-            data across health systems that may not normally have access. [27] </para>
+            data across health systems that may not normally have access. [25] </para>
         <para>Data plays a crucial role in the identification and research of rare diseases.
             Comprehensive data collection and analysis are essential for understanding the genetic
             and environmental factors associated with rare diseases, developing diagnostic tools,
             and identifying potential treatments. IKM can enhance the quality and accessibility of
             rare disease data, enabling researchers and clinicians to uncover patterns and
-            connections that would otherwise remain obscured. [28] IKM principles advocate for the
+            connections that would otherwise remain obscured. [26] IKM principles advocate for the
             use of standardized data formats and terminologies to facilitate data sharing and
             collaboration among researchers worldwide. This approach not only improves the
             efficiency of data collection but also increases the chances of breakthroughs in
-            understanding and treating rare diseases. [29] </para>
+            understanding and treating rare diseases. [27] </para>
         <para>IKM plays a pivotal role in advancing rare disease research and improving patient
             care. IKM enables the integration of research findings into clinical practice more
             rapidly by supporting interoperable and easily accessible data from various sources.
             This integration is vital for developing effective treatment protocols and care
             strategies for rare diseases, ultimately improving patient outcomes and quality of life.
-            [30] In addition, IKM can support efforts to improve rare disease management and
+            [28] In addition, IKM can support efforts to improve rare disease management and
             research with the goal of obtaining more complete datasets, as shown in the work of the
                 <emphasis role="italic">Task Force on Clinical Research Networks for Rare
                 Diseases</emphasis> by the International Rare Diseases Research Consortium (IRDRC).
             The IRDRC designed the task force with the objective of analyzing the quality of data to
             be obtained via the growing global network, removing communication and technical
-            barriers in managing and sharing rare disease data globally. [31] The National
+            barriers in managing and sharing rare disease data globally. [29] The National
             Institutes of Health (NIH) reports more than 7,000 rare diseases. Lurie Children's
             Hospital of Chicago states that one in 10 Americans has a rare disease. About half of
-            these Americans are children. [32]</para>
+            these Americans are children. [30]</para>
     </sect1>
     <sect1>
         <title>Cross-Disciplinary Data Integration and Management</title>
@@ -287,24 +268,24 @@
             various disciplines, such as genomics, epidemiology, and social sciences can lead to a
             more comprehensive understanding of health and disease. The IKM principals can
             facilitate this integration, ensuring that data is not only interoperable but also
-            meaningful across different research and clinical contexts. [33]</para>
+            meaningful across different research and clinical contexts. [31]</para>
         <para>The integration of data across disciplines is crucial for developing a holistic
             approach to patient care and public health. It allows for the consideration of a wide
             range of factors affecting health, from genetic predispositions to environmental and
             social determinants. IKM supports this integration by standardizing data formats and
-            terminologies, enabling seamless data exchange and analysis across diverse fields. [34]
+            terminologies, enabling seamless data exchange and analysis across diverse fields. [32]
             Implementing IKM to support cross-disciplinary efforts will involve adopting common data
             standards, utilizing interoperable platforms, and fostering collaboration among
             stakeholders from different disciplines. These strategies ensure that data is not only
             accessible but also usable for all parties involved, facilitating multidisciplinary
-            research and care initiatives. [35] </para>
+            research and care initiatives. [33] </para>
         <para>Numerous examples of integrated data management have led to improved patient outcomes.
             For instance, combining clinical data with social and environmental information has
             enabled healthcare providers to offer more personalized care plans that address the
             broader context of patients' lives. Similarly, integrating epidemiological data with
             genomic research has accelerated the identification of disease markers and the
             development of targeted therapies. These successes underscore the value of IKM in
-            enhancing the effectiveness of health interventions across disciplines. [36]</para>
+            enhancing the effectiveness of health interventions across disciplines. [34]</para>
     </sect1>
     <sect1>
         <title>Future Direction for Healthcare Data Management and IKM</title>
@@ -312,7 +293,7 @@
             leveraging emerging technologies and methodologies to further enhance the quality,
             accessibility, and interoperability of health data. These advancements promise to
             transform healthcare delivery, research, and policy-making, driving improvements in
-            patient outcomes and healthcare efficiency. [37] </para>
+            patient outcomes and healthcare efficiency. [35] </para>
         <para>As the healthcare sector prepares for these advancements, it faces challenges such as
             ensuring data privacy and security, managing the ethical implications of AI and big
             data, and addressing disparities in access to technology. However, these challenges also
@@ -320,7 +301,7 @@
             foster a more data-driven and patient-centric healthcare ecosystem. Embracing IKM
             principles will be crucial in navigating these changes, ensuring that data management
             practices continue to evolve in alignment with technological advancements and healthcare
-            needs. [38]</para>
+            needs. [36]</para>
     </sect1>
     <sect1>
         <title>References</title>
@@ -408,18 +389,6 @@
                 <para>Lee K. What is population health management (PHM)? | Definition from
                     TechTarget. [Internet] Health IT; June 2017 [cited 2024 Feb 24]. Available from:
                     https://www.techtarget.com/searchhealthit/definition/Population-health-management-PHM</para>
-            </listitem>
-            <listitem>
-                <para>DISPARITIES IN HEALTHCARE. In: 2021 National Healthcare Quality and
-                    Disparities Report [Internet] [Internet]. Agency for Healthcare Research and
-                    Quality (US); 2021 [cited 2024 May 23]. Available from:
-                    https://www.ncbi.nlm.nih.gov/books/NBK578532/ </para>
-            </listitem>
-            <listitem>
-                <para>Breen N, Berrigan D, Jackson JS, Wong DWS, Wood FB, Denny JC, et al.
-                    Translational Health Disparities Research in a Data-Rich World. Health Equity
-                    [Internet]. 2019 Nov 1 [cited 2024 May 23];3(1):588–600. Available from:
-                    https://www.liebertpub.com/doi/10.1089/heq.2019.0042 </para>
             </listitem>
             <listitem>
                 <para>McIsaac JLD, Penney TL, Storey KE, et al. Integrated knowledge translation in

@@ -13,7 +13,7 @@
             encompasses most sources of health data derived from common sources such as traditional
             clinical trial settings, including EHRs, claims and billing activities, disease
             registries, pharmacy records, as well as non-standard sources such as social media and
-            wearable devices. [2] </para>
+            wearable devices. [1] </para>
         <para>Large quantities of clinical data are generated throughout the various stages of an
             individual’s health care journey. When a patient visits a care provider, has their
             vitals recorded, reports their symptoms, undergoes laboratory tests, receives a
@@ -27,10 +27,10 @@
             analytics without substantial data curation efforts. </para>
         <para>Similar to RWD, RWE is defined as clinical evidence about the usage and potential
             benefits, or risks of medical treatments, technology, drug, or intervention derived from
-            sources other than clinical trials. [3] It refers to analysis of data that has been
+            sources other than clinical trials. [2] It refers to analysis of data that has been
             collected outside the traditional randomized clinical trial (RCT) setting. RWE has
             immense value in advancing medical research, particularly when deriving the required
-            information in a clinical trial would be unfeasible or unethical. [4]. By design, RWD
+            information in a clinical trial would be unfeasible or unethical. [3]. By design, RWD
             and RWE are generated independent of a specific research question or study design and
             must be aggregated across. This can be a benefit in some cases and a barrier in others.
             Aggregating RWD across multiple sites is necessary to establish sufficient
@@ -47,7 +47,7 @@
             the primary applications of RWE thus far has been in post-market surveillance monitoring
             drug safety and efficacy as well as researching health outcomes that are difficult to
             study with traditional methods, such as with lesser understood conditions, smaller
-            patient populations, and long follow-up periods. [4] However, during the COVID-19
+            patient populations, and long follow-up periods. [3] However, during the COVID-19
             pandemic, RWD served as the primary source of information available to the medical
             community to understand COVID, evaluate the safety and efficacy of IVD testing, antigen
             testing, and vaccination safety/efficacy. As an example, the State of Nebraska
@@ -57,36 +57,34 @@
             polymerase chain reaction (PCR). Analysis showed that the presence of one or both
             symptoms had a positive predictive value (PPV) of 80% for COVID. These RWD provided the
             RWE to support pool testing of specimens to conserve testing reagents during a period of
-            severe test supply shortages. [5] </para>
+            severe test supply shortages. [4] </para>
         <para>The use of RWD that is of sufficient quality to be used as RWE for market approval,
             post-market surveillance of medicines, and in IVD presents a potentially rich
             environment and supplement to the current gold-standard controlled clinical trial
             methodologies. To this effect, Congress signed the 21st Century Cures Act (Cures Act)
             into law in 2016 to help accelerate the development of medical products and bring new
-            innovations to patient populations. [2] The law intends to increase federal focus on
+            innovations to patient populations. [1] The law intends to increase federal focus on
             evaluating RWD and RWE for regulatory decision making for new approvals, support
             post-approval study requirements, and evaluate additional indications for approved
-            treatments. [2]</para>
-        <?oxy_comment_start author="tocrow" timestamp="20250225T185927-0500" comment="previously 3.2, which was consolidated with above para. need to fix citation"?>
-        <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Unfortunately, RWD
-            and RWE face numerous obstacles that hinder their reliable widespread use ranging from
-            data quality and bias, lack of standardization, data access challenges, and privacy
-            concerns. One of the most significant challenges is that of data interoperability. The
-            movement of a Portable Document Format (PDF) medical report from institution A to
-            institution B is done routinely, but none of the data held within the report is
-            computable, thus not interoperable. Discrete EHR data can be computable within its
-            source system but cannot be electronically exchanged to a second institution and
+            treatments. [1]</para>
+        <para>Unfortunately, RWD and RWE face numerous obstacles that hinder their reliable
+            widespread use ranging from data quality and bias, lack of standardization, data access
+            challenges, and privacy concerns. One of the most significant challenges is that of data
+            interoperability. The movement of a Portable Document Format (PDF) medical report from
+            institution A to institution B is done routinely, but none of the data held within the
+            report is computable, thus not interoperable. Discrete EHR data can be computable within
+            its source system but cannot be electronically exchanged to a second institution and
             reliably and safely computed to convey the exact same meaning as initially intended
             because these data, even data between identical EHR systems, do not carry sufficient
             context to convey appropriate meaning to be safely and reliably reconstructed between
             system instances. Finally, data encoded using standardized medical terminology, such as
             laboratory data, that is electronically exchanged and computable between systems does
             not safely guarantee the data will be considered to have the exact same meaning between
-            systems. [1] Such a gap in surveillance, data capture, data exchange, data harmonization
+            systems. [5] Such a gap in surveillance, data capture, data exchange, data harmonization
             and subsequent analytics place the U.S. at risk to repeat the “data scramble” in the
             event of another emerging disease, as experienced during COVID. To realize the potential
             of RWD which is suitable as RWE for regulatory, research, public health, and clinical
-            care purposes, data interoperability must be achieved. <?oxy_custom_end?></para><?oxy_comment_end?>
+            care purposes, data interoperability must be achieved. </para>
         <section>
             <title>Current RWD Uses</title>
             <para>There are several national and international efforts to aggregate and expose
@@ -304,10 +302,12 @@
                     and Sentinel could be used to drive those decisions. Sentinel’s Active Risk
                     Identification and Analysis (ARIA) System evaluates the safety of approved
                     medical devices and drugs and has performed hundreds of such analyses to date.
-                    [22] The operations of ARIA are of particular significance when considering the
-                    known limitations of the FDA’s Adverse Event Reporting System (FAERS), which the
-                    FDA itself estimates to have received only one to ten percent of adverse events
-                    that occur. [23]</para>
+                    [<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>2<?oxy_custom_end?>0]
+                    The operations of ARIA are of particular significance when considering the known
+                    limitations of the FDA’s Adverse Event Reporting System (FAERS), which the FDA
+                    itself estimates to have received only one to ten percent of adverse events that
+                    occur.
+                    [<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>2<?oxy_custom_end?>1]</para>
                 <para>Although the Sentinel System has already provided measurable impact since its
                     implementation, it has some desirable holes. The most notable one reveals the
                     limitations inherent to the data sources Sentinel accesses. The majority of
@@ -348,12 +348,12 @@
             and 97% electronically recorded broad determinants of health (BDOH) data. Rates of
             electronic recording of SDOH and BDOH data were slightly higher among primary care
             physicians, with 89% of primary care physicians electronically recording SDOH data and
-            98% electronically recording BDOH data in 2021. [24] </para>
+            98% electronically recording BDOH data in 2021. [22] </para>
        <para>In the past, research relied upon billing data from the UB-04 and CMS-1500 billing
             forms as the source of structured data for research purposes. The UB-04 and CMS-1500
             billing forms are the standard claim forms that healthcare organization use for the
             billing of inpatient and outpatient, respectively, medical and mental health claims.
-            [25-26] Although developed by CMS, the form has become the standard form used by all
+            [23-24] Although developed by CMS, the form has become the standard form used by all
             insurance carriers. This form captures data in a structured format and captures
             diagnoses, treatments and procedures, type of admission, medications, and demographic
             information. While the UB-04 and similar administrative data have been considered rich
@@ -435,11 +435,6 @@
         <title>References</title>
         <orderedlist>
             <listitem>
-                <para>Stram M, Gigliotti T, Hartman D, Pitkus A, Huff SM, Riben M, et al. Logical
-                    Observation Identifiers Names and Codes for Laboratorians. Archives of Pathology
-                    &amp; Laboratory Medicine. 2020 Feb;144(2):229–39.</para>
-            </listitem>
-            <listitem>
                 <para>Office of the Commissioner. Real-World Evidence [Internet]. U.S. Food and Drug
                     Administration. 2019. Available from:
                     https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence</para>
@@ -458,6 +453,11 @@
                 <para>Abdalhamid B, Bilder CR, McCutchen EL, Hinrichs SH, Koepsell SA, Iwen PC.
                     Assessment of Specimen Pooling to Conserve SARS CoV-2 Testing Resources.
                     American Journal of Clinical Pathology. 2020 Apr 18;153(6):715–8.</para>
+            </listitem>
+            <listitem>
+                <para>Stram M, Gigliotti T, Hartman D, Pitkus A, Huff SM, Riben M, et al. Logical
+                    Observation Identifiers Names and Codes for Laboratorians. Archives of Pathology
+                    &amp; Laboratory Medicine. 2020 Feb;144(2):229–39.</para>
             </listitem>
             <listitem>
                 <para>National Center for Advancing Translational Science. National COVID Cohort
@@ -528,17 +528,6 @@
                     networks to generate actionable evidence: the case of real-world outcomes in the
                     Food and Drug Administration’s Sentinel system. Journal of the American Medical
                     Informatics Association. 2020 Apr 11;27(5):793–7.</para>
-            </listitem>
-            <listitem>
-                <para>Adimadhyam S, Barreto EF, Cocoros NM, Toh S, Brown JS, Maro JC, et al.
-                    Leveraging the Capabilities of the FDA’s Sentinel System To Improve Kidney Care.
-                    Journal of the American Society of Nephrology. 2020 Oct
-                    19;31(11):2506–16.</para>
-            </listitem>
-            <listitem>
-                <para>Findlay S. The FDA’s Sentinel Initiative [Internet]. Health Affairs. 2015
-                    [cited 2022 Dec 20]. Available from:
-                    https://www.healthaffairs.org/do/10.1377/hpb20150604.936915/</para>
             </listitem>
             <listitem>
                 <para>Drug Studies | Sentinel Initiative [Internet]. www.sentinelinitiative.org.

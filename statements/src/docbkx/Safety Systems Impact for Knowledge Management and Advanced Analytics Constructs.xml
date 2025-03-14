@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <?oxy_comment_start author="tocrow" timestamp="20250310T220256-0400" comment="Citations are not in correct format, Vancouver used everywhere else. Will need to be changed"?>
+    <title>Patient Safety Overview</title><?oxy_comment_end?>
+    <para>Integrated Knowledge Exchange (IKE) is a set of principles, tools and methods that are
+        designed to make doing the right thing easier. One of those “right things” is patient
+        safety. First and foremost, our health information must do no harm to the patient. IKE
+        enables more accurate, complete, precise, and higher-quality health data that is safer to
+        use for clinical decision-making as low-quality health data management practices can lead to
+        under treatment, over treatment, or delayed treatment resulting in preventable patient harm.
+        [1]</para>
+    <section>
+        <title>Patient Safety – Then and Now</title>
+        <para>Patient safety has been defined as the “prevention of harm to patients” [2]. To
+            achieve patient safety, the whole healthcare system must work collaboratively to prevent
+            errors, learn from the errors that occur, and develop a culture of safety similar to
+            other high-risk industries, such as aviation.</para>
+        <para>Previously, patient safety efforts have primarily focused on investigating adverse
+            events <emphasis role="italic">after</emphasis> they have occurred. This is known as
+                <emphasis role="bold">reactive safety</emphasis> and, while important for learning
+            from errors, is insufficient in reducing common adverse events. such as medication
+            errors, surgical complications, or diagnostic errors [2]. Alternatively, <emphasis
+                role="bold">proactive safety</emphasis> attempts to design or redesign systems,
+            processes, and methods based on leading indicators of increased risk, poor quality, or
+            identified flaws <emphasis role="italic">before</emphasis> an adverse event occurs.
+            Examples of proactive safety practices include hazard analysis, safety reporting,
+            audits, tracers, training, testing, and surveys to measure the culture of safety.</para>
+        <para>Properly implementing both reactive and proactive safety requires organizations and
+            systems to develop a <emphasis role="bold">culture of safety</emphasis> that establishes
+            a non-punitive response to error, also known as a “just culture". Just culture is a
+            balance between learning from error and accountability that encourages practitioners to
+            be transparent with the self-reporting of errors by reducing or eliminating the fear of
+            retribution, loss of employment, or legal action [3]. Blaming an individual or team for
+            system errors prevents learning from errors, impedes continuous improvement, and
+            reinforces silence when system vulnerabilities are discovered. Unfortunately, many
+            current healthcare professionals continue to be hesitant when reporting errors due to
+            medical malpractice litigation concerns and threat of employment termination.</para>
+        <para>Since the 1999 report, <emphasis role="italic">To Err is Human</emphasis>, was
+            published by the Institute of Medicine, patient safety has received more attention
+            across the healthcare ecosystem due to the prevalence of preventable patient harm. A
+            short review of these important patient safety publications documents key milestones for
+            system improvement opportunities and required changes to improve patient care and
+            safety:</para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">To Err is Human (1999)</emphasis> – described the
+                    breadth and depth of preventable harm that estimated nearly 100,000 Americans
+                    died because of preventable patient harm and the challenge of improving patient
+                    safety [4]. In 2016, a study from Johns Hopkins researchers estimated annual
+                    patient deaths at more than 250,000 Americans making preventable patient harm
+                    the third leading cause of death in the United States of America (USA) behind
+                    cardiac disease and cancer [5].</para>
+            </listitem>
+            <listitem>
+                <para>
+                    <emphasis role="bold">Crossing the Quality Chasm (2001)</emphasis> – described
+                    major healthcare quality gaps, how current practices degrade the quality of
+                    healthcare in America, and how to take systems approaches to improve the quality
+                    of care delivered to patients. The paper outlines goals for healthcare quality
+                    improvements, including redesigning safety as system property, improving
+                    effectiveness, focusing on patient-centered approaches, timeliness and
+                    efficiency, and more. The report also furthered the need for digitized health
+                    information systems [6].</para>
+                <para><emphasis role="bold">Health IT and Patient Safety (2012)</emphasis> –
+                    described both the promise of health information technology (HIT) and the
+                    potential patient safety risks of poorly designed, improperly configured, and
+                    mismanaged electronic patient data and HIT systems. The report further
+                    highlighted the importance of the human-machine (including software) interfaces
+                    to prevent diagnostic errors and improve clinical decision making. HIT vendors,
+                    regulators, and health systems were encouraged to find ways to mitigate
+                    identified HIT risks and the unintended consequences of the Meaningful Use
+                    criteria as part of the Health Information Technology for Economic and Clinical
+                    Health (HITECH) Act of 2009 [7].</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Improving Diagnosis in Health Care (2015)</emphasis> –
+                    described the importance of reducing the prevalence of diagnostic errors across
+                    the healthcare system including missed diagnoses, delayed diagnoses, and
+                    incorrect diagnoses resulting in undertreatment, overtreatment, suboptimal
+                    standard of care, and preventable patient harm. It is estimated that every
+                    American will experience at least one diagnostic error during their lifetime.
+                    High quality health information is critical for improving diagnostic decision
+                    making and clinicians and patients must be able to trust the underlying health
+                    data and HIT systems being used for diagnostic decision making [8].</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Safety of Inpatient Care in Surgical Settings: Cohort
+                        Study</emphasis> - described the state of adverse patient events today for
+                    patients admitted to 11 U.S. hospitals for surgical procedures. The authors
+                    identified that more than one third (38%) of surgical patients admitted as
+                    inpatients to the hospitals being studied suffered an adverse event. Nearly half
+                    of the adverse events were identified as major (serious harm resulting in
+                    substantial intervention or prolonged recovery, life threatening event, or
+                    death) and likely preventable [9].</para>
+            </listitem>
+        </itemizedlist>
+        <section>
+            <title>High Reliability Organizations (HROs)</title>
+            <para>High reliability organization (HRO) principles from other safety critical
+                industries, such as commercial aviation and nuclear power, began to be adopted as a
+                patient safety framework in some healthcare settings. [10] These principles,
+                outlined in the table below, originated from social science as behaviors present in
+                organizations that operate in extremely complex, high-risk environments with high
+                levels of system reliability believed to produce safer outcomes. Reliability is the
+                probability that a component or system will perform as designed under certain
+                conditions over time (i.e., checklists). </para>
+            <table>
+                <title>HRO Principles for Health Information</title>
+                <tgroup cols="3">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="3" colname="col3"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">HRO Principle</emphasis></entry>
+                            <entry><emphasis role="bold">HRO Response</emphasis></entry>
+                            <entry><emphasis role="bold">IKE Application</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Preoccupation with
+                                Failure</emphasis></entry>
+                            <entry>Develop leading safety indicators</entry>
+                            <entry>Measure &amp; monitor data quality</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Reluctance to Simplify</emphasis></entry>
+                            <entry>Awareness of active &amp; latent failures</entry>
+                            <entry>Identify known &amp; unknown defects</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Sensitivity to
+                                Operations</emphasis></entry>
+                            <entry>Promote reporting of defects</entry>
+                            <entry>Speak up &amp; report errors/defects</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Commitment to Resilience</emphasis></entry>
+                            <entry>Manage errors before losses occur</entry>
+                            <entry>Perform rigorous testing/monitoring </entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Deference to Expertise</emphasis></entry>
+                            <entry>Engage experts in decision making</entry>
+                            <entry>Use informatics experts in HIT</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <para>While leaders and managers can foster a culture supported by HRO principles, HRO
+                methods rely on decomposition or breaking complex systems down into single
+                components to analyze. If they primarily focus on reducing errors at a single
+                component level, also known as component failures (human or machine), they can be
+                erroneously made to believe that worse case scenarios (losses, adverse events, and
+                accidents) have linear causality with the human as a possible weak link in the
+                system.</para>
+            <para>Traditional safety approaches are inadequate when it comes to addressing the
+                increasing complexity in the healthcare ecosystem. Methodologies, like root cause
+                analysis (RCA) and Failure Modes and Effects Analysis (FMEA), focus on failures at a
+                component level or as over-simplified human error and were developed before work
+                systems incorporated software, computers, and other sophisticated technology such as
+                artificial intelligence (AI). The healthcare ecosystem is complex, multifaceted, and
+                highly coupled across various systems, such as healthcare data information systems,
+                and requires a more complex and comprehensive approach to safety that employs
+                systems theory, systems thinking, and a systems approach to safety [11,12].</para>
+        </section>
+        <section>
+            <title>System Safety</title>
+            <para>System Safety is rooted in systems theory where the whole system is more than the
+                sum of the parts. System Safety addresses the whole using a combination of systems
+                and safety engineering approaches and views patient safety as a control problem. </para>
+            <para>Engineering models can be developed and analyzed for safety and quality purposes
+                throughout the system’s lifecycle from design through adoption. These system models
+                are <emphasis role="italic">not</emphasis> schematics or flow charts; instead, they
+                serve as abstract representations of highly complex sociotechnical relationships
+                between a controller and the process being controlled. These relationships are known
+                as control loops (Figure 1) [13].</para>
+            <figure xml:id="Provider-PatientControlLoop">
+                <title>Provider-Patient Control Loop</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/Provider-Patient%20Control%20Loop.svg" scale="35"
+                            align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>Control loops are hierarchal with the <emphasis role="italic">Provider</emphasis>
+                as a controller above the <emphasis role="italic">Patient</emphasis>, the controlled
+                process in this example. The downward arrows represent the control actions that the
+                controller uses to control the patient care process including assessments, exams,
+                tests, imaging, treatments, and therapies. The upward arrows are feedback mechanisms
+                the provider receives from the patient such as their medical history, symptoms, and
+                health trends. </para>
+            <para>Without adequate feedback, the provider would not be able to make safe, high
+                quality clinical decisions that meet the standard of care. The <emphasis
+                    role="italic">Provider</emphasis> controller develops a process model or belief
+                system about each individual patient before making treatment decisions. Other
+                information may be accessible through the patient’s electronic health record (EHR),
+                a family member, or another patient advocate. Modelling the patient care system of
+                interest builds on this control loop to include other essential control loops
+                forming what’s known as a control structure [14].</para>
+            <para>Once the control structure is fully modelled, either in the design or redesign
+                phases of the system lifecycle, teams can conduct proactive and retrospective safety
+                analyses to identify new requirements, system hazards, unsafe control actions, and
+                missing feedback loops. The System Theoretic Process Analysis (STPA) method is most
+                effective when used early in the design or redesign phase as a prospective safety
+                analysis while the Causal Analysis based on Systems Theory (CAST) is used
+                retrospectively to determine causal factors of adverse events such as preventable
+                patient harm [15].</para>
+        </section>
+        <section>
+            <title>Safety Management</title>
+            <para>Safety Management Systems (SMS)are used by high-risk industries such as aviation,
+                military commands, health care, and nuclear power to reduce or eliminate hazards for
+                safer outcomes. SMS is a formalized approach to safety decision-making, proactive
+                safety management, safety culture promotion, and quality assurance. An effective SMS
+                relies on a comprehensive safety information system that has leading indicators of
+                safe performance, feedback from voluntary reporting, and passive data collection
+                using software applications that monitor system control actions. </para>
+            <para>Safety data trends are reported to responsible parties including operators,
+                supervisors, management, regulators, and other industry stakeholders. An SMS is an
+                enabler for learning including knowledge sharing, policy effectiveness, and
+                innovation and drives key processes like safety risk management and safety assurance
+                [16]. SMS design is enhanced when system control structures are modelled, monitored,
+                and audited using system safety engineering principles such as STPA to support
+                continual process improvement.</para>
+            <para>Safety in a health data context includes clinical decision support, safe data
+                exchange, and safe use of health data for regulatory oversight, health equity,
+                research, and population health decision-making. Furthermore, poor data quality
+                degrades patient safety especially among disparate health populations when using low
+                quality data to train Artificial Intelligence (AI) models for patient care
+                [17].</para>
+        </section>
+        <section>
+            <title>Spotlight Case Study #1: System-Theoretic Process Analysis (STPA) of the U.S.
+                Diagnostic Laboratory Data Ecosystem</title>
+            <para>The STPA of the U.S. Diagnostic Laboratory Data Ecosystem, was a proactive
+                analysis that sought to detail the operations of the complex, interdependent system
+                both as a whole and of its respective components and identify where – or where not –
+                diagnostic laboratory data was fulfilling its goals of higher quality care. </para>
+            <para>Using STPA with interviews from 50 stakeholders, the research team developed a
+                model of the ecosystem (control structure) and analyzed it to identify the causal
+                factors in common types of adverse events related to diagnostic laboratory data and
+                provided recommendations for improvement and system redesign. This analysis
+                identified over <emphasis role="bold">200</emphasis> Unsafe Control Actions (UCAs)
+                and six main causal factors that contribute to two main recurring hazards: (1)
+                patients receiving less than adequate care and (2) diminishing trust and/or
+                reputation within the laboratory data ecosystem. </para>
+            <para>These six causal factors with their associated recommendation were:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Decentralized and Missing Oversight</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Recommendation 1: Assign responsibility for addressing gaps in the
+                                regulatory oversight of laboratory data exchanges between system
+                                components that are regulated by different agencies.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Recommendation 2: Identify the data and standards needs of
+                                regulatory agencies and ensure they have the ability to use them
+                                appropriately.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Recommendation 3: Encourage the identification of regulatory gaps
+                                in other areas of the laboratory ecosystem through additional
+                                systems-theory-based analyses.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>Inadequacies and Gaps in Laboratory Data Standards, Including Standards
+                        that are Loosely Constrained, Ambiguous, and Outdated</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Recommendation 4: Reference libraries must develop a knowledge
+                                base that establishes a ground truth for naming, coding, and mapping
+                                of reference terminologies to particular laboratory tests, and
+                                stakeholders must be incentivized to use it.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Recommendation 5: Appropriate groups must be assigned
+                                responsibility for identifying gaps and weaknesses in laboratory
+                                data standards and for establishing a reporting channel for problems
+                                related to them.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Recommendation 6: Standards Development Organizations (Logical
+                                Observation Identifiers Names and Codes [LOINC®], Systematized
+                                Nomenclature of Medicine Clinical Terms (SNOMED CT®, RxNorm, etc.)
+                                must continuously support users by identifying and eliminating
+                                ambiguities in implementation guides for HIT standards.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>Inaccurate Perceptions of Risks with Respect to Both Laboratory Data and
+                        the use of HIT</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Recommendation 7: Proactively and retroactively investigate
+                                systemic sources of diagnostic error.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Recommendation 8: Create a consolidated national database for HIT
+                                safety reporting that can be used to identify trends and
+                                opportunities for improving patient safety outcomes. It should
+                                include information about HIT not behaving as users intended and
+                                detail how features of HIT design may have contributed to “user
+                                errors.”</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>Lack of a Systems View by Participants in the System</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Recommendation 9: Educate the healthcare community on systems
+                                engineering and systemic approaches for solving problems, including
+                                tools to accomplish this goal.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Recommendation 10: Establish appropriate control loops for updates
+                                to standards and HIT.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>Inadequate Regulatory Emphasis on the Safety Involved in Health System
+                        IT</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Recommendation 11: Assign regulatory oversight of HIT safety to
+                                The Assistant Secretary of Technology/Office of the National
+                                Coordinator for HIT (ASTP/ONC) or another appropriate group. Include
+                                the explicit directive to develop and include safety-related
+                                certification criteria for HIT and the ability to limit the
+                                inclusion of “hold harmless” clauses in HIT contracts.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Recommendation 12: Establish incentives for using certified HIT
+                                throughout the entire healthcare ecosystem.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>Flawed Communication and Coordination</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Recommendation 13: Develop formal processes for inclusion of
+                                laboratorians in the multidisciplinary teams responsible for
+                                decisions about laboratory data needs, representations, and
+                                interfaces at care facilities.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </orderedlist>
+            <section>
+                <title>UCAs Scenario – Defining the Need for IKE</title>
+                <para>This following UCA scenario identifies an area within the Spotlight Case Study
+                    #1 where IKE solutioning would strengthen knowledge representation, improve data
+                    quality, and reduce patient risk.</para>
+                <para>UCA scenario: A medical practitioner may provide treatment that does not match
+                    the patient’s condition. One contributing factor may be that the practitioner
+                    did not have the diagnostic information to inform their mental model of the
+                    patient’s condition. The diagnostic information may not be observed by the
+                    medical practitioner because they may be accustomed to using their routine
+                    process to access results in the EHR, which only displays laboratory data that
+                    has been previously mapped to the care facility’s EHR system (e.g., mapped to a
+                    LOINC® code or local code representation). In some cases, additional unmapped
+                    test results are shared by the laboratory as a Portable Document Format (PDF)
+                    and the physician may not notice the PDF due to its lack of salience in the EHR
+                    process flow. Physicians who are not expecting and looking for the test results
+                    may not be prompted to look for additional, unmapped information in a patient
+                    profile, particularly if the unmapped results were ordered by another physician
+                    or a long time ago. The results may have been shared as a PDF because they
+                    pertained to a new or uncommon test whose format could not be represented in the
+                    messaging standard available to that laboratory-care facility pair. Standards
+                    for new and complex tests (e.g., genomics) are not yet tightly constrained,
+                    which means the results can be shared as PDFs because Clinical Laboratory
+                    Improvement Amendments (CLIA) only requires that the data that is sent gets
+                    received and does not specify the method of transmission nor impose any
+                    requirement or confirmation that the information is observed by the medical
+                    practitioner. CLIA was drafted and approved in 1988, before EHRs were widely
+                    adopted and modifications to CLIA require Congressional approval. The following
+                    is a visualization of this scenario using system safety principles.</para>
+                <figure xml:id="VisualizationofUnsafeControlActionUCALaboratoryDataScenario">
+                    <title>Visualization of UCA Laboratory Data Scenario</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/Visualization%20of%20Unsafe%20Control%20Action%20(UCA)%20Laboratory%20Data%20Scenario.svg"
+                                scale="35" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>For the full report, click <link
+                        xlink:href="https://synensysglobal.com/wp-content/uploads/2023/12/System-Safety-within-Laboratory-Data-Exchanges-Report.pdf"
+                        >here</link>.</para>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title>The Promise of Digital Health Information and Patient Safety</title>
+        <para>Moving from paper charts to EHR systems is mostly complete (96%) in hospitals in the
+            U.S., while 22% of office-based physician practices remain paper-based [18]. Incentive
+            programs such as the <emphasis role="italic">Meaningful Use </emphasis>(MU) program
+            provided government funding through the U.S. Center for Medicare and Medicaid Services
+            (CMS) for health systems and provider organizations to digitize their health information
+            systems. From 2010-2020, MU program goals included digital data collection, data
+            sharing, advanced clinical processes, and improved outcomes. Studies have shown that HIT
+            has improved patient safety by reducing medication errors, avoiding adverse drug
+            reactions, and increasing adherence to evidence-based medicine protocols [19].</para>
+        <para>While HIT has improved some clinical outcomes, the adoption, configuration,
+            implementation, and maintenance of HIT has increased patient risk in other parts of the
+            health delivery system due to unintended consequences of poorly managed systems [20].
+            First-generation HIT configurations have mostly been managed by HIT vendors who mainly
+            focused on billing data and other administrative and operational data management
+            functions (e.g., reimbursement, mandatory reporting, etc.). HIT adoption radically
+            changed historic clinical workflows in an effort to standardize data inputs and system
+            outputs, but this “one size fits all” approach was resisted by clinicians creating
+            configuration trade-offs, workarounds, and increased system complexity. </para>
+        <para>Local configurations and local coding created unique HIT features and functionality,
+            which may have been needed based on hospital location or patient population, also
+            created variability from hospital to hospital even within the same health network. For
+            the most part, these local variations had few <emphasis role="italic">visible</emphasis>
+            negative consequences for patients and health practitioners. Unfortunately, most HIT
+            configurations did not optimize for patient mobility – patients who received care in
+            non-affiliated systems or for the need to share precise data with other health systems,
+            health registries, and public health agencies.</para>
+        <para>Without new incentives, many organizations are unable to fully maintain their HIT as
+            vendor maintenance contract costs continue to increase. Experienced HIT personnel have
+            also become more expensive as technology companies search for qualified staff in a
+            decreasing talent pool, which has led Health systems to be more dependent on vendors to
+            fill the talent gap. Some under-resourced hospitals may be forced to delay system
+            upgrades and updates – even important changes in terminology, clinical workflows, naming
+            and coding, or other critical data quality enhancements due to concerns over system
+            failures, outages, or unexpected consequences from system updates. These are real
+            concerns and may lead to patient safety implications. The recent CrowdStrike
+            cybersecurity update failure in 2024 caused many health systems to cancel surgeries and
+            other non-critical services leading to over $2 billion in losses to healthcare
+            organizations [21].</para>
+        <section>
+            <title>Addressing Patient Safety Gaps in the Current Health Data Ecosystem</title>
+            <para>Health data is a critical component of health care decisions and can directly
+                impact the treatment that patients receive, and the quality of care delivered.
+                Clinical decision support systems (CDSS) depend on accurate and precise data to
+                ensure decision “triggers” fire when appropriate to prevent delays in treatment or
+                diagnostic errors. If important clinical information is missing sufficient context,
+                decision-making can be incorrect, insufficient, or incomplete. A laboratory test
+                result that is missing units of measure, reference range, or unique device
+                identification may be excluded from a providers decision-making process for a
+                patient, which may then prompt further testing, additional costs, and unnecessary
+                patient suffering through intrusive tests. Patient history may not always be
+                accurate or complete – especially when limiting data migration to a patient’s recent
+                history or when sharing data from one EHR to another.</para>
+            <para>Many of the errors related to encoding, sharing, and exchanging health data remain
+                difficult to manage safely since institutions are mostly interested in the quality
+                of the data received rather than the data sent. ASTP/ONC has developed the Trusted
+                Exchange Framework and Common Agreement (TEFCA) to enhance data sharing and data
+                exchange by establishing policies, governance practices, and standards aimed at
+                making health data more accessible for payers, public health agencies, provider
+                organizations, and patients. TEFCA will likely enhance the data sharing
+                infrastructure, but it still does not currently address the quality of data being
+                shared [22].</para>
+            <para>Data intended to be used for research needs to possess the attributes summarized
+                in the Findability, Accessibility, Interoperability, and Reusability (FAIR) Guiding
+                Principles, which provide guidelines to make data findable (F), accessible (A),
+                interoperable (I), and reusable (R) to the research community and machines.
+                Unfortunately, a large portion of health data does not meet the FAIR Guiding
+                Principles as it is often hidden in isolated data silos or incompatible systems and
+                difficult to exchange, process, and interpret [23,24]. During the COVID-19 pandemic,
+                leaders were unable to make informed decisions related to public health because of
+                incomplete data, unstructured data, and missing data leading to preventable patient
+                deaths, pandemic response delays, and unnecessary lockdowns [25].</para>
+        </section>
+        <section>
+            <title>Spotlight Case Study #2: Interoperability and Patient Safety – A Case for a
+                Source of Truth</title>
+            <para>A source of truth, or definitive knowledge source, is needed to ensure data is
+                accurate and trustworthy from the time it is encoded at the source, during
+                validation, and as it is transmitted within and between HIT systems. Trustworthy
+                data in turn ensures that safety management systems can operate properly and
+                accurately, and governing bodies are able to rely on data and audits of appropriate
+                controls to provide real time feedback.</para>
+            <para>While there are multiple health data standards development and oversight
+                organizations that look to act as a source of truth, each of these organizations
+                have their own “standards” and lack a unifying knowledge source. Simply put, one
+                patient safety use case for IKE, is the ability to identify a singular source of
+                data truth that can branch across multiple organizational standards and can be
+                edited or updated by a unified governing entity as new testing, devices, patient
+                conditions or disease codes are discovered. Thus, as changes occur the uniform
+                dictionary is updated and rapidly distributed across the healthcare ecosystem before
+                preventable patient harm occurs due to missed, delayed, or incorrect
+                diagnoses.</para>
+            <para>Having an independent governance process and entity provides a singular,
+                collaborative voice for data dictionary maintenance and development that represents
+                input from not only healthcare providers, but laboratories, regulatory bodies, and
+                device manufactures. In addition to defining and codifying health care information
+                in an objective manner, this governing body would allow for auditing of current
+                dictionary definitions to assure accuracy and consistency across the ecosystem and
+                improve the safety and interoperability of data. The use of this dictionary must be
+                mandatory to prevent variation and allow for concurrent audit tools that can be used
+                to drive continuous process improvement. Another benefit of a rigorous governing
+                body is that institutional history is maintained through a transparent manner (e.g.,
+                data provenance) for future use and reference as changes need to be made or new
+                definitions are required, even as potential turnover within the governance body
+                occurs. </para>
+            <para>Using IKE as a source of truth for health care data within the healthcare
+                ecosystem will provide uniformity, consistency, and accuracy in a standardized
+                format that will reduce patient harm and enhance the accuracy of clinical
+                decision-making. Watch the full case study <link
+                    xlink:href="https://documentsuat-cloud.cap.org/fda-shield/CAP%20video%20v18%20with%20cc.mp4?_gl=1*qerztx*_ga*MTYyNjY4NDcwNi4xNzQwNTE3Njcw*_ga_97ZFJSQQ0X*MTc0MDUxNzY3MC4xLjEuMTc0MDUxNzgzMC4wLjAuMA.."
+                    >here</link>.</para>
+        </section>
+        <section>
+            <title>Spotlight Case Study #4: Analysis of Laboratory Data Transmission Between Two
+                Healthcare Institutions Using a Widely Used Point-to-Point Health Information
+                Exchange Platform: a Case Report</title>
+            <para>The objective of this analysis was to identify information loss that could affect
+                clinical care in laboratory data transmission between two health care institutions
+                via a Health Information Exchange (HIE) platform. To accomplish this, data
+                transmission results of 9 laboratory tests of a simulated patient, including LOINC®
+                codes, were compared in the following: between sending and receiving EHR systems,
+                the individual Health Level Seven International (HL7) Version 2 messages across the
+                instrument, laboratory information system, and the sending EHR. The analysis found
+                that the loss of information for this and similar tests indicated the following
+                potential patient safety issues: </para>
+            <orderedlist>
+                <listitem>
+                    <para>Consistently missing specimen source</para>
+                </listitem>
+                <listitem>
+                    <para>Lack of reporting of analytical technique or instrument platform</para>
+                </listitem>
+                <listitem>
+                    <para>Inconsistent units of measure and reference ranges</para>
+                </listitem>
+                <listitem>
+                    <para>Discordant LOINC® code use</para>
+                </listitem>
+                <listitem>
+                    <para>Increased data messaging complexity with multiple HL7 versions</para>
+                </listitem>
+            </orderedlist>
+            <para>This analysis showcased the challenges surrounding the completeness and accuracy
+                of laboratory data exchanges in terms of the data elements required by law and the
+                needed details to correctly interpret the results of the test. Additionally, this
+                analysis highlighted the differences of manufacturers’ equipment (specifically in
+                vitro devices) performing the same test on the same sample and the production of
+                differing results. Furthermore, despite being essential for correct interpretation,
+                information on the equipment manufacturer that produced the result, and the type of
+                sample tested was never included in the exchange results. The study concluded that
+                while the Systemic Harmonization and Interoperability Enhancement for Laboratory
+                Data (SHIELD) collaborative community recommendations can be helpful − such as
+                consistently including encodement information (SNOMED CT® and LOINC®), UCUM (Unified
+                Codes for Units of Measure), and Unique Device Identifier (UDI) – these are partial
+                steps to improving laboratory data interoperability. In tandem, EHR and Laboratory
+                Information System (LIS) functionality must be standardized to allow for the
+                consistent capture and transmission of relevant data elements. Usage of a HIE with
+                standard messaging, SHIELD recommendations, and enhanced EHR data encoding
+                functionality can yield consistent test identification and result value
+                transmission. </para>
+            <para>For the full study, click <link
+                    xlink:href="https://academic.oup.com/jamiaopen/article/7/2/ooae032/7657767"
+                    >here</link>.</para>
+        </section>
+        <section>
+            <title>Spotlight Case Study #5: Establishing Trust in Pharmaceutical Data with an
+                Independent Verification and Validation (IV&amp;V) Methodology</title>
+            <para>In this study, researchers demonstrated a general-purpose IV&amp;V approach for
+                information models, instance data, and knowledge that will enable reproducible
+                metrics for data quality and patient safety. This IV&amp;V approach uses established
+                statistical process control methods for inter-rater and intra-rater reliability and
+                agreement metrics with Cohen’s Kappa to evaluate pharmacy prescription data being
+                migrated between a legacy EHR and commercial-off-the-shelf (COTS) EHR. These methods
+                are widely accepted in other industries where quality and safety are closely
+                monitored, but the methods are under-utilized within the HIT industry. The research
+                team demonstrated that these methods can be applied to electronic health data and
+                knowledge management tasks. Researchers recommended that HIT practitioners routinely
+                use bivariate comparison of reviewer agreement over an appropriately sized
+                statistical sample to develop standard benchmarks for health data and knowledge
+                quality and safety. A detailed description of the method is provided in this study
+                along with summarized analysis findings from the application of IV&amp;V methods to
+                pharmacy prescription data being migrated between EHRs.</para>
+            <para>For the full study, click <link
+                    xlink:href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10148340/"
+                >here</link>.</para>
+        </section>
+    </section>
+    <section>
+        <title>Summary</title>
+        <para>Many other safety-critical industries are addressing the data quality of their safety
+            information to improve safety management of their aircraft, automobiles, power plants,
+            and search engines. In today’s digital healthcare ecosystem and with patients receiving
+            care in diverse health settings, even at home, patient safety does not just depend upon
+            highly skilled clinicians. Now, more than ever, patient safety depends on high quality
+            data. Producing high quality data depends on ensuring data is accurately encoded at the
+            source and exchanged or migrated without losing meaningful context for clinical decision
+            making no matter where a patient receives treatment. Health informaticists and HIT
+            professionals need tooling and support to ensure their organizations are producing high
+            data quality. IKE can provide this tooling and support to improve health data quality so
+            providers, leaders, and patients can trust their health data is safe to use.</para>
+    </section>
+    <section>
+        <title><?oxy_comment_start author="tocrow" timestamp="20250310T220320-0400" comment="Citations are not in correct format, Vancouver used everywhere else. Will need to be changed"?>References<?oxy_comment_end?></title>
+        <orderedlist>
+            <listitem>
+                <para>Department of Veteran Affairs, Office of Inspector General. The New Electronic
+                    Health Record’s Unknown Queue Caused Multiple Events of Patient Harm July 14,
+                    2022, Report #22-01137-204</para>
+            </listitem>
+            <listitem>
+                <para>Mitchell PH. Defining Patient Safety and Quality Care. In: Hughes RG, editor.
+                    Patient Safety and Quality: An Evidence-Based Handbook for Nurses. Rockville
+                    (MD): Agency for Healthcare Research and Quality (US); 2008 Apr. Chapter 1.
+                    Available from: https://www.ncbi.nlm.nih.gov/books/NBK2681/</para>
+            </listitem>
+            <listitem>
+                <para>Plebani, M. (2015). Diagnostic errors and laboratory medicine–causes and
+                    strategies. JIFCCLM, 26(1), 7.</para>
+            </listitem>
+            <listitem>
+                <para>Dekker, S. (2016). Just culture: Balancing safety and accountability. CRC
+                    Press.</para>
+            </listitem>
+            <listitem>
+                <para>Donaldson, M. S., Corrigan, J. M., &amp; Kohn, L. T. (Eds.). (2000). To err is
+                    human: building a safer health system.</para>
+            </listitem>
+            <listitem>
+                <para>Makary, M. A., &amp; Daniel, M. (2016). Medical error—the third leading cause
+                    of death in the US. BMJ, 353.</para>
+            </listitem>
+            <listitem>
+                <para>Institute of Medicine (US) Committee on Quality of Health Care in America.
+                    Crossing the Quality Chasm: A New Health System for the 21st Century. Washington
+                    (DC): National Academies Press (US); 2001. Available from:
+                    https://www.ncbi.nlm.nih.gov/books/NBK222274/ doi: 10.17226/10027</para>
+            </listitem>
+            <listitem>
+                <para>Committee on Patient Safety and Health Information Technology; Institute of
+                    Medicine. Health IT and Patient Safety: Building Safer Systems for Better Care.
+                    Washington (DC): National Academies Press (US); 2011 Nov 10. PMID:
+                    24600741.</para>
+            </listitem>
+            <listitem>
+                <para>Committee on Diagnostic Error in Health Care; Board on Health Care Services;
+                    Institute of Medicine; The National Academies of Sciences, Engineering, and
+                    Medicine; Balogh EP, Miller BT, Ball JR, editors. Improving Diagnosis in Health
+                    Care. Washington (DC): National Academies Press (US); 2015 Dec 29. Preface.
+                    Available from: https://www.ncbi.nlm.nih.gov/books/NBK338585/</para>
+            </listitem>
+            <listitem>
+                <para>Duclos, A., Frits, M. L., Iannaccone, C., Lipsitz, S. R., Cooper, Z.,
+                    Weissman, J. S., &amp; Bates, D. W. (2024). Safety of inpatient care in surgical
+                    settings: cohort study. BMJ, 387.</para>
+            </listitem>
+            <listitem>
+                <para>Chassin, M. R., &amp; Loeb, J. M. (2013). High‐reliability health care:
+                    getting there from here. The Milbank Quarterly, 91(3), 459-490. </para>
+            </listitem>
+            <listitem>
+                <para>Weick, K. E., &amp; Sutcliffe, K. M. (2001). Managing the unexpected (Vol. 9).
+                    San Francisco: Jossey-Bass.</para>
+            </listitem>
+            <listitem>
+                <para>Leveson, N., Dulac, N., Marais, K., &amp; Carroll, J. (2009). Moving beyond
+                    normal accidents and high reliability organizations: A systems approach to
+                    safety in complex systems. Organization studies, 30(2-3), 227-249.</para>
+            </listitem>
+            <listitem>
+                <para>Leveson, N. G. (2016). Engineering a safer world: Systems thinking applied to
+                    safety (p. 560). The MIT Press.</para>
+            </listitem>
+            <listitem>
+                <para>Leveson, N. G., &amp; Stephanopoulos, G. (2013). A system-theoretic,
+                    control-inspired view and approach to process safety.</para>
+            </listitem>
+            <listitem>
+                <para>Leveson, N. G. (2023). An Introduction to System Safety Engineering. The MIT
+                    Press.</para>
+            </listitem>
+            <listitem>
+                <para>Li, Y., &amp; Guldenmund, F. W. (2018). Safety management systems: A broad
+                    overview of the literature. Safety science, 103, 94-123.</para>
+            </listitem>
+            <listitem>
+                <para>Kristiansen, T. B., Kristensen, K., Uffelmann, J., &amp; Brandslund, I.
+                    (2022). Erroneous data: The Achilles' heel of AI and personalized medicine.
+                    Frontiers in Digital Health, 4, 862095.</para>
+            </listitem>
+            <listitem>
+                <para>Office of the National Coordinator for Health Information Technology.
+                    ‘National Trends in Hospital and Physician Adoption of Electronic Health
+                    Records,’ Health IT Quick-Stat #61.</para>
+            </listitem>
+            <listitem>
+                <para>Alotaibi, Y. K., &amp; Federico, F. (2017). The impact of health information
+                    technology on patient safety. Saudi medical journal, 38(12), 1173.</para>
+            </listitem>
+            <listitem>
+                <para>Singh, H., &amp; Sittig, D. F. (2016). Measuring and improving patient safety
+                    through health information technology: The Health IT Safety Framework. BMJ
+                    quality &amp; safety, 25(4), 226-232.</para>
+            </listitem>
+            <listitem>
+                <para>Alder, S. (July, 2024). July 26, 2024: CrowdStrike Issues Update on Outage
+                    Cause; Healthcare Hit Hardest with Estimated $1.94B in Losses. HIPAA Journal.
+                    Accessed at
+                    https://www.hipaajournal.com/crowdstrike-issues-update-on-outage-cause-healthcare-hit-hardest-with-estimated-1-94b-in-losses/</para>
+            </listitem>
+            <listitem>
+                <para>Mijic, M., &amp; Tripathi, M. (2024). Accelerating The Exchange Of Health And
+                    Human Services Data To Improve Outcomes And Disrupt Inequities. Health Affairs
+                    Forefront.</para>
+            </listitem>
+            <listitem>
+                <para>Lehne, M., Sass, J., Essenwanger, A., Schepers, J., &amp; Thun, S. (2019). Why
+                    digital medicine depends on interoperability. NPJ digital medicine, 2(1),
+                    79.</para>
+            </listitem>
+            <listitem>
+                <para>Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M.,
+                    Baak, A., ... &amp; Mons, B. (2016). The FAIR Guiding Principles for scientific
+                    data management and stewardship. Scientific data, 3(1), 1-9.</para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>

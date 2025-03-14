@@ -144,19 +144,18 @@
                 </listitem>
             </itemizedlist>
             <para>Normalization of disparate health data and knowledge is defined as "the ability to
-                identify every representational format that confers the same meaning as being
-                equivalent (i.e., unambiguous representation)." [3] This
-                transformation/normalization would involve a data instance to data instance
-                transformation. An example could be John Doe's Systolic Blood Pressure measurement
-                taken on June 4, 2019 represented as a Fast Health Interoperability Resources (FHIR)
-                Observation instance, which is then transformed to a common data model/normal form
-                instance representing this same data. Transformation, in this case, is not a simple
-                endeavor that one can hope to implement on clinical data. It will likely involve
-                navigating disparate data structure trees and include variable representations to
-                then generate a well-formed terminology expression. It is most likely possible to
-                target sub-domains for consistent transformation, such as all quantitative
-                laboratory results, but in some cases, it may be that each detailed clinical model
-                needs its own unique transformation. </para>
+            identify every representational format that confers the same meaning as being equivalent
+            (i.e., unambiguous representation)." [1] This transformation/normalization would involve
+            a data instance to data instance transformation. An example could be John Doe's Systolic
+            Blood Pressure measurement taken on June 4, 2019 represented as a Fast Health
+            Interoperability Resources (FHIR) Observation instance, which is then transformed to a
+            common data model/normal form instance representing this same data. Transformation, in
+            this case, is not a simple endeavor that one can hope to implement on clinical data. It
+            will likely involve navigating disparate data structure trees and include variable
+            representations to then generate a well-formed terminology expression. It is most likely
+            possible to target sub-domains for consistent transformation, such as all quantitative
+            laboratory results, but in some cases, it may be that each detailed clinical model needs
+            its own unique transformation. </para>
             <para>Currently, there are three basic categories of errors that might be associated
                 with attempts at normalizing clinical data representation: </para>
             <orderedlist>
@@ -200,18 +199,17 @@
                 represented in a way that is both applicable at enterprise and project-specific
                 levels. </para>
             <para>Another pragmatic methodology would be to engage vendors and incentivize them to
-                implement an open, common data model and produce shareable output in interoperable,
-                reproducible, and understandable formats that could then be ingested by other
-                systems. While major U.S. EHR vendors have independently attempted to create such
-                clinical data resources and product offerings, they are often proprietary and do not
-                extend beyond the vendor-user community. Further, the data normalization and
-                representation process remains a "black box" and cannot be independently verified
-                for semantic correctness, data and information loss or gains, or appropriate
-                application of metadata standards. [4-5] Despite these weaknesses, an opportunity
-                exists to collaborate with EHR vendors to create unique value in their data
-                offerings to the clientele, while ensuring data can be safely and reliably
-                aggregated for research, public health, clinical quality improvement and regulatory
-                uses as described by SHIELD. </para>
+            implement an open, common data model and produce shareable output in interoperable,
+            reproducible, and understandable formats that could then be ingested by other systems.
+            While major U.S. EHR vendors have independently attempted to create such clinical data
+            resources and product offerings, they are often proprietary and do not extend beyond the
+            vendor-user community. Further, the data normalization and representation process
+            remains a "black box" and cannot be independently verified for semantic correctness,
+            data and information loss or gains, or appropriate application of metadata standards.
+            [2-3] Despite these weaknesses, an opportunity exists to collaborate with EHR vendors to
+            create unique value in their data offerings to the clientele, while ensuring data can be
+            safely and reliably aggregated for research, public health, clinical quality improvement
+            and regulatory uses as described by SHIELD. </para>
         </section>
         <section>
             <title>Metadata Overview</title>
@@ -223,16 +221,16 @@
                 Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®), the Logical
                 Observation Identifiers, Names, and Codes (LOINC®) and RxNorm. </para>
             <para>While these standards are widely implemented and adopted, aggregation and
-                analytics can be difficult because there is no standard representation across these
-                terminologies. Traversing the data models of these various terminology standards in
-                an integrated way is non-trivial because SNOMED CT®, LOINC®, and RxNorm each use
-                different formalisms and tools for their representation. Various terminologies have
-                different semantics, models, release cycles, and versioning mechanisms. [6] </para>
+            analytics can be difficult because there is no standard representation across these
+            terminologies. Traversing the data models of these various terminology standards in an
+            integrated way is non-trivial because SNOMED CT®, LOINC®, and RxNorm each use different
+            formalisms and tools for their representation. Various terminologies have different
+            semantics, models, release cycles, and versioning mechanisms. [4] </para>
             <para>Ideally, to support RWE analytics and aggregation, enterprise terminology requires
-                an integrated terminology using a common representation (metadata) and management. A
-                common terminology model, such as HL7 Standardized Terminology Knowledge Base (also
-                known as TermINology Knowledge Architecture [Tinkar]) would allow the following
-                analytics on top of aggregated RWE data sets [7]: </para>
+            an integrated terminology using a common representation (metadata) and management. A
+            common terminology model, such as HL7 Standardized Terminology Knowledge Base (also
+            known as TermINology Knowledge Architecture [Tinkar]) would allow the following
+            analytics on top of aggregated RWE data sets [5]: </para>
             <para>
                 <itemizedlist>
                     <listitem>
@@ -298,20 +296,20 @@
             happened, or that a particular procedure was requested. A clinical statement can be
             expressed as a narrative that provides a written account that can be naturally read by
             humans, as well as a normal form which is a machine-processable representation of the
-            statement's data as a standardized and encoded fundamental form. [8]</para>
+            statement's data as a standardized and encoded fundamental form. [6]</para>
         <para>Clinical Input Form (CIF) is also a general informatics term. It describes the manner
             by which clinicians author clinical statements and enter them into their organizations’
             EHR. CIFs have an impact as to how information is presented to the clinicians and how
             they enter the data. CIFs might be generated by natural language processing or may use
             models that constrain structured input to allow only certain values to be entered, such
             as a drop-down list or radio button, or breaking up large chunks of related information
-            into smaller parts. [8]</para>
+            into smaller parts. [6]</para>
         <para>Today, clinical statements are often represented in unpredictable and denormalized
             forms, which makes reliable and safe decision support challenging and reduces the
             quality of other types of data processing. ANF is an approach to clinical statements
             that ensures the statement representation is reproducible and scalable, with the
             adherence to principles of being simple, reproducible, and use case driven, with a clean
-            separation between statement concerns and terminology concerns. [8]</para>
+            separation between statement concerns and terminology concerns. [6]</para>
         <para>In linguistics, words have their very own definitions, however, if it’s not paired
             with proper sentence structure, the words convey very little meaning and are open to
             interpretation. When this framework is applied to the healthcare system, clinical data,
@@ -335,9 +333,7 @@
             language processing of consult notes, and many others. </para>
     </section>
     <section>
-        <?oxy_comment_start author="tocrow" timestamp="20250228T212444-0500" comment="From Book Introduction"?>
-        <title><?oxy_custom_start type="oxy_content_highlight" color="255,255,0" mid="1"?>A Brief
-            Overview of Health Data Standards</title><?oxy_comment_end?>
+        <title>A Brief Overview of Health Data Standards</title>
         <para>The broad goal of the application of standards to electronic health data is
             unambiguous data exchange, or “interoperability” – the ability of two parties, either
             human or machine, to exchange data or information so that it is transportable,
@@ -375,7 +371,7 @@
                 interfacing is the Health Level Seven (HL7) Version 2.x (V2.x) standard. While other
                 messaging standards exist and can be used, the HL7 V2.x messaging standard, first
                 released in 1987, is used in 95% of U.S. healthcare organizations and in more than
-                35 countries. [35] </para>
+                35 countries. [7] </para>
             <para><xref linkend="ErroneousLoincMapping"/> below shows an example of an HL7 v2
                 Observation (OBX) segment from two different mock lab result messages. In this
                 scenario, a laboratory has conducted two distinct blood glucose tests on two
@@ -404,7 +400,7 @@
             <para>The figure shows how one local code, show in blue, can be erroneously mapped to
                 two different tests and their distinct LOINC® codes and transmitted in a Lab Result
                 message. This mock scenario highlights one example of the myriad of interoperability
-                challenges faced in healthcare today. [35] Successful interoperability is dependent
+                challenges faced in healthcare today. [7] Successful interoperability is dependent
                 on either using universal code systems for data capture or through mapping local
                 content to a universal code system. Local code systems serve the same function as
                 universal coding systems such as SNOMED CT® and LOINC®, however are internal
@@ -433,7 +429,7 @@
                 standards for meaning (i.e., terminology model) can represent clinical data alone in
                 the current data structures. Both types of models can be arbitrarily complex, and,
                 at some point, semantics not represented in one must be represented in the other if
-                one is to achieve interoperability. [18]</para><?oxy_custom_end mid="1"?>
+                one is to achieve interoperability. [8]</para>
         </section>
         <section>
             <title>The Adoption of Three Key Terminology Standards: Systematized Nomenclature of
@@ -660,12 +656,12 @@
                                 equivalence and interoperability. [13] </para>
                         </listitem>
                         <listitem>
-                            <para>While RxNorm has ‘defined ingredients’ [13], historically it has
-                                lacked the computational definition where concepts are defined by
+                            <para>While RxNorm has ‘defined ingredients’, historically it has lacked
+                                the computational definition where concepts are defined by
                                 relationships, therefore determining equivalence and allowing
-                                inferencing. However, recent efforts by Bona et al. [15] have
+                                inferencing. However, recent efforts by Bona et al. have
                                 successfully created an OWL file to implement and define the classes
-                                necessary to model RxNorm and NDC concepts.</para>
+                                necessary to model RxNorm and NDC concepts. [13, 15]</para>
                         </listitem>
                     </itemizedlist></para>
             </section>
@@ -719,20 +715,9 @@
     <xi:include href="Book%20Patient%20Safety%20Overview.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <section>
-        <title><?oxy_comment_start author="tocrow" timestamp="20250225T184250-0500" comment="Text for citations 1-2 was moved"?>References<?oxy_comment_end?></title>
+        <title><?oxy_comment_start author="tocrow" timestamp="20250225T184250-0500" comment="Highlighted Citations need to be updated to Vancouver"?>References<?oxy_comment_end?></title>
         <para>
             <orderedlist>
-                <listitem>
-                    <para>Shortliffe EH, Cimino JJ, editors. Biomedical Informatics: Computer
-                        Applications in Health Care and Biomedicine. 5th ed. Cham, Switzerland:
-                        Springer Nature; 2021.</para>
-                </listitem>
-                <listitem>
-                    <para>Kahn MG, Brown JS, Chun AT, Davidson BN, Meeker D, Ryan PB, Schilling LM,
-                        Weiskopf NG, Williams AE, Zozus MN. Transparent reporting of data quality in
-                        distributed data networks. EGEMS (Wash DC). 2015 Mar 23;3(1):1052. doi:
-                        10.13063/2327-9214.1052.</para>
-                </listitem>
                 <listitem>
                     <para>Elkin, P. Terminology and Terminological Systems. London: Springer; 2012.
                     </para>
@@ -768,6 +753,18 @@
                             >http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf</link>.</para>
                 </listitem>
                 <listitem>
+                    <para>Health Level Seven international [Internet]. HL7 Standards Product Brief -
+                        HL7 Version 2 Product Suite | HL7 International. [cited 2023Jan12].
+                        Available from: <link
+                            xlink:href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185"
+                            >https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185</link></para>
+                </listitem>
+                <listitem>
+                    <para>How Doctors Feel about Electronic Health Records [presentation]. Stanford
+                        Medicine. National Physician Poll by The Harris Poll. [cited
+                        2023Jan13].</para>
+                </listitem>
+                <listitem>
                     <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, Scott
                         NM, Rubinstein WS, Brenner SA, Merrick R, Hadden WC, Campbell KE, Waters MS.
                         Encoding laboratory testing data: case studies of the national
@@ -797,7 +794,8 @@
                         of terminologies for laboratory results reveals individual advantages and a
                         lack of possibilities to encode interpretive comments [Internet]. De
                         Gruyter. De Gruyter; 2018 [cited 2022Oct19]. Available from:
-                        https://www.degruyter.com/document/doi/10.1515/labmed-2018-0103/html?lang=en </para>
+                        https://www.degruyter.com/document/doi/10.1515/labmed-2018-0103/html?lang=en
+                    </para>
                 </listitem>
                 <listitem>
                     <para>Lin M, Vreeman D, McDonald C, et al. Auditing consistency and usefulness
@@ -812,15 +810,17 @@
                             >https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8</link></para>
                 </listitem>
                 <listitem>
-                    <para>Department of Veteran Affairs, Office of Inspector General. The New
-                        Electronic Health Record’s Unknown Queue Caused Multiple Events of Patient
-                        Harm July 14, 2022, Report #22-01137-204</para>
-                </listitem>
+                    <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Department
+                        of Veteran Affairs, Office of Inspector General. The New Electronic Health
+                        Record’s Unknown Queue Caused Multiple Events of Patient Harm July 14, 2022,
+                        Report #22-01137-204</para>
+                </listitem><?oxy_custom_end?>
                 <listitem>
-                    <para>Mitchell PH. Defining Patient Safety and Quality Care. In: Hughes RG,
-                        editor. Patient Safety and Quality: An Evidence-Based Handbook for Nurses.
-                        Rockville (MD): Agency for Healthcare Research and Quality (US); 2008 Apr.
-                        Chapter 1. Available from: <link
+                    <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Mitchell
+                        PH. Defining Patient Safety and Quality Care. In: Hughes RG, editor. Patient
+                        Safety and Quality: An Evidence-Based Handbook for Nurses. Rockville (MD):
+                        Agency for Healthcare Research and Quality (US); 2008 Apr. Chapter 1.
+                        Available from: <link
                             xlink:href="https://www.ncbi.nlm.nih.gov/books/NBK2681/"
                             >https://www.ncbi.nlm.nih.gov/books/NBK2681/</link></para>
                 </listitem>
@@ -859,6 +859,11 @@
                         Diagnosis in Health Care. Washington (DC): National Academies Press (US);
                         2015 Dec 29. Preface. Available from:
                         https://www.ncbi.nlm.nih.gov/books/NBK338585/</para>
+                </listitem>
+                <listitem>
+                    <para>Duclos, A., Frits, M. L., Iannaccone, C., Lipsitz, S. R., Cooper, Z.,
+                        Weissman, J. S., &amp; Bates, D. W. (2024). Safety of inpatient care in
+                        surgical settings: cohort study. BMJ, 387.</para>
                 </listitem>
                 <listitem>
                     <para>Chassin, M. R., &amp; Loeb, J. M. (2013). High‐Reliability health care:
@@ -934,12 +939,7 @@
                     <para>Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton,
                         M., Baak, A., ... &amp; Mons, B. (2016). The FAIR Guiding Principles for
                         scientific data management and stewardship. Scientific data, 3(1), 1-9.
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Fahey, R. A., &amp; Hino, A. (2020). COVID-19, digital privacy, and the
-                        social limits on data-focused public health responses. International Journal
-                        of Information Management, 55, 102181. </para>
+                        <?oxy_custom_end?></para>
                 </listitem>
             </orderedlist>
         </para>

@@ -2,8 +2,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title><?oxy_comment_start author="tocrow" timestamp="20250225T144502-0500" comment="Section 1.3.3 &quot;IKM Value Proposition&quot; removed and referneces 4-12
-"?>Introduction<?oxy_comment_end?> to the Integrated Knowledge Management (IKM) Book</title>
+    <title>Introduction to the Integrated Knowledge Management (IKM) Book</title>
     <section>
         <title>Preface</title>
         <para>Integrated Knowledge Management (IKM) is “the discipline of bringing all knowledge
@@ -29,21 +28,21 @@
             solution that harmonizes the different clinical terminology standards and generates a
             common model that supports patient care, data querying and analysis, public health, and
             policy making. Interoperable data in an ideal world would eliminate patient harm and
-            other inefficiencies stemming from data misrepresentations and errors. The motivation
-            for this work is to explore the pathway to unifying a patient’s care experience through
-            reliable and interoperable data that supports accurate and timely clinical decision
-            support that is solely prompted and driven by real-world data and provides real-time
-            assistance to clinicians.</para>
+            other inefficiencies stemming from data misrepresentations and errors. </para>
+        <para>The motivation for this work is to explore the pathway to unifying a patient’s care
+            experience through reliable and interoperable data that supports accurate and timely
+            clinical decision support that is solely prompted and driven by real-world data and
+            provides real-time assistance to clinicians.</para>
         <para>The essential challenge of the informatics practice within the healthcare enterprise
-            is to quickly deliver a high fidelity reasoned interpretation of principles and facts to
-            the point of care—and then to quickly aggregate these point of care experiences for
-            analysis so that new principles and facts can be formulated and validated as part of a
-            continuous optimization of healthcare knowledge and delivery. To effectively answer this
-            challenge, we must focus on simplification and integration of knowledge assets, and on
-            build, test, deploy, and release processes for delivering these assets to the points of
-            care and analysis. This focus on perhaps mundane topics is not because we think that
-            novelty has no place in our work; rather, that without a focus on aspects of our
-            delivery challenge that are often treated as peripheral to the overall problem, we
+            is to quickly deliver a high fidelity and reasoned interpretation of principles and
+            facts to the point of care and then rapidly aggregating the point of care information
+            for analysis so that new principles and facts can be formulated and validated as part of
+            a continuous optimization of healthcare knowledge and delivery. To effectively address
+            this challenge, we must focus on the simplification and integration of knowledge assets,
+            and on build, test, deploy, and release processes for delivering these assets to the
+            points of care and analysis. This focus on perhaps mundane topics is not because we
+            think that novelty has no place in our work; rather, that without a focus on aspects of
+            our delivery challenge that are often treated as peripheral to the overall problem, we
             cannot achieve reliable, rapid, low-risk knowledge-asset development and delivery in an
             efficient manner.</para>
     </section>
@@ -51,15 +50,15 @@
         <title>Overview of the IKM Book</title>
         <para>The IKM Book serves as an educational resource to allow stakeholders to perform a deep
             dive into the IKM Architecture this team has worked to develop. This Book will act as a
-            reference for understanding the complex, multi-layered, and highly interdependent Health
+            reference for understanding the complex, multi-layered, and highly interdependent health
             Information Technology (IT) landscape, and a framework for the implementation of a
             layered, architecture-based approach to integrating and managing knowledge in the
-            healthcare ecosystem that will seek to solve the previously identified issues.</para>
-        <para>This framework, referred to throughout the Book as the 'Knowledge Architecture', is a
+            healthcare ecosystem that will seek to solve the previously identified issues. This
+            framework, referred to throughout the Book as the 'Knowledge Architecture', is a
             methodology seeking to enable the concept of IKM throughout the healthcare
             ecosystem.</para>
-        <para>Through examples and illustrations, this Book seeks to have a direct connection to
-            real world events and circumstances and demonstrate that this approach for managing
+        <para>This Book seeks to have a direct connection to real world events and circumstances
+            through examples and illustrations and demonstrate that this approach for managing
             knowledge will allow for:</para>
         
             <itemizedlist>
@@ -88,24 +87,24 @@
         <section>
             <title>Guiding Principles</title>
             <para>The following key principles are critical in our summarization and discussion of IKM. </para>
-            <para>Functional decomposition—often referred to as a Separation of Concerns (SoC)—across
-                components or sections with a specific purpose is a foundational design principle for
-                complex system architecture. SoC allows a complete system to be subdivided into distinct
-                sections or components with well-defined functionality and dependencies. If successful,
-                this approach allows individual sections to be reused, as well as designed, implemented,
-                and updated independently to address emerging requirements. This is especially useful
-                and important in a medical context given how many different health information and
-                clinical terminology projects are ongoing at any given time.</para>
+            <para>Functional decomposition, also known as Separation of Concerns (SoC), across
+                components or sections of our work is a foundational design principle for complex
+                system architecture. SoC allows a complete system to be subdivided into distinct
+                sections or components with well-defined functionality and dependencies. If
+                successful, this approach allows individual sections to be reused, as well as
+                designed, implemented, and updated independently to address emerging requirements.
+                This is especially useful and important in a medical context given how many
+                different health information and clinical terminology projects are ongoing at any
+                given time.</para>
             <para>The architecture presented in this Book is inspired by core evolutionary design
-                principles called “Understandable, Reproducible, and Useful” upon which Systematized
-                Nomenclature of Medicine Clinical Terms (SNOMED CT®) development is still based. [1, 2]
-                These criteria describe an approach for improving data quality and increasing data
-                integrity and agility: </para>
+                principles called “Understandable, Reproducible, and Useful” (URU) upon which
+                Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®) development is
+                still based. [1, 2] </para>
             <itemizedlist>
                 <listitem>
-                    <para><emphasis role="bold">Understandable: </emphasis>The content can be processed
-                        by health IT systems and understood by most healthcare providers without
-                        reference to private or inaccessible information. </para>
+                    <para><emphasis role="bold">Understandable: </emphasis>The content can be
+                        processed by Health IT systems and understood by most healthcare providers
+                        without reference to private or inaccessible information. </para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Reproducible: </emphasis>Multiple users or systems apply
@@ -135,18 +134,19 @@
                             software solution.</para>
                     </listitem>
                     <listitem>
-                        <para><emphasis role="bold">Iterative and Incremental</emphasis>: Similar to the
-                            Agile mindset, developing software solutions should in small, iterative, and
-                            incremental ways thus affording time to perform adequate Independent
-                            Validation and Verification (IV&amp;V) methodologies. IV&amp;V methodologies
-                            include general-purpose validation approaches conducted by an organization
-                            that is not involved in development to generate metrics for data and
-                            software quality. From a health information exchange perspective, IV&amp;V
-                            can help compare and test source data against requirements of a destination
-                            system through manual, semi-automated, and automated inspection of
+                        <para><emphasis role="bold">Iterative and Incremental</emphasis>: Similar to
+                            the Agile mindset, developing software solutions should in small,
+                            iterative, and incremental ways thus affording time to perform adequate
+                            Independent Verification and Validation (IV&amp;V) methodologies.
+                            IV&amp;V methodologies include general-purpose validation approaches
+                            conducted by an organization that is not involved in development to
+                            generate metrics for data and software quality. From a health
+                            information exchange (HIE) perspective, IV&amp;V can help compare and
+                            test source data against requirements of a destination system through
+                            manual, semi-automated, and automated inspection of
                             source-to-destination data reviews, thereby helping ensure a sound data
-                            strategy intended to reduce patient safety risk and improve data quality for
-                            analysis and tracking. [3]</para>
+                            strategy intended to reduce patient safety risk and improve data quality
+                            for analysis and tracking. [3]</para>
                     </listitem>
                 </itemizedlist></para>
         </section>
@@ -163,9 +163,9 @@
             and treatment. As information is exchanged across systems, an interoperable solution
             requires a common understanding of data, a method to support knowledge representation,
             and clinical decision rules based on common terminology and statements to ultimately
-            address the requirements of medical proffesionals. Current Health Level Seven
-            International (HL7), a variety of global standards for the transfer of health data,
-            implementations rely on profiles and templates to disambiguate statement and terminology
+            address the requirements of medical proffesionals. Current implementations of Health
+            Level Seven International (HL7), a variety of global standards for the transfer of
+            health data, relies on profiles and templates to disambiguate statement and terminology
             and provide sufficient precision for transactions, documents, and standards-based
             Application Programming Interfaces (APIs). Therefore, the architectural approach
             described here is applicable to standards organizations developing interoperability for
@@ -173,23 +173,23 @@
         <para>The Knowledge Architecture, by definition, is a framework for clinical information
             that is organized into distinct layers such that each higher layer relies upon artifacts
             from the lower layer. The purpose of the Knowledge Architecture is to standardize
-            clinical statements and terminologies by providing abstraction &amp; eliminating
-            unnecessary complexity. It helps to do this by:</para>
-        <para><emphasis role="bold">Integrating essential clinical terminologies into a coherent
-                integrated system: </emphasis><itemizedlist>
+            clinical statements and terminologies and eliminate abstract and unnecessary complexity
+            by:</para>
+        <para><emphasis role="bold">Integrating Essential Clinical Terminologies into a Coherent
+                Integrated System </emphasis><itemizedlist>
                 <listitem>
                     <para>Localized terminology specific to one organization or system </para>
                 </listitem>
                 <listitem>
-                    <para>EHR Vendor Terminologies (such as Cerner's Code Sets, Event Codes, Event
+                    <para>EHR Vendor Terminologies (such as Oracle's Code Sets, Event Codes, Event
                         Set Hierarchy)</para>
                 </listitem>
                 <listitem>
                     <para>Interoperability standards: SNOMED CT®, Logical Observation Identifiers
                         Names and Codes® (LOINC®), RxNorm, and similar</para>
                 </listitem>
-            </itemizedlist><emphasis role="bold">Defining a Standardized Form for clinical
-                statements:</emphasis><itemizedlist>
+            </itemizedlist><emphasis role="bold">Defining a Standardized Form for Clinical
+                Statements</emphasis><itemizedlist>
                 <listitem>
                     <para>Reduce unnecessary complexity and improve logical structure</para>
                 </listitem>
@@ -199,12 +199,13 @@
                 <listitem>
                     <para>Create an analysis normal form for clinical statements</para>
                 </listitem>
-            </itemizedlist>The proposed architecture, shown visually below, serves as an
-            implementation of SoC, and helps to break out and organize inter-dependent types of
-            knowledge in a way that allows for reuse, ongoing development, and independent updates.
-            If employed, this model can help the healthcare ecosystem to individually resolve issues
-            in their data within their layers, rather than the entire system, leading to much more
-            agile improvement.</para><figure xml:id="PASTFModel">
+            </itemizedlist>The proposed architecture, shown below in the Procedural, Assertional,
+            Statement, Terminology, Foundational (PASTF) Model, serves as an implementation of SoC,
+            and helps to break out and organize inter-dependent types of knowledge in a way that
+            allows for reuse, ongoing development, and independent updates. If employed, this model
+            can help the healthcare ecosystem to individually resolve issues in their data within
+            their layers, rather than the entire system, leading to much more agile
+            improvement.</para><figure xml:id="PASTFModel">
                 <title>PASTF Model</title>
                 
                     <mediaobject>
@@ -250,49 +251,39 @@
             clinical alert rules, reminders, etc., that trigger actions or recommend
             interventions.</para>
         <para>Examining a clinical procedure for controlling hypertension illustrates each of the
-            layers of the informatics architectural separation of concerns.<itemizedlist>
-                <listitem>
-                    <para>At the terminology knowledge layer, there may be various codes and terms
-                        from disparate source terminologies to define a concept (e.g.,
-                        hypertension). Ideally, these overlapping codes and terms would be oriented
-                        to the same parent concept during the transformation and integration process
-                        at the foundational architecture layer.</para>
-                </listitem>
-                <listitem>
-                    <para>The statement model layer enables representation of blood pressure
-                        measurement values (e.g., systolic BP = 140 mmHg), or the categorical data
-                        (e.g., pregnancy induced hypertension vs. renal hypertension) within a
-                        standard data structure to facilitate information exchange or retrieval,
-                        such as within a standards-based clinical statement (i.e., Fast Healthcare
-                        Interoperability Resources, or FHIR).</para>
-                </listitem>
-                <listitem>
-                    <para>The assertional knowledge layer represents non-procedural statements, or
-                        facts, such as “Stage 2 high blood pressure is over 140 systolic or 90
-                        diastolic,” or “beta-blockers and ACE inhibitors may be used to treat
-                        hypertension”, or “beta-blockers are contraindicated in patients with a
-                        diagnosis of reactive airway disease.”</para>
-                </listitem>
-                <listitem>
-                    <para>Finally, the procedural knowledge layer provides algorithms to analyze
-                        clinical statements about a patient, in combination with the assertional
-                        knowledge, to recommend a treatment protocol for different kinds of
-                        hypertension, including the considerations of, (e.g., patient age,
-                        co-morbidities etc., which can be generated by an electronic clinical
-                        decision support system [statement + assertional layers]). This layer adds
-                        support for workflow and conditional logic (i.e., if-then-else).</para>
-                </listitem>
-            </itemizedlist></para>
+            layers of the informatics architectural separation of concerns.</para>
+        <para>In the <emphasis role="bold">Terminology Knowledge </emphasis>layer, there may be
+            various codes and terms from disparate source terminologies to define a concept (e.g.,
+            hypertension). Ideally, these overlapping codes and terms would be oriented to the same
+            parent concept during the transformation and integration process at the foundational
+            architecture layer.</para>
+        <para>The <emphasis role="bold">Statement Model</emphasis> layer enables representation of
+            blood pressure measurement values (e.g., systolic blood pressure = 140 mmHg), or the
+            categorical data (e.g., pregnancy induced hypertension vs. renal hypertension) within a
+            standard data structure to facilitate information exchange or retrieval, such as within
+            a standards-based clinical statement (i.e., Fast Healthcare Interoperability Resources,
+            or FHIR).</para>
+        <para>The <emphasis role="bold">Assertional Knowledge </emphasis>layer represents
+            non-procedural statements, or facts, such as “Stage 2 high blood pressure is over 140
+            systolic or 90 diastolic,” or “beta-blockers and Angiotensin converting enzyme (ACE)
+            inhibitors may be used to treat hypertension”, or “beta-blockers are contraindicated in
+            patients with a diagnosis of reactive airway disease.”</para>
+        <para>Finally, the <emphasis role="bold">Procedural Knowledge </emphasis>layer<emphasis
+                role="bold"> </emphasis>provides algorithms to analyze clinical statements about a
+            patient, in combination with the assertional knowledge, to recommend a treatment
+            protocol for different kinds of hypertension, including the considerations of, (e.g.,
+            patient age, co-morbidities etc., which can be generated by an electronic clinical
+            decision support system [statement + assertional layers]). This layer adds support for
+            workflow and conditional logic (i.e., if-then-else).</para>
     </section>
     
         <section>
         <title>The Promise of Health Information Technology (IT)</title>
         <para>Health IT, or the use of computer hardware, software, or infrastructure to record,
-                store, protect, and retrieve clinical, administrative, or financial information, has
-                become a critically important form of organizing, managing, analyzing, and
-                exchanging patient health information. [13] Though first employed in the 1960s,
-                Health IT entered the scene and obtained widespread adoption in the early-1990s
-                promising: </para>
+            store, protect, and retrieve clinical, administrative, or financial information, has
+            become a critically important form of organizing, managing, analyzing, and exchanging
+            patient health information. [4] Though first employed in the 1960s, Health IT entered
+            the scene and obtained widespread adoption in the early-1990s promising: </para>
         <itemizedlist>
             <listitem>
                 <para>The enhancement of quality and safety of healthcare,</para>
@@ -312,24 +303,24 @@
             </listitem>
             <listitem>
                 <para>The ability to improve clinician/provider satisfaction and reduce burden and
-                    burnout. [14]</para>
+                    burnout. [5]</para>
             </listitem>
         </itemizedlist>
-        <para>The most commonly known forms of Health IT systems, EHRs, or a systematized collection
-            of electronically stored patient and population health information, have undoubtedly
-            enabled dramatic advancements in patient care and reduced the burden on providers. EHRs
-            have also allowed for breakthrough technologies with advanced analytical capabilities
-            (e.g., Machine Learning(ML), AI ) to more easily identify new diseases and develop
-            treatments and reduce the need for patients to maintain and carry paper records from
-            provider to provider. </para>
+        <para>The most commonly known forms of Health IT systems, EHRs, are a systematized
+            collection of electronically stored patient and population health information that have
+            undoubtedly enabled dramatic advancements in patient care and reduced the burden on
+            providers. EHRs have also allowed for breakthrough technologies with advanced analytical
+            capabilities (e.g., Machine Learning [ML], Artificial Intelligence [AI]) to more easily
+            identify new diseases and develop treatments and reduce the need for patients to
+            maintain and carry paper records from provider to provider. </para>
         <para>Despite advancement in technologies like these, a Johns Hopkins study conducted in
             2016 suggested that preventable medical errors, including those due to EHR errors,
             accounted for approximately 250,000 patient deaths every year – making it the
-            third-leading cause of death in the United States. [15] When Controlled Risk Insurance
+            third-leading cause of death in the United States. [6] When Controlled Risk Insurance
             Company (CRICO), a medical professional liability organization, identified 147 cases of
             patient harm over five years in which an EHR was identified as a contributing factor, a
             staggering 80 percent of these cases involved moderate or severe harm to the patient.
-            [16] In total, an estimated $61 million in direct payments and legal expenses resulted
+            [7] In total, an estimated $61 million in direct payments and legal expenses resulted
             from these cases, at an average cost of $415,000 per case.</para>
         <para>On the surface, exciting new technology has continued to advance in the healthcare
             ecosystem, but cases of patient harm, redundant testing, and over-expenditure persists.
@@ -341,7 +332,7 @@
         <para>The advancements in EHRs have had a great impact for patients, but users continue to
             face complications due to the lack of standardized data exchange. Unstandardized data
             stacking has made it difficult to interpret a patient’s chart with accurate data
-            reporting. [17] As far as healthcare technology has come, the quality of existing
+            reporting. [8] As far as healthcare technology has come, the quality of existing
             technology platforms is limited through the quality of encoded data – which is where the
             problem begins. While healthcare information originates across a variety of disparate
             systems and organizations, the United States healthcare environment requires
@@ -350,24 +341,23 @@
             decision making. Many needs must be met in the existing, fragmented healthcare setting
             which includes a network of interconnected information systems.</para>
         <para>Historically, the United States healthcare system has been composed of relatively
-                autonomous organizations that maintain loose relationships in support of patient
-                care. Patients typically visit one or more primary care clinicians and are
-                frequently sent, along with orders and patient data, to specialists, laboratories,
-                and other care teams. The observation and interpretation of patients’ healthcare
-                data across these settings is crucial to the processes of making safe clinical
-                decisions, tracking patient outcomes, anticipating future health problems,
-                identifying deviations from expected trends, informing preventive and public health
-                measures, supporting clinical research, and enabling standardized approaches in
-                treatment and health data exchange. [18] </para>
+            autonomous organizations that maintain loose relationships in support of patient care.
+            Patients typically visit one or more primary care clinicians and are frequently sent,
+            along with orders and patient data, to specialists, laboratories, and other care teams.
+            The observation and interpretation of patients’ healthcare data across these settings is
+            crucial to the processes of making safe clinical decisions, tracking patient outcomes,
+            anticipating future health problems, identifying deviations from expected trends,
+            informing preventive and public health measures, supporting clinical research, and
+            enabling standardized approaches in treatment and health data exchange. [9] </para>
         <para>For example, when a primary care provider records a diabetes diagnosis in the
-            provider's local system, it is critical for that system to share the data accurately and
-            seamlessly to the pertinent pharmacy and laboratory systems. These systems must then in
-            turn communicate with one another and with the primary care system to alert the provider
-            that the patient has previously been prescribed gentamicin and has recently been given
-            an order for a radiologic examination that requires intravenous iodine dye – both of
-            which are known to affect kidney function. If this information is not accurately
-            communicated across healthcare settings in a way that can be readily accessed, the
-            patient may face unnecessary harm or risks that could have been avoided.</para>
+            provider's local system, that system must share the data accurately and seamlessly to
+            the pertinent pharmacy and laboratory systems. These systems must then in turn
+            communicate with one another and with the primary care system to alert the provider that
+            the patient has previously been prescribed gentamicin and has recently been given an
+            order for a radiologic examination that requires intravenous iodine dye – both of which
+            are known to affect kidney function. If this information is not accurately communicated
+            across healthcare settings in a way that can be readily accessed, the patient may face
+            unnecessary harm or risks that could have been avoided.</para>
         <para>The following sections aim to spell out some of the current problems with electronic
             health data more clearly.</para>
         <section>
@@ -402,21 +392,22 @@
                 measurements, images, drawings, and more. It is common practice for several
                 different observations of a singular patient to be made concurrently, the
                 observation of the same patient parameter to be made over the course of several
-                points in time, or both. [18] It is also important to keep a record of the
+                points in time, or both. [9] It is also important to keep a record of the
                 circumstances under which data are obtained, further adding to the complexity and
-                volume of data. </para>
+                volume of data. Accurately capturing this wide range of data points is challenging
+                and can often be done in sub-optimal ways.</para>
         </section>
         <section>
             <title>The Lack of Adherence and Enforcement of Standards </title>
             <para>Despite a significant history of emphasis on healthcare data standards, entities
-                continue to leverage proprietary, or localized, methods for data representation
-                creating inherent and avoidable challenges in care delivery, reporting, and the
+                continue to leverage proprietary, or localized, methods for data representation that
+                creates inherent and avoidable challenges in care delivery, reporting, and the
                 meaningful application of available technology. Motivations for proprietary or
                 localized data methods cannot be confirmed, however, considerations include
                 protection of market share from competitors and avoidance of public scrutiny for
                 misalignment to standard processes. Maintaining alignment with Standards Development
-                Organizations (SDOs) is resource intensive and invites SDOs to measure and
-                scrutinize an organization against the standard processes to which an entity claims
+                Organizations (SDOs) is resource-intensive and invites SDOs to measure and
+                scrutinize organizations against the standard processes to which an entity claims
                 conformity. </para>
             <para>Current approaches for representing data from various, disparate health
                 information systems introduce additional opportunities for inefficiencies,
@@ -424,7 +415,7 @@
                 efforts illustrates the challenges of using observational data for safe patient
                 care, comparative effectiveness research, and analyses for biases, workflow
                 differences, and issues with variations in data collection, such as invalid,
-                inconsistent, and missing data. [19 – 34]</para>
+                inconsistent, and missing data. [10 - 25]</para>
         </section>
         <section>
             <title>The Inability to Share Between Systems</title>
@@ -441,8 +432,7 @@
     
     
     <section>
-        <?oxy_comment_start author="tocrow" timestamp="20250228T212514-0500" comment="Removed A Breif Overview of Health Data Standards (references 35 and 18)"?>
-        <title><?oxy_comment_end?>References</title>
+        <title>References</title>
         <para>
             <orderedlist>
                 <listitem>
@@ -457,80 +447,6 @@
                 <listitem>
                     <para>Analysis Normal Form Informative Ballot. HL7 CIMI Work Group. Sept 2019.
                         http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf.</para>
-                </listitem>
-                <listitem>
-                    <para>Middleton B. The Value of Healthcare Information Exchange and
-                        Interoperability [Internet]. 2014 [cited 2023 Jul 31]. Available from: <link
-                            xlink:href="https://www.researchgate.net/profile/Blackford-Middleton/publication/228874733_The_value_of_healthcare_information_exchange_and_interoperability/links/0fcfd51476ee58b1e0000000/The-value-of-healthcare-information-exchange-and-interoperability.pdf"
-                                ><emphasis role="underline"
-                                >https://www.researchgate.net/profile/Blackford-Middleton/publication/228874733_The_value_of_healthcare_information_exchange_and_interoperability/links/0fcfd51476ee58b1e0000000/The-value-of-healthcare-information-exchange-and-interoperability.pdf.</emphasis></link>
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Houlne D. Technology and the Cost-of-Care Convergence [Internet]. HIMSS;
-                        2021 [cited 2023 Jul 31]. Available from: <link
-                            xlink:href="https://www.himss.org/news/technology-and-cost-care-convergence#:~:text=Better%2C%20cost-effective%20care%20starts%20with%20interoperability.%20One%20study,U.S.%20health%20system%20over%20%2430%20billion%20a%20year"
-                                ><emphasis role="underline"
-                                >https://www.himss.org/news/technology-and-cost-care-convergence#:~:text=Better%2C%20cost-effective%20care%20starts%20with%20interoperability.%20One%20study,U.S.%20health%20system%20over%20%2430%20billion%20a%20year.</emphasis></link></para>
-                </listitem>
-                <listitem>
-                    <para>Analysis by West Health Institute finds medical device interoperability
-                        could save more than $30 billion a year. West Health; 2013 [cited 2023 Jul
-                        31]. Available from: <link
-                            xlink:href="https://www.westhealth.org/press-release/new-analysis-by-west-health-institute-finds-medical-device-interoperability-could-save-more-than-30-billion-a-year/"
-                                ><emphasis role="underline"
-                                >https://www.westhealth.org/press-release/new-analysis-by-west-health-institute-finds-medical-device-interoperability-could-save-more-than-30-billion-a-year/.</emphasis></link>
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Benson T, Grieve G. Why Interoperability Is Hard. In: Principles of Health
-                        Interoperability: FHIR, HL7 and SNOMED CT. Cham: Springer; 2021. p. 21–40.
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Lehne M, Sass J, Essenwanger A, Schepers J, Thun S. Why Digital Medicine
-                        Depends on Interoperability [Internet]. U.S. National Library of Medicine;
-                        2019 [cited 2023 Jul 31]. Available from: <link
-                            xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6702215/?report=classic"
-                                ><emphasis role="underline"
-                                >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6702215/?report=classic.</emphasis></link>
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Frankel A, Leonard M, Brooks A, Peach A, Proulx J, Cramer D, et al. The
-                        Framework for High Reliability Healthcare [Internet]. [cited 2023 Jul 31].
-                        Available from: <link
-                            xlink:href="https://www.safeandreliablecare.com/the-framework-for-high-reliability-healthcare2"
-                                ><emphasis role="underline"
-                                >https://www.safeandreliablecare.com/the-framework-for-high-reliability-healthcare2.</emphasis></link>
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Patzer A. Council Post: Why a Lack of Interoperability in Healthcare is a
-                        Detriment to Patients [Internet]. Forbes Magazine; 2020 [cited 2023 Jul 31].
-                        Available from: <link
-                            xlink:href="https://www.forbes.com/sites/forbestechcouncil/2020/03/02/why-a-lack-of-interoperability-in-healthcare-is-a-detriment-to-patients/?sh=1dc13d761120"
-                                ><emphasis role="underline"
-                                >https://www.forbes.com/sites/forbestechcouncil/2020/03/02/why-a-lack-of-interoperability-in-healthcare-is-a-detriment-to-patients/?sh=1dc13d761120.</emphasis></link>
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Abernethy A, Adams L, Barrett M, Bechtel C, Brennan P, Butte A, et al. The
-                        promise of Digital Health: Then, now, and the future [Internet]. U.S.
-                        National Library of Medicine; 2022 [cited 2023 Jul 31]. Available from:
-                            <link xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499383/"
-                                ><emphasis role="underline"
-                                >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499383/.</emphasis></link>
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Ricker-Kiefert K, Block L. State Strategies to Advance Health Data
-                        Interoperability [Internet]. NGA; 2021 [cited 2023 Jul 31]. Available from:
-                            <link
-                            xlink:href="https://www.nga.org/wp-content/uploads/2021/03/State-Strategies-to-Advance-Health-Data-Interoperability.pdf"
-                                ><emphasis role="underline"
-                                >https://www.nga.org/wp-content/uploads/2021/03/State-Strategies-to-Advance-Health-Data-Interoperability.pdf.</emphasis></link>
-                    </para>
                 </listitem>
                 <listitem>
                     <para>What is Health IT? [Internet]. HealthIT.gov. [cited 2023Jan13]. Available
@@ -664,12 +580,6 @@
                         towards sick patients when sampling patients with sufficient electronic
                         health record data for research. BMC Med Inform Decis Mak. 2014;14:51.
                     </para>
-                </listitem>
-                <listitem>
-                    <para>Health Level Seven international [Internet]. HL7 Standards Product Brief -
-                        HL7 Version 2 Product Suite | HL7 International. [cited 2023Jan12].
-                        Available from:
-                        https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185</para>
                 </listitem>
             </orderedlist>
         </para>

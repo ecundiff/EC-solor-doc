@@ -10,9 +10,23 @@
             <orderedlist>
                 <listitem>
                     <para>Use the following link to <link
-                            xlink:href="https://github.com/ikmdev/komet/releases">download the
-                            latest Komet release build</link> for your appropriate operating
-                        system</para>
+                        xlink:href="https://github.com/ikmdev/komet/releases">access and view
+                        the latest Komet release builds.</link> Each release will include
+                        release notes that detail what updates were made.</para>
+                    <figure xml:id="KometReleaseVersion">
+                        <title>Komet Release Version</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Komet%20Release%20Version.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Scroll down on this webpage to the latest release's "Assests" and select
+                        the installer based on your operating system and central processing unit
+                        chip, when appropriate (Mac M1 versus Mac Intel chip).</para>
                     <figure xml:id="KometDownload">
                         <title>Komet Download</title>
                         <mediaobject>
@@ -40,7 +54,7 @@
                 <listitem>
                     <para>From your browser’s downloads, open the Komet Installer file</para>
                     <figure xml:id="KometInstallerFile">
-                        <title>Komet Installer File</title>
+                        <title>Komet Windows Installer File</title>
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Komet%20Installer%20File.svg" scale="60"
@@ -48,6 +62,10 @@
                             </imageobject>
                         </mediaobject>
                     </figure>
+                </listitem>
+                <listitem>
+                    <para>If you experience a windows defender or other similar anti-virus pop-ups,
+                        proceed through the steps to confirm the download</para>
                 </listitem>
                 <listitem>
                     <para>A message will pop up asking if you want to run the Komet Installer File,
@@ -70,7 +88,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/Komet%20Mac%20Installer%20File.svg"
-                                    scale="20" align="center"/>
+                                    scale="10" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -89,17 +107,19 @@
             <orderedlist>
                 <listitem>
                     <para>For Windows, go to your search bar or apps folder and search for “Komet”.
-                        For Mac, go to your applications folder, search for Komet, and run the
-                        desktop version Komet contributed application.</para>
+                        For Mac, go to your applications folder or press Command+space, search for
+                        Komet, and run the latest desktop version of Komet. The application will be
+                        named Komet [version number], so for example "Komet 1.48.0"</para>
                 </listitem>
+                
                 <listitem>
-                    <para>The below Komet Startup window will open. Change data source to “Open
-                        SpinedArrayStore”</para>
+                    <para>The below Komet Startup window will open. Ensure the Data Source select is
+                        “Open SpinedArrayStore”</para>
                     <figure xml:id="OpenSpinedArrayStore">
                         <title>Open SpinedArrayStore</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Open%20SpinedArrayStore.svg" scale="60"
+                                <imagedata fileref="images/Open%20SpinedArrayStore.svg" scale="10"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -107,21 +127,11 @@
                 </listitem>
                 <listitem>
                     <para>Select the data source you would like to use and click “Ok” in the bottom
-                        right and proceed to Step 8.. There are currently three data sources to
-                        choose from</para>
+                        right and proceed to Step 8</para>
                     <orderedlist>
                         <listitem>
-                            <para>PLACEHOLDER - Currently, solor-ids-256.sa is the data source that
-                                works for me. </para>
-                        </listitem>
-                        <listitem>
-                            <para>SNOMED CT</para>
-                        </listitem>
-                        <listitem>
-                            <para>SNOMED-LOINC Collaboration</para>
-                        </listitem>
-                        <listitem>
-                            <para>LIDR  </para>
+                            <para> PLACEHOLDER - Currently, SNOMED-International-JAVA23 is the
+                                latest data set - PLACEHOLDER</para>
                         </listitem>
                     </orderedlist>
                 </listitem>
@@ -132,11 +142,31 @@
                 </listitem>
                 <listitem>
                     <para>Right click the desired data zip file and select "Unzip Here" so the data
-                        is stored in the Solor folder</para>
+                        is stored in the Solor folder. Ensure the unzipped data files are placed
+                        directly in the unzipped data folder, not inside any subfolders within the
+                        unzipped data folder</para>
+                    <figure xml:id="UnzippedDataFolder">
+                        <title>Unzipped Data Folder</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Unzipped%20Data%20Folder.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
                     <para>Exit and re-open Komet. Change the data source to “Open SpinedArrayStore”;
-                        your data source should appear</para>
+                        your data source should now appear</para>
+                    <figure xml:id="NewData">
+                        <title>New Data</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/New%20Data.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
                     <para>Select the data source you would like to use and click “Ok” in the bottom
@@ -166,7 +196,7 @@
                         <title>New Journal</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/New%20Journal%20Panel.svg" scale="45"
+                                <imagedata fileref="images/New%20Journal%20Panel.svg" scale="20"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -183,11 +213,12 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>Select the magnifying glass icon at the top of the left-hand bar</para>
+                    <para>To find a concept, first open a new journal, or in an existing and open
+                        journal, and select the comment icon in the left-hand bar</para>
                 </listitem>
                 <listitem>
-                    <para>Type the keyword or concept name into the "enter search query" bar at the
-                        top of the left-hand panel to find a concept</para>
+                    <para>Type the keyword or concept name into the search bar at the top of the
+                        left-hand panel to find a concept</para>
                     <figure xml:id="ConceptSearch">
                         <title>Komet Concept Search</title>
                         <mediaobject>
@@ -200,7 +231,7 @@
                 </listitem>
                 <listitem>
                     <para>Results containing the keyword will populate in the field below the search
-                        bar, with keywords highlighted in green</para>
+                        bar</para>
                 </listitem>
             </orderedlist>
         </para>
@@ -208,13 +239,14 @@
             <title>How to View Details</title>
             <orderedlist>
                 <listitem>
-                    <para>To view a concept, double click on a search result or drag it to the
-                        center panel to view more details</para>
+                    <para>To view a concept, double click on a search result, drag the concept to
+                        the center panel, or right click a concept and select "Populate Concept
+                        Option"</para>
                 </listitem>
                 <listitem>
-                    <para>You can click the magnifying glass icon at the top of the left-hand bar
-                        again to minimize the search panel for more space (this can be done for any
-                        icon in the left-hand bar)</para>
+                    <para>You can click the comment icon at the top of the left-hand bar again to
+                        minimize the search panel for more space (this can be done for any icon in
+                        the left-hand bar)</para>
                 </listitem>
                 <listitem>
                     <para>Toggle the "Properties" button on and use the icons at the top right-had
@@ -224,7 +256,7 @@
                         <title>View Concept Details</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Concept%20Details.svg" scale="45"
+                                <imagedata fileref="images/View%20Concept%20Details.svg" scale="20"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -252,17 +284,30 @@
             <para>
                 <orderedlist>
                     <listitem>
-                        <para>To view hierarchical relationships, select the Hierarchical
-                            Relationships icon in the left-hand bar and drag the desired concept
-                            from the Axioms section into the Hierarchical Relationships panel.
-                            Inferred navigation pattern information will appear on the left-hand
-                            side. </para>
+                        <para>To view hierarchical relationships, select the Navigator icon in the
+                            left-hand bar</para>
+                        <figure xml:id="HierarchicalRelationshipsIcon">
+                            <title>Hierarchical Relationships Icon</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata
+                                        fileref="images/Hierarchical%20Relationships%20Icon.svg"
+                                        scale="15" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                    <listitem>
+                        <para>Drag the desired concept from the Axioms section into the Hierarchical
+                            Relationships panel. Inferred navigation pattern information will appear
+                            on the left-hand side. </para>
                         <figure xml:id="HierarchicalNavigation">
                             <title>Hierarchical Navigation</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="images/Visualize%20Hierarchical%20Relationships.svg" scale="15" align="center"/>
+                                        fileref="images/Visualize%20Hierarchical%20Relationships.svg"
+                                        scale="15" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -271,13 +316,13 @@
                         <para>Hierarchical Relationships can also be viewed in the center panel by
                             toggling the "Properties" button on and selecting the "Hierarchy" icon
                             at the top of the concept window </para>
-                        <figure xml:id="OtherHierarchicalNavigation">
+                        <figure xml:id="AlternativeHierarchicalNavigation">
                             <title>Alternative Hierarchical Navigation</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="images/Other%20Hierarchical%20Relationship%20View.svg"
-                                        scale="35" align="center"/>
+                                        fileref="images/Alternative%20Hierarchical%20Relationship%20View.svg"
+                                        scale="25" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -297,19 +342,36 @@
             axiom changes were made.</para>
         <orderedlist>
             <listitem>
+                <para>To view versioning, first open a new journal, or in an existing and open
+                    journal, and follow the steps to view a concept in Section 1.4</para>
+            </listitem>
+            <listitem>
                 <para>In the tool ribbon at the top left of the concept window, click the Time
                     Travel button</para>
                 <figure xml:id="GettoVersioning">
                     <title>Versioning Panel</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Get%20to%20Versioning.svg" scale="35"
+                            <imagedata fileref="images/Get%20to%20Versioning.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
                 <para>The Timeline panel opens to the right. The blue lines in the Timeline panel
                     represent different data extensions.</para>
+            </listitem>
+            <listitem>
+                <para>Click the elipsis in the top right of the Timeline panel to see additional
+                    information on the Path and Extensions that the timelines represent</para>
+                <figure xml:id="TimelineInformation">
+                    <title>Timeline Information</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Timeline%20Information.svg" scale="25"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
             </listitem>
             <listitem>
                 <para>Toggle the "Properties" button on in the top right of the concept
@@ -321,7 +383,7 @@
                     <title>Viewing Versioning</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Viewing%20Versioning.svg" scale="60"
+                            <imagedata fileref="images/Viewing%20Versioning.svg" scale="20"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -340,7 +402,7 @@
                     <title>Version Nodes</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Viewing%20Versioning2.svg" scale="60"
+                            <imagedata fileref="images/Viewing%20Versioning2.svg" scale="20"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -350,10 +412,10 @@
                 <para>You can further narrow the versioning by selecting the "All" drop down arrow
                     to filter historical events by Concept, Description, and Axiom changes.</para>
                 <figure xml:id="ConceptHistoryOptions">
-                    <title>Concept Version Options</title>
+                    <title>Concept History Options</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Concept%20History%20Options.svg" scale="35"
+                            <imagedata fileref="images/Concept%20History%20Options.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -369,20 +431,23 @@
             Status, Time, Author, Module, and Path (STAMP), stated relationships, and more.</para>
         <orderedlist>
             <listitem>
-                <para>To create a concept, click the "+" icon at the top of the Komet window and
-                    select "New Concept"</para>
+                <para>To create a concept, first open a new journal, in an existing and open
+                    journal, and click the "+" icon at the top of the Komet window and select "New
+                    Concept"</para>
+            </listitem>
+            <listitem>
                 <figure xml:id="CreateNewConcept">
                     <title>Creating a Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Create%20New%20Concept.svg" scale="35" align="center"
-                            />
+                            <imagedata fileref="images/Create%20New%20Concept.svg" scale="35"
+                                align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>A new concept viewing window will appear</para>
+                <para>A new concept template will appear</para>
                 <figure xml:id="NewConcept">
                     <title>New Concept</title>
                     <mediaobject>
@@ -395,12 +460,13 @@
             </listitem>
             <listitem>
                 <para>To add STAMP properties of the new concept, select the ellipsis in the top
-                    right of the concept window</para>
+                    right of the concept window and select the appropriate options within each drop
+                    down menu to edit the appropriate information for STAMP</para>
                 <figure xml:id="EditSTAMP">
                     <title>Creating STAMP Properties</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Edit%20STAMP.svg" scale="35" align="center"
+                            <imagedata fileref="images/Edit%20STAMP.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -408,22 +474,61 @@
             </listitem>
             <listitem>
                 <para>Select the pencil icon on the right-hand side of the description section of
-                    the concept window to add a description, including a fully qualified name or
-                    other name</para>
+                    the concept window to add a description</para>
                 <figure xml:id="NewDescription">
                     <title>Adding a Description</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/New%20Description.svg" scale="35" align="center"
+                            <imagedata fileref="images/New%20Description.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>Finally, select the pencil icon on the right-hand side of the description
-                    section of the concept window to add axiom information, including sufficient and
-                    necessary sets</para>
+                <para>Select "Add Fully Qualified Name" and fill out the necessary
+                    information</para>
+                <figure xml:id="NewFullyQualifiedName">
+                    <title>New Fully Qualified Name
+                    </title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/New%20Fully%20Qualified%20Name.svg" scale="25" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>When complete, scroll to the bottom of the panel and select "Submit"</para>
+                <figure xml:id="SubmitFullyQualifiedName">
+                    <title>Submit Fully Qualified Name
+                    </title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Submit%20Fully%20Qualified%20Name.svg" scale="25" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Select the pencil icon again on the right-hand side of the description section
+                    to add an Other Name, as needed</para>
+                <figure xml:id="NewOtherName">
+                    <title>New Other Name</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/New%20Other%20Name.svg" scale="25" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Finally, select the pencil icon on the right-hand side of the axiom section of
+                    the concept window to add axiom information, including sufficient and necessary
+                    sets</para>
                 <figure xml:id="NewAxiom">
                     <title>Adding an Axiom</title>
                     <mediaobject>
@@ -434,16 +539,76 @@
                     </mediaobject>
                 </figure>
             </listitem>
+            <listitem>
+                <para>Once you add a Sufficient or Necessary Set, it will appear in the Axioms
+                    section, where you can then select the pencil icon to add another Sufficient or
+                    Necessary Set.</para>
+                <figure xml:id="AdditionalSets">
+                    <title>Additional Sets</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Additional%20Sets.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Once you have added a Sufficient or Necessary Set, a unique identifier will
+                    automatically be generated for your concept</para>
+                <figure xml:id="UniqueIdentifier">
+                    <title>Unique Identifier</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Unique%20Identifier.svg" scale="10" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Your concept will then appear in the concept search bar on the left hand
+                    side</para>
+                <figure xml:id="CreatedConcept">
+                    <title>Created Concept</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Created%20Concept.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
         </orderedlist>
     </section>
     <section>
-        <title>Editing and Modifying a Concept</title>
+        <title>Editing a Concept</title>
         <para>Users may want to edit or modify a concept to reflect new and emerging real-world data
             or real-world evidence.</para>
         <orderedlist>
             <listitem>
-                <para>To edit a concept, ensure the "Properties" button is toggled on and select the
-                    "Edit" icon at the top right of the concept viewing window</para>
+                <para>To edit a concept, first open a new journal, or in an existing and open
+                    journal, and find the concept you want to edit, double-click or drag the concept
+                    into the main viewing window, and turn the "Properties" button is toggled
+                    on.</para>
+                <para>Of note, if you are editing a concept you just created, you must first exit
+                    out of the concept window, find the new concept with the search feature, and
+                    then double click or drag the new concept back into the viewing window</para>
+            </listitem>
+            <listitem>
+                <para>You can directly edit a Fully Qualified Name or Other Name by clicking
+                    the respective name in the concept window</para>
+                <figure xml:id="EditaConcept2">
+                    <title>Alternate Editing a Concept</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/Edit%20Concept2.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>You can also select the "Add/Edit" pencil icon at the top right of the concept viewing
+                    window</para>
                 <figure xml:id="EditingaConcept">
                     <title>Editing a Concept</title>
                     <mediaobject>
@@ -454,43 +619,55 @@
                     </mediaobject>
                 </figure>
             </listitem>
+           
         </orderedlist>
         <section>
             <title>Edit Descriptions</title>
             <orderedlist>
                 <listitem>
                     <para>Selecting "Edit Description" leads to two additional options</para>
-                    <figure xml:id="EditDescription">
-                        <title>Edit Description</title>
+                    <figure xml:id="EditingaDescription">
+                        <title>Editing a Description</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Editing%20a%20Concept.svg" scale="35"
+                                <imagedata fileref="images/Editing%20a%20Description.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
-                </listitem>
-                <listitem>
                     <para>Selecting "Edit Fully Qualified" allows you to edit the selected concept's
                         Fully Qualified Name and associated information</para>
-                    <figure xml:id="EditingaConcept2">
+                    <figure xml:id="EditingaFullyQualifiedName">
                         <title>Editing a Fully Qualified Name</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Editing%20a%20Concept2.svg" scale="35"
+                                <imagedata
+                                    fileref="images/Editing%20a%20Fully%20Qualified%20Name.svg"
+                                    scale="35" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <para>Selecting "Add Other Name" allows you to add a new description of the
+                        concept and associated information</para>
+                    <figure xml:id="AddingOtherName">
+                        <title>Adding Other Name</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Adding%20Other%20Name.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Selecting "Add Other Name" allows you to add a new description of the
-                        concept and associated information</para>
-                    <figure xml:id="EditingaConcept3">
-                        <title>Adding a New Description</title>
+                    <para>Once you have changed the Fully Qualified Name or added an Other Name,
+                        scroll to the bottom of the edit panel and select submit. You can also write
+                        a comment to provide additional information on the changes. </para>
+                    <figure xml:id="SubmitanEdit">
+                        <title>Submit and Edit</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Editing%20a%20Concept3.svg" scale="35"
+                                <imagedata fileref="images/Submit%20an%20Edit.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -502,16 +679,23 @@
             <title>Edit Axiom</title>
             <orderedlist>
                 <listitem>
-                    <para>Button isn't functional as of 1/28/25</para>
-                </listitem>
-                <listitem>
-                    <para>Axioms can also be edited by selecting the Pencil Icon next to the Axiom's
-                        concept and selecting the appropriate action from the drop down menu</para>
+                    <para>Axioms can also be edited at various hierarchical levels by selecting the
+                        Pencil Icon next to the Axiom's concept and selecting the appropriate action
+                        from the drop down menu</para>
                     <figure xml:id="AxiomEditing">
                         <title>Editing an Axiom</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Axiom%20Editing2.svg" scale="45"
+                                <imagedata fileref="images/Axiom%20Editing.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <figure xml:id="AxiomEditing2">
+                        <title>Further Editing an Axiom</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/Axiom%20Editing2.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -527,8 +711,9 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>To create a new pattern, click the "+" icon at the top of the Komet window
-                        and select "New Pattern"</para>
+                    <para>To create a new pattern, first open a new journal, or in an existing and
+                        open journal, and click the "+" icon at the top of the Komet window and
+                        select "New Pattern"</para>
                     <figure xml:id="NewPattern">
                         <title>New Pattern</title>
                         <mediaobject>
@@ -542,11 +727,11 @@
                 <listitem>
                     <para>A new pattern editing window will appear, where you can select the
                         ellipsis to add STAMP information</para>
-                    <figure xml:id="EditPatternSTAMP">
-                        <title>Edit Pattern STAMP</title>
+                    <figure xml:id="AddPatternSTAMP">
+                        <title>Add Pattern STAMP</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Edit%20Pattern%20STAMP.svg" scale="35" align="center"
+                                <imagedata fileref="images/Add%20Pattern%20STAMP.svg" scale="25" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -555,11 +740,11 @@
                 <listitem>
                     <para>Next, select the Pencil Icon in the Pattern Definition section to add
                         Semantic Purpose and Semantic Meaning</para>
-                    <figure xml:id="EditPatternDefinition">
-                        <title>Edit Pattern Definition</title>
+                    <figure xml:id="AddPatternDefinition">
+                        <title>Add Pattern Definition</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Edit%20Pattern%20Definition.svg" scale="35" align="center"
+                                <imagedata fileref="images/Add%20Pattern%20Definition.svg" scale="25" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -568,7 +753,7 @@
                 <listitem>
                     <para>Concepts for both Semantic Purpose and Semantic Meaning can be found by
                         selecting the Comment Icon on the left-hand bar and searching for desired
-                        Concepts</para>
+                        Concepts. These can then be drag-and-dropped into Purpose or Meaning.</para>
                     <figure xml:id="PatternDefinitionOptions">
                         <title>Pattern Definition Options</title>
                         <mediaobject>
@@ -604,7 +789,7 @@
                         <title>Edit Fully Qualified Name</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Edit%20Fully%20Qualified%20Name.svg" scale="35" align="center"
+                                <imagedata fileref="images/Edit%20Fully%20Qualified%20Name.svg" scale="25" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -614,8 +799,8 @@
                     <para>Once all necessary components are complete, select "Done"</para>
                 </listitem>
                 <listitem>
-                    <para>Next, select the Pencil Icon in the Fields section to add additional
-                        information</para>
+                    <para>If needed, select the Pencil Icon in the Fields section to add additional
+                        information. This step is optional</para>
                     <figure xml:id="EditFields">
                         <title>Edit Fields</title>
                         <mediaobject>
@@ -655,7 +840,7 @@
                 </listitem>
                 <listitem>
                     <para>Once all sections have been completed for the Pattern, select the Globe
-                        icon to save the the pattern</para>
+                        icon to save the pattern</para>
                     <figure xml:id="AddIdentifier">
                         <title>Add Identifier</title>
                         <mediaobject>
@@ -805,11 +990,7 @@
                     </mediaobject>
                 </figure>
                 <para>Users can add multiple Targets, Result Constraints, and Specimen but are
-                    limited to a single Analyte. If you manually add any data, such as a Result
-                    Constraint, be sure to run the reasoner once you are finished so that the data
-                    is added to the appropriate Hierarchical Relationship path. See <link
-                        linkend="RunningTheReasoner">Running the Reasoner</link> for further
-                    instructions</para>
+                    limited to a single Analyte.</para>
             </listitem>
             <listitem>
                 <para>Once you click "Done" in the bottom right of the LIDR Record Details panel, it
@@ -866,7 +1047,7 @@
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Once you have enetered all pertinent information, click "Export" and a
+                    <para>Once you have entered all pertinent information, click "Export" and a
                         progress bar will appear in the bottom left-hand side of Komet</para>
                     <figure xml:id="Exporting">
                         <title>Exporting</title>
@@ -896,7 +1077,7 @@
                         <title>Import Dataset</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Import%20Data%20Set.svg" scale="45" align="center"/>
+                                <imagedata fileref="images/Import%20Data%20Set.svg" scale="25" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -930,7 +1111,7 @@
                     <title>Open Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Open%20Reasoner.svg" scale="45" align="center"/>
+                            <imagedata fileref="images/Open%20Reasoner.svg" scale="25" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -942,7 +1123,7 @@
                     <title>Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Reasoner.svg" scale="45" align="center"/>
+                            <imagedata fileref="images/Reasoner.svg" scale="25" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -954,7 +1135,7 @@
                     <title>Run the Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Run%20Reasoner.svg" scale="45"
+                            <imagedata fileref="images/Run%20Reasoner.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -968,7 +1149,7 @@
                     <title>Reasoner In Action</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Reasoner%20In%20Action.svg" scale="45"
+                            <imagedata fileref="images/Reasoner%20In%20Action.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -983,20 +1164,20 @@
                     <title>Reasoner Results</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Reasoner%20Results.svg" scale="45"
+                            <imagedata fileref="images/Reasoner%20Results.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>You can then compare the equivalent concepts by selecting each concept, right
-                    clicking, and choosing "Compare Concepts"</para>
+                <para>You can then compare the equivalent concepts by clicking on each concept,
+                    right clicking, and choosing "Compare Concepts"</para>
                 <figure xml:id="CompareResults">
                     <title>Compare Results</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Compare%20Results.svg" scale="45"
+                            <imagedata fileref="images/Compare%20Results.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -1007,7 +1188,7 @@
                     <title>Understand Equivalents</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Understand%20Equivalents.svg" scale="45"
+                            <imagedata fileref="images/Understand%20Equivalents.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
